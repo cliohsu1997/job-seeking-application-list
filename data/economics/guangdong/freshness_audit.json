@@ -1,0 +1,396 @@
+{
+  "date": "2026-10-14",
+  "region": "guangdong",
+  "input": 43,
+  "kept": 38,
+  "rejected": 5,
+  "rows": [
+    {
+      "title": "佛山大学数字经济【经济贸易学院-高层次人才】招聘",
+      "url": "https://www.sciencehr.net/job/193240.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "【百万英才汇南粤】广东金融学院2026年大数据与人工智能学院诚聘师资公告",
+      "url": "https://ai.gduf.edu.cn/info/1099/1240.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东工业大学经济学院高层次人才招聘",
+      "url": "https://jjxy.gdut.edu.cn/info/1055/3235.htm",
+      "keep": true,
+      "label": "rolling_undated",
+      "reasons": [
+        "rolling_language"
+      ]
+    },
+    {
+      "title": "百万英才汇南粤--广东工业大学高层次人才招聘简章（经济学院）",
+      "url": "https://hr.gdut.edu.cn/info/1073/1195.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "“百万英才汇南粤”广东财经大学2026年博士后招聘公告",
+      "url": "http://rsc.gdufe.edu.cn/2026/0306/c4710a233784/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东财经大学2026年招聘博士后（经济学/管理学/法学等）",
+      "url": "http://rsc.gdufe.edu.cn/2026/0429/c4948a238378/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东财经大学面向海内外招聘学科方向带头人的公告",
+      "url": "http://rsc.gdufe.edu.cn/2025/0116/c12800a215856/page.htm",
+      "keep": true,
+      "label": "fresh_2025_rolling",
+      "reasons": [
+        "year_2025_with_rolling"
+      ]
+    },
+    {
+      "title": "广东外语外贸大学2026年招聘师资博士后研究...",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/12549.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东外语外贸大学应用经济学博士后科研流动站2024年科研博士后研究人员招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/11977.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东外语外贸大学应用经济学博士后科研流动站2025年科研博士后研究人员招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/12041.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东外语外贸大学应用经济学博士后科研流动站2026年科研博士后研究人员招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/12519.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广外2026年招聘师资博士后（含应用经济学、金融学）",
+      "url": "https://rsc.gdufs.edu.cn/info/1017/12559.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广外2026年面向海内外招聘人才（经贸学院含国贸/产业/数字经济等）",
+      "url": "https://rsc.gdufs.edu.cn/info/1017/12399.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广外应用经济学博士后科研流动站2026年科研博士后招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1017/12909.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广州大学2026年高层次人才招聘公告",
+      "url": "https://rsc.gzhu.edu.cn/info/1016/8191.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广州大学经济与统计学院（李正辉课题组）2026年诚聘博士后",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/388060.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广州大学经济与统计学院（李正辉课题组）2026年诚聘博士后",
+      "url": "https://www.gxszw.com/region/guangdong/gxzpgd/202603/30124547.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "百万英才汇南粤 广州大学2026年博士后招聘简章",
+      "url": "https://www.gzhu.edu.cn/info/1205/31377.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广州中医药大学2025-2026学年度学科博士后招收公告",
+      "url": "https://www.gzucm.edu.cn/info/1461/114061.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广州中医药大学诚聘海内外英才（含经济与管理类）",
+      "url": "https://rsc.gzucm.edu.cn/info/1003/4003.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "Job Openings IESR 2026",
+      "url": "https://iesr.jnu.edu.cn/2025/1021/c17720a844641/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "招聘通知｜暨南大学经济学院2025年诚聘海内外英才",
+      "url": "https://ec.jnu.edu.cn/2024/1129/c24919a826585/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "暨南大学2026年博士后全球招聘公告",
+      "url": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "暨南大学2026年博士后全球招聘（含应用经济学、理论经济学）",
+      "url": "https://hrdam.jnu.edu.cn/2026/0413/c343a853500/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "暨南大学冯帅章教授团队招聘博士后",
+      "url": "https://iesr.jnu.edu.cn/2025/0624/c17209a839104/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "暨南大学经济学院2025年诚聘海内外英才（含教师各层次与博士后）",
+      "url": "https://ec.jnu.edu.cn/2024/1129/c42192a826585/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "华南农业大学经济管理学院姜百臣教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399607/page.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "华南农业大学经济管理学院易法敏教授研究团队招聘博士后",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399618/page.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "华南农业大学经济管理学院杨学儒教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399608/page.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "华南农业大学经济管理学院柳松教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399594/page.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "华南农业大学经济管理学院段伟教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399586/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "华南师范大学2025年公开招聘教学科研人员公告",
+      "url": "http://em.scnu.edu.cn/a/20250910/10765.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "汕头大学商学院博士后招聘（数字经济/宏观经济/产业经济）",
+      "url": "https://biz.stu.edu.cn/gk/cpyc/bshzp.htm",
+      "keep": true,
+      "label": "fresh_2025_rolling",
+      "reasons": [
+        "year_2025_with_rolling"
+      ]
+    },
+    {
+      "title": "汕头大学商学院教师招聘（含应用经济学/数字经济）",
+      "url": "https://biz.stu.edu.cn/gk/cpyc/jszp.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "华南师范大学经济与管理学院博士后流动站常年招收（理论/应用经济学）",
+      "url": "http://em.scnu.edu.cn/xueshukeyan/boshihouliudongzhan/",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "中山大学国际金融学院诚聘海内外英才（教师+博士后）",
+      "url": "https://isbf.sysu.edu.cn/zh-hans/article/2827",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "中山大学岭南学院2026年招聘教师（含教研岗与博士后）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/434822.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "五邑大学经济管理学院2026年招聘人才",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/399560.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "广东工业大学经济学院优秀博士后招聘公告",
+      "url": "https://jjxy.gdut.edu.cn/rczp/bsh.htm",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    },
+    {
+      "title": "华南理工大学经济与金融学院2025年招聘博士后公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/305893.html",
+      "keep": false,
+      "label": "stale_2025_closed",
+      "reasons": [
+        "2025_with_deadline_no_rolling"
+      ]
+    },
+    {
+      "title": "2024-01-09 中山大学区域国别研究院面向海内外招聘博士后启事",
+      "url": "https://rcb.sysu.edu.cn/article/532",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    },
+    {
+      "title": "中山大学中观经济学研究院公开招聘博士后",
+      "url": "https://lingnan.sysu.edu.cn/article/2774",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    },
+    {
+      "title": "加入岭南·成就卓越 | 中山大学岭南学院全球招聘（教师+博士后）",
+      "url": "https://lingnan.sysu.edu.cn/article/2580",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    }
+  ]
+}

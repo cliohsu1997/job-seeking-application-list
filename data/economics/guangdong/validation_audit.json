@@ -1,12 +1,12 @@
 {
   "date": "2026-10-14",
   "region": "guangdong",
-  "candidates": 54,
-  "kept_before_polish": 21,
-  "kept": 21,
-  "rejected": 33,
-  "academic": 7,
-  "postdoc": 14,
+  "candidates": 85,
+  "kept_before_polish": 43,
+  "kept": 43,
+  "rejected": 42,
+  "academic": 16,
+  "postdoc": 27,
   "rows": [
     {
       "title": "加入岭南·成就卓越 | 中山大学岭南学院全球招聘（教师+博士后）",
@@ -79,7 +79,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "华南理工大学经济与金融学院2025年度人才招聘启事（专任教师+应用经济学博士后）",
+      "title": "华南理工大学经济与金融学院2025年度人才招聘启事",
       "url": "https://www2.scut.edu.cn/economy/2024/0416/c27492a542018/page.htm",
       "keep": false,
       "label": "stale_cycle",
@@ -211,10 +211,10 @@
     {
       "title": "广东工业大学经济学院高层次人才招聘（应用经济学/数字经济/金融等）",
       "url": "https://jjxy.gdut.edu.cn/rczp/gccrc.htm",
-      "keep": true,
-      "label": "real_announcement",
+      "keep": false,
+      "label": "dead",
       "reasons": [
-        "ok"
+        "fetch_fail status=None"
       ],
       "job_type": "Academic"
     },
@@ -323,10 +323,9 @@
       "title": "广东财经大学2023年公开招聘工作人员公告",
       "url": "http://rsc.gdufe.edu.cn/2023/0330/c7198a172489/page.htm",
       "keep": false,
-      "label": "stale",
+      "label": "stale_year_title",
       "reasons": [
-        "campus_hr_not_econ",
-        "posted_year_too_old"
+        "title_year_pre_2024"
       ],
       "job_type": "Academic"
     },
@@ -462,10 +461,9 @@
       "title": "广东财经大学2023年教学科研人员招聘公告",
       "url": "http://rsc.gdufe.edu.cn/2023/0517/c12800a175049/page.htm",
       "keep": false,
-      "label": "stale",
+      "label": "stale_year_title",
       "reasons": [
-        "campus_hr_econ_field",
-        "posted_year_too_old"
+        "title_year_pre_2024"
       ],
       "job_type": "Academic"
     },
@@ -473,10 +471,9 @@
       "title": "广东财经大学2022年公开招聘企业管理学科带头人公告",
       "url": "http://rsc.gdufe.edu.cn/2022/1014/c12800a167367/page.htm",
       "keep": false,
-      "label": "stale",
+      "label": "stale_year_title",
       "reasons": [
-        "campus_hr_econ_field",
-        "posted_year_too_old"
+        "title_year_pre_2024"
       ],
       "job_type": "Academic"
     },
@@ -556,9 +553,321 @@
       "title": "042026-02 关于开展2026年度国家资助博士后研究人员计划（含博士后创新人才支持计划）和博士后科研业绩评估考核资助申报工作的通知",
       "url": "https://hr.gdut.edu.cn/info/1007/1774.htm",
       "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "百万英才汇南粤|华南农业大学2026年全职博士后全球招聘启动（含农林经济管理）",
+      "url": "https://hr.scau.edu.cn/pd/2026/0313/c9921a429140/page.htm",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "campus_hr_econ_field",
+        "few_application_signals"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南农业大学2025年人才引进和博士后招聘公告",
+      "url": "https://hr.scau.edu.cn/2025/0317/c6117a402512/page.htm",
+      "keep": false,
       "label": "wrong_field",
       "reasons": [
         "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南农业大学经济管理学院杨学儒教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399608/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南农业大学经济管理学院柳松教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399594/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南农业大学经济管理学院段伟教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399586/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南农业大学经济管理学院姜百臣教授研究团队招聘博士后启事",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399607/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南农业大学经济管理学院易法敏教授研究团队招聘博士后",
+      "url": "https://cem.scau.edu.cn/2025/0221/c9875a399618/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "百万英才汇南粤--广东工业大学高层次人才招聘简章（经济学院）",
+      "url": "https://hr.gdut.edu.cn/info/1073/1195.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东工业大学经济学院优秀博士后招聘公告",
+      "url": "https://jjxy.gdut.edu.cn/rczp/bsh.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东工业大学经济学院博士后招聘",
+      "url": "https://jjxy.gdut.edu.cn/rczp/bshzp.htm",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东工业大学经济学院高层次人才招聘",
+      "url": "https://jjxy.gdut.edu.cn/info/1055/3235.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "百万英才汇南粤 广州大学2026年博士后招聘简章",
+      "url": "https://www.gzhu.edu.cn/info/1205/31377.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广州大学2026年高层次人才招聘公告",
+      "url": "https://rsc.gzhu.edu.cn/info/1016/8191.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广州中医药大学2025-2026学年度学科博士后招收公告",
+      "url": "https://rsc.gzucm.edu.cn/info/1047/4253.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广州中医药大学诚聘海内外英才（含经济与管理类）",
+      "url": "https://rsc.gzucm.edu.cn/info/1003/4003.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广州中医药大学2025-2026学年度学科博士后招收公告",
+      "url": "https://www.gzucm.edu.cn/info/1461/114061.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南理工大学经济与金融学院2025年招聘博士后公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/305893.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "暨南大学2026年博士后全球招聘公告",
+      "url": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "Job Openings IESR 2026",
+      "url": "https://iesr.jnu.edu.cn/2025/1021/c17720a844641/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "招聘通知｜暨南大学经济学院2025年诚聘海内外英才",
+      "url": "https://ec.jnu.edu.cn/2024/1129/c24919a826585/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "华南师范大学2025年公开招聘教学科研人员公告",
+      "url": "http://em.scnu.edu.cn/a/20250910/10765.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "汕头大学商学院教师招聘（含应用经济学/数字经济）",
+      "url": "https://biz.stu.edu.cn/gk/cpyc/jszp.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "汕头大学商学院博士后招聘（数字经济/宏观经济/产业经济）",
+      "url": "https://biz.stu.edu.cn/gk/cpyc/bshzp.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "五邑大学经济管理学院2026年招聘人才",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/399560.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "【百万英才汇南粤】广东金融学院2026年大数据与人工智能学院诚聘师资公告",
+      "url": "https://ai.gduf.edu.cn/info/1099/1240.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "北师港浸大哲学政治学和经济学中心招聘公告",
+      "url": "https://hrapp.uic.edu.cn/recruit/job/vacancy/JobDetail/380",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中山大学国际金融学院高层次人才招聘启事",
+      "url": "https://isbf.sysu.edu.cn/zh-hans/article/72",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "posted_year_too_old"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "佛山大学数字经济【经济贸易学院-高层次人才】招聘",
+      "url": "https://www.sciencehr.net/job/193240.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "华南农业大学经济管理学院易法敏教授团队2026年博士后招聘",
+      "url": "https://www.gaoxiaojob.com/job/detail/1498807.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广州大学经济与统计学院（李正辉课题组）2026年诚聘博士后",
+      "url": "https://www.gxszw.com/region/guangdong/gxzpgd/202603/30124547.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广州医科大学及附属医院2025年博士后招聘（含公共管理学）",
+      "url": "http://www.boshihoujob.com/gxbsh/guangdong/121595.html",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
         "not_econ_related"
       ],
       "job_type": "Postdoc"
