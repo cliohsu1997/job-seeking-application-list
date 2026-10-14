@@ -247,6 +247,16 @@ def download_cice() -> Path:
             )
             time.sleep(FETCH_SLEEP_SEC)
             continue
+        from deadline_extract import html_to_text, page_has_only_past_deadlines
+
+        if detail_html and page_has_only_past_deadlines(html_to_text(detail_html)):
+            skipped_empty += 1
+            print(
+                "  skip closed (past deadline) CICE: %s"
+                % ((item.get("institution") or key)[:50],)
+            )
+            time.sleep(FETCH_SLEEP_SEC)
+            continue
 
         kept.append(item)
         if item.get("deadline"):

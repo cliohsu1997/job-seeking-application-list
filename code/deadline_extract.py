@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Shared deadline parsing from listing-page text."""
+"""Shared deadline parsing from listing-page text.
+
+Looks for Deadline / closing / apply-by language, then English months
+(Jan...Dec), ISO (2026-11-30), slash dates (2026/11/30, 11/30/2026),
+and Chinese year-month-day forms.
+"""
 from __future__ import annotations
 
 import re
@@ -12,6 +17,10 @@ _ISO = re.compile(r"(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})")
 _US = re.compile(r"\b(\d{1,2})/(\d{1,2})/(20\d{2})\b")
 _CN = re.compile(
     r"(20\d{2})\s*[\u5e74/-]\s*(\d{1,2})\s*[\u6708/-]\s*(\d{1,2})\s*\u65e5?"
+)
+# Compact Chinese without ?: 2026?11?30
+_CN_SHORT = re.compile(
+    r"(20\d{2})\s*\u5e74\s*(\d{1,2})\s*\u6708\s*(\d{1,2})"
 )
 _EN_MONTH = {
     "jan": 1,
@@ -44,49 +53,47 @@ _MONTH = (
     r"Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|"
     r"Nov(?:ember)?|Dec(?:ember)?)"
 )
-# Month DD[, ]YYYY  (allows Nov. / November 28 th / December 7th?2025)
+# Month DD[, ]YYYY  / Nov. 20, 2019 / January 15th 2026
 _EN_MDY = re.compile(
     rf"{_MONTH}\.?\s+(\d{{1,2}})\s*(?:st|nd|rd|th)?"
-    rf"\s*[,?]?\s*(20\d{{2}})",
+    rf"\s*[,/]?\s*(20\d{{2}})",
     re.I,
 )
-# DD Month YYYY  (Closing date: 30 Nov 2024)
+# DD Month YYYY
 _EN_DMY = re.compile(
-    rf"(\d{{1,2}})\s*(?:st|nd|rd|th)?\s+{_MONTH}\.?\s*(20\d{{2}})",
+    rf"(\d{{1,2}})\s*(?:st|nd|rd|th)?\s+{_MONTH}\.?\s*,?\s*(20\d{{2}})",
     re.I,
 )
-# Keyword window then a date (CICE: "Deadline Date: Nov. 20, 2019")
-_EN_KW = re.compile(
-    r"(?:"
+# Month YYYY (no day) -> last day of month when near deadline keyword only
+_EN_MY = re.compile(rf"{_MONTH}\.?\s+(20\d{{2}})\b", re.I)
+
+_KW_CORE = (
     r"deadline(?:\s*date)?|"
     r"closing\s+date|"
+    r"application\s+deadline|"
+    r"due\s+date|"
     r"due|"
     r"apply\s+by|"
-    r"applications?\s+(?:due|close|must\s+be\s+received)|"
+    r"expected\s+by|"
+    r"applications?\s+(?:due|close|must\s+be\s+received|accepted\s+until)|"
     r"must\s+be\s+received\s+by|"
     r"received\s+by|"
     r"no\s+later\s+than|"
     r"full\s+consideration|"
+    r"review\s+(?:of\s+)?applications?\s+begins|"
+    r"applications?\s+will\s+be\s+reviewed|"
     r"submit(?:ted)?\s+before|"
     r"before\s+the|"
-    # "submit ... letters by November 28, 2025"
     r"(?:submit|submitted|send|sent).{0,160}?\b(?:by|before)\b|"
     r"(?:letters|materials|applications?)\s+(?:by|before)\b|"
-    r"\b(?:by|before)\s+(?=" + _MONTH + r")"
-    r")"
-    r".{0,120}",
-    re.I,
-)
-_NEAR_KW = re.compile(
-    r"("
     r"\u622a\u6b62\u65e5\u671f|\u62a5\u540d\u622a\u6b62|\u622a\u6b62\u65f6\u95f4|"
     r"\u7533\u8bf7\u622a\u6b62|\u6750\u6599\u63d0\u4ea4|\u8bf7\u4e8e|"
-    r"\u62a5\u540d\u65f6\u95f4|\u7533\u8bf7\u65f6\u95f4|"
-    r"deadline(?:\s*date)?|closing\s+date|apply\s+by|"
-    r"received\s+by|no\s+later\s+than|full\s+consideration"
-    r").{0,120}",
-    re.I,
+    r"\u62a5\u540d\u65f6\u95f4|\u7533\u8bf7\u65f6\u95f4|\u622a\u6b62"
 )
+
+# "expected by DATE" always counts as a deadline keyword.
+_EN_KW = re.compile(r"(?:" + _KW_CORE + r").{0,160}", re.I)
+_NEAR_KW = _EN_KW
 
 
 def _ymd(y, m, d) -> str | None:
@@ -105,7 +112,17 @@ def _month_num(name: str | None) -> int | None:
     return _EN_MONTH.get(name.lower().rstrip("."))
 
 
-def _collect_en_dates(window: str) -> list[str]:
+def _month_end(y: int, m: int) -> str | None:
+    if m == 12:
+        return _ymd(y, 12, 31)
+    nxt = date(y, m + 1, 1)
+    from datetime import timedelta
+
+    last = nxt - timedelta(days=1)
+    return last.isoformat()
+
+
+def _collect_en_dates(window: str, *, allow_month_year: bool = False) -> list[str]:
     found: list[str] = []
     for m in _EN_MDY.finditer(window):
         mo = _month_num(m.group(1))
@@ -121,27 +138,36 @@ def _collect_en_dates(window: str) -> list[str]:
         s = _ymd(m.group(3), m.group(1), m.group(2))
         if s:
             found.append(s)
-    for cre in (_ISO, _CN):
+    for cre in (_ISO, _CN, _CN_SHORT):
         for dm in cre.finditer(window):
             s = _ymd(dm.group(1), dm.group(2), dm.group(3))
             if s:
                 found.append(s)
+    if allow_month_year and not found:
+        for m in _EN_MY.finditer(window):
+            mo = _month_num(m.group(1))
+            if mo:
+                s = _month_end(int(m.group(2)), mo)
+                if s:
+                    found.append(s)
     return found
 
 
-def extract_deadline(text: str) -> str | None:
-    """Return YYYY-MM-DD, 'Rolling', or None if unknown."""
-    if not text:
-        return None
-
-    # Normalize HTML entities / odd spaces so "Nov.\n20" and "28 th" match
+def _normalize_text(text: str) -> str:
     text = (
         text.replace("\xa0", " ")
         .replace("&nbsp;", " ")
         .replace("&#32;", " ")
         .replace("\u3000", " ")
     )
-    text = re.sub(r"\s+", " ", text)
+    return re.sub(r"\s+", " ", text)
+
+
+def extract_deadline(text: str) -> str | None:
+    """Return YYYY-MM-DD, 'Rolling', or None if unknown."""
+    if not text:
+        return None
+    text = _normalize_text(text)
 
     found: list[str] = []
     for m in DEADLINE_RE.finditer(text):
@@ -150,29 +176,39 @@ def extract_deadline(text: str) -> str | None:
             found.append(s)
 
     for m in _EN_KW.finditer(text):
-        found.extend(_collect_en_dates(m.group(0)))
+        found.extend(_collect_en_dates(m.group(0), allow_month_year=True))
 
-    for m in _NEAR_KW.finditer(text):
-        found.extend(_collect_en_dates(m.group(0)))
+    # If the page mentions Deadline / closing at all, harvest nearby EN/ISO dates
+    # from a wider slice of the document (helps sparse CICE/AEA pages).
+    if not found and re.search(r"deadline|\u622a\u6b62|closing\s+date", text, re.I):
+        for m in re.finditer(
+            r"(?:deadline|\u622a\u6b62|closing\s+date).{0,240}",
+            text,
+            flags=re.I,
+        ):
+            found.extend(_collect_en_dates(m.group(0), allow_month_year=True))
 
-    # Prefer keyword-linked dates; if none, still accept clear MDY near apply phrases
-    if not found:
-        by_pat = (
-            r"(?:applications?\s+(?:must\s+be\s+)?received\s+by|"
-            r"submit(?:ted)?\s+(?:by|before)|"
-            r"to\s+be\s+guaranteed\s+full\s+consideration|"
-            r"fully\s+considered|"
-            r"\b(?:by|before)\s+" + _MONTH + r")"
-            r".{0,40}"
-        )
-        for m in re.finditer(by_pat, text, flags=re.I):
-            found.extend(_collect_en_dates(m.group(0)))
+    # Last resort: future ISO / Month DD, YYYY when apply language is present.
+    if not found and re.search(
+        r"\bapply\b|application|\u62db\u8058|\u5e94\u8058|\u7533\u8bf7",
+        text,
+        re.I,
+    ):
+        candidates = _collect_en_dates(text)
+        today = date.today().isoformat()
+        future = sorted({d for d in candidates if d >= today})
+        if len(future) == 1:
+            found.append(future[0])
+        elif 1 < len(future) <= 3:
+            found.append(future[0])
 
     if found:
-        # Concrete dates beat "rolling" language elsewhere on the page
         today = date.today().isoformat()
+        # Never keep previous-year / already-passed deadlines
         future = sorted(d for d in found if d >= today)
-        return future[0] if future else sorted(found)[-1]
+        if future:
+            return future[0]
+        found = []
 
     if ROLLING.search(text) or ROLLING_OK.search(text):
         return "Rolling"
@@ -198,6 +234,28 @@ def html_to_text(html: str) -> str:
     return text
 
 
+def page_has_only_past_deadlines(text: str) -> bool:
+    """True when the page has date(s) but every one is before today (closed ad)."""
+    if not text:
+        return False
+    text = _normalize_text(text)
+    if ROLLING.search(text) or ROLLING_OK.search(text):
+        return False
+    found: list[str] = []
+    for m in DEADLINE_RE.finditer(text):
+        s = _ymd(m.group(1), m.group(2), m.group(3) or 1)
+        if s:
+            found.append(s)
+    for m in _NEAR_KW.finditer(text):
+        found.extend(_collect_en_dates(m.group(0), allow_month_year=True))
+    if not found:
+        found.extend(_collect_en_dates(text))
+    if not found:
+        return False
+    today = date.today().isoformat()
+    return all(d < today for d in found)
+
+
 def has_deadline(job: dict) -> bool:
     d = job.get("Deadline")
     if d in (None, "", "None"):
@@ -212,5 +270,4 @@ def has_deadline(job: dict) -> bool:
     return False
 
 
-# Back-compat alias used by older callers
 _has_deadline = has_deadline

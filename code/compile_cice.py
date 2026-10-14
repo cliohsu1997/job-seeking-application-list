@@ -99,27 +99,38 @@ def item_to_row(item: dict) -> dict:
     }
 
 
-def _item_has_content(item: dict) -> bool:
-    """Drop CICE rows whose detail page is an empty 'nothing' shell."""
+def _load_detail_html(item: dict) -> str:
     from paths import ROOT
 
-    html = ""
     rel = item.get("detail_html_path") or ""
     if rel:
         path = Path(rel) if Path(rel).is_absolute() else ROOT / rel
         if path.exists():
-            html = path.read_text(encoding="utf-8", errors="replace")
-    if not html:
-        key = item.get("key") or ""
-        local = HTML_DIR / ("%s.html" % key)
-        if local.exists():
-            html = local.read_text(encoding="utf-8", errors="replace")
-    if not html:
-        html = load_detail_html_for_url(item.get("url") or "")
+            return path.read_text(encoding="utf-8", errors="replace")
+    key = item.get("key") or ""
+    local = HTML_DIR / ("%s.html" % key)
+    if local.exists():
+        return local.read_text(encoding="utf-8", errors="replace")
+    return load_detail_html_for_url(item.get("url") or "")
+
+
+def _item_has_content(item: dict) -> bool:
+    """Drop CICE rows whose detail page is an empty 'nothing' shell."""
+    html = _load_detail_html(item)
     if html:
         return has_cice_content(html)
     desc = (item.get("description") or "").strip()
     return len(desc) >= 80
+
+
+def _deadline_is_closed(item: dict) -> bool:
+    """True if the only dates on the page are before today (stale CICE ad)."""
+    from deadline_extract import html_to_text, page_has_only_past_deadlines
+
+    html = _load_detail_html(item)
+    if not html:
+        return False
+    return page_has_only_past_deadlines(html_to_text(html))
 
 
 def load_rows() -> list[dict]:
@@ -127,11 +138,23 @@ def load_rows() -> list[dict]:
     if not files:
         raise FileNotFoundError("No cice_listings_*.json. Run download_cice.py first.")
     items = json.loads(files[0].read_text(encoding="utf-8"))
-    kept = [it for it in items if _item_has_content(it)]
-    skipped = len(items) - len(kept)
+    kept = []
+    skipped_empty = skipped_closed = 0
+    for it in items:
+        if not _item_has_content(it):
+            skipped_empty += 1
+            continue
+        if _deadline_is_closed(it):
+            skipped_closed += 1
+            continue
+        kept.append(it)
     print(
         f"Compiling {len(kept)} CICE listings from {files[0].name}"
-        + (f" (skipped {skipped} empty)" if skipped else "")
+        + (
+            f" (skipped empty={skipped_empty} closed_past_deadline={skipped_closed})"
+            if (skipped_empty or skipped_closed)
+            else ""
+        )
     )
     return [item_to_row(item) for item in kept]
 

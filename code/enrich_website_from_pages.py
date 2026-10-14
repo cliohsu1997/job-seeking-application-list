@@ -13,6 +13,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime
 from pathlib import Path
 
@@ -132,12 +134,31 @@ def enrich_row(
     channel = (row.get("Submission Channel") or "").upper()
     section = ""
     pages: list[str] = []
-    for url in urls:
-        text = fetch_listing_text(url, cache=cache)
-        flags["fetched"] += 1
-        if text:
-            pages.append(text)
-            flags["pages"] += 1
+    need_dl = force_deadline or not has_deadline({"Deadline": row.get("Deadline")})
+
+    # CICE: prefer saved encrypted-detail HTML (SPA shell has no deadline)
+    if channel == "CICE":
+        try:
+            from download_cice import load_detail_html_for_url
+            from deadline_extract import html_to_text
+
+            for url in urls:
+                html = load_detail_html_for_url(url)
+                flags["fetched"] += 1
+                text = html_to_text(html) if html else ""
+                if text:
+                    pages.append(text)
+                    flags["pages"] += 1
+        except Exception:
+            pass
+
+    if not pages or (need_dl and channel != "CICE"):
+        for url in urls:
+            text = fetch_listing_text(url, cache=cache)
+            flags["fetched"] += 1
+            if text:
+                pages.append(text)
+                flags["pages"] += 1
 
     page_blob = "\n".join(pages)
     primary = urls[0]
@@ -146,17 +167,14 @@ def enrich_row(
         title=title,
         full_text=page_blob,
         url=primary,
-        fetch_always=False,  # already fetched above
+        fetch_always=False,
         cache=cache,
     )
-    # Re-classify with merged page text explicitly
     from classify_aea_job_type import _classify_text
 
     jt2, reason2 = _classify_text(title, page_blob, section)
     if jt2:
         job_type, reason = jt2, "page_" + reason2
-    elif page_blob:
-        job_type, reason = job_type, reason
 
     old_type = row.get("Job Type") or ""
     if old_type == "Academic":
@@ -167,24 +185,14 @@ def enrich_row(
     if job_type != old_type:
         flags["type_changed"] = 1
 
-    # Deadline from listing page(s)
-    need_dl = force_deadline or not has_deadline(
-        {"Deadline": new_row.get("Deadline")}
-    )
     page_deadline = extract_deadline(title + "\n" + page_blob) if page_blob else None
-    if page_deadline and (need_dl or force_deadline):
+    if page_deadline and need_dl:
         if _deadline_str(new_row.get("Deadline")) != page_deadline:
             new_row["Deadline"] = page_deadline
             flags["deadline_filled"] = 1
-    elif page_deadline and not _deadline_str(new_row.get("Deadline")):
+    elif page_deadline and channel == "CICE" and not has_deadline(new_row):
         new_row["Deadline"] = page_deadline
         flags["deadline_filled"] = 1
-
-    # CICE often has no structured deadline in JSON  page is the source of truth
-    if channel == "CICE" and page_deadline:
-        new_row["Deadline"] = page_deadline
-        if flags["deadline_filled"] == 0 and _deadline_str(row.get("Deadline")) != page_deadline:
-            flags["deadline_filled"] = 1
 
     return new_row, flags
 
@@ -253,19 +261,106 @@ def write_sheet(wb, sheet_name: str, rows: list[dict]) -> None:
                 cell.font = link_font
 
 
+def _enrich_channel(
+    *,
+    sheet_name: str,
+    channel: str,
+    rows: list[dict],
+    targets: list[int],
+    cache: dict,
+    cache_lock: threading.Lock,
+    force_deadline: bool,
+) -> tuple[str, str, list[dict], dict]:
+    """Enrich one channel's rows (safe to run in parallel with other channels)."""
+    print(
+        "=== ENRICH %s from listing pages (%d / %d rows) ==="
+        % (channel, len(targets), len(rows))
+    )
+    ch_stats = {
+        "rows": len(targets),
+        "sheet_rows": len(rows),
+        "fetched": 0,
+        "pages_ok": 0,
+        "type_changed": 0,
+        "deadline_filled": 0,
+        "faculty": 0,
+        "postdoc": 0,
+        "non_academic": 0,
+        "with_deadline": 0,
+    }
+    done = 0
+    for i in targets:
+        row = rows[i]
+        with cache_lock:
+            new_row, flags = enrich_row(
+                row, cache=cache, force_deadline=force_deadline
+            )
+        rows[i] = new_row
+        done += 1
+        ch_stats["fetched"] += flags["fetched"]
+        ch_stats["pages_ok"] += flags["pages"]
+        ch_stats["type_changed"] += flags["type_changed"]
+        ch_stats["deadline_filled"] += flags["deadline_filled"]
+        if done % 25 == 0 or done == len(targets):
+            with cache_lock:
+                cache_n = len(cache)
+            print(
+                "  [%s %d/%d] type_changed=%d deadline_filled=%d cache=%d"
+                % (
+                    channel,
+                    done,
+                    len(targets),
+                    ch_stats["type_changed"],
+                    ch_stats["deadline_filled"],
+                    cache_n,
+                )
+            )
+        if done % 50 == 0:
+            with cache_lock:
+                save_page_cache(cache)
+
+    for new_row in rows:
+        jt = new_row.get("Job Type") or ""
+        if jt == "Academic":
+            new_row["Job Type"] = "Faculty"
+            jt = "Faculty"
+        if jt == "Postdoc":
+            ch_stats["postdoc"] += 1
+        elif jt == "Non-Academic":
+            ch_stats["non_academic"] += 1
+        else:
+            ch_stats["faculty"] += 1
+        if has_deadline({"Deadline": new_row.get("Deadline")}):
+            ch_stats["with_deadline"] += 1
+
+    print(
+        "  -> %s Faculty=%d Postdoc=%d Non-Academic=%d with_deadline=%d/%d"
+        % (
+            channel,
+            ch_stats["faculty"],
+            ch_stats["postdoc"],
+            ch_stats["non_academic"],
+            ch_stats["with_deadline"],
+            ch_stats["sheet_rows"],
+        )
+    )
+    return sheet_name, channel, rows, ch_stats
+
+
 def run(
     *,
     channels: list[str] | None = None,
     asia_pacific_only: bool = False,
     force_deadline: bool = False,
+    parallel: bool = False,
 ) -> dict:
     ensure_dirs()
     want = {c.upper() for c in (channels or ["AEA", "EJM", "CICE"])}
     cache = load_page_cache()
     cache_before = len(cache)
+    cache_lock = threading.Lock()
 
     wb = load_workbook(APP_XLSX)
-    all_enriched: list[dict] = []
     summary = {
         "date": TODAY,
         "channels": {},
@@ -276,6 +371,7 @@ def run(
         "rows": 0,
     }
 
+    jobs: list[tuple[str, str, list[dict], list[int]]] = []
     for sheet_name, channel in SOURCE_SHEETS:
         if channel not in want:
             continue
@@ -285,85 +381,61 @@ def run(
             for i, r in enumerate(rows)
             if (not asia_pacific_only) or asia_pacific_keep(r)
         ]
+        jobs.append((sheet_name, channel, rows, targets))
+
+    results: list[tuple[str, str, list[dict], dict]] = []
+    if parallel and len(jobs) > 1:
         print(
-            "=== ENRICH %s from listing pages (%d / %d rows) ==="
-            % (channel, len(targets), len(rows))
+            "=== PARALLEL website enrich: %s ==="
+            % ", ".join(ch for _, ch, _, _ in jobs)
         )
-        ch_stats = {
-            "rows": len(targets),
-            "sheet_rows": len(rows),
-            "fetched": 0,
-            "pages_ok": 0,
-            "type_changed": 0,
-            "deadline_filled": 0,
-            "faculty": 0,
-            "postdoc": 0,
-            "non_academic": 0,
-            "with_deadline": 0,
-        }
-        done = 0
-        for i in targets:
-            row = rows[i]
-            new_row, flags = enrich_row(
-                row, cache=cache, force_deadline=force_deadline
-            )
-            rows[i] = new_row
-            done += 1
-            ch_stats["fetched"] += flags["fetched"]
-            ch_stats["pages_ok"] += flags["pages"]
-            ch_stats["type_changed"] += flags["type_changed"]
-            ch_stats["deadline_filled"] += flags["deadline_filled"]
-            if done % 25 == 0 or done == len(targets):
-                print(
-                    "  [%d/%d] type_changed=%d deadline_filled=%d cache=%d"
-                    % (
-                        done,
-                        len(targets),
-                        ch_stats["type_changed"],
-                        ch_stats["deadline_filled"],
-                        len(cache),
-                    )
+        with ThreadPoolExecutor(max_workers=len(jobs)) as pool:
+            futs = [
+                pool.submit(
+                    _enrich_channel,
+                    sheet_name=sheet_name,
+                    channel=channel,
+                    rows=rows,
+                    targets=targets,
+                    cache=cache,
+                    cache_lock=cache_lock,
+                    force_deadline=force_deadline,
                 )
-            if done % 50 == 0:
-                save_page_cache(cache)
+                for sheet_name, channel, rows, targets in jobs
+            ]
+            for fut in as_completed(futs):
+                results.append(fut.result())
+        # Stable sheet order for writing
+        order = {ch: i for i, (_, ch) in enumerate(SOURCE_SHEETS)}
+        results.sort(key=lambda t: order.get(t[1], 99))
+    else:
+        for sheet_name, channel, rows, targets in jobs:
+            results.append(
+                _enrich_channel(
+                    sheet_name=sheet_name,
+                    channel=channel,
+                    rows=rows,
+                    targets=targets,
+                    cache=cache,
+                    cache_lock=cache_lock,
+                    force_deadline=force_deadline,
+                )
+            )
 
-        for new_row in rows:
-            jt = new_row.get("Job Type") or ""
-            if jt == "Academic":
-                new_row["Job Type"] = "Faculty"
-                jt = "Faculty"
-            if jt == "Postdoc":
-                ch_stats["postdoc"] += 1
-            elif jt == "Non-Academic":
-                ch_stats["non_academic"] += 1
-            else:
-                ch_stats["faculty"] += 1
-            if has_deadline({"Deadline": new_row.get("Deadline")}):
-                ch_stats["with_deadline"] += 1
-
+    for sheet_name, channel, rows, ch_stats in results:
         write_sheet(wb, sheet_name, rows)
-        all_enriched.extend(rows)
         summary["channels"][channel] = ch_stats
         summary["fetched"] += ch_stats["fetched"]
         summary["pages_ok"] += ch_stats["pages_ok"]
         summary["type_changed"] += ch_stats["type_changed"]
         summary["deadline_filled"] += ch_stats["deadline_filled"]
         summary["rows"] += ch_stats["rows"]
-        print(
-            "  -> Faculty=%d Postdoc=%d Non-Academic=%d with_deadline=%d/%d"
-            % (
-                ch_stats["faculty"],
-                ch_stats["postdoc"],
-                ch_stats["non_academic"],
-                ch_stats["with_deadline"],
-                ch_stats["sheet_rows"],
-            )
-        )
 
     wb.save(APP_XLSX)
-    save_page_cache(cache)
-    summary["cache_entries"] = len(cache)
-    summary["cache_new"] = len(cache) - cache_before
+    with cache_lock:
+        save_page_cache(cache)
+        summary["cache_entries"] = len(cache)
+    summary["cache_new"] = summary["cache_entries"] - cache_before
 
     # Rebuild clean/economics all_listings from workbook (full sheets, not AP-only)
     from combine_clean import main as combine_clean_main
@@ -406,6 +478,11 @@ def main() -> None:
         action="store_true",
         help="Overwrite existing deadlines when page has a date",
     )
+    ap.add_argument(
+        "--parallel",
+        action="store_true",
+        help="Enrich AEA / EJM / CICE channels concurrently",
+    )
     args = ap.parse_args()
     print(
         json.dumps(
@@ -413,6 +490,7 @@ def main() -> None:
                 channels=args.channels,
                 asia_pacific_only=args.asia_pacific_only,
                 force_deadline=args.force_deadline,
+                parallel=args.parallel,
             ),
             ensure_ascii=False,
             indent=2,
