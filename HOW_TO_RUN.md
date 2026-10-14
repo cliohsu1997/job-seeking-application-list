@@ -5,7 +5,18 @@ pip install -r requirements.txt
 python code/update.py
 ```
 
-That regenerates the four `clean/` root finals (see below).
+That is the **full refresh from network sources** and regenerates the four `clean/` root finals (see below).
+
+**What is backed up in git:** `code/`, `requirements.txt`, `application list.xlsx`, provincial `discovered_jobs_verified.json`, Macau/Taiwan `listings_*.json`, and the `clean/` finals.  
+**Regenerated on each run (not required in git):** JOE/EJM/CICE downloads, `data/economics/cice_html/`, page caches.
+
+**Cold start (empty provincial data):** run discovery first, then `update.py`:
+
+```bash
+python code/run_province_pipeline.py --all --continue-on-error
+python code/download_macau_taiwan.py   # if macau/taiwan listings missing
+python code/update.py
+```
 
 ## Pipeline (necessary and sufficient)
 
