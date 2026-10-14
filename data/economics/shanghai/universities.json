@@ -3,7 +3,7 @@
   "region": "shanghai",
   "province_zh": "上海",
   "count": 12,
-  "with_econ_units": 10,
+  "with_econ_units": 11,
   "tags_985_211": 10,
   "universities": [
     {
@@ -18,12 +18,13 @@
       ],
       "home": "https://www.fudan.edu.cn/",
       "career": "https://hr.fudan.edu.cn/",
-      "postdoc": null,
+      "postdoc": "https://econ.fudan.edu.cn/xstd1/syfz/zpxx.htm",
       "econ_units": [
         {
           "unit_zh": "经济学院",
           "unit_en": "SOE",
-          "url": "https://econ.fudan.edu.cn/"
+          "url": "https://econ.fudan.edu.cn/",
+          "career": "https://econ.fudan.edu.cn/szdw1/szzp1.htm"
         }
       ]
     },
@@ -44,7 +45,8 @@
         {
           "unit_zh": "安泰经济与管理学院",
           "unit_en": "Antai",
-          "url": "https://www.acem.sjtu.edu.cn/"
+          "url": "https://www.acem.sjtu.edu.cn/",
+          "career": "https://www.acem.sjtu.edu.cn/faculty/teacher.html"
         }
       ]
     },
@@ -59,13 +61,14 @@
         "双一流"
       ],
       "home": "https://www.tongji.edu.cn/",
-      "career": "https://hr.tongji.edu.cn/",
-      "postdoc": null,
+      "career": "https://zp.tongji.edu.cn/",
+      "postdoc": "https://zp.tongji.edu.cn/",
       "econ_units": [
         {
           "unit_zh": "经济与管理学院",
           "unit_en": "SEM",
-          "url": "https://sem.tongji.edu.cn/"
+          "url": "https://sem.tongji.edu.cn/",
+          "career": "https://sem.tongji.edu.cn/semch/56204.html"
         }
       ]
     },
@@ -84,6 +87,12 @@
       "postdoc": null,
       "econ_units": [
         {
+          "unit_zh": "经济与管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.ecnu.edu.cn/",
+          "career": "https://sem.ecnu.edu.cn/42845/list.htm"
+        },
+        {
           "unit_zh": "经济与管理学部",
           "unit_en": "FEM",
           "url": "https://fem.ecnu.edu.cn/"
@@ -100,13 +109,19 @@
         "双一流"
       ],
       "home": "https://www.sufe.edu.cn/",
-      "career": "https://rsc.sufe.edu.cn/",
+      "career": "https://recruiting.sufe.edu.cn/",
       "postdoc": null,
       "econ_units": [
         {
           "unit_zh": "经济学院",
           "unit_en": "SOE",
-          "url": "https://se.sufe.edu.cn/"
+          "url": "https://soe.sufe.edu.cn/"
+        },
+        {
+          "unit_zh": "商学院",
+          "unit_en": "COB",
+          "url": "https://cob.sufe.edu.cn/",
+          "career": "https://cob.sufe.edu.cn/Home/Detail/26953"
         }
       ]
     },
@@ -140,13 +155,14 @@
         "双一流"
       ],
       "home": "https://www.shu.edu.cn/",
-      "career": "https://hr.shu.edu.cn/",
+      "career": "https://jobs.shu.edu.cn/",
       "postdoc": null,
       "econ_units": [
         {
           "unit_zh": "经济学院",
           "unit_en": "SOE",
-          "url": "https://soe.shu.edu.cn/"
+          "url": "https://soe.shu.edu.cn/",
+          "career": "https://jobs.shu.edu.cn/"
         }
       ]
     },
@@ -166,7 +182,8 @@
         {
           "unit_zh": "旭日工商管理学院",
           "unit_en": "Glorious Sun",
-          "url": "https://glxy.dhu.edu.cn/"
+          "url": "https://glxy.dhu.edu.cn/",
+          "career": "https://glxy.dhu.edu.cn/"
         }
       ]
     },
@@ -213,13 +230,19 @@
         "provincial"
       ],
       "home": "https://www.suibe.edu.cn/",
-      "career": "https://rsc.suibe.edu.cn/",
+      "career": "https://www.suibe.edu.cn/rsc/",
       "postdoc": null,
       "econ_units": [
         {
           "unit_zh": "国际经贸学院",
           "unit_en": "SIET",
           "url": "https://gjm.suibe.edu.cn/"
+        },
+        {
+          "unit_zh": "国际组织学院",
+          "unit_en": "SIO",
+          "url": "https://www.suibe.edu.cn/gjzz/",
+          "career": "https://www.suibe.edu.cn/gjzz/2025/0421/c21874a183262/page.htm"
         }
       ]
     },
@@ -234,7 +257,14 @@
       "home": "https://www.shanghaitech.edu.cn/",
       "career": "https://jobs.shanghaitech.edu.cn/",
       "postdoc": null,
-      "econ_units": []
+      "econ_units": [
+        {
+          "unit_zh": "创业与管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.shanghaitech.edu.cn/",
+          "career": "https://sem.shanghaitech.edu.cn/2026/0922/c3517a1127559/page.htm"
+        }
+      ]
     }
   ]
 }

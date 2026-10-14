@@ -52,7 +52,9 @@ ECON_SIG = re.compile(
     "("
     "\u7ecf\u6d4e|\u91d1\u878d|\u5e94\u7528\u7ecf\u6d4e\u5b66|\u7406\u8bba\u7ecf\u6d4e\u5b66|"
     "\u6570\u5b57\u7ecf\u6d4e|\u8d22\u653f|\u56fd\u9645\u8d38\u6613|"
-    "\u5cad\u5357\u5b66\u9662|\u7ecf\u6d4e\u5b66\u9662|\u7ecf\u6d4e\u4e0e|\u5546\u5b66\u9662|\u7ecf\u7ba1"
+    "\u5cad\u5357\u5b66\u9662|\u7ecf\u6d4e\u5b66\u9662|\u7ecf\u6d4e\u4e0e|\u5546\u5b66\u9662|\u7ecf\u7ba1|"
+    "\u7ba1\u7406\u5b66\u9662|\u521b\u4e1a\u4e0e\u7ba1\u7406|\u5de5\u5546\u7ba1\u7406|"
+    "\u7ec4\u7ec7\u7ba1\u7406|\u8425\u9500\u7cfb|\u4f1a\u8ba1\u7cfb|Antai|SEM\\b|ACEM"
     ")",
     re.I,
 )
@@ -84,7 +86,8 @@ REJECT_BODY = re.compile(
 LIST_URL = re.compile(r"(list\.htm|list\.html|/list/?$|/zp/?$|Recruitment/?$)", re.I)
 DETAIL_URL = re.compile(
     r"(article/\d+|info/\d+/\d+|/c\d+a\d+|content\.|/detail|"
-    r"view\.php|announcement/detail|page\.htm|/\d{4}/\d{2}/)",
+    r"view\.php|announcement/detail|page\.htm|/\d{4}/\d{2}/|"
+    r"/acem/hr/\d+|Ads/Ads\?|/Home/Detail/)",
     re.I,
 )
 STALE_YEAR = re.compile(r"(201[0-9]|202[0-3])")
@@ -275,10 +278,13 @@ def score_announcement(
     title_econ = bool(ECON_SIG.search(title) or (unit_zh and unit_zh and unit_zh in title))
     body_econ = bool(ECON_SIG.search(body[:2500]))
     unit_in_body = bool(unit_zh and unit_zh in body[:2500])
-    econ_ok = title_econ or unit_in_body or (
+    # Trust curated School labels from seeds/catalog (e.g. SEM / Antai / ???).
+    school_econ = bool(unit_zh and ECON_SIG.search(unit_zh))
+    econ_ok = title_econ or unit_in_body or school_econ or (
         body_econ and re.search(
             "\u7ecf\u6d4e\u5b66\u9662|\u7ecf\u6d4e\u4e0e|\u5cad\u5357|\u91d1\u878d\u5b66\u9662|"
-            "\u5e94\u7528\u7ecf\u6d4e|\u7406\u8bba\u7ecf\u6d4e|\u6570\u5b57\u7ecf\u6d4e",
+            "\u5e94\u7528\u7ecf\u6d4e|\u7406\u8bba\u7ecf\u6d4e|\u6570\u5b57\u7ecf\u6d4e|"
+            "\u7ba1\u7406\u5b66\u9662|\u5546\u5b66\u9662|\u7ecf\u7ba1",
             body[:2500],
         )
     )

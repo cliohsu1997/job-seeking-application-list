@@ -2,11 +2,11 @@
   "date": "2026-10-14",
   "regions": {
     "shanghai": {
-      "candidates": 7,
-      "kept": 3,
-      "rejected": 4,
-      "academic": 3,
-      "postdoc": 0,
+      "candidates": 27,
+      "kept": 25,
+      "rejected": 0,
+      "academic": 20,
+      "postdoc": 5,
       "pdf": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\shanghai_listings_validated_2026-10-14.pdf",
       "xlsx": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\economics\\shanghai_listings_validated_2026-10-14.xlsx"
     }

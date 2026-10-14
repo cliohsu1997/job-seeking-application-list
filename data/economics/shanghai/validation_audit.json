@@ -1,27 +1,166 @@
 {
   "date": "2026-10-14",
   "region": "shanghai",
-  "candidates": 7,
-  "kept_before_polish": 3,
-  "kept": 3,
-  "rejected": 4,
-  "academic": 3,
-  "postdoc": 0,
+  "candidates": 27,
+  "kept_before_polish": 27,
+  "kept": 25,
+  "rejected": 0,
+  "academic": 20,
+  "postdoc": 5,
   "rows": [
     {
-      "title": "5 21 2026.04 同济大学数学科学学院产业兼职教师招聘启事 一、岗位要求1.拥护党的教育方针，具备良好的思想政治素质和职业道德，热爱教育事业，遵纪守法，有良好...",
-      "url": "https://hr.tongji.edu.cn/info/1177/50765.htm",
-      "keep": false,
-      "label": "wrong_field",
+      "title": "【2026年】复旦大学经济学院面向全球诚聘英才，热岑欢迎您的加盟",
+      "url": "https://econ.fudan.edu.cn/info/1134/46327.htm",
+      "keep": true,
+      "label": "real_announcement",
       "reasons": [
-        "campus_hr_not_econ",
-        "not_econ_related"
+        "ok"
       ],
       "job_type": "Academic"
     },
     {
-      "title": "东华大学旭日工商管理学院诚聘海内外高层次人才",
-      "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376232/page.htm",
+      "title": "经济系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97812.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "金融系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97771.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "会计系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97769.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "管理科学系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97783.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "数据与商务智能系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97770.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "组织管理系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97785.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "信息、技术与创新系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97772.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "上海交通大学中银科技金融学院诚聘天下英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97786.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "Job Posting: Join Tongji SEM Prestigious Research Faculty",
+      "url": "https://sem.tongji.edu.cn/semch/56204.html",
+      "keep": true,
+      "label": "likely_real",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "同济大学经济与管理学院应用经济博士后招聘",
+      "url": "https://zp.tongji.edu.cn/info/1063/19717.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华东师范大学经济与管理学院海内外诚聘英才",
+      "url": "https://sem.ecnu.edu.cn/02/ed/c42845a721645/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2026上海财经大学商学院世界经济与贸易系、产业经济系师资招聘",
+      "url": "https://cob.sufe.edu.cn/Home/Detail/26953",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "经济学院金融学教师岗位",
+      "url": "https://jobs.shu.edu.cn/Ads/Ads?a=d0516abc-9c5a-4f57-8b6d-296a4068dc9d",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "经济学院产业经济学教师岗位",
+      "url": "https://jobs.shu.edu.cn/Ads/Ads?a=64360f5d-6f33-4397-8cc7-0e607228767f",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "经济学院数字经济与贸易教师岗位",
+      "url": "https://jobs.shu.edu.cn/Ads/Ads?a=ff3d6c5d-27b3-4094-bb0c-f0ab7a5c945f",
       "keep": true,
       "label": "real_announcement",
       "reasons": [
@@ -40,6 +179,16 @@
       "job_type": "Academic"
     },
     {
+      "title": "东华大学旭日工商管理学院诚聘海内外高层次人才",
+      "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376232/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
       "title": "东华大学旭日工商管理学院诚聘海内外英才",
       "url": "https://glxy.dhu.edu.cn/2024/1014/c20103a352033/page.htm",
       "keep": true,
@@ -50,34 +199,84 @@
       "job_type": "Academic"
     },
     {
-      "title": "上海外国语大学国际金融贸易学院教学科研人员招聘启事",
-      "url": "https://sef.shisu.edu.cn/08/eb/c10381a198891/page.htm",
-      "keep": false,
-      "label": "expired_deadline",
-      "reasons": [
-        "deadline_passed_2025-10-31"
-      ],
-      "job_type": "Academic"
-    },
-    {
-      "title": "上海外国语大学国际金融贸易学院教学科研人员招聘启事",
-      "url": "https://sef.shisu.edu.cn/ff/1f/c10381a196383/page.htm",
-      "keep": false,
-      "label": "expired_deadline",
-      "reasons": [
-        "deadline_passed_2025-6-15"
-      ],
-      "job_type": "Academic"
-    },
-    {
       "title": "上海科技大学创业与管理学院诚聘英才",
       "url": "https://sem.shanghaitech.edu.cn/2026/0922/c3517a1127559/page.htm",
-      "keep": false,
-      "label": "wrong_field",
+      "keep": true,
+      "label": "real_announcement",
       "reasons": [
-        "not_econ_related"
+        "ok"
       ],
       "job_type": "Academic"
+    },
+    {
+      "title": "上海对外经贸大学国际组织学院（贸易谈判学院）2026年诚聘海内外英才",
+      "url": "https://www.suibe.edu.cn/gjzz/2025/0421/c21874a183262/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "上海对外经贸大学教学科研岗位人才招聘启事",
+      "url": "https://www.suibe.edu.cn/rsc/2025/0401/c3652a182425/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "商学院教师岗位招聘启事",
+      "url": "https://bs.ecust.edu.cn/cms/ecust/facultyAndResearch/teacherRecruit/0-000c77j842001.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "商学院管理科学与工程博士后科研流动站招聘启事",
+      "url": "https://bs.ecust.edu.cn/cms/ecust/facultyAndResearch/teacherRecruit/450106463682564.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华东理工大学陈万思教授团队招聘博士后启事",
+      "url": "https://bs.ecust.edu.cn/cms/ecust/szyky/szdw/zpqs.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "海外优青 | 欢迎依托上海交大安泰经济与管理学院申报",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/94461.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "上海大学经济学院2026年招聘1名数量经济学教师",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/370987.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
     }
   ]
 }
