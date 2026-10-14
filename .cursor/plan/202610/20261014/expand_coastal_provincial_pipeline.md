@@ -58,6 +58,8 @@ python code/run_province_pipeline.py --all --continue-on-error
 - [x] Per-province workspaces via `init_province_pipeline.py`  
 - [x] `run_province_pipeline.py --region|--all|--list|--init-only|--continue-on-error`  
 - [x] Catalog reloads from disk; empty validate sets handled  
+- [x] Pipeline steps: freshness screen (2026+/2025 rolling) + one-by-one verify + coastal summarize  
+- [ ] Subagents fill all provinces to >=2x schools then coastal merge  
 - [x] Plan lives under `.cursor/plan/` (tracked via gitignore exceptions)  
 - [x] First Shanghai pipeline run (12 schools -> 3 kept Donghua after stale purge)  
 - [x] Shanghai coverage fix: hand seeds + catalog career hubs -> **25 kept (>=2x 12 schools)**  

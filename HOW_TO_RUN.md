@@ -99,7 +99,18 @@ python code/init_province_pipeline.py --all
 
 ### One-command pipeline (any province)
 
-Catalog → one-by-one school scrape → seeds → validate/polish → PDF:
+Catalog → discover → seeds → validate → **freshness screen (2026+ / 2025 rolling)** →
+**one-by-one verify** → province PDF → coastal summarize:
+
+```bash
+python code/run_province_pipeline.py --region shanghai
+python code/run_province_pipeline.py --all --continue-on-error
+python code/run_province_pipeline.py --summarize-only
+```
+
+Target coverage: **kept ≥ 2 × number of schools** in that province (via seeds + discover).
+
+Legacy one-liner still works:
 
 ```bash
 python code/run_province_pipeline.py --region guangdong
@@ -131,14 +142,20 @@ python code/download_china_universities.py --region beijing
 python code/discover_by_university.py --region beijing
 python code/seed_jobs.py --region beijing
 python code/validate_job_links.py --region beijing
+python code/screen_job_freshness.py --region beijing
+python code/verify_jobs_one_by_one.py --region beijing
+python code/summarize_coastal.py
 ```
 
-Or `--all` on discover / seed / validate:
+Or `--all` on the stage scripts:
 
 ```bash
 python code/discover_by_university.py --all
 python code/seed_jobs.py --all
 python code/validate_job_links.py --all
+python code/screen_job_freshness.py --all
+python code/verify_jobs_one_by_one.py --all
+python code/summarize_coastal.py
 ```
 
 Lock a good validated set into seeds (reproducible keep list):

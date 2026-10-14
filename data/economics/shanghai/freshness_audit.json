@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-14",
+  "region": "shanghai",
+  "input": 25,
+  "kept": 22,
+  "rejected": 3,
+  "rows": [
+    {
+      "title": "东华大学旭日工商管理学院研究助理教授（RAP）招聘公告",
+      "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376231/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "东华大学旭日工商管理学院诚聘海内外英才",
+      "url": "https://glxy.dhu.edu.cn/2024/1014/c20103a352033/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "东华大学旭日工商管理学院诚聘海内外高层次人才",
+      "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376232/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "华东理工大学陈万思教授团队招聘博士后启事",
+      "url": "https://bs.ecust.edu.cn/cms/ecust/szyky/szdw/zpqs.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "商学院管理科学与工程博士后科研流动站招聘启事",
+      "url": "https://bs.ecust.edu.cn/cms/ecust/facultyAndResearch/teacherRecruit/450106463682564.html",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "【2026年】复旦大学经济学院面向全球诚聘英才，热岑欢迎您的加盟",
+      "url": "https://econ.fudan.edu.cn/info/1134/46327.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "上海交通大学中银科技金融学院诚聘天下英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97786.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "会计系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97769.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "信息、技术与创新系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97772.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "数据与商务智能系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97770.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海外优青 | 欢迎依托上海交大安泰经济与管理学院申报",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/94461.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "管理科学系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97783.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "组织管理系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97785.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "经济系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97812.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "金融系2027年度招聘——上海交大安泰经管学院诚聘英才",
+      "url": "https://www.acem.sjtu.edu.cn/acem/hr/97771.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2026上海财经大学商学院世界经济与贸易系、产业经济系师资招聘",
+      "url": "https://cob.sufe.edu.cn/Home/Detail/26953",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "上海对外经贸大学国际组织学院（贸易谈判学院）2026年诚聘海内外英才",
+      "url": "https://www.suibe.edu.cn/gjzz/2025/0421/c21874a183262/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "上海对外经贸大学教学科研岗位人才招聘启事",
+      "url": "https://www.suibe.edu.cn/rsc/2025/0401/c3652a182425/page.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "上海大学经济学院2026年招聘1名数量经济学教师",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/370987.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "经济学院数字经济与贸易教师岗位",
+      "url": "https://jobs.shu.edu.cn/Ads/Ads?a=ff3d6c5d-27b3-4094-bb0c-f0ab7a5c945f",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "上海科技大学创业与管理学院诚聘英才",
+      "url": "https://sem.shanghaitech.edu.cn/2026/0922/c3517a1127559/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "同济大学经济与管理学院应用经济博士后招聘",
+      "url": "https://zp.tongji.edu.cn/info/1063/19717.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "华东师范大学经济与管理学院海内外诚聘英才",
+      "url": "https://sem.ecnu.edu.cn/02/ed/c42845a721645/page.htm",
+      "keep": false,
+      "label": "stale_2025_closed",
+      "reasons": [
+        "2025_with_deadline_no_rolling"
+      ]
+    },
+    {
+      "title": "商学院教师岗位招聘启事",
+      "url": "https://bs.ecust.edu.cn/cms/ecust/facultyAndResearch/teacherRecruit/0-000c77j842001.html",
+      "keep": false,
+      "label": "stale_2025_closed",
+      "reasons": [
+        "2025_with_deadline_no_rolling"
+      ]
+    },
+    {
+      "title": "Job Posting: Join Tongji SEM Prestigious Research Faculty",
+      "url": "https://sem.tongji.edu.cn/semch/56204.html",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    }
+  ]
+}
