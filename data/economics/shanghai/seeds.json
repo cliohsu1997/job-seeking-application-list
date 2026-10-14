@@ -1,6 +1,52 @@
 {
   "region": "shanghai",
-  "note": "Add known-good announcement URLs; pipeline merges then validates",
-  "count": 0,
-  "seeds": []
+  "note": "Synced from validated listing; pipeline merges then validates",
+  "count": 3,
+  "seeds": [
+    {
+      "region": "shanghai",
+      "Country": "China",
+      "Location": "上海",
+      "University": "Donghua University",
+      "School": "旭日工商管理学院",
+      "Deadline": null,
+      "JobPostTitle": "东华大学旭日工商管理学院研究助理教授（RAP）招聘公告",
+      "JobPostUrl": "https://glxy.dhu.edu.cn/2026/0520/c20103a376231/page.htm",
+      "RequiredMaterial": "See announcement page",
+      "SubmissionChannel": "Dept/HR",
+      "ApplicationLink": "https://glxy.dhu.edu.cn/2026/0520/c20103a376231/page.htm",
+      "Email": null,
+      "JobType": "Academic"
+    },
+    {
+      "region": "shanghai",
+      "Country": "China",
+      "Location": "上海",
+      "University": "Donghua University",
+      "School": "旭日工商管理学院",
+      "Deadline": null,
+      "JobPostTitle": "东华大学旭日工商管理学院诚聘海内外英才",
+      "JobPostUrl": "https://glxy.dhu.edu.cn/2024/1014/c20103a352033/page.htm",
+      "RequiredMaterial": "See announcement page",
+      "SubmissionChannel": "Dept/HR",
+      "ApplicationLink": "https://glxy.dhu.edu.cn/2024/1014/c20103a352033/page.htm",
+      "Email": null,
+      "JobType": "Academic"
+    },
+    {
+      "region": "shanghai",
+      "Country": "China",
+      "Location": "上海",
+      "University": "Donghua University",
+      "School": "旭日工商管理学院",
+      "Deadline": null,
+      "JobPostTitle": "东华大学旭日工商管理学院诚聘海内外高层次人才",
+      "JobPostUrl": "https://glxy.dhu.edu.cn/2026/0520/c20103a376232/page.htm",
+      "RequiredMaterial": "See announcement page",
+      "SubmissionChannel": "Dept/HR",
+      "ApplicationLink": "https://glxy.dhu.edu.cn/2026/0520/c20103a376232/page.htm",
+      "Email": null,
+      "JobType": "Academic"
+    }
+  ]
 }

@@ -129,6 +129,8 @@ FACULTY_OR_POSTDOC_TITLE = re.compile(
 )
 STALE_YEAR_IN_TITLE = re.compile("2024\u5e74")
 FRESH_YEAR_IN_TITLE = re.compile("202[5-6]")
+# Title cycles from 2010-2023 are hard-stale (body footers must not clear them).
+OLD_CYCLE_TITLE = re.compile(r"(201[0-9]|202[0-3])\u5e74")
 
 
 def strip_html(html: str) -> str:
@@ -224,8 +226,17 @@ def score_announcement(
             "score": 0,
             "reasons": ["dean_or_admin_post"],
         }
+    # Hard reject year-coded cycles in the title (2010-2023), incl. postdocs.
+    # Do not let incidental fresh years in page footers clear this.
+    if OLD_CYCLE_TITLE.search(title) and not ROLLING_OK.search(title + " " + body[:800]):
+        return {
+            "keep": False,
+            "label": "stale_year_title",
+            "job_type": "Unknown",
+            "score": 0,
+            "reasons": ["title_year_pre_2024"],
+        }
     # Faculty ads whose title is only a 2024 cycle (no 2025/2026) are stale.
-    # Postdoc year-series pages may still accept applications ù keep those.
     if (
         STALE_YEAR_IN_TITLE.search(title)
         and not FRESH_YEAR_IN_TITLE.search(title)

@@ -1,28 +1,43 @@
 {
   "date": "2026-10-14",
   "regions": {
-    "guangdong": {
-      "region": "guangdong",
+    "shanghai": {
+      "region": "shanghai",
       "date": "2026-10-14",
+      "ok": true,
+      "init": {
+        "region": "shanghai",
+        "seeds_created": false,
+        "candidates_created": false,
+        "catalog": null,
+        "universities": true,
+        "path": "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\shanghai"
+      },
       "catalog": {
-        "count": 15,
-        "with_econ_units": 11,
-        "tags_985_211": 5,
-        "path": "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\china_universities\\by_region\\guangdong.json"
+        "count": 12,
+        "with_econ_units": 10,
+        "tags_985_211": 10
+      },
+      "discover": {
+        "universities_searched": 12,
+        "exact_job_links": 9,
+        "academic": 7,
+        "postdoc": 2
       },
       "seeds": {
-        "seeds": 21,
-        "candidates": 54
+        "seeds": 0,
+        "candidates": 9
       },
       "validation": {
-        "candidates": 54,
-        "kept": 21,
-        "rejected": 33,
-        "academic": 7,
-        "postdoc": 14,
-        "pdf": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\guangdong_listings_validated_2026-10-14.pdf",
-        "xlsx": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\economics\\guangdong_listings_validated_2026-10-14.xlsx"
+        "candidates": 9,
+        "kept": 5,
+        "rejected": 4,
+        "academic": 3,
+        "postdoc": 2,
+        "pdf": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\shanghai_listings_validated_2026-10-14.pdf",
+        "xlsx": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\economics\\shanghai_listings_validated_2026-10-14.xlsx"
       }
     }
-  }
+  },
+  "failed": []
 }

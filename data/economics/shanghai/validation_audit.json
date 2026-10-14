@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-14",
+  "region": "shanghai",
+  "candidates": 7,
+  "kept_before_polish": 3,
+  "kept": 3,
+  "rejected": 4,
+  "academic": 3,
+  "postdoc": 0,
+  "rows": [
+    {
+      "title": "5 21 2026.04 同济大学数学科学学院产业兼职教师招聘启事 一、岗位要求1.拥护党的教育方针，具备良好的思想政治素质和职业道德，热爱教育事业，遵纪守法，有良好...",
+      "url": "https://hr.tongji.edu.cn/info/1177/50765.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东华大学旭日工商管理学院诚聘海内外高层次人才",
+      "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376232/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东华大学旭日工商管理学院研究助理教授（RAP）招聘公告",
+      "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376231/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东华大学旭日工商管理学院诚聘海内外英才",
+      "url": "https://glxy.dhu.edu.cn/2024/1014/c20103a352033/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "上海外国语大学国际金融贸易学院教学科研人员招聘启事",
+      "url": "https://sef.shisu.edu.cn/08/eb/c10381a198891/page.htm",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2025-10-31"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "上海外国语大学国际金融贸易学院教学科研人员招聘启事",
+      "url": "https://sef.shisu.edu.cn/ff/1f/c10381a196383/page.htm",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2025-6-15"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "上海科技大学创业与管理学院诚聘英才",
+      "url": "https://sem.shanghaitech.edu.cn/2026/0922/c3517a1127559/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    }
+  ]
+}

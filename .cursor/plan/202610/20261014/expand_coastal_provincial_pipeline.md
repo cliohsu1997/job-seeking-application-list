@@ -59,7 +59,9 @@ python code/run_province_pipeline.py --all --continue-on-error
 - [x] `run_province_pipeline.py --region|--all|--list|--init-only|--continue-on-error`  
 - [x] Catalog reloads from disk; empty validate sets handled  
 - [x] Plan lives under `.cursor/plan/` (tracked via gitignore exceptions)  
-- [ ] Run discover+validate for beijing / shanghai / shandong / zhejiang  
+- [x] First Shanghai pipeline run (12 schools -> 3 kept Donghua after stale purge)  
+- [x] Validator: hard-reject title years 2010-2023; CAREER_KW + jobs.* hubs  
+- [ ] Run discover+validate for beijing / shanghai (enriched seeds) / shandong / zhejiang  
 - [ ] Run remaining coastal provinces (`--all`)  
 - [ ] Sync seeds per province after first good validate  
 

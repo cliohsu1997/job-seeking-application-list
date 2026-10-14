@@ -44,7 +44,8 @@ SLEEP = 0.3
 # 简体中文-first keywords (faculty + postdoc)
 CAREER_KW = re.compile(
     r"(人才招聘|教师招聘|人才引进|诚聘|博士后招聘|博士后|师资博士后|"
-    r"人事处|人力资源|加入我们|招贤纳士|师资引进)",
+    r"人事处|人力资源|加入我们|招贤纳士|师资引进|"
+    r"师资招聘|招聘信息|人才网|英才招聘)",
     re.I,
 )
 JOB_ANN_KW = re.compile(
@@ -155,6 +156,9 @@ def is_career_link(text: str, url: str) -> bool:
     blob = f"{text} {url}"
     if STUDENT_PORTAL.search(blob):
         return False
+    host = url.split("/")[2] if "://" in url else ""
+    if host.startswith("jobs.") or ".jobs." in host:
+        return True
     return bool(CAREER_KW.search(blob))
 
 

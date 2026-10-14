@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-14",
+  "region": "shanghai",
+  "universities_searched": 12,
+  "exact_job_links": 9,
+  "academic": 7,
+  "postdoc": 2,
+  "universities": [
+    {
+      "name_zh": "复旦大学",
+      "name_en": "Fudan University",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济学院",
+          "url": "https://econ.fudan.edu.cn/",
+          "status": 200,
+          "jobs": 2
+        }
+      ]
+    },
+    {
+      "name_zh": "上海交通大学",
+      "name_en": "SJTU",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "安泰经济与管理学院",
+          "url": "https://www.acem.sjtu.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "同济大学",
+      "name_en": "Tongji University",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济与管理学院",
+          "url": "https://sem.tongji.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "华东师范大学",
+      "name_en": "ECNU",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济与管理学部",
+          "url": "https://fem.ecnu.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "上海财经大学",
+      "name_en": "SUFE",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济学院",
+          "url": "https://se.sufe.edu.cn/",
+          "status": null,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "华东理工大学",
+      "name_en": "ECUST",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "商学院",
+          "url": "https://bs.ecust.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "上海大学",
+      "name_en": "Shanghai University",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济学院",
+          "url": "https://soe.shu.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "东华大学",
+      "name_en": "Donghua University",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "旭日工商管理学院",
+          "url": "https://glxy.dhu.edu.cn/",
+          "status": 200,
+          "jobs": 3
+        }
+      ]
+    },
+    {
+      "name_zh": "上海外国语大学",
+      "name_en": "SISU",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "国际金融贸易学院",
+          "url": "https://sef.shisu.edu.cn/",
+          "status": 200,
+          "jobs": 2
+        }
+      ]
+    },
+    {
+      "name_zh": "海军军医大学",
+      "name_en": "Naval Medical University",
+      "tags": [
+        "211",
+        "military"
+      ],
+      "units_used": 0,
+      "units_discovered": 0,
+      "unit_reports": []
+    },
+    {
+      "name_zh": "上海对外经贸大学",
+      "name_en": "SUIBE",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "国际经贸学院",
+          "url": "https://gjm.suibe.edu.cn/",
+          "status": null,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "上海科技大学",
+      "name_en": "ShanghaiTech",
+      "tags": [
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济相关（子域探测）",
+          "url": "https://sem.shanghaitech.edu.cn/",
+          "status": 200,
+          "jobs": 1
+        }
+      ]
+    }
+  ]
+}
