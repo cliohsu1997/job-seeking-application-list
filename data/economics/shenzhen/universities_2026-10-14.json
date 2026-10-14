@@ -1,0 +1,105 @@
+[
+  {
+    "name_zh": "深圳大学",
+    "name_en": "Shenzhen University",
+    "city": "深圳",
+    "home": "https://www.szu.edu.cn/",
+    "career": "https://hr.szu.edu.cn/",
+    "apply": "http://zp.szu.edu.cn/",
+    "postdoc": "https://hr.szu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济学院",
+        "unit_en": "College of Economics",
+        "url": "https://eco.szu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "南方科技大学",
+    "name_en": "Southern University of Science and Technology",
+    "city": "深圳",
+    "home": "https://www.sustech.edu.cn/",
+    "career": "https://jobs.sustech.edu.cn/",
+    "postdoc": "https://jobs.sustech.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "商学院",
+        "unit_en": "School of Business",
+        "url": "https://business.sustech.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "香港中文大学（深圳）",
+    "name_en": "CUHK Shenzhen",
+    "city": "深圳",
+    "home": "https://www.cuhk.edu.cn/",
+    "career": "https://www.cuhk.edu.cn/zh-hans/page/4897",
+    "econ_units": [
+      {
+        "unit_zh": "经管学院",
+        "unit_en": "SME",
+        "url": "https://sme.cuhk.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "哈尔滨工业大学（深圳）",
+    "name_en": "HIT Shenzhen",
+    "city": "深圳",
+    "home": "https://www.hitsz.edu.cn/",
+    "career": "https://www.hitsz.edu.cn/rczp/list.htm",
+    "econ_units": [
+      {
+        "unit_zh": "经济管理学院",
+        "unit_en": "School of Economics and Management",
+        "url": "https://sem.hitsz.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "深圳北理莫斯科大学",
+    "name_en": "SMBU",
+    "city": "深圳",
+    "home": "https://www.smbu.edu.cn/",
+    "career": "https://www.smbu.edu.cn/",
+    "econ_units": []
+  },
+  {
+    "name_zh": "清华大学深圳国际研究生院",
+    "name_en": "Tsinghua SIGS",
+    "city": "深圳",
+    "home": "https://www.sigs.tsinghua.edu.cn/",
+    "career": "https://www.sigs.tsinghua.edu.cn/rczp.htm",
+    "econ_units": []
+  },
+  {
+    "name_zh": "北京大学深圳研究生院",
+    "name_en": "PKU Shenzhen",
+    "city": "深圳",
+    "home": "https://www.pkusz.edu.cn/",
+    "career": "https://www.pkusz.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "汇丰商学院",
+        "unit_en": "PHBS",
+        "url": "https://phbs.pku.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "中山大学深圳校区",
+    "name_en": "SYSU Shenzhen",
+    "city": "深圳",
+    "home": "https://www.sysu.edu.cn/",
+    "career": "https://rcb.sysu.edu.cn/zp",
+    "econ_units": [
+      {
+        "unit_zh": "岭南学院/深圳经济研究院",
+        "unit_en": "Lingnan / Shenzhen Institute of Economics",
+        "url": "https://lingnan.sysu.edu.cn/"
+      }
+    ]
+  }
+]

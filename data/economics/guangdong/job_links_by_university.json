@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-14",
+  "region": "guangdong",
+  "universities_searched": 15,
+  "exact_job_links": 54,
+  "academic": 36,
+  "postdoc": 18,
+  "universities": [
+    {
+      "name_zh": "中山大学",
+      "name_en": "Sun Yat-sen University",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "岭南学院",
+          "url": "https://lingnan.sysu.edu.cn/",
+          "status": 200,
+          "jobs": 1
+        }
+      ]
+    },
+    {
+      "name_zh": "暨南大学",
+      "name_en": "Jinan University",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 2,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济与社会研究院",
+          "url": "https://iesr.jnu.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        },
+        {
+          "unit_zh": "经济学院",
+          "url": "https://ec.jnu.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "华南理工大学",
+      "name_en": "South China University of Technology",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济与金融学院",
+          "url": "https://www2.scut.edu.cn/economy/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "华南师范大学",
+      "name_en": "South China Normal University",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济与管理学院",
+          "url": "https://em.scnu.edu.cn/",
+          "status": null,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "广东外语外贸大学",
+      "name_en": "Guangdong University of Foreign Studies",
+      "tags": [
+        "provincial",
+        "双一流学科"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济贸易学院",
+          "url": "https://seib.gdufs.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "广东财经大学",
+      "name_en": "Guangdong University of Finance and Economics",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济学院",
+          "url": "https://jjxy.gdufe.edu.cn/",
+          "status": null,
+          "jobs": 18
+        }
+      ]
+    },
+    {
+      "name_zh": "广州大学",
+      "name_en": "Guangzhou University",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济与统计学院",
+          "url": "https://jjxy.gzhu.edu.cn/",
+          "status": null,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "广东工业大学",
+      "name_en": "Guangdong University of Technology",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济学院",
+          "url": "https://jjxy.gdut.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "华南农业大学",
+      "name_en": "South China Agricultural University",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济管理学院",
+          "url": "https://cem.scau.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "广东金融学院",
+      "name_en": "Guangdong University of Finance",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "经济贸易学院",
+          "url": "https://rsc.gduf.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "广东海洋大学",
+      "name_en": "Guangdong Ocean University",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 2,
+      "units_discovered": 1,
+      "unit_reports": [
+        {
+          "unit_zh": "10.13 商学院本科生发表数字经济研究领域国际高水平论文",
+          "url": "https://www.gdou.edu.cn/info/1092/82667.htm",
+          "status": 200,
+          "jobs": 0
+        },
+        {
+          "unit_zh": "经济相关（子域探测）",
+          "url": "https://jjxy.gdou.edu.cn/",
+          "status": 200,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "北京师范大学香港浸会大学联合国际学院",
+      "name_en": "BNU-HKBU UIC",
+      "tags": [
+        "known_catalog"
+      ],
+      "units_used": 1,
+      "units_discovered": 0,
+      "unit_reports": [
+        {
+          "unit_zh": "工商管理学院",
+          "url": "https://uic.edu.cn/",
+          "status": null,
+          "jobs": 0
+        }
+      ]
+    },
+    {
+      "name_zh": "汕头大学",
+      "name_en": "Shantou University",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 0,
+      "units_discovered": 0,
+      "unit_reports": []
+    },
+    {
+      "name_zh": "五邑大学",
+      "name_en": "Wuyi University",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 0,
+      "units_discovered": 0,
+      "unit_reports": []
+    },
+    {
+      "name_zh": "佛山大学",
+      "name_en": "Foshan University",
+      "tags": [
+        "provincial"
+      ],
+      "units_used": 1,
+      "units_discovered": 1,
+      "unit_reports": [
+        {
+          "unit_zh": "经济贸易学院举办2026级国际商务研究生新生教育… 2026-10-13",
+          "url": "https://www.fosu.edu.cn/xueyuan-news/131025.html",
+          "status": null,
+          "jobs": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+[
+  {
+    "name": "招聘_中山大学",
+    "url": "https://rcb.sysu.edu.cn/zp",
+    "status": 200,
+    "bytes": 33976,
+    "file": "招聘_中山大学.html",
+    "fetched_at": "2026-10-14T21:01:02"
+  },
+  {
+    "name": "博士后_中山大学",
+    "url": "https://lingnan.sysu.edu.cn/article/2580",
+    "status": 200,
+    "bytes": 14307,
+    "file": "博士后_中山大学.html",
+    "fetched_at": "2026-10-14T21:01:03"
+  },
+  {
+    "name": "主页_中山大学",
+    "url": "https://www.sysu.edu.cn/",
+    "status": 200,
+    "bytes": 101285,
+    "file": "主页_中山大学.html",
+    "fetched_at": "2026-10-14T21:01:06"
+  },
+  {
+    "name": "中山大学_岭南学院",
+    "url": "https://lingnan.sysu.edu.cn/",
+    "status": 200,
+    "bytes": 20889,
+    "file": "中山大学_岭南学院.html",
+    "fetched_at": "2026-10-14T21:01:07"
+  },
+  {
+    "name": "招聘_暨南大学",
+    "url": "https://hrdam.jnu.edu.cn/264/list.htm",
+    "status": 200,
+    "bytes": 45902,
+    "file": "招聘_暨南大学.html",
+    "fetched_at": "2026-10-14T21:01:07"
+  },
+  {
+    "name": "博士后_暨南大学",
+    "url": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
+    "status": 200,
+    "bytes": 75340,
+    "file": "博士后_暨南大学.html",
+    "fetched_at": "2026-10-14T21:01:08"
+  },
+  {
+    "name": "主页_暨南大学",
+    "url": "https://www.jnu.edu.cn/",
+    "status": 200,
+    "bytes": 164295,
+    "file": "主页_暨南大学.html",
+    "fetched_at": "2026-10-14T21:01:09"
+  },
+  {
+    "name": "暨南大学_经济与社会研究院",
+    "url": "https://iesr.jnu.edu.cn/",
+    "status": 200,
+    "bytes": 51837,
+    "file": "暨南大学_经济与社会研究院.html",
+    "fetched_at": "2026-10-14T21:01:10"
+  },
+  {
+    "name": "暨南大学_经济学院",
+    "url": "https://ec.jnu.edu.cn/",
+    "status": 200,
+    "bytes": 47442,
+    "file": "暨南大学_经济学院.html",
+    "fetched_at": "2026-10-14T21:01:11"
+  },
+  {
+    "name": "招聘_华南理工大学",
+    "url": "https://www2.scut.edu.cn/hr/",
+    "status": 200,
+    "bytes": 47352,
+    "file": "招聘_华南理工大学.html",
+    "fetched_at": "2026-10-14T21:01:11"
+  },
+  {
+    "name": "博士后_华南理工大学",
+    "url": "https://www2.scut.edu.cn/hr/",
+    "status": 200,
+    "bytes": 47352,
+    "file": "博士后_华南理工大学.html",
+    "fetched_at": "2026-10-14T21:01:13"
+  },
+  {
+    "name": "主页_华南理工大学",
+    "url": "https://www2.scut.edu.cn/",
+    "status": 200,
+    "bytes": 1135,
+    "file": "主页_华南理工大学.html",
+    "fetched_at": "2026-10-14T21:01:13"
+  },
+  {
+    "name": "华南理工大学_经济与金融学院",
+    "url": "https://www2.scut.edu.cn/economy/",
+    "status": 200,
+    "bytes": 52639,
+    "file": "华南理工大学_经济与金融学院.html",
+    "fetched_at": "2026-10-14T21:01:14"
+  },
+  {
+    "name": "招聘_华南师范大学",
+    "url": "https://rsc.scnu.edu.cn/",
+    "status": 200,
+    "bytes": 24266,
+    "file": "招聘_华南师范大学.html",
+    "fetched_at": "2026-10-14T21:01:15"
+  },
+  {
+    "name": "博士后_华南师范大学",
+    "url": "https://rsc.scnu.edu.cn/",
+    "status": 200,
+    "bytes": 24266,
+    "file": "博士后_华南师范大学.html",
+    "fetched_at": "2026-10-14T21:01:16"
+  },
+  {
+    "name": "主页_华南师范大学",
+    "url": "https://www.scnu.edu.cn/",
+    "status": 200,
+    "bytes": 106419,
+    "file": "主页_华南师范大学.html",
+    "fetched_at": "2026-10-14T21:01:18"
+  },
+  {
+    "name": "华南师范大学_经济与管理学院",
+    "url": "https://www.scnu.edu.cn/",
+    "status": 200,
+    "bytes": 106419,
+    "file": "华南师范大学_经济与管理学院.html",
+    "fetched_at": "2026-10-14T21:01:19"
+  },
+  {
+    "name": "招聘_广东外语外贸大学",
+    "url": "https://rsc.gdufs.edu.cn/",
+    "status": 200,
+    "bytes": 19996,
+    "file": "招聘_广东外语外贸大学.html",
+    "fetched_at": "2026-10-14T21:01:20"
+  },
+  {
+    "name": "博士后_广东外语外贸大学",
+    "url": "https://rsc.gdufs.edu.cn/info/1017/12559.htm",
+    "status": 200,
+    "bytes": 19146,
+    "file": "博士后_广东外语外贸大学.html",
+    "fetched_at": "2026-10-14T21:01:21"
+  },
+  {
+    "name": "主页_广东外语外贸大学",
+    "url": "https://www.gdufs.edu.cn/",
+    "status": 200,
+    "bytes": 154330,
+    "file": "主页_广东外语外贸大学.html",
+    "fetched_at": "2026-10-14T21:01:22"
+  },
+  {
+    "name": "广东外语外贸大学_经济贸易学院",
+    "url": "https://seib.gdufs.edu.cn/",
+    "status": 200,
+    "bytes": 20119,
+    "file": "广东外语外贸大学_经济贸易学院.html",
+    "fetched_at": "2026-10-14T21:01:23"
+  },
+  {
+    "name": "招聘_广东财经大学",
+    "url": "https://rsc.gdufe.edu.cn/",
+    "status": 200,
+    "bytes": 59310,
+    "file": "招聘_广东财经大学.html",
+    "fetched_at": "2026-10-14T21:01:25"
+  },
+  {
+    "name": "博士后_广东财经大学",
+    "url": "https://rsc.gdufe.edu.cn/",
+    "status": 200,
+    "bytes": 59310,
+    "file": "博士后_广东财经大学.html",
+    "fetched_at": "2026-10-14T21:01:27"
+  },
+  {
+    "name": "主页_广东财经大学",
+    "url": "https://www.gdufe.edu.cn/",
+    "status": 200,
+    "bytes": 72547,
+    "file": "主页_广东财经大学.html",
+    "fetched_at": "2026-10-14T21:01:30"
+  },
+  {
+    "name": "广东财经大学_经济学院",
+    "url": "https://www.gdufe.edu.cn/",
+    "status": 200,
+    "bytes": 72547,
+    "file": "广东财经大学_经济学院.html",
+    "fetched_at": "2026-10-14T21:01:32"
+  },
+  {
+    "name": "招聘_广州大学",
+    "url": "https://rsc.gzhu.edu.cn/",
+    "status": 200,
+    "bytes": 68557,
+    "file": "招聘_广州大学.html",
+    "fetched_at": "2026-10-14T21:01:37"
+  },
+  {
+    "name": "博士后_广州大学",
+    "url": "https://rsc.gzhu.edu.cn/",
+    "status": 200,
+    "bytes": 68557,
+    "file": "博士后_广州大学.html",
+    "fetched_at": "2026-10-14T21:01:44"
+  },
+  {
+    "name": "广州大学_经济与统计学院",
+    "url": "https://rsc.gzhu.edu.cn/",
+    "status": 200,
+    "bytes": 68557,
+    "file": "广州大学_经济与统计学院.html",
+    "fetched_at": "2026-10-14T21:01:52"
+  },
+  {
+    "name": "招聘_广东工业大学",
+    "url": "https://hr.gdut.edu.cn/",
+    "status": 200,
+    "bytes": 33709,
+    "file": "招聘_广东工业大学.html",
+    "fetched_at": "2026-10-14T21:01:55"
+  },
+  {
+    "name": "博士后_广东工业大学",
+    "url": "https://hr.gdut.edu.cn/",
+    "status": 200,
+    "bytes": 33709,
+    "file": "博士后_广东工业大学.html",
+    "fetched_at": "2026-10-14T21:02:01"
+  },
+  {
+    "name": "主页_广东工业大学",
+    "url": "https://www.gdut.edu.cn/",
+    "status": 200,
+    "bytes": 46470,
+    "file": "主页_广东工业大学.html",
+    "fetched_at": "2026-10-14T21:02:04"
+  },
+  {
+    "name": "广东工业大学_经济学院",
+    "url": "https://jjxy.gdut.edu.cn/",
+    "status": 200,
+    "bytes": 24594,
+    "file": "广东工业大学_经济学院.html",
+    "fetched_at": "2026-10-14T21:02:10"
+  },
+  {
+    "name": "招聘_华南农业大学",
+    "url": "https://hr.scau.edu.cn/",
+    "status": 200,
+    "bytes": 81943,
+    "file": "招聘_华南农业大学.html",
+    "fetched_at": "2026-10-14T21:02:11"
+  },
+  {
+    "name": "博士后_华南农业大学",
+    "url": "https://hr.scau.edu.cn/",
+    "status": 200,
+    "bytes": 81943,
+    "file": "博士后_华南农业大学.html",
+    "fetched_at": "2026-10-14T21:02:12"
+  },
+  {
+    "name": "主页_华南农业大学",
+    "url": "https://www.scau.edu.cn/",
+    "status": 200,
+    "bytes": 81914,
+    "file": "主页_华南农业大学.html",
+    "fetched_at": "2026-10-14T21:02:14"
+  },
+  {
+    "name": "华南农业大学_经济管理学院",
+    "url": "https://cem.scau.edu.cn/",
+    "status": 200,
+    "bytes": 17824,
+    "file": "华南农业大学_经济管理学院.html",
+    "fetched_at": "2026-10-14T21:02:15"
+  },
+  {
+    "name": "招聘_广东金融学院",
+    "url": "https://rsc.gduf.edu.cn/",
+    "status": 200,
+    "bytes": 15351,
+    "file": "招聘_广东金融学院.html",
+    "fetched_at": "2026-10-14T21:02:16"
+  },
+  {
+    "name": "博士后_广东金融学院",
+    "url": "https://rsc.gduf.edu.cn/",
+    "status": 200,
+    "bytes": 15351,
+    "file": "博士后_广东金融学院.html",
+    "fetched_at": "2026-10-14T21:02:16"
+  },
+  {
+    "name": "广东金融学院_经济贸易学院",
+    "url": "https://rsc.gduf.edu.cn/",
+    "status": 200,
+    "bytes": 15351,
+    "file": "广东金融学院_经济贸易学院.html",
+    "fetched_at": "2026-10-14T21:02:17"
+  },
+  {
+    "name": "招聘_广东海洋大学",
+    "url": "https://rsc.gdou.edu.cn/",
+    "status": 200,
+    "bytes": 17662,
+    "file": "招聘_广东海洋大学.html",
+    "fetched_at": "2026-10-14T21:02:18"
+  },
+  {
+    "name": "博士后_广东海洋大学",
+    "url": "https://rsc.gdou.edu.cn/",
+    "status": 200,
+    "bytes": 17662,
+    "file": "博士后_广东海洋大学.html",
+    "fetched_at": "2026-10-14T21:02:19"
+  },
+  {
+    "name": "主页_广东海洋大学",
+    "url": "https://www.gdou.edu.cn/",
+    "status": 200,
+    "bytes": 81857,
+    "file": "主页_广东海洋大学.html",
+    "fetched_at": "2026-10-14T21:02:20"
+  },
+  {
+    "name": "招聘_北京师范大学香港浸会大学联合国际学院",
+    "url": "https://uic.edu.cn/",
+    "status": 200,
+    "bytes": 89363,
+    "file": "招聘_北京师范大学香港浸会大学联合国际学院.html",
+    "fetched_at": "2026-10-14T21:02:45"
+  },
+  {
+    "name": "博士后_北京师范大学香港浸会大学联合国际学院",
+    "url": "https://uic.edu.cn/",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:03:28"
+  },
+  {
+    "name": "北京师范大学香港浸会大学联合国际学院_工商管理学院",
+    "url": "https://uic.edu.cn/",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:04:30"
+  },
+  {
+    "name": "教师_Faculty 2026 — Macro / Finance / Digital Economy / Political Economy (all fields welcome)",
+    "url": "https://www.gaoxiaojob.com/announcement/detail/434822.html",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:04:57"
+  },
+  {
+    "name": "博士后_博士后 — 理论/应用经济学（含宏观、金融、数字经济、政治经济学等）",
+    "url": "https://lingnan.sysu.edu.cn/article/2580",
+    "status": 200,
+    "bytes": 14261,
+    "file": "博士后_博士后_理论_应用经济学_含宏观_金融_数字经济_政治经济学等.html",
+    "fetched_at": "2026-10-14T21:04:58"
+  },
+  {
+    "name": "博士后_博士后 — 中观经济学研究院（区域政府经济行为等）",
+    "url": "https://lingnan.sysu.edu.cn/article/2774",
+    "status": 200,
+    "bytes": 16904,
+    "file": "博士后_博士后_中观经济学研究院_区域政府经济行为等.html",
+    "fetched_at": "2026-10-14T21:04:59"
+  },
+  {
+    "name": "博士后_博士后 — 国家发展研究院（增长/产业与数字经济/金融等）",
+    "url": "https://m.gaoxiaojob.com/job/detail/2073763.html",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:05:53"
+  },
+  {
+    "name": "教师_Faculty / research positions (check IESR career page)",
+    "url": "https://iesr.jnu.edu.cn/",
+    "status": 200,
+    "bytes": 51837,
+    "file": "教师_Faculty_research_positions_check_IESR_career_page.html",
+    "fetched_at": "2026-10-14T21:05:53"
+  },
+  {
+    "name": "博士后_博士后 — 数字经济与AI时代儿童发展/人力资本、劳动力市场",
+    "url": "https://iesr.jnu.edu.cn/2025/0624/c17209a839104/page.htm",
+    "status": 200,
+    "bytes": 19821,
+    "file": "博士后_博士后_数字经济与AI时代儿童发展_人力资本_劳动力市场.html",
+    "fetched_at": "2026-10-14T21:05:54"
+  },
+  {
+    "name": "博士后_博士后全球招聘 2026 — 应用经济学 / 理论经济学等",
+    "url": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
+    "status": 200,
+    "bytes": 75341,
+    "file": "博士后_博士后全球招聘_2026_应用经济学_理论经济学等.html",
+    "fetched_at": "2026-10-14T21:05:54"
+  },
+  {
+    "name": "博士后_师资博士后 2026（含经济贸易等相关学科）",
+    "url": "https://rsc.gdufs.edu.cn/info/1017/12559.htm",
+    "status": 200,
+    "bytes": 19146,
+    "file": "博士后_师资博士后_2026_含经济贸易等相关学科.html",
+    "fetched_at": "2026-10-14T21:05:55"
+  }
+]

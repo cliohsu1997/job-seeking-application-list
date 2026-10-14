@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-14",
+  "region": "hebei",
+  "province_zh": "河北",
+  "count": 4,
+  "with_econ_units": 3,
+  "tags_985_211": 2,
+  "universities": [
+    {
+      "name_zh": "河北工业大学",
+      "name_en": "HEBUT",
+      "region": "hebei",
+      "city": "天津",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.hebut.edu.cn/",
+      "career": "https://rsc.hebut.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://em.hebut.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "华北电力大学（保定）",
+      "name_en": "NCEPU Baoding",
+      "region": "hebei",
+      "city": "保定",
+      "tags": [
+        "211",
+        "双一流",
+        "campus"
+      ],
+      "home": "https://bd.ncepu.edu.cn/",
+      "career": "https://bd.ncepu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "河北大学",
+      "name_en": "Hebei University",
+      "region": "hebei",
+      "city": "保定",
+      "tags": [
+        "provincial",
+        "双一流学科"
+      ],
+      "home": "https://www.hbu.edu.cn/",
+      "career": "https://rsc.hbu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.hbu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "河北经贸大学",
+      "name_en": "HUEB",
+      "region": "hebei",
+      "city": "石家庄",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.hueb.edu.cn/",
+      "career": "https://rsc.hueb.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.hueb.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

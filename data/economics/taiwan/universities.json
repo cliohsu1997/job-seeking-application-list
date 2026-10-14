@@ -1,0 +1,890 @@
+[
+  {
+    "code": "0001",
+    "name_zh": "國立政治大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0002",
+    "name_zh": "國立清華大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0003",
+    "name_zh": "國立臺灣大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0004",
+    "name_zh": "國立臺灣師範大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0005",
+    "name_zh": "國立成功大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0006",
+    "name_zh": "國立中興大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0007",
+    "name_zh": "國立陽明交通大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0008",
+    "name_zh": "國立中央大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0009",
+    "name_zh": "國立中山大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0012",
+    "name_zh": "國立臺灣海洋大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0013",
+    "name_zh": "國立中正大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0014",
+    "name_zh": "國立高雄師範大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0015",
+    "name_zh": "國立彰化師範大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0017",
+    "name_zh": "國立臺北大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0018",
+    "name_zh": "國立嘉義大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0019",
+    "name_zh": "國立高雄大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0020",
+    "name_zh": "國立東華大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0021",
+    "name_zh": "國立暨南國際大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0022",
+    "name_zh": "國立臺灣科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0023",
+    "name_zh": "國立雲林科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0024",
+    "name_zh": "國立屏東科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0025",
+    "name_zh": "國立臺北科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0028",
+    "name_zh": "國立臺北藝術大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0029",
+    "name_zh": "國立臺灣藝術大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0030",
+    "name_zh": "國立臺東大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0031",
+    "name_zh": "國立宜蘭大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0032",
+    "name_zh": "國立聯合大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0033",
+    "name_zh": "國立虎尾科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0035",
+    "name_zh": "國立臺南藝術大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0036",
+    "name_zh": "國立臺南大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0037",
+    "name_zh": "國立臺北教育大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0039",
+    "name_zh": "國立臺中教育大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0042",
+    "name_zh": "國立澎湖科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0043",
+    "name_zh": "國立勤益科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0044",
+    "name_zh": "國立體育大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0046",
+    "name_zh": "國立臺北護理健康大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0047",
+    "name_zh": "國立高雄餐旅大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0048",
+    "name_zh": "國立金門大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0049",
+    "name_zh": "國立臺灣體育運動大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0050",
+    "name_zh": "國立臺中科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0051",
+    "name_zh": "國立臺北商業大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0052",
+    "name_zh": "國立屏東大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "0053",
+    "name_zh": "國立高雄科技大學",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0144",
+    "name_zh": "國立臺灣戲曲學院",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0221",
+    "name_zh": "國立臺南護理專科學校",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0222",
+    "name_zh": "國立臺東專科學校",
+    "public_private": "公立",
+    "system": "技專校院"
+  },
+  {
+    "code": "0A01",
+    "name_zh": "國立空中大學",
+    "public_private": "公立",
+    "system": "空中大學"
+  },
+  {
+    "code": "1001",
+    "name_zh": "東海大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1002",
+    "name_zh": "輔仁大學學校財團法人輔仁大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1003",
+    "name_zh": "東吳大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1004",
+    "name_zh": "中原大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1005",
+    "name_zh": "淡江大學學校財團法人淡江大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1006",
+    "name_zh": "中國文化大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1007",
+    "name_zh": "逢甲大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1008",
+    "name_zh": "靜宜大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1009",
+    "name_zh": "長庚大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1010",
+    "name_zh": "元智大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1011",
+    "name_zh": "中華大學學校財團法人中華大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1012",
+    "name_zh": "大葉大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1013",
+    "name_zh": "華梵學校財團法人華梵大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1014",
+    "name_zh": "義守大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1015",
+    "name_zh": "世新大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1016",
+    "name_zh": "銘傳大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1017",
+    "name_zh": "實踐大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1018",
+    "name_zh": "朝陽科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1019",
+    "name_zh": "高雄醫學大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1020",
+    "name_zh": "南華大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1021",
+    "name_zh": "真理大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1022",
+    "name_zh": "大同大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1023",
+    "name_zh": "南臺學校財團法人南臺科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1024",
+    "name_zh": "崑山科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1025",
+    "name_zh": "嘉藥學校財團法人嘉南藥理大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1026",
+    "name_zh": "樹德科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1027",
+    "name_zh": "慈濟學校財團法人慈濟大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1028",
+    "name_zh": "臺北醫學大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1029",
+    "name_zh": "中山醫學大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1030",
+    "name_zh": "龍華科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1031",
+    "name_zh": "輔英科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1032",
+    "name_zh": "明新學校財團法人明新科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1033",
+    "name_zh": "長榮大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1034",
+    "name_zh": "弘光科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1035",
+    "name_zh": "中國醫藥大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1036",
+    "name_zh": "健行學校財團法人健行科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1037",
+    "name_zh": "正修學校財團法人正修科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1038",
+    "name_zh": "萬能學校財團法人萬能科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1039",
+    "name_zh": "玄奘大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1040",
+    "name_zh": "建國科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1041",
+    "name_zh": "明志科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1042",
+    "name_zh": "台鋼學校財團法人台鋼科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1043",
+    "name_zh": "大仁科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1044",
+    "name_zh": "聖約翰科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1045",
+    "name_zh": "嶺東科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1046",
+    "name_zh": "中國科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1047",
+    "name_zh": "中臺科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1048",
+    "name_zh": "亞洲大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1049",
+    "name_zh": "開南大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1050",
+    "name_zh": "佛光大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1051",
+    "name_zh": "台南家專學校財團法人台南應用科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1052",
+    "name_zh": "中信金學校財團法人中信科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1053",
+    "name_zh": "光宇學校財團法人元培醫事科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1054",
+    "name_zh": "景文科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1055",
+    "name_zh": "中華醫事科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1056",
+    "name_zh": "東南科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1057",
+    "name_zh": "德明財經科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1060",
+    "name_zh": "南開科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1061",
+    "name_zh": "中華學校財團法人中華科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1062",
+    "name_zh": "僑光科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1063",
+    "name_zh": "廣亞學校財團法人育達科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1064",
+    "name_zh": "美和學校財團法人美和科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1065",
+    "name_zh": "吳鳳科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1069",
+    "name_zh": "修平學校財團法人修平科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1070",
+    "name_zh": "長庚學校財團法人長庚科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1071",
+    "name_zh": "城市學校財團法人臺北城市科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1072",
+    "name_zh": "大華學校財團法人敏實科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1073",
+    "name_zh": "醒吾學校財團法人醒吾科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1075",
+    "name_zh": "文藻學校財團法人文藻外語大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1078",
+    "name_zh": "致理學校財團法人致理科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1079",
+    "name_zh": "康寧學校財團法人康寧大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1080",
+    "name_zh": "宏國學校財團法人宏國德霖科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1082",
+    "name_zh": "崇右學校財團法人崇右影藝科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1083",
+    "name_zh": "台北海洋學校財團法人台北海洋科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1084",
+    "name_zh": "亞東學校財團法人亞東科技大學",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1085",
+    "name_zh": "馬偕學校財團法人馬偕醫學大學",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1125",
+    "name_zh": "中信學校財團法人中信金融管理學院",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1168",
+    "name_zh": "南亞科技學校財團法人南亞技術學院",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1183",
+    "name_zh": "黎明技術學院",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1185",
+    "name_zh": "德育學校財團法人德育護理健康學院",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1196",
+    "name_zh": "法鼓學校財團法人法鼓文理學院",
+    "public_private": "私立",
+    "system": "一般大學"
+  },
+  {
+    "code": "1282",
+    "name_zh": "馬偕學校財團法人馬偕醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1283",
+    "name_zh": "仁德醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1284",
+    "name_zh": "樹人醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1285",
+    "name_zh": "慈惠醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1286",
+    "name_zh": "耕莘健康管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1287",
+    "name_zh": "敏惠醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1289",
+    "name_zh": "育英醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1291",
+    "name_zh": "聖母醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1292",
+    "name_zh": "新生學校財團法人新生醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1293",
+    "name_zh": "崇仁醫護管理專科學校",
+    "public_private": "私立",
+    "system": "技專校院"
+  },
+  {
+    "code": "1R02",
+    "name_zh": "學校財團法人中華浸信會基督教台灣浸會神學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R03",
+    "name_zh": "臺北基督學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R05",
+    "name_zh": "台神學校財團法人台灣神學研究學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R06",
+    "name_zh": "一貫道崇德學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R07",
+    "name_zh": "台灣基督長老教會南神神學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R08",
+    "name_zh": "基督教華神學校財團法人中華福音神學研究學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R09",
+    "name_zh": "唯心聖教學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "1R10",
+    "name_zh": "福智學校財團法人福智佛教學院",
+    "public_private": "私立",
+    "system": "宗教研修學院"
+  },
+  {
+    "code": "3002",
+    "name_zh": "臺北市立大學",
+    "public_private": "公立",
+    "system": "一般大學"
+  },
+  {
+    "code": "3A01",
+    "name_zh": "高雄市立空中大學",
+    "public_private": "公立",
+    "system": "空中大學"
+  }
+]

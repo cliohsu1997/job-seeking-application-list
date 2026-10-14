@@ -1,0 +1,567 @@
+{
+  "date": "2026-10-14",
+  "region": "guangdong",
+  "candidates": 54,
+  "kept_before_polish": 21,
+  "kept": 21,
+  "rejected": 33,
+  "academic": 7,
+  "postdoc": 14,
+  "rows": [
+    {
+      "title": "加入岭南·成就卓越 | 中山大学岭南学院全球招聘（教师+博士后）",
+      "url": "https://lingnan.sysu.edu.cn/article/2580",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中山大学国家发展研究院公开招聘博士后",
+      "url": "https://lingnan.sysu.edu.cn/article/3485",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2026-4-15"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中山大学岭南学院公开招聘研究型教师",
+      "url": "https://lingnan.sysu.edu.cn/article/3031",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2025-3-15"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中山大学中观经济学研究院公开招聘博士后",
+      "url": "https://lingnan.sysu.edu.cn/article/2774",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中山大学国家发展研究团队公开招聘博士后",
+      "url": "https://lingnan.sysu.edu.cn/article/2513",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "posted_year_too_old"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中山大学粤港澳大湾区数字经济与数据科学实验室公开招聘博士后",
+      "url": "https://lingnan.sysu.edu.cn/article/2477",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "posted_year_too_old"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "暨南大学冯帅章教授团队招聘博士后",
+      "url": "https://iesr.jnu.edu.cn/2025/0624/c17209a839104/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南理工大学经济与金融学院2025年度人才招聘启事（专任教师+应用经济学博士后）",
+      "url": "https://www2.scut.edu.cn/economy/2024/0416/c27492a542018/page.htm",
+      "keep": false,
+      "label": "stale_cycle",
+      "reasons": [
+        "prior_year_cycle"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2026年招聘博士后（经济学/管理学/法学等）",
+      "url": "http://rsc.gdufe.edu.cn/2026/0429/c4948a238378/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中山大学岭南学院2026年招聘教师（含教研岗与博士后）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/434822.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中山大学国际金融学院诚聘海内外英才（教师+博士后）",
+      "url": "https://isbf.sysu.edu.cn/zh-hans/article/2827",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "暨南大学经济学院2025年诚聘海内外英才（含教师各层次与博士后）",
+      "url": "https://ec.jnu.edu.cn/2024/1129/c42192a826585/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "暨南大学2026年博士后全球招聘（含应用经济学、理论经济学）",
+      "url": "https://hrdam.jnu.edu.cn/2026/0413/c343a853500/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南理工大学经济与金融学院2026年招聘人才启事（教师+博士后）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/365663.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2025-12-31"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南师范大学经济与管理学院博士后流动站常年招收（理论/应用经济学）",
+      "url": "http://em.scnu.edu.cn/xueshukeyan/boshihouliudongzhan/",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "华南师范大学经济与管理学院诚聘海内外优秀人才",
+      "url": "http://em.scnu.edu.cn/a/20230504/9348.html",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "posted_year_too_old"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广外应用经济学博士后科研流动站2026年科研博士后招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1017/12909.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广外2026年招聘师资博士后（含应用经济学、金融学）",
+      "url": "https://rsc.gdufs.edu.cn/info/1017/12559.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广外2026年面向海内外招聘人才（经贸学院含国贸/产业/数字经济等）",
+      "url": "https://rsc.gdufs.edu.cn/info/1017/12399.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广州大学经济与统计学院（李正辉课题组）2026年诚聘博士后",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/388060.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东工业大学经济学院高层次人才招聘（应用经济学/数字经济/金融等）",
+      "url": "https://jjxy.gdut.edu.cn/rczp/gccrc.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中山大学岭南学院王曦教授科研团队博士后招聘启事",
+      "url": "https://lingnan.sysu.edu.cn/article/1564",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "posted_year_too_old"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "2026-06-05 中山大学中法核工程与技术学院数学教师招聘公告",
+      "url": "https://rcb.sysu.edu.cn/article/746",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2026-02-13 中法核工程与技术学院教学型教师招聘启事 Recruitment of French/English teacher",
+      "url": "https://rcb.sysu.edu.cn/article/711",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2024-01-09 中山大学区域国别研究院面向海内外招聘博士后启事",
+      "url": "https://rcb.sysu.edu.cn/article/532",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "2022-06-10 中山大学面向全球公开招聘商学院学科带头人",
+      "url": "https://rsc.sysu.edu.cn/article/543",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "campus_hr_econ_field",
+        "posted_year_too_old"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东外语外贸大学应用经济学博士后科研流动站2026年科研博士后研究人员招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/12519.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东外语外贸大学应用经济学博士后科研流动站2025年科研博士后研究人员招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/12041.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东外语外贸大学应用经济学博士后科研流动站2024年科研博士后研究人员招聘简章",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/11977.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东外语外贸大学2026年招聘师资博士后研究...",
+      "url": "https://rsc.gdufs.edu.cn/info/1083/12549.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东财经大学面向海内外公开招聘二级学院院长及经济与管理实验教...",
+      "url": "http://rsc.gdufe.edu.cn/2026/0706/c7198a241160/page.htm",
+      "keep": false,
+      "label": "dean_admin",
+      "reasons": [
+        "dean_or_admin_post"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2023年公开招聘工作人员公告",
+      "url": "http://rsc.gdufe.edu.cn/2023/0330/c7198a172489/page.htm",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "campus_hr_not_econ",
+        "posted_year_too_old"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2025年第二次公开招聘合同制工作人员（司机岗位）公告",
+      "url": "http://rsc.gdufe.edu.cn/2025/1223/c7198a232186/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2025年集中公开招聘高层次和急需紧缺人才（第三轮）...",
+      "url": "http://rsc.gdufe.edu.cn/2025/1201/c7198a231125/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2025年公开招聘合同制工作人员（体育学院场馆管理员）公告",
+      "url": "http://rsc.gdufe.edu.cn/2025/1013/c7198a228497/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2025年集中公开招聘高层次和急需紧缺人才（第二轮）...",
+      "url": "http://rsc.gdufe.edu.cn/2025/0915/c7198a226242/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2025年集中公开招聘高层次和急需紧缺人才资格复审结...",
+      "url": "http://rsc.gdufe.edu.cn/2025/0618/c7198a222499/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学面向海内外公开招聘二级学院院长及经济与管理实验教...",
+      "url": "http://rsc.gdufe.edu.cn/2026/0706/c12800a241160/page.htm",
+      "keep": false,
+      "label": "dean_admin",
+      "reasons": [
+        "dean_or_admin_post"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2025年集中公开招聘高层次和急需紧缺人才（第三轮）...",
+      "url": "http://rsc.gdufe.edu.cn/2025/1225/c12800a232300/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2025年集中公开招聘高层次和急需紧缺人才（第二轮）...",
+      "url": "http://rsc.gdufe.edu.cn/2025/1014/c12800a228582/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2025年集中公开招聘高层次和急需紧缺人才会议评审公...",
+      "url": "http://rsc.gdufe.edu.cn/2025/1013/c12800a228458/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学面向海内外招聘学科方向带头人的公告",
+      "url": "http://rsc.gdufe.edu.cn/2025/0116/c12800a215856/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学地理与环境经济学院2024年公开招聘教学科研人员招聘...",
+      "url": "http://rsc.gdufe.edu.cn/2024/1104/c12800a200689/page.htm",
+      "keep": false,
+      "label": "stale_year_title",
+      "reasons": [
+        "title_year_2024_faculty"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学面向海内外公开招聘文化旅游与地理学院院长公告",
+      "url": "http://rsc.gdufe.edu.cn/2024/0129/c12800a186990/page.htm",
+      "keep": false,
+      "label": "dean_admin",
+      "reasons": [
+        "dean_or_admin_post"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2023年教学科研人员招聘公告",
+      "url": "http://rsc.gdufe.edu.cn/2023/0517/c12800a175049/page.htm",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "campus_hr_econ_field",
+        "posted_year_too_old"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学2022年公开招聘企业管理学科带头人公告",
+      "url": "http://rsc.gdufe.edu.cn/2022/1014/c12800a167367/page.htm",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "campus_hr_econ_field",
+        "posted_year_too_old"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学面向海内外公开招聘院长公告",
+      "url": "http://rsc.gdufe.edu.cn/2022/0712/c12800a163965/page.htm",
+      "keep": false,
+      "label": "dean_admin",
+      "reasons": [
+        "dean_or_admin_post"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "“百万英才汇南粤”广东财经大学2026年博士后招聘公告",
+      "url": "http://rsc.gdufe.edu.cn/2026/0306/c4710a233784/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广东财经大学面向海内外公开招聘二级学院院长及经济与管理实验教...",
+      "url": "https://rsc.gdufe.edu.cn/2026/0706/c7198a241160/page.htm",
+      "keep": false,
+      "label": "dean_admin",
+      "reasons": [
+        "dean_or_admin_post"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学面向海内外公开招聘二级学院院长及经济与管理实验教...",
+      "url": "https://rsc.gdufe.edu.cn/2026/0706/c12800a241160/page.htm",
+      "keep": false,
+      "label": "dean_admin",
+      "reasons": [
+        "dean_or_admin_post"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广东财经大学地理与环境经济学院2024年公开招聘教学科研人员招聘...",
+      "url": "https://rsc.gdufe.edu.cn/2024/1104/c12800a200689/page.htm",
+      "keep": false,
+      "label": "stale_year_title",
+      "reasons": [
+        "title_year_2024_faculty"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "​先进材料与技术研究院诚聘“青年百人计划”教师与博士后研究人员 2026-09-29",
+      "url": "https://hr.gdut.edu.cn/info/1073/1194.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "智慧海洋科学与工程研究院诚聘高层次人才 2026-09-28",
+      "url": "https://hr.gdut.edu.cn/info/1073/1841.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "042026-02 关于开展2026年度国家资助博士后研究人员计划（含博士后创新人才支持计划）和博士后科研业绩评估考核资助申报工作的通知",
+      "url": "https://hr.gdut.edu.cn/info/1007/1774.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Postdoc"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-14",
+  "region": "fujian",
+  "province_zh": "福建",
+  "count": 10,
+  "with_econ_units": 7,
+  "tags_985_211": 2,
+  "universities": [
+    {
+      "name_zh": "厦门大学",
+      "name_en": "Xiamen University",
+      "region": "fujian",
+      "city": "厦门",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.xmu.edu.cn/",
+      "career": "https://jobs.xmu.edu.cn/",
+      "postdoc": "https://jobs.xmu.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://soe.xmu.edu.cn/"
+        },
+        {
+          "unit_zh": "王亚南经济研究院",
+          "unit_en": "WISE",
+          "url": "https://wise.xmu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "福州大学",
+      "name_en": "Fuzhou University",
+      "region": "fujian",
+      "city": "福州",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.fzu.edu.cn/",
+      "career": "https://rsc.fzu.edu.cn/xiaowai/zxzp.htm",
+      "postdoc": "https://rsc.fzu.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济与管理学院",
+          "unit_en": "SEM",
+          "url": "https://jgxy.fzu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "福建师范大学",
+      "name_en": "FJNU",
+      "region": "fujian",
+      "city": "福州",
+      "tags": [
+        "provincial",
+        "双一流学科"
+      ],
+      "home": "https://www.fjnu.edu.cn/",
+      "career": "https://rsc.fjnu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.fjnu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "华侨大学",
+      "name_en": "Huaqiao University",
+      "region": "fujian",
+      "city": "泉州/厦门",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.hqu.edu.cn/",
+      "career": "https://rsc.hqu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济与金融学院",
+          "unit_en": "SEF",
+          "url": "https://ef.hqu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "集美大学",
+      "name_en": "Jimei University",
+      "region": "fujian",
+      "city": "厦门",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.jmu.edu.cn/",
+      "career": "https://rsc.jmu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "财经学院",
+          "unit_en": "SFE",
+          "url": "https://finance.jmu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "福建农林大学",
+      "name_en": "FAFU",
+      "region": "fujian",
+      "city": "福州",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.fafu.edu.cn/",
+      "career": "https://rsc.fafu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济与管理学院",
+          "unit_en": "SEM",
+          "url": "https://jjgl.fafu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "福建江夏学院",
+      "name_en": "FJXU",
+      "region": "fujian",
+      "city": "福州",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.fjjxu.edu.cn/",
+      "career": "https://rsc.fjjxu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济贸易学院",
+          "unit_en": "SET",
+          "url": "https://jmxy.fjjxu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "闽南师范大学",
+      "name_en": "Minnan Normal University",
+      "region": "fujian",
+      "city": "漳州",
+      "tags": [
+        "known_catalog"
+      ],
+      "home": "https://www.mnnu.edu.cn/",
+      "career": "https://rsc.mnnu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "泉州师范学院",
+      "name_en": "Quanzhou Normal University",
+      "region": "fujian",
+      "city": "泉州",
+      "tags": [
+        "known_catalog"
+      ],
+      "home": "https://www.qztc.edu.cn/",
+      "career": "https://rsc.qztc.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "仰恩大学",
+      "name_en": "Yang-En University",
+      "region": "fujian",
+      "city": "泉州",
+      "tags": [
+        "known_catalog"
+      ],
+      "home": "https://www.yeu.edu.cn/",
+      "career": "https://www.yeu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    }
+  ]
+}

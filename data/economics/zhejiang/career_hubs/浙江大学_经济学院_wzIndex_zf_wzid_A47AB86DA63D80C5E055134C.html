@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>  
+   	<meta charset="UTF-8">
+<meta name=renderer  content=webkit>
+<meta http-equiv="pragma" CONTENT="no-cache">
+<meta http-equiv="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta http-equiv="expires" CONTENT="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="Copyright" content="zfsoft" />	
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+<title>浙江大学就业服务平台</title>
+<script type="text/javascript">
+	//全局变量
+	var _path = "/jyxt";
+	var _systemPath = "/jyxt";
+	var _stylePath = "/zftal-ui-v5-1.1.1";
+    //给hmd登录提示做判断
+    var modalFlag =false;
+</script>
+
+<!--jQuery核心框架库 -->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/jquery-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/jquery-migrate.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+<!--jQuery浏览器检测 -->
+<script type="text/javascript" src="/jyxt/js/browse/browse-judge.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+<script type="text/javascript">
+	//\u6d4f\u89c8\u5668\u7248\u672c\u9a8c\u8bc1
+	/*var broswer = broswer();
+	if(broswer.msie==true||broswer.safari==true||broswer.mozilla==true||broswer.chrome==true){
+		if(broswer.msie==true&&broswer.version<9){
+		   window.location.href = _path+"/xtgl/init_cxBrowser.html";
+		}
+	}else{
+		 window.location.href = _path+"/xtgl/init_cxBrowser.html";
+	}*/
+</script><!--
+jquery.ui 需要在bootstrap之前加载，解决冲突问题
+http://blog.csdn.net/remote_roamer/article/details/14105999
+-->
+<script src="/zftal-ui-v5-1.1.1/assets/js/jquery-ui-custom.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" type="text/javascript" charset="utf-8"></script>
+<!--Bootstrap布局框架-->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/bootstrap/css/bootstrap.min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/bootstrap/js/bootstrap.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--zftal-ui样式-->
+<!--jQuery常用工具扩展库：基础工具,资源加载工具,元素尺寸相关工具 -->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/zftal/jquery.utils.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--jQuery基础工具库：$.browser,$.cookie,$.actual等 -->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/zftal/jquery.plugins.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--jQuery自定义event事件库 -->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/zftal/jquery.events.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--JavaScript对象扩展库：Array,Date,Number,String -->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/zftal/jquery.extends.contact-2.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--国际化js库 -->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/i18n/jquery.i18n-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--业务框架前端脚本国际化库-->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/zftal/jquery.zftal_zh_CN-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+<!--Bootbox弹窗插件-->
+<script src="/zftal-ui-v5-1.1.1/assets/plugins/bootbox/bootbox.concat-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" type="text/javascript" charset="utf-8"></script>
+<script src="/zftal-ui-v5-1.1.1/assets/plugins/bootbox/lang/zh_CN-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/bootbox/css/bootbox-min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<!--jQuery单选框美化-->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/iCheck/skins/all.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/iCheck/icheck.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--jQuery.chosen下拉框美化插件-->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/chosen/css/chosen-min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<link rel="stylesheet" type="text/css" href="/jyxt/assets/plugins/select/bigselect.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></link>
+<script type="text/javascript" src="/jyxt/assets/plugins/select/bigselect.js"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/utils/jquery.utils.pinyin.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/chosen/jquery.choosen.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/chosen/jquery.chosen-additional.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/chosen/lang/zh_CN-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!-- Tagsinput 插件 -->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script><!--IE浏览器html5、CSS3兼容插件-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/html5shiv.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/respond.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<![endif]-->
+<!--业务框架jQuery全局设置和通用函数库-->
+<script type="text/javascript" src="/jyxt/js/jquery.zftal.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+<!--基于Nifty样式库的新版界面前端依赖-->
+<script src="/zftal-ui-v5-1.1.1/assets/plugins/nifty/js/nifty.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+<link href="/zftal-ui-v5-1.1.1/assets/plugins/nifty/css/nifty.min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" rel="stylesheet" type="text/css"/>
+<!--皮肤+字体-->
+<link href="/zftal-ui-v5-1.1.1/assets/css/theme/zftal-ui-nifty-icons.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" rel="stylesheet" type="text/css"/>
+<link href="/zftal-ui-v5-1.1.1/assets/css/theme/theme-ocean.min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" rel="stylesheet" type="text/css"/>
+<link href="/zftal-ui-v5-1.1.1/assets/css/zftal-ui-base.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"  rel="stylesheet" type="text/css"/>
+<link href="/zftal-ui-v5-1.1.1/assets/css/zftal-ui-index.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" rel="stylesheet" type="text/css"/>
+<link href="/jyxt/css/zftal-ui-app.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" rel="stylesheet" type="text/css"/>
+
+
+<!--laydate日期控件1111-->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/laydate/need/laydate.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/laydate/skins/zfcolor/laydate.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/laydate/laydate.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+	<style type="text/css">
+	.bootbox.modal{overflow-y: hidden !important;text-align: justify;}
+	.tooltips.top.in {z-index: 1200 !important;}
+	</style>
+	<!--v5公用代码调用-->
+	<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/zftal/v5/zftal-ui-page.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<!--jQuery.validation校验插件 -->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/validation/css/jquery.validate-min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/validation/js/jquery.validate-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/validation/js/jquery.validate.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/jyxt/js/plugins/validation/jquery.validate.methods.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/validation/lang/zh_CN-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$('[data-toggle*="validation"]').trigger("validation");
+	});
+</script>	
+		<link rel="stylesheet" href="/jyxt/assets/css/zftal-ui-base.css">
+		<link rel="stylesheet" href="/jyxt/assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/jyxt/assets/plugins/bannerSilder/css/bannerSilder.css">
+		<link rel="stylesheet" href="/jyxt/assets/css/reset.css">
+		<link rel="stylesheet" href="/jyxt/assets/css/style.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0">
+		<link rel="stylesheet" href="/jyxt/assets/css/zdstyle.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0">
+		<link rel="stylesheet" href="/jyxt/assets/css/animate.min.css">
+		<link rel="stylesheet" href="/jyxt/assets/css/xheader-carousel.css">
+		<link rel="stylesheet" href="/jyxt/assets/css/swiper.min.css">
+<!--jQuery.validation校验插件 -->
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.1.1/assets/plugins/validation/css/jquery.validate-min.css?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" />
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/validation/js/jquery.validate-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/validation/js/jquery.validate.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/jyxt/js/plugins/validation/jquery.validate.methods.contact-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/plugins/validation/lang/zh_CN-min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0" charset="utf-8"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$('[data-toggle*="validation"]').trigger("validation");
+	});
+</script><!--密码强度展示插件-->
+<script type="text/javascript" src="/zftal-ui-v5-1.1.1/assets/js/utils/jquery.utils.strength.min.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>		<script src="/jyxt/assets/js/device.js"></script>
+		<script src="/jyxt/js/jyweb/webIndex-yx.js?ver=de5ab630f2871f5caa2fbc1e56c8d8c0"></script>
+		<script src="/jyxt/assets/js/jquery-scrolltofixed.js"></script>
+		<script src="/jyxt/assets/js/swiper.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="/jyxt/css/globalweb/wrapper.css"/>
+<script type="text/javascript" src="/jyxt/assets/plugins/toastr/toastr.js"></script>
+<link rel="stylesheet" href="/jyxt/assets/plugins/toastr/toastr.css" type="text/css"></head>  
+<body>  
+	<div style="width: 100%; padding: 0px; margin: 0px;overflow: hidden;" id="bodyContainer" class="bodyContainer">
+		<div class="container-fluid container-func" style="width:100%;padding: 0px; margin: 0px;">
+	   <!-- page content start -->
+	    
+<!-- ******头部****** --> 
+<div class="xjyzdindex">
+	<div class="xheader_toop">
+		<div class="container">
+		<div class="xhead-bar clearfix">
+				<div class="bar-left">
+					<div class="xhead-bar-logo"><img src="/jyxt/comm/common/preview.zf?filePath=/img/1589167564422/1浙大LOGO1.png" alt=""></div>
+					<div class="xhead-bar-name"><img src="/jyxt/comm/common/preview.zf?filePath=/img/1589167593414/经济学院.png" alt=""></div>
+				</div>
+				<div class="bar-right">
+					<div class="xhead-bar-nav">
+						<ul>
+							<li><p><img src="/jyxt/assets/images/xbar1.png" alt=""></p><a>雇主</a></li>
+							<li><p><img src="/jyxt/assets/images/xbar2.png" alt=""></p><a>学生</a></li>
+							<li><p><img src="/jyxt/assets/images/xbar3.png" alt=""></p><a>教师</a></li>
+							<li><p><img src="/jyxt/assets/images/xbar4.png" alt=""></p><a>校友</a></li>
+						</ul>
+						
+						<div class="clear"></div>
+						<div class="subnav-sec">
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/web/login/dwLogin.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>招聘预约</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B30BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub1.png" alt=""></p>招聘安排</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B40BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub2.png" alt=""></p>招聘邀请函</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B50BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub3.png" alt=""></p>场地信息</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B70BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub5.png" alt=""></p>生源信息</dd>
+										</a>
+								</dl>
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC317490E0538713470A7BA2&lmjdid=779F7844FA730FDAE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/rs.png" alt=""></p>职业测评</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC357490E0538713470A7BA2&lmjdid=A1899A980FD1110DE055134CA39C9BD7&lmtype=1&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zp.png" alt=""></p>招聘信息</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&lmjdid=739BEBB72A1F2B25E0538713470A6C41" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/gzl.png" alt=""></p>就业须知</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&lmjdid=95957290B207B342E055134CA39C9BD7&lmtype=2&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/fw.png" alt=""></p>就业政策</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC307490E0538713470A7BA2&lmjdid=739BEBB72A0B2B25E0538713470A6C41" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/hd.png" alt=""></p>新闻活动</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=748986AF9266735FE0538713470AC5D2&lmjdid=748986AF926A735FE0538713470AC5D2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/wjdc.png" alt=""></p>问卷调查</dd>
+										</a>
+										<a class="topmenu" data-src="/xtht/login/ssoswitch.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>学生登录</dd>
+										</a>
+								</dl>
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC307490E0538713470A7BA2&lmjdid=739BEBB72A072B25E0538713470A6C41" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/hd.png" alt=""></p>新闻动态</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC307490E0538713470A7BA2&lmjdid=739BEBB72A072B25E0538713470A6C41" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/hd.png" alt=""></p>活动通知</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC357490E0538713470A7BA2&sjlmid=A1899A980FD1110DE055134CA39C9BD7&lmtype=1&lx=3" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/cx.png" alt=""></p>招聘信息</dd>
+										</a>
+										<a class="topmenu" data-src="/jyxt/xtgl/login/slogin.zf" data-opentype="1" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/gl.png" alt=""></p>就业管理</dd>
+										</a>
+								</dl>
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC317490E0538713470A7BA2&sjlmid=73C20FCA7FF00B44E0538713470ADC3F" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>辅导咨询</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&lmjdid=739BEBB72A292B25E0538713470A6C41" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/wd.png" alt=""></p>常见问题</dd>
+										</a>
+										<a class="topmenu" data-src="/jyweb/grzx.zf?type=wjdc" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/wjdc.png" alt=""></p>问卷调查</dd>
+										</a>
+										<a class="topmenu" data-src="/web/login/xsLogin.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>校友登录</dd>
+										</a>
+								</dl>
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC317490E0538713470A7BA2&lmjdid=779F7844FA730FDAE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/rs.png" alt=""></p>职业测评</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC317490E0538713470A7BA2&lmjdid=77A06565F6731505E055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>个体咨询</dd>
+										</a>
+										<a class="topmenu" data-src="/jyxt/jygz/new/newsDetail.zf?xwid=FE1C2782CD6C7EE0E0553A68DD0E9B18&lmtype=2" data-opentype="1" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/wjdc.png" alt=""></p>求职宝典</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC357490E0538713470A7BA2&lmjdid=A1899A980FD1110DE055134CA39C9BD7&lmtype=1&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zp.png" alt=""></p>招聘信息</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&lmjdid=739BEBB72A1F2B25E0538713470A6C41" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/gzl.png" alt=""></p>就业须知</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=7531BF87175E0C78E055000000000001&lmjdid=7531BF8717640C78E055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub1.png" alt=""></p>基层选调</dd>
+										</a>
+										<a class="topmenu" data-src="https://zju.jianli.jiuyeqiao.cn" data-opentype="1" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/fw.png" alt=""></p>AI简历智写</dd>
+										</a>
+										<a class="topmenu" data-src="/jyweb/xsgrzx/ckAispmnms.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>AI视频模拟面试</dd>
+										</a>
+								</dl>
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/web/login/dwLogin.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/zx.png" alt=""></p>招聘预约</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B30BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub1.png" alt=""></p>招聘安排</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B40BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub2.png" alt=""></p>招聘须知</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B50BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub3.png" alt=""></p>场地信息</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&sjlmid=8497E48461B70BFFE055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxt/assets/images/xsub5.png" alt=""></p>生源信息</dd>
+										</a>
+								</dl>
+								<dl class="nav-sub clearfix" >
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC307490E0538713470A7BA2&lmjdid=739BEBB72A0B2B25E0538713470A6C41&_=1667476229256" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxthdtz" alt=""></p>活动通知</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?rq=" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxthdrl" alt=""></p>活动日历</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC357490E0538713470A7BA2&lmjdid=A19195EA8BF93090E055134CA39C9BD7&_=1667476602479" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtxjh" alt=""></p>宣讲会</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC357490E0538713470A7BA2&lmjdid=EB867FA0734E6234E053871D470A7037&_=1667476602495" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtzph" alt=""></p>双选会</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC357490E0538713470A7BA2&lmjdid=A1899A980FD1110DE055134CA39C9BD7&lmtype=1&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtzpxx" alt=""></p>招聘信息</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC317490E0538713470A7BA2&lmjdid=77A06565F6731505E055000000000001&lmtype=1&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtzxyy" alt=""></p>个体咨询</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC317490E0538713470A7BA2&lmjdid=779F7844FA730FDAE055000000000001&lmtype=4&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtzypc" alt=""></p>职业评测</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=7531BF87175E0C78E055000000000001&lmjdid=7531BF8717640C78E055000000000001" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtxdszl" alt=""></p>基层选调</dd>
+										</a>
+										<a class="topmenu" data-src="/jygz/new/newsList.zf?lmid=738CE59CBC397490E0538713470A7BA2&lmjdid=739BEBB72A1F2B25E0538713470A6C41&lmtype=2&lx=2" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtjyxz" alt=""></p>就业须知</dd>
+										</a>
+										<a class="topmenu" data-src="/jyweb/xsgrzx/xgSyxsInfo.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtsyzs" alt=""></p>生源自审</dd>
+										</a>
+										<a class="topmenu" data-src="/jyweb/wsqy/cxXsWsqy.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtzxqy" alt=""></p>在线签约</dd>
+										</a>
+										<a class="topmenu" data-src="/jyweb/jytj/xgXsJytj.zf" data-opentype="0" href="javascript:void(0);" data-lmid="">
+										<dd><p><img src="/jyxtjytjb" alt=""></p>就业推荐表</dd>
+										</a>
+								</dl>
+						</div>
+					</div>
+					<!--登录成功-->
+						<div class="xlogin">
+							<p class="xlogin-btn">登录<br>Login</p>
+							<div class="xlogin-tog">
+								<button onclick="dwLogin();">单位登录</button>
+								<button onclick="xsLogin();">校友登录</button>
+								<button onclick="swLogin();">华农学生登录</button>
+								<button onclick="lsLogin();">校内统一身份登录</button>
+							</div>
+						</div>
+				</div>
+				<div class="wrapper">
+			        <ul class="wrapper-mess">
+			            <li class="wechat">
+			                <div class="wechat-call" style="display: none;"></div>
+			            </li>
+			        </ul>
+			    </div>
+			    <script>
+				    $(function(){
+				        $(".wechat").mouseenter(function(){
+				            $(".wechat-call").show();
+				        })
+				        $(".wechat").mouseleave(function(){
+				            $(".wechat-call").hide();
+				        })
+				    })
+			    </script>
+			</div>
+		</div>
+	</div>
+	<div class="xheader">
+		<div id="xheader-carousel" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+			<ol class="carousel-indicators">
+							<li data-target="#xheader-carousel" data-slide-to="0" class="active"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<a href="http://10.72.99.11/" target="_blank"><img src="/jyxt/comm/common/preview.zf?filePath=/img/1777445353876/经略.jpg" alt="" class="slide-image"/></a>
+							</div>
+			</div>
+		</div>
+		<div class="container">
+			<input type="hidden" id="lmid" value="">
+			<input type="hidden" id="zhcxid" value="">
+		</div>
+	</div>
+	<div class="xnav-static">
+		<div class="xnav">
+			<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid"> 
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+								<span class="sr-only">切换导航</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button> 
+							<a class="navbar-brand ydshow sy" data-src="/jyweb/cxXyweb.zf?wzid=A47AB86DA63D80C5E055134CA39C9BD7" href="javascript:void(0);">首页</a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav xnav-list" id="navlist">
+								<li><a data-src="/jyweb/cxXyweb.zf?wzid=A47AB86DA63D80C5E055134CA39C9BD7" data-opentype='0' href="javascript:void(0);">首页</a></li>
+									<li>
+										<a data-lmid="A47D7E3AC27B899BE055134CA39C9BD7" data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27B899BE055134CA39C9BD7" href="javascript:void(0);">新闻通知</a>
+										<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27B899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD68A5AE055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">活动通知</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27B899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD78A5AE055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">新闻报道</a>
+													</li>
+										</ul>
+									</li>
+									<li>
+										<a data-lmid="A47D7E3AC278899BE055134CA39C9BD7" data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC278899BE055134CA39C9BD7" href="javascript:void(0);">生涯规划</a>
+										<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC278899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD08A5AE055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">就业指导嘉年华</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC278899BE055134CA39C9BD7&lmjdid=A47DEDBDFCCF8A5AE055134CA39C9BD7&lmtype=1&lx=2" href="javascript:void(0);">咨询预约</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC278899BE055134CA39C9BD7&lmjdid=A5BC250626E2E96DE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">生涯慕课</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC278899BE055134CA39C9BD7&lmjdid=A5BC250626E1E96DE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">职业测评</a>
+													</li>
+										</ul>
+									</li>
+									<li>
+										<a data-lmid="A47D7E3AC279899BE055134CA39C9BD7" data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC279899BE055134CA39C9BD7" href="javascript:void(0);">招聘资讯</a>
+										<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC279899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD38A5AE055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">学院招聘信息</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC279899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD48A5AE055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">综合招聘信息</a>
+													</li>
+										</ul>
+									</li>
+									<li>
+										<a data-lmid="A47D7E3AC27C899BE055134CA39C9BD7" data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27C899BE055134CA39C9BD7" href="javascript:void(0);">综合服务</a>
+										<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27C899BE055134CA39C9BD7&lmjdid=A47DEDBDFCDB8A5AE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">学院就业老师介绍</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27C899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD88A5AE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">毕业生生源介绍</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27C899BE055134CA39C9BD7&lmjdid=A47DEDBDFCDA8A5AE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">学科特色介绍</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27C899BE055134CA39C9BD7&lmjdid=A47DEDBDFCD98A5AE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">常见问题指引</a>
+													</li>
+										</ul>
+									</li>
+									<li>
+										<a data-lmid="A47D7E3AC27D899BE055134CA39C9BD7" data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7" href="javascript:void(0);">就业引导</a>
+										<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=A47DEDBDFCDF8A5AE055134CA39C9BD7&lmtype=4&lx=2" href="javascript:void(0);">培养目标</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=A47DEDBDFCDC8A5AE055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">重点清单</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=BE310E465E723D43E055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">经略计划</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=BE6DAAB23BCD3898E055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">经略课堂</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=BDC70C9E83879123E055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">重要金融机构</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=BDC7E4FC2A699481E055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">选调生</a>
+													</li>
+													<li>
+														<a data-opentype='0' data-src="/jygz/new/newsList.zf?lmid=A47D7E3AC27D899BE055134CA39C9BD7&lmjdid=BDC70C9E83BD9123E055134CA39C9BD7&lmtype=2&lx=2" href="javascript:void(0);">升学深造</a>
+													</li>
+										</ul>
+									</li>
+									<li>
+										<a data-lmid="A47D7E3AC27A899BE055134CA39C9BD7" data-opentype='1' data-src="http://www.career.zju.edu.cn/jyxt/jyweb/webIndex.zf?lmid=A47D7E3AC27A899BE055134CA39C9BD7" href="javascript:void(0);">学校就业网站</a>
+										<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+										</ul>
+									</li>
+							</ul>
+							<div class="search navbar-form navbar-right" role="search">
+								<div class="form-group">
+									<input type="text" id="title" class="ipt-text form-control" placeholder="请输入关键字" value="">
+								</div>
+								<button onclick="search()" id="search" class="ipt-btn btn btn-default" ><img src="/jyxt/assets/images/search.png" alt=""></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ↓↓↓↓↓↓↓↓↓↓中间公共区域 ↓↓↓↓↓↓↓↓↓↓--> 
+		<div id="mainIdex"></div>
+		<!-- ↑↑↑↑↑↑↑↑↑↑中间公共区域 ↑↑↑↑↑↑↑↑↑↑-->
+		<div class="xfooter">
+			<!--<div class="top">
+				<div class="container">
+					<p><span>|</span>联系方式</p><p><span>|</span>关于我们</p>
+				</div>
+			</div>-->
+			<div class="down none">
+				<div class="container">
+					使用者:浙江大学就业指导与服务中心  未经同意 任何单位和个人不得擅自引用与转载本网站任何信息<br>
+					<a href="http://www.zfsoft.com" target="_blank">技术支持:正方软件股份有限公司</a><br>
+					<!--历史访问量:14489月访问量:14489日访问量:10408在线人数:155-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function () {
+			    // 初始化pc端轮播图
+			    let pcSwiper = new Swiper("#pc-swiper", {
+			        autoplay: {
+			            disableOnInteraction: true,
+			            delay: 3500
+			        },
+			        navigation: {
+			            prevEl: ".swiper-button-prev",
+			            nextEl: ".swiper-button-next"
+			        },
+			        slidesPerView: 3,
+			        centeredSlides: true,
+			        centeredSlidesBounds: true,
+			        loop: true
+			    });
+			
+			    // 初始化移动端轮播图
+			
+			    let mobSwiper = new Swiper("#mobile-swiper", {
+			        autoplay: {
+			            disableOnInteraction: false,
+			            delay: 3500
+			        },
+			        pagination: {
+			            el: ".swiper-pagination"
+			        },
+			        loop: true
+			    });
+			
+			    let roomSwiper = new Swiper("#roomList")
+			});   
+	</script>
+
+
+	   <!-- page content end -->  
+	   <!-- <script type="text/javascript">
+	$(function(){
+		$('.xfooter > .xfooter-height').height($('.xfooter > .xfooter-content').height());
+	})
+</script> -->
+	   </div>
+	</div>
+	<div id="progressbarweb-box">
+		<div class="progressbar">
+			<div class="load-bar">
+				<div class="load-bar-inner" data-loading="0"> <span id="counter"></span> </div>
+			</div>
+			<p id="text-msg">请稍候... </p>
+		</div>
+	</div>
+</body>  
+<script type="text/javascript">
+jQuery(function($) {
+	let h1 = $('#navbar_container').outerHeight(true) ? $('#navbar_container').outerHeight(true) : 0
+	let h2 = $('#footerID').outerHeight(true) ? $('#footerID').outerHeight(true) : 0
+	var pageHeight = $(window).height() - h1 - h2;
+	$('.bodyContainer').css("min-height",pageHeight);
+	toastr.options = {
+		"closeButton": false,
+		"debug": false,
+		"positionClass": "toast-top-center",
+		"showDuration": "300",
+		"hideDuration": "1000",
+		"timeOut": "5000",
+		"extendedTimeOut": "1000",
+		"showEasing": "swing",
+		"hideEasing": "linear",
+		"showMethod": "fadeIn",
+		"hideMethod": "fadeOut"
+	}
+
+	//调整学生单位端日期鼠标移动到日期上，最外层框消失
+	$(document).off('click', '.cond-bar-selected .tag-list-cond a').on('click', '.cond-bar-selected .tag-list-cond a', function () {
+		var $this = $(this);
+		var condTimer;
+		$clps = $($(this).data('href'))
+		$clps.unbind('hover');
+		$clps.hover(function (e) {//鼠标移动进入clps
+			clearTimeout(condTimer);
+		},function (e) {//鼠标移动离开clps的区域范围
+			//clps的区域范围
+			var $new_clps = $($this.data('href'));
+
+			var offset = $new_clps.offset();
+
+			var width = $new_clps.width();
+			var height = $new_clps.height();
+
+			var left = offset.left;
+			var top = offset.top;
+
+			var minX = left;
+			var maxX = left + width;
+			var minY = top;
+			var maxY = top + height;
+
+			var x = e.pageX;
+			var y = e.pageY;
+			if(minX <= x && x <= maxX && minY <= y && y <= maxY){
+				//在范围内，忽略
+			}else{
+				condTimer = setTimeout(function () {
+					$this.parents('.tag-list-cond').find('a[data-href="' + $this.data('href') + '"]').parent('li').removeClass('in');
+					$clps.slideUp(150);
+				},150);
+			}
+		});
+	})
+});
+function showwrapperbox(){
+	$('#progressbarweb-box').show();
+}
+function hidewrapperbox(){
+	$('#progressbarweb-box').hide()
+}
+function wrapperbox(bl,msg){
+	$('#progressbarweb-box .progressbar #counter').html(bl+'%');
+	$('#progressbarweb-box .progressbar #counter').css('left',(3.5*bl-25)+'px');
+	$('#progressbarweb-box .progressbar .load-bar-inner').css('width',bl+'%');
+	$('#progressbarweb-box .progressbar #text-msg').html(msg);
+}
+</script>
+</html>

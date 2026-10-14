@@ -1,0 +1,83 @@
+[
+  {
+    "university_zh": "厦门大学",
+    "university_en": "Xiamen University",
+    "city": "厦门",
+    "unit_zh": "经济学院",
+    "unit_en": "School of Economics",
+    "url": "https://soe.xmu.edu.cn/",
+    "career": "https://jobs.xmu.edu.cn/"
+  },
+  {
+    "university_zh": "厦门大学",
+    "university_en": "Xiamen University",
+    "city": "厦门",
+    "unit_zh": "经济学系",
+    "unit_en": "Department of Economics",
+    "url": "https://econ.xmu.edu.cn/",
+    "career": "https://jobs.xmu.edu.cn/"
+  },
+  {
+    "university_zh": "厦门大学",
+    "university_en": "Xiamen University",
+    "city": "厦门",
+    "unit_zh": "王亚南经济研究院",
+    "unit_en": "WISE",
+    "url": "https://wise.xmu.edu.cn/",
+    "career": "https://jobs.xmu.edu.cn/"
+  },
+  {
+    "university_zh": "福州大学",
+    "university_en": "Fuzhou University",
+    "city": "福州",
+    "unit_zh": "经济与管理学院",
+    "unit_en": "School of Economics and Management",
+    "url": "https://som.fzu.edu.cn/",
+    "career": "https://rsc.fzu.edu.cn/xiaowai/zxzp.htm"
+  },
+  {
+    "university_zh": "福建师范大学",
+    "university_en": "Fujian Normal University",
+    "city": "福州",
+    "unit_zh": "经济学院",
+    "unit_en": "School of Economics",
+    "url": "https://jjxy.fjnu.edu.cn/",
+    "career": "https://rsc.fjnu.edu.cn/"
+  },
+  {
+    "university_zh": "华侨大学",
+    "university_en": "Huaqiao University",
+    "city": "泉州/厦门",
+    "unit_zh": "经济与金融学院",
+    "unit_en": "School of Economics and Finance",
+    "url": "https://ef.hqu.edu.cn/",
+    "career": "https://rsc.hqu.edu.cn/"
+  },
+  {
+    "university_zh": "集美大学",
+    "university_en": "Jimei University",
+    "city": "厦门",
+    "unit_zh": "财经学院",
+    "unit_en": "School of Finance and Economics",
+    "url": "https://finance.jmu.edu.cn/",
+    "career": "https://rsc.jmu.edu.cn/"
+  },
+  {
+    "university_zh": "福建农林大学",
+    "university_en": "Fujian Agriculture and Forestry University",
+    "city": "福州",
+    "unit_zh": "经济与管理学院",
+    "unit_en": "School of Economics and Management",
+    "url": "https://jjgl.fafu.edu.cn/",
+    "career": "https://rsc.fafu.edu.cn/"
+  },
+  {
+    "university_zh": "福建江夏学院",
+    "university_en": "Fujian Jiangxia University",
+    "city": "福州",
+    "unit_zh": "经济贸易学院",
+    "unit_en": "School of Economics and Trade",
+    "url": "https://jmxy.fjjxu.edu.cn/",
+    "career": "https://rsc.fjjxu.edu.cn/"
+  }
+]

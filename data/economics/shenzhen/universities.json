@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-14",
+  "region": "shenzhen",
+  "province_zh": "广东",
+  "count": 8,
+  "with_econ_units": 6,
+  "tags_985_211": 4,
+  "universities": [
+    {
+      "name_zh": "深圳大学",
+      "name_en": "Shenzhen University",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.szu.edu.cn/",
+      "career": "https://hr.szu.edu.cn/",
+      "postdoc": "https://hr.szu.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "COE",
+          "url": "https://eco.szu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "南方科技大学",
+      "name_en": "SUSTech",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "双一流"
+      ],
+      "home": "https://www.sustech.edu.cn/",
+      "career": "https://jobs.sustech.edu.cn/",
+      "postdoc": "https://jobs.sustech.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "商学院",
+          "unit_en": "Business School",
+          "url": "https://business.sustech.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "香港中文大学（深圳）",
+      "name_en": "CUHK Shenzhen",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "cooperative"
+      ],
+      "home": "https://www.cuhk.edu.cn/",
+      "career": "https://www.cuhk.edu.cn/zh-hans/taxonomy/term/38",
+      "postdoc": "https://www.cuhk.edu.cn/zh-hans/taxonomy/term/50",
+      "econ_units": [
+        {
+          "unit_zh": "经管学院",
+          "unit_en": "SME",
+          "url": "https://sme.cuhk.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "哈尔滨工业大学（深圳）",
+      "name_en": "HIT Shenzhen",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "985",
+        "211",
+        "campus"
+      ],
+      "home": "https://www.hitsz.edu.cn/",
+      "career": "https://hr.hitsz.edu.cn/rczp/zpxxhz.htm",
+      "postdoc": "https://hr.hitsz.edu.cn/info/1009/2203.htm",
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.hitsz.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "北京大学深圳研究生院",
+      "name_en": "PKU Shenzhen",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "985",
+        "211",
+        "campus"
+      ],
+      "home": "https://www.pkusz.edu.cn/",
+      "career": "https://www.pkusz.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "汇丰商学院",
+          "unit_en": "PHBS",
+          "url": "https://phbs.pku.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "清华大学深圳国际研究生院",
+      "name_en": "Tsinghua SIGS",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "985",
+        "211",
+        "campus"
+      ],
+      "home": "https://www.sigs.tsinghua.edu.cn/",
+      "career": "https://talent.sigs.tsinghua.edu.cn/index.html?locale=zh_CN",
+      "postdoc": "https://talent.sigs.tsinghua.edu.cn/index.html?locale=zh_CN",
+      "econ_units": []
+    },
+    {
+      "name_zh": "中山大学深圳校区",
+      "name_en": "SYSU Shenzhen",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "985",
+        "211",
+        "campus"
+      ],
+      "home": "https://www.sysu.edu.cn/",
+      "career": "https://rcb.sysu.edu.cn/zp",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "岭南学院/深圳经济研究院",
+          "unit_en": "Lingnan/SIE",
+          "url": "https://lingnan.sysu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "深圳北理莫斯科大学",
+      "name_en": "SMBU",
+      "region": "shenzhen",
+      "city": "深圳",
+      "tags": [
+        "cooperative"
+      ],
+      "home": "https://www.smbu.edu.cn/",
+      "career": "https://www.smbu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    }
+  ]
+}

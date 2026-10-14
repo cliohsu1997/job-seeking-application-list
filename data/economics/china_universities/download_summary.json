@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "regions": {
+    "beijing": {
+      "count": 27,
+      "with_econ_units": 24,
+      "tags_985_211": 26
+    },
+    "tianjin": {
+      "count": 4,
+      "with_econ_units": 3,
+      "tags_985_211": 3
+    },
+    "hebei": {
+      "count": 4,
+      "with_econ_units": 3,
+      "tags_985_211": 2
+    },
+    "liaoning": {
+      "count": 5,
+      "with_econ_units": 5,
+      "tags_985_211": 4
+    },
+    "shanghai": {
+      "count": 12,
+      "with_econ_units": 10,
+      "tags_985_211": 10
+    },
+    "jiangsu": {
+      "count": 13,
+      "with_econ_units": 12,
+      "tags_985_211": 11
+    },
+    "zhejiang": {
+      "count": 12,
+      "with_econ_units": 10,
+      "tags_985_211": 1
+    },
+    "fujian": {
+      "count": 10,
+      "with_econ_units": 7,
+      "tags_985_211": 2
+    },
+    "shandong": {
+      "count": 5,
+      "with_econ_units": 5,
+      "tags_985_211": 3
+    },
+    "guangdong": {
+      "count": 16,
+      "with_econ_units": 12,
+      "tags_985_211": 4
+    },
+    "shenzhen": {
+      "count": 8,
+      "with_econ_units": 6,
+      "tags_985_211": 4
+    },
+    "guangxi": {
+      "count": 2,
+      "with_econ_units": 2,
+      "tags_985_211": 1
+    },
+    "hainan": {
+      "count": 2,
+      "with_econ_units": 1,
+      "tags_985_211": 1
+    }
+  }
+}

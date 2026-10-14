@@ -1,0 +1,266 @@
+[
+  {
+    "name": "招聘_厦门大学",
+    "url": "https://jobs.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 34110,
+    "file": "招聘_厦门大学.html",
+    "fetched_at": "2026-10-14T21:06:31"
+  },
+  {
+    "name": "博士后_厦门大学",
+    "url": "https://jobs.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 34110,
+    "file": "博士后_厦门大学.html",
+    "fetched_at": "2026-10-14T21:06:31"
+  },
+  {
+    "name": "主页_厦门大学",
+    "url": "https://www.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 103571,
+    "file": "主页_厦门大学.html",
+    "fetched_at": "2026-10-14T21:06:32"
+  },
+  {
+    "name": "厦门大学_经济学院",
+    "url": "https://soe.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 9179040,
+    "file": "厦门大学_经济学院.html",
+    "fetched_at": "2026-10-14T21:06:35"
+  },
+  {
+    "name": "厦门大学_经济学系",
+    "url": "https://econ.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 31621,
+    "file": "厦门大学_经济学系.html",
+    "fetched_at": "2026-10-14T21:06:36"
+  },
+  {
+    "name": "厦门大学_王亚南经济研究院",
+    "url": "https://wise.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 13236658,
+    "file": "厦门大学_王亚南经济研究院.html",
+    "fetched_at": "2026-10-14T21:06:38"
+  },
+  {
+    "name": "招聘_福州大学",
+    "url": "https://rsc.fzu.edu.cn/xiaowai/zxzp.htm",
+    "status": 200,
+    "bytes": 20574,
+    "file": "招聘_福州大学.html",
+    "fetched_at": "2026-10-14T21:06:39"
+  },
+  {
+    "name": "博士后_福州大学",
+    "url": "https://rsc.fzu.edu.cn/",
+    "status": 200,
+    "bytes": 3913,
+    "file": "博士后_福州大学.html",
+    "fetched_at": "2026-10-14T21:06:40"
+  },
+  {
+    "name": "主页_福州大学",
+    "url": "https://www.fzu.edu.cn/",
+    "status": 200,
+    "bytes": 67991,
+    "file": "主页_福州大学.html",
+    "fetched_at": "2026-10-14T21:06:41"
+  },
+  {
+    "name": "福州大学_经济与管理学院",
+    "url": "https://som.fzu.edu.cn/",
+    "status": 404,
+    "bytes": 192,
+    "file": "福州大学_经济与管理学院.html",
+    "fetched_at": "2026-10-14T21:06:42"
+  },
+  {
+    "name": "招聘_福建师范大学",
+    "url": "https://rsc.fjnu.edu.cn/",
+    "status": 200,
+    "bytes": 27291,
+    "file": "招聘_福建师范大学.html",
+    "fetched_at": "2026-10-14T21:07:00"
+  },
+  {
+    "name": "主页_福建师范大学",
+    "url": "https://www.fjnu.edu.cn/",
+    "status": 200,
+    "bytes": 54654,
+    "file": "主页_福建师范大学.html",
+    "fetched_at": "2026-10-14T21:07:18"
+  },
+  {
+    "name": "福建师范大学_经济学院",
+    "url": "https://jjxy.fjnu.edu.cn/",
+    "status": 200,
+    "bytes": 59913,
+    "file": "福建师范大学_经济学院.html",
+    "fetched_at": "2026-10-14T21:07:35"
+  },
+  {
+    "name": "招聘_华侨大学",
+    "url": "https://rsc.hqu.edu.cn/",
+    "status": 200,
+    "bytes": 55316,
+    "file": "招聘_华侨大学.html",
+    "fetched_at": "2026-10-14T21:07:42"
+  },
+  {
+    "name": "主页_华侨大学",
+    "url": "https://www.hqu.edu.cn/",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:08:08"
+  },
+  {
+    "name": "华侨大学_经济与金融学院",
+    "url": "https://ef.hqu.edu.cn/",
+    "status": null,
+    "bytes": 48,
+    "file": null,
+    "fetched_at": "2026-10-14T21:08:08"
+  },
+  {
+    "name": "招聘_集美大学",
+    "url": "https://rsc.jmu.edu.cn/",
+    "status": 200,
+    "bytes": 2531,
+    "file": "招聘_集美大学.html",
+    "fetched_at": "2026-10-14T21:08:10"
+  },
+  {
+    "name": "主页_集美大学",
+    "url": "https://www.jmu.edu.cn/",
+    "status": 200,
+    "bytes": 50374,
+    "file": "主页_集美大学.html",
+    "fetched_at": "2026-10-14T21:08:10"
+  },
+  {
+    "name": "集美大学_财经学院",
+    "url": "https://finance.jmu.edu.cn/",
+    "status": null,
+    "bytes": 48,
+    "file": null,
+    "fetched_at": "2026-10-14T21:08:11"
+  },
+  {
+    "name": "招聘_福建农林大学",
+    "url": "https://rsc.fafu.edu.cn/",
+    "status": null,
+    "bytes": 96,
+    "file": "招聘_福建农林大学.html",
+    "fetched_at": "2026-10-14T21:08:11"
+  },
+  {
+    "name": "主页_福建农林大学",
+    "url": "https://www.fafu.edu.cn/",
+    "status": null,
+    "bytes": 96,
+    "file": "主页_福建农林大学.html",
+    "fetched_at": "2026-10-14T21:08:12"
+  },
+  {
+    "name": "福建农林大学_经济与管理学院",
+    "url": "https://jjgl.fafu.edu.cn/",
+    "status": null,
+    "bytes": 48,
+    "file": null,
+    "fetched_at": "2026-10-14T21:08:22"
+  },
+  {
+    "name": "招聘_闽南师范大学",
+    "url": "https://rsc.mnnu.edu.cn/",
+    "status": 200,
+    "bytes": 36657,
+    "file": "招聘_闽南师范大学.html",
+    "fetched_at": "2026-10-14T21:08:23"
+  },
+  {
+    "name": "主页_闽南师范大学",
+    "url": "https://www.mnnu.edu.cn/",
+    "status": 200,
+    "bytes": 65609,
+    "file": "主页_闽南师范大学.html",
+    "fetched_at": "2026-10-14T21:08:24"
+  },
+  {
+    "name": "招聘_福建江夏学院",
+    "url": "https://rsc.fjjxu.edu.cn/",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:08:52"
+  },
+  {
+    "name": "主页_福建江夏学院",
+    "url": "https://www.fjjxu.edu.cn/",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:10:07"
+  },
+  {
+    "name": "福建江夏学院_经济贸易学院",
+    "url": "https://jmxy.fjjxu.edu.cn/",
+    "status": null,
+    "bytes": 48,
+    "file": null,
+    "fetched_at": "2026-10-14T21:10:08"
+  },
+  {
+    "name": "招聘_泉州师范学院",
+    "url": "https://rsc.qztc.edu.cn/",
+    "status": null,
+    "bytes": 48,
+    "file": null,
+    "fetched_at": "2026-10-14T21:10:08"
+  },
+  {
+    "name": "主页_泉州师范学院",
+    "url": "https://www.qztc.edu.cn/",
+    "status": 200,
+    "bytes": 48544,
+    "file": "主页_泉州师范学院.html",
+    "fetched_at": "2026-10-14T21:10:09"
+  },
+  {
+    "name": "招聘_仰恩大学",
+    "url": "https://www.yeu.edu.cn/",
+    "status": null,
+    "bytes": 28,
+    "file": null,
+    "fetched_at": "2026-10-14T21:10:44"
+  },
+  {
+    "name": "教师_Faculty openings (check SOE / WISE / HR)",
+    "url": "https://soe.xmu.edu.cn/",
+    "status": 200,
+    "bytes": 9179040,
+    "file": "教师_Faculty_openings_check_SOE_WISE_HR.html",
+    "fetched_at": "2026-10-14T21:10:46"
+  },
+  {
+    "name": "教师_Teaching-research faculty (Theory / Applied Economics) — 3 posts",
+    "url": "https://www.gaoxiaojob.com/job/detail/2049266.html",
+    "status": 403,
+    "bytes": 133,
+    "file": "教师_Teaching-research_faculty_Theory_Applied_Economics_3_posts.html",
+    "fetched_at": "2026-10-14T21:10:47"
+  },
+  {
+    "name": "教师_Full-time faculty — Applied Economics / Digital Economy — 4 posts",
+    "url": "https://www.gaoxiaojob.com/job/detail/2166774.html",
+    "status": 403,
+    "bytes": 133,
+    "file": "教师_Full-time_faculty_Applied_Economics_Digital_Economy_4_posts.html",
+    "fetched_at": "2026-10-14T21:10:48"
+  }
+]

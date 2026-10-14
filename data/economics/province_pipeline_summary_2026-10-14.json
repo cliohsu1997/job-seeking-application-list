@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-14",
+  "regions": {
+    "guangdong": {
+      "region": "guangdong",
+      "date": "2026-10-14",
+      "catalog": {
+        "count": 15,
+        "with_econ_units": 11,
+        "tags_985_211": 5,
+        "path": "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\china_universities\\by_region\\guangdong.json"
+      },
+      "seeds": {
+        "seeds": 21,
+        "candidates": 54
+      },
+      "validation": {
+        "candidates": 54,
+        "kept": 21,
+        "rejected": 33,
+        "academic": 7,
+        "postdoc": 14,
+        "pdf": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\guangdong_listings_validated_2026-10-14.pdf",
+        "xlsx": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\economics\\guangdong_listings_validated_2026-10-14.xlsx"
+      }
+    }
+  }
+}

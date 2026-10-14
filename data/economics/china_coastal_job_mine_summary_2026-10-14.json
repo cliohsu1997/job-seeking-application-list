@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-14",
+  "regions": {
+    "guangdong": {
+      "departments_scraped": 12,
+      "departments_with_career": 9,
+      "exact_job_links": 9,
+      "academic": 4,
+      "postdoc": 5,
+      "job_links": "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\guangdong\\job_links.json",
+      "discovered_jobs": "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\guangdong\\discovered_jobs.json",
+      "validation": {
+        "candidates": 9,
+        "kept": 9,
+        "rejected": 0,
+        "academic": 3,
+        "postdoc": 6
+      }
+    }
+  }
+}

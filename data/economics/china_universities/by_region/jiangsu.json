@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-14",
+  "region": "jiangsu",
+  "province_zh": "江苏",
+  "count": 13,
+  "with_econ_units": 12,
+  "tags_985_211": 11,
+  "universities": [
+    {
+      "name_zh": "南京大学",
+      "name_en": "Nanjing University",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.nju.edu.cn/",
+      "career": "https://hr.nju.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "商学院",
+          "unit_en": "Business School",
+          "url": "https://nubs.nju.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "东南大学",
+      "name_en": "Southeast University",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.seu.edu.cn/",
+      "career": "https://hr.seu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://em.seu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "苏州大学",
+      "name_en": "Soochow University",
+      "region": "jiangsu",
+      "city": "苏州",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.suda.edu.cn/",
+      "career": "https://rsc.suda.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "东吴商学院",
+          "unit_en": "Dongwu",
+          "url": "https://sxy.suda.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "南京航空航天大学",
+      "name_en": "NUAA",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.nuaa.edu.cn/",
+      "career": "https://rsc.nuaa.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济与管理学院",
+          "unit_en": "CEM",
+          "url": "https://cem.nuaa.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "南京理工大学",
+      "name_en": "NJUST",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.njust.edu.cn/",
+      "career": "https://rsc.njust.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.njust.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "中国矿业大学",
+      "name_en": "CUMT",
+      "region": "jiangsu",
+      "city": "徐州",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.cumt.edu.cn/",
+      "career": "https://rsc.cumt.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.cumt.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "河海大学",
+      "name_en": "Hohai University",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.hhu.edu.cn/",
+      "career": "https://rsc.hhu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "商学院",
+          "unit_en": "Business School",
+          "url": "https://hhbs.hhu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "江南大学",
+      "name_en": "Jiangnan University",
+      "region": "jiangsu",
+      "city": "无锡",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.jiangnan.edu.cn/",
+      "career": "https://hr.jiangnan.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "商学院",
+          "unit_en": "Business School",
+          "url": "https://bus.jiangnan.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "南京农业大学",
+      "name_en": "NAU",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.njau.edu.cn/",
+      "career": "https://rsc.njau.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "CEM",
+          "url": "https://jgy.njau.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "中国药科大学",
+      "name_en": "CPU",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.cpu.edu.cn/",
+      "career": "https://rsc.cpu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "南京师范大学",
+      "name_en": "NNU",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.njnu.edu.cn/",
+      "career": "https://rsc.njnu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "商学院",
+          "unit_en": "Business School",
+          "url": "https://sxy.njnu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "南京财经大学",
+      "name_en": "NUFE",
+      "region": "jiangsu",
+      "city": "南京",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.nufe.edu.cn/",
+      "career": "https://rsc.nufe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.nufe.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "江苏大学",
+      "name_en": "Jiangsu University",
+      "region": "jiangsu",
+      "city": "镇江",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.ujs.edu.cn/",
+      "career": "https://rsc.ujs.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "财经学院",
+          "unit_en": "SFE",
+          "url": "https://cjxy.ujs.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

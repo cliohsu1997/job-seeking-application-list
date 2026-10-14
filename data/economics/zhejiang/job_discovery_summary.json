@@ -1,0 +1,13 @@
+{
+  "depts_scraped": 10,
+  "depts_with_career": 4,
+  "exact_job_links": 50,
+  "Academic": 19,
+  "Postdoc": 11,
+  "Unknown": 20,
+  "discovered_jobs_rows": 50,
+  "paths": [
+    "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\zhejiang\\job_links.json",
+    "C:\\Users\\birdy\\Desktop\\Application_list\\data\\economics\\zhejiang\\discovered_jobs.json"
+  ]
+}

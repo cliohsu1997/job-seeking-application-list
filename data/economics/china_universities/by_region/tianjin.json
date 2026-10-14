@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-14",
+  "region": "tianjin",
+  "province_zh": "天津",
+  "count": 4,
+  "with_econ_units": 3,
+  "tags_985_211": 3,
+  "universities": [
+    {
+      "name_zh": "南开大学",
+      "name_en": "Nankai University",
+      "region": "tianjin",
+      "city": "天津",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.nankai.edu.cn/",
+      "career": "https://hr.nankai.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://economics.nankai.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "天津大学",
+      "name_en": "Tianjin University",
+      "region": "tianjin",
+      "city": "天津",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.tju.edu.cn/",
+      "career": "https://hr.tju.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "管理与经济学部",
+          "unit_en": "CoME",
+          "url": "http://come.tju.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "天津医科大学",
+      "name_en": "Tianjin Medical University",
+      "region": "tianjin",
+      "city": "天津",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.tmu.edu.cn/",
+      "career": "https://rsc.tmu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "天津财经大学",
+      "name_en": "TJUFE",
+      "region": "tianjin",
+      "city": "天津",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.tjufe.edu.cn/",
+      "career": "https://rsc.tjufe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.tjufe.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-14",
+  "region": "liaoning",
+  "province_zh": "辽宁",
+  "count": 5,
+  "with_econ_units": 5,
+  "tags_985_211": 4,
+  "universities": [
+    {
+      "name_zh": "大连理工大学",
+      "name_en": "DUT",
+      "region": "liaoning",
+      "city": "大连",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.dlut.edu.cn/",
+      "career": "https://perdep.dlut.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.dlut.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "东北大学",
+      "name_en": "NEU",
+      "region": "liaoning",
+      "city": "沈阳",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.neu.edu.cn/",
+      "career": "https://hr.neu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "工商管理学院",
+          "unit_en": "SBA",
+          "url": "http://www.sba.neu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "辽宁大学",
+      "name_en": "Liaoning University",
+      "region": "liaoning",
+      "city": "沈阳",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.lnu.edu.cn/",
+      "career": "https://rsc.lnu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.lnu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "大连海事大学",
+      "name_en": "DMU",
+      "region": "liaoning",
+      "city": "大连",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.dlmu.edu.cn/",
+      "career": "https://rsc.dlmu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "航运经济与管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.dlmu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "东北财经大学",
+      "name_en": "DUFE",
+      "region": "liaoning",
+      "city": "大连",
+      "tags": [
+        "provincial",
+        "双一流学科"
+      ],
+      "home": "https://www.dufe.edu.cn/",
+      "career": "https://rsc.dufe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://se.dufe.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

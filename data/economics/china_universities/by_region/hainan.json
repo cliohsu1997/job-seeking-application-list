@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-14",
+  "region": "hainan",
+  "province_zh": "海南",
+  "count": 2,
+  "with_econ_units": 1,
+  "tags_985_211": 1,
+  "universities": [
+    {
+      "name_zh": "海南大学",
+      "name_en": "Hainan University",
+      "region": "hainan",
+      "city": "海口",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.hainanu.edu.cn/",
+      "career": "https://hd.hainanu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://www.hainanu.edu.cn/jingji/"
+        }
+      ]
+    },
+    {
+      "name_zh": "海南师范大学",
+      "name_en": "Hainan Normal University",
+      "region": "hainan",
+      "city": "海口",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.hainnu.edu.cn/",
+      "career": "https://rsc.hainnu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    }
+  ]
+}

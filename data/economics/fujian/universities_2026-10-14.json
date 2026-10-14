@@ -1,0 +1,136 @@
+[
+  {
+    "name_zh": "厦门大学",
+    "name_en": "Xiamen University",
+    "city": "厦门",
+    "home": "https://www.xmu.edu.cn/",
+    "career": "https://jobs.xmu.edu.cn/",
+    "postdoc": "https://jobs.xmu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济学院",
+        "unit_en": "School of Economics",
+        "url": "https://soe.xmu.edu.cn/"
+      },
+      {
+        "unit_zh": "经济学系",
+        "unit_en": "Department of Economics",
+        "url": "https://econ.xmu.edu.cn/"
+      },
+      {
+        "unit_zh": "王亚南经济研究院",
+        "unit_en": "WISE",
+        "url": "https://wise.xmu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "福州大学",
+    "name_en": "Fuzhou University",
+    "city": "福州",
+    "home": "https://www.fzu.edu.cn/",
+    "career": "https://rsc.fzu.edu.cn/xiaowai/zxzp.htm",
+    "postdoc": "https://rsc.fzu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济与管理学院",
+        "unit_en": "School of Economics and Management",
+        "url": "https://som.fzu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "福建师范大学",
+    "name_en": "Fujian Normal University",
+    "city": "福州",
+    "home": "https://www.fjnu.edu.cn/",
+    "career": "https://rsc.fjnu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济学院",
+        "unit_en": "School of Economics",
+        "url": "https://jjxy.fjnu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "华侨大学",
+    "name_en": "Huaqiao University",
+    "city": "泉州/厦门",
+    "home": "https://www.hqu.edu.cn/",
+    "career": "https://rsc.hqu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济与金融学院",
+        "unit_en": "School of Economics and Finance",
+        "url": "https://ef.hqu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "集美大学",
+    "name_en": "Jimei University",
+    "city": "厦门",
+    "home": "https://www.jmu.edu.cn/",
+    "career": "https://rsc.jmu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "财经学院",
+        "unit_en": "School of Finance and Economics",
+        "url": "https://finance.jmu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "福建农林大学",
+    "name_en": "Fujian Agriculture and Forestry University",
+    "city": "福州",
+    "home": "https://www.fafu.edu.cn/",
+    "career": "https://rsc.fafu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济与管理学院",
+        "unit_en": "School of Economics and Management",
+        "url": "https://jjgl.fafu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "闽南师范大学",
+    "name_en": "Minnan Normal University",
+    "city": "漳州",
+    "home": "https://www.mnnu.edu.cn/",
+    "career": "https://rsc.mnnu.edu.cn/",
+    "econ_units": []
+  },
+  {
+    "name_zh": "福建江夏学院",
+    "name_en": "Fujian Jiangxia University",
+    "city": "福州",
+    "home": "https://www.fjjxu.edu.cn/",
+    "career": "https://rsc.fjjxu.edu.cn/",
+    "econ_units": [
+      {
+        "unit_zh": "经济贸易学院",
+        "unit_en": "School of Economics and Trade",
+        "url": "https://jmxy.fjjxu.edu.cn/"
+      }
+    ]
+  },
+  {
+    "name_zh": "泉州师范学院",
+    "name_en": "Quanzhou Normal University",
+    "city": "泉州",
+    "home": "https://www.qztc.edu.cn/",
+    "career": "https://rsc.qztc.edu.cn/",
+    "econ_units": []
+  },
+  {
+    "name_zh": "仰恩大学",
+    "name_en": "Yang-En University",
+    "city": "泉州",
+    "home": "https://www.yeu.edu.cn/",
+    "career": "https://www.yeu.edu.cn/",
+    "econ_units": []
+  }
+]

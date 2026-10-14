@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-14",
+  "region": "shandong",
+  "province_zh": "山东",
+  "count": 5,
+  "with_econ_units": 5,
+  "tags_985_211": 3,
+  "universities": [
+    {
+      "name_zh": "山东大学",
+      "name_en": "Shandong University",
+      "region": "shandong",
+      "city": "济南",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.sdu.edu.cn/",
+      "career": "https://www.job.sdu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://www.econ.sdu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "中国海洋大学",
+      "name_en": "Ocean University of China",
+      "region": "shandong",
+      "city": "青岛",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.ouc.edu.cn/",
+      "career": "https://hr.ouc.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://www2.ouc.edu.cn/jingji/"
+        }
+      ]
+    },
+    {
+      "name_zh": "中国石油大学（华东）",
+      "name_en": "CUP East China",
+      "region": "shandong",
+      "city": "青岛",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.upc.edu.cn/",
+      "career": "https://hr.upc.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.upc.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "山东财经大学",
+      "name_en": "SDUFE",
+      "region": "shandong",
+      "city": "济南",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.sdufe.edu.cn/",
+      "career": "https://rsc.sdufe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.sdufe.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "青岛大学",
+      "name_en": "Qingdao University",
+      "region": "shandong",
+      "city": "青岛",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.qdu.edu.cn/",
+      "career": "https://rsc.qdu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://econ.qdu.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

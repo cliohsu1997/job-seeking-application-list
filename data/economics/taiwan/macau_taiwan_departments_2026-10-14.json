@@ -1,0 +1,95 @@
+[
+  {
+    "region": "Macau",
+    "university": "University of Macau",
+    "unit": "Department of Economics (FSS)",
+    "dept_url": "https://econ.fss.um.edu.mo/",
+    "career_portal": "https://career.admo.um.edu.mo/"
+  },
+  {
+    "region": "Macau",
+    "university": "University of Macau",
+    "unit": "Department of Finance and Business Economics (FBA)",
+    "dept_url": "https://fba.um.edu.mo/fbe/",
+    "career_portal": "https://career.admo.um.edu.mo/"
+  },
+  {
+    "region": "Macau",
+    "university": "City University of Macau",
+    "unit": "Faculty of Finance / Economics & Digital Economics",
+    "dept_url": "https://hro.cityu.edu.mo/en/category/job-application/teaching-en/",
+    "career_portal": "https://career.cityu.edu.mo"
+  },
+  {
+    "region": "Macau",
+    "university": "City University of Macau",
+    "unit": "Institute of Urban and Sustainable Development (Economics)",
+    "dept_url": "https://hro.cityu.edu.mo/en/category/job-application/teaching-en/",
+    "career_portal": "https://career.cityu.edu.mo"
+  },
+  {
+    "region": "Macau",
+    "university": "Macau University of Science and Technology",
+    "unit": "School of Business — Department of Applied Economics",
+    "dept_url": "https://msb.must.edu.mo/",
+    "career_portal": "https://www.must.edu.mo/en/careers"
+  },
+  {
+    "region": "Macau",
+    "university": "Macao Polytechnic University",
+    "unit": "Faculty of Business (no standalone Economics dept)",
+    "dept_url": "https://mpusite.mpu.edu.mo/esce/en/about_faculty.php",
+    "career_portal": "https://www.mpu.edu.mo/vacancy",
+    "note": "No open Economics faculty posting found at check time"
+  },
+  {
+    "region": "Taiwan",
+    "university": "National Taiwan University",
+    "unit": "Department of Economics",
+    "dept_url": "https://econ.ntu.edu.tw/",
+    "career_portal": "https://econ.ntu.edu.tw/archives/18834"
+  },
+  {
+    "region": "Taiwan",
+    "university": "National Chengchi University",
+    "unit": "Department of Economics",
+    "dept_url": "https://econo.nccu.edu.tw/",
+    "career_portal": "https://econo.nccu.edu.tw/eng/PageDoc/Detail?fid=1052&id=42260"
+  },
+  {
+    "region": "Taiwan",
+    "university": "National Tsing Hua University",
+    "unit": "Taipei School of Economics and Political Science (TSE)",
+    "dept_url": "http://www.tse.nthu.edu.tw/",
+    "career_portal": "http://www.tse.nthu.edu.tw/post/82-tse-job-opening"
+  },
+  {
+    "region": "Taiwan",
+    "university": "National Cheng Kung University",
+    "unit": "Department of Economics",
+    "dept_url": "https://econ.ncku.edu.tw/",
+    "career_portal": "https://ann.ncku.edu.tw/p/404-1013-305836.php?Lang=zh-tw"
+  },
+  {
+    "region": "Taiwan",
+    "university": "Soochow University",
+    "unit": "Department of Economics",
+    "dept_url": "http://www.scu.edu.tw/econ/",
+    "career_portal": "https://web-ch.scu.edu.tw/econ/opinion/16118/31786"
+  },
+  {
+    "region": "Taiwan",
+    "university": "National Sun Yat-sen University",
+    "unit": "Department of Political Economy",
+    "dept_url": "https://pe.nsysu.edu.tw/",
+    "career_portal": "https://www.nstc.gov.tw/folksonomy/detail/4b115db7-4cd9-4774-8ba4-31335f5ea07c?l=en"
+  },
+  {
+    "region": "Taiwan",
+    "university": "National Chung Hsing University",
+    "unit": "Department of Applied Economics",
+    "dept_url": "https://www.nchu.edu.tw/",
+    "career_portal": "https://www2.nchu.edu.tw/en-news-detail/id/1254",
+    "note": "Prior call deadline 2026-07-02 (likely closed)"
+  }
+]

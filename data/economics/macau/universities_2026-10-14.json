@@ -1,0 +1,106 @@
+[
+  {
+    "name": "University of Macau",
+    "chinese": "澳門大學",
+    "type": "Public",
+    "home": "https://www.um.edu.mo/",
+    "career": "https://career.admo.um.edu.mo/",
+    "econ_units": [
+      {
+        "unit": "Department of Economics (FSS)",
+        "url": "https://econ.fss.um.edu.mo/"
+      },
+      {
+        "unit": "Department of Finance and Business Economics (FBA)",
+        "url": "https://fba.um.edu.mo/fbe/"
+      }
+    ]
+  },
+  {
+    "name": "Macao Polytechnic University",
+    "chinese": "澳門理工大學",
+    "type": "Public",
+    "home": "https://www.mpu.edu.mo/",
+    "career": "https://www.mpu.edu.mo/vacancy",
+    "econ_units": [
+      {
+        "unit": "Faculty of Business",
+        "url": "https://mpusite.mpu.edu.mo/esce/en/"
+      }
+    ]
+  },
+  {
+    "name": "Macao University of Tourism",
+    "chinese": "澳門旅遊大學",
+    "type": "Public",
+    "home": "https://www.utm.edu.mo/",
+    "career": "https://www.utm.edu.mo/en/about-utm/career/",
+    "econ_units": []
+  },
+  {
+    "name": "Academy of Public Security Forces of Macao",
+    "chinese": "澳門保安部隊高等學校",
+    "type": "Public",
+    "home": "https://www.fsm.gov.mo/",
+    "career": null,
+    "econ_units": []
+  },
+  {
+    "name": "Macau University of Science and Technology",
+    "chinese": "澳門科技大學",
+    "type": "Private",
+    "home": "https://www.must.edu.mo/",
+    "career": "https://www.must.edu.mo/en/careers",
+    "econ_units": [
+      {
+        "unit": "Department of Applied Economics (School of Business)",
+        "url": "https://msb.must.edu.mo/"
+      }
+    ]
+  },
+  {
+    "name": "City University of Macau",
+    "chinese": "澳門城市大學",
+    "type": "Private",
+    "home": "https://www.cityu.edu.mo/",
+    "career": "https://hro.cityu.edu.mo/en/category/job-application/teaching-en/",
+    "econ_units": [
+      {
+        "unit": "Faculty of Finance (Economics / Digital Economics)",
+        "url": "https://hro.cityu.edu.mo/en/category/job-application/teaching-en/"
+      }
+    ]
+  },
+  {
+    "name": "University of Saint Joseph",
+    "chinese": "聖若瑟大學",
+    "type": "Private",
+    "home": "https://www.usj.edu.mo/",
+    "career": "https://www.usj.edu.mo/en/careers/",
+    "econ_units": []
+  },
+  {
+    "name": "Kiang Wu Nursing College of Macau",
+    "chinese": "澳門鏡湖護理學院",
+    "type": "Private",
+    "home": "https://www.kwnc.edu.mo/",
+    "career": "https://www.kwnc.edu.mo/",
+    "econ_units": []
+  },
+  {
+    "name": "Macau Institute of Management",
+    "chinese": "澳門管理學院",
+    "type": "Private",
+    "home": "https://www.mma.org.mo/",
+    "career": "https://www.mma.org.mo/",
+    "econ_units": []
+  },
+  {
+    "name": "Macau Millennium College",
+    "chinese": "中西創新學院",
+    "type": "Private",
+    "home": "https://www.mmc.edu.mo/",
+    "career": "https://www.mmc.edu.mo/",
+    "econ_units": []
+  }
+]

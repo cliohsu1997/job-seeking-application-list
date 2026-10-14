@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log
+
+# Cursor local state, but keep plans
+.cursor/*
+!.cursor/plan/
+!.cursor/plan/**
+
+# Large scraped HTML dumps
+data/**/raw/
+data/**/raw_*/
+data/**/departments/
+data/**/job_mine*/
+
+# Local Excel working copies / Office locks
+~$*
+*.tmp

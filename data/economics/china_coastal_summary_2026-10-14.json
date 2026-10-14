@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-14",
+  "regions": {
+    "guangdong": {
+      "universities": 12,
+      "econ_units": 12,
+      "fetches": 38,
+      "open_jobs": 2
+    },
+    "fujian": {
+      "universities": 10,
+      "econ_units": 9,
+      "fetches": 32,
+      "open_jobs": 3
+    },
+    "zhejiang": {
+      "universities": 12,
+      "econ_units": 10,
+      "fetches": 36,
+      "open_jobs": 2
+    },
+    "shenzhen": {
+      "universities": 8,
+      "econ_units": 6,
+      "fetches": 25,
+      "open_jobs": 3
+    }
+  }
+}

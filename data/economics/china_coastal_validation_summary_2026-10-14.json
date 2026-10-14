@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-14",
+  "regions": {
+    "guangdong": {
+      "candidates": 21,
+      "kept": 13,
+      "rejected": 8,
+      "academic": 5,
+      "postdoc": 8,
+      "pdf": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\guangdong_listings_validated_2026-10-14.pdf",
+      "xlsx": "C:\\Users\\birdy\\Desktop\\Application_list\\clean\\economics\\guangdong_listings_validated_2026-10-14.xlsx"
+    }
+  }
+}

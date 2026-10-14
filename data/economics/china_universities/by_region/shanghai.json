@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-14",
+  "region": "shanghai",
+  "province_zh": "上海",
+  "count": 12,
+  "with_econ_units": 10,
+  "tags_985_211": 10,
+  "universities": [
+    {
+      "name_zh": "复旦大学",
+      "name_en": "Fudan University",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.fudan.edu.cn/",
+      "career": "https://hr.fudan.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://econ.fudan.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "上海交通大学",
+      "name_en": "SJTU",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.sjtu.edu.cn/",
+      "career": "https://hr.sjtu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "安泰经济与管理学院",
+          "unit_en": "Antai",
+          "url": "https://www.acem.sjtu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "同济大学",
+      "name_en": "Tongji University",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.tongji.edu.cn/",
+      "career": "https://hr.tongji.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济与管理学院",
+          "unit_en": "SEM",
+          "url": "https://sem.tongji.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "华东师范大学",
+      "name_en": "ECNU",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.ecnu.edu.cn/",
+      "career": "https://hr.ecnu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济与管理学部",
+          "unit_en": "FEM",
+          "url": "https://fem.ecnu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "上海财经大学",
+      "name_en": "SUFE",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.sufe.edu.cn/",
+      "career": "https://rsc.sufe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://se.sufe.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "华东理工大学",
+      "name_en": "ECUST",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.ecust.edu.cn/",
+      "career": "https://hr.ecust.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "商学院",
+          "unit_en": "Business School",
+          "url": "https://bs.ecust.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "上海大学",
+      "name_en": "Shanghai University",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.shu.edu.cn/",
+      "career": "https://hr.shu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://soe.shu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "东华大学",
+      "name_en": "Donghua University",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.dhu.edu.cn/",
+      "career": "https://hr.dhu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "旭日工商管理学院",
+          "unit_en": "Glorious Sun",
+          "url": "https://glxy.dhu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "上海外国语大学",
+      "name_en": "SISU",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.shisu.edu.cn/",
+      "career": "https://hr.shisu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "国际金融贸易学院",
+          "unit_en": "SEF",
+          "url": "https://sef.shisu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "海军军医大学",
+      "name_en": "Naval Medical University",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "211",
+        "military"
+      ],
+      "home": "https://www.smmu.edu.cn/",
+      "career": null,
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "上海对外经贸大学",
+      "name_en": "SUIBE",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.suibe.edu.cn/",
+      "career": "https://rsc.suibe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "国际经贸学院",
+          "unit_en": "SIET",
+          "url": "https://gjm.suibe.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "上海科技大学",
+      "name_en": "ShanghaiTech",
+      "region": "shanghai",
+      "city": "上海",
+      "tags": [
+        "双一流"
+      ],
+      "home": "https://www.shanghaitech.edu.cn/",
+      "career": "https://jobs.shanghaitech.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    }
+  ]
+}

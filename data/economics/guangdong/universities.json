@@ -1,0 +1,304 @@
+{
+  "date": "2026-10-14",
+  "region": "guangdong",
+  "province_zh": "广东",
+  "count": 16,
+  "with_econ_units": 12,
+  "tags_985_211": 4,
+  "universities": [
+    {
+      "name_zh": "中山大学",
+      "name_en": "Sun Yat-sen University",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.sysu.edu.cn/",
+      "career": "https://rcb.sysu.edu.cn/zp",
+      "postdoc": "https://lingnan.sysu.edu.cn/article/2580",
+      "econ_units": [
+        {
+          "unit_zh": "岭南学院",
+          "unit_en": "Lingnan",
+          "url": "https://lingnan.sysu.edu.cn/",
+          "career": "https://lingnan.sysu.edu.cn/Recruitment"
+        }
+      ]
+    },
+    {
+      "name_zh": "华南理工大学",
+      "name_en": "SCUT",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "985",
+        "211",
+        "双一流"
+      ],
+      "home": "https://www2.scut.edu.cn/",
+      "career": "https://www2.scut.edu.cn/hr/",
+      "postdoc": "https://www2.scut.edu.cn/hr/",
+      "econ_units": [
+        {
+          "unit_zh": "经济与金融学院",
+          "unit_en": "SEF",
+          "url": "https://www2.scut.edu.cn/economy/"
+        }
+      ]
+    },
+    {
+      "name_zh": "暨南大学",
+      "name_en": "Jinan University",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.jnu.edu.cn/",
+      "career": "https://hrdam.jnu.edu.cn/264/list.htm",
+      "postdoc": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
+      "econ_units": [
+        {
+          "unit_zh": "经济与社会研究院",
+          "unit_en": "IESR",
+          "url": "https://iesr.jnu.edu.cn/"
+        },
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "COE",
+          "url": "https://ec.jnu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "华南师范大学",
+      "name_en": "SCNU",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.scnu.edu.cn/",
+      "career": "https://rsc.scnu.edu.cn/",
+      "postdoc": "https://rsc.scnu.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济与管理学院",
+          "unit_en": "SEM",
+          "url": "https://em.scnu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "华南农业大学",
+      "name_en": "SCAU",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "双一流"
+      ],
+      "home": "https://www.scau.edu.cn/",
+      "career": "https://hr.scau.edu.cn/",
+      "postdoc": "https://hr.scau.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济管理学院",
+          "unit_en": "CEM",
+          "url": "https://cem.scau.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "广东外语外贸大学",
+      "name_en": "GDUFS",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "provincial",
+        "双一流学科"
+      ],
+      "home": "https://www.gdufs.edu.cn/",
+      "career": "https://rsc.gdufs.edu.cn/",
+      "postdoc": "https://rsc.gdufs.edu.cn/info/1017/12559.htm",
+      "econ_units": [
+        {
+          "unit_zh": "经济贸易学院",
+          "unit_en": "SET",
+          "url": "https://seib.gdufs.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "广东财经大学",
+      "name_en": "GDUFE",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.gdufe.edu.cn/",
+      "career": "https://rsc.gdufe.edu.cn/",
+      "postdoc": "https://rsc.gdufe.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.gdufe.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "广州大学",
+      "name_en": "Guangzhou University",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.gzhu.edu.cn/",
+      "career": "https://rsc.gzhu.edu.cn/",
+      "postdoc": "https://rsc.gzhu.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济与统计学院",
+          "unit_en": "SES",
+          "url": "https://jjxy.gzhu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "广东工业大学",
+      "name_en": "GDUT",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.gdut.edu.cn/",
+      "career": "https://hr.gdut.edu.cn/",
+      "postdoc": "https://hr.gdut.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://jjxy.gdut.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "广东金融学院",
+      "name_en": "GDUF",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.gduf.edu.cn/",
+      "career": "https://rsc.gduf.edu.cn/",
+      "postdoc": "https://rsc.gduf.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "经济贸易学院",
+          "unit_en": "SET",
+          "url": "https://rsc.gduf.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "汕头大学",
+      "name_en": "Shantou University",
+      "region": "guangdong",
+      "city": "汕头",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.stu.edu.cn/",
+      "career": "https://hr.stu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "五邑大学",
+      "name_en": "Wuyi University",
+      "region": "guangdong",
+      "city": "江门",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.wyu.edu.cn/",
+      "career": "https://rsc.wyu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "佛山大学",
+      "name_en": "Foshan University",
+      "region": "guangdong",
+      "city": "佛山",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.fosu.edu.cn/",
+      "career": "https://rsc.fosu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "北京师范大学香港浵会大学联合国际学院",
+      "name_en": "UIC",
+      "region": "guangdong",
+      "city": "珠海",
+      "tags": [
+        "provincial",
+        "cooperative"
+      ],
+      "home": "https://uic.edu.cn/",
+      "career": "https://uic.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "工商管理学院",
+          "unit_en": "FBM",
+          "url": "https://uic.edu.cn/"
+        }
+      ]
+    },
+    {
+      "name_zh": "广东海洋大学",
+      "name_en": "Guangdong Ocean University",
+      "region": "guangdong",
+      "city": "湛江",
+      "tags": [
+        "known_catalog"
+      ],
+      "home": "https://www.gdou.edu.cn/",
+      "career": "https://rsc.gdou.edu.cn/",
+      "postdoc": "https://rsc.gdou.edu.cn/",
+      "econ_units": []
+    },
+    {
+      "name_zh": "北京师范大学香港浸会大学联合国际学院",
+      "name_en": "BNU-HKBU UIC",
+      "region": "guangdong",
+      "city": "珠海",
+      "tags": [
+        "known_catalog"
+      ],
+      "home": "https://uic.edu.cn/",
+      "career": "https://uic.edu.cn/",
+      "postdoc": "https://uic.edu.cn/",
+      "econ_units": [
+        {
+          "unit_zh": "工商管理学院",
+          "unit_en": "Faculty of Business and Management",
+          "url": "https://uic.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

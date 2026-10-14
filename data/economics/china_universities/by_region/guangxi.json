@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-14",
+  "region": "guangxi",
+  "province_zh": "广西",
+  "count": 2,
+  "with_econ_units": 2,
+  "tags_985_211": 1,
+  "universities": [
+    {
+      "name_zh": "广西大学",
+      "name_en": "Guangxi University",
+      "region": "guangxi",
+      "city": "南宁",
+      "tags": [
+        "211",
+        "双一流"
+      ],
+      "home": "https://www.gxu.edu.cn/",
+      "career": "https://rsc.gxu.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济学院",
+          "unit_en": "SOE",
+          "url": "https://www.gxu.edu.cn/jjxy.htm"
+        }
+      ]
+    },
+    {
+      "name_zh": "广西财经大学",
+      "name_en": "GXUFE",
+      "region": "guangxi",
+      "city": "南宁",
+      "tags": [
+        "provincial"
+      ],
+      "home": "https://www.gxufe.edu.cn/",
+      "career": "https://rsc.gxufe.edu.cn/",
+      "postdoc": null,
+      "econ_units": [
+        {
+          "unit_zh": "经济与贸易学院",
+          "unit_en": "SET",
+          "url": "https://jmxy.gxufe.edu.cn/"
+        }
+      ]
+    }
+  ]
+}

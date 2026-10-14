@@ -1,0 +1,429 @@
+{
+  "date": "2026-10-14",
+  "region": "zhejiang",
+  "departments_scraped": 10,
+  "departments_with_career": 10,
+  "exact_job_links": 36,
+  "academic": 32,
+  "postdoc": 4,
+  "departments": [
+    {
+      "university_zh": "浙江大学",
+      "university_en": "Zhejiang University",
+      "city": "杭州",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "http://www.cec.zju.edu.cn/",
+      "dept_status": 200,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "博士后管理",
+          "url": "http://www.cec.zju.edu.cn/bshgl/list.htm"
+        },
+        {
+          "text": "就业指导",
+          "url": "http://www.career.zju.edu.cn/jyxt/jyweb/xywzIndex.zf?wzid=A47AB86DA63D80C5E055134CA39C9BD7"
+        },
+        {
+          "text": "博士后",
+          "url": "http://www.cec.zju.edu.cn/zzbs/list.htm"
+        },
+        {
+          "text": "加入我们",
+          "url": "http://www.cec.zju.edu.cn/cecen/woinwws/list.htm"
+        },
+        {
+          "text": "学校招聘",
+          "url": "http://talent.zju.edu.cn/"
+        }
+      ],
+      "jobs": [
+        {
+          "title": "博士后管理",
+          "url": "http://www.cec.zju.edu.cn/bshgl/list.htm",
+          "job_type": "Postdoc",
+          "via": "http://www.cec.zju.edu.cn/bshgl/list.htm"
+        },
+        {
+          "title": "浙江大学经济学院博士后研究人员进出站条件及考核办法",
+          "url": "http://www.cec.zju.edu.cn/2024/0914/c36156a2962683/page.htm",
+          "job_type": "Postdoc",
+          "via": "http://www.cec.zju.edu.cn/bshgl/list.htm"
+        },
+        {
+          "title": "招聘公告",
+          "url": "http://talent.zju.edu.cn/zpwzlb/list.htm",
+          "job_type": "Academic",
+          "via": "http://talent.zju.edu.cn/"
+        },
+        {
+          "title": "浙江大学坚持师资为基，深入实施新时代人才强校核心战略。我们热忱欢迎海内外优秀人才加盟，共创辉煌！",
+          "url": "http://talent.zju.edu.cn/2022/1012/c70809a2645525/page.htm",
+          "job_type": "Academic",
+          "via": "http://talent.zju.edu.cn/"
+        },
+        {
+          "title": "浙江大学是一所历史悠久、声誉卓著，在海内外有较大影响的综合型、研究型、创新型大学。学校建有一支高水平创新人才队伍，教师中现有两院院士、文科资深教授近80人，各类国家级人才1500余人。",
+          "url": "http://talent.zju.edu.cn/2022/1010/c70810a2644890/page.htm",
+          "job_type": "Academic",
+          "via": "http://talent.zju.edu.cn/"
+        },
+        {
+          "title": "浙江大学素有培养人才、团结人才、成就人才的良好传统，各类人才在教育教学、学科发展、科研创新、开放合作等方面取得成就，为学校成为人才蓄水池、创新策源地和教育领头雁做出贡献。",
+          "url": "http://talent.zju.edu.cn/2022/1010/c70811a2644970/page.htm",
+          "job_type": "Academic",
+          "via": "http://talent.zju.edu.cn/"
+        },
+        {
+          "title": "浙江大学坚持党管人才原则，树立一流意识，围绕一流目标，贯彻一流标准，做强做实人才的引育、管理和服务工作，竭力为各类人才提供良好的工作条件和职业发展环境，搭建适宜于各类人才发展的学术平台，营造有利于各类人才发展的学术生态和制度环境，帮助人才迅速开展新事业，潜心攀登科研育人高峰。在浙里，我们为您提供：全过程、全谱系的人才项目和计划申报组织指导；全周期、全方位的人",
+          "url": "http://talent.zju.edu.cn/2022/1011/c70812a2645188/page.htm",
+          "job_type": "Academic",
+          "via": "http://talent.zju.edu.cn/"
+        }
+      ]
+    },
+    {
+      "university_zh": "浙江财经大学",
+      "university_en": "Zhejiang University of Finance and Economics",
+      "city": "杭州",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "https://jjxy.zufe.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://rsc.zufe.edu.cn/info/1073/3604.htm"
+        },
+        {
+          "text": "学校博士后",
+          "url": "https://rsc.zufe.edu.cn/"
+        }
+      ],
+      "jobs": [
+        {
+          "title": "学校招聘",
+          "url": "https://rsc.zufe.edu.cn/info/1073/3604.htm",
+          "job_type": "Academic",
+          "via": "hub_is_announcement"
+        }
+      ]
+    },
+    {
+      "university_zh": "浙江工商大学",
+      "university_en": "Zhejiang Gongshang University",
+      "city": "杭州",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "https://jjxy.zjgsu.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://rsc.zjgsu.edu.cn/"
+        }
+      ],
+      "jobs": []
+    },
+    {
+      "university_zh": "宁波大学",
+      "university_en": "Ningbo University",
+      "city": "宁波",
+      "unit_zh": "商学院",
+      "unit_en": "Business School",
+      "dept_url": "https://bs.nbu.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://rsc.nbu.edu.cn/"
+        }
+      ],
+      "jobs": [
+        {
+          "title": "博士后工作",
+          "url": "https://rsc.nbu.edu.cn/bshgz.htm",
+          "job_type": "Postdoc",
+          "via": "https://rsc.nbu.edu.cn/"
+        },
+        {
+          "title": "关于做好新引进高层次人才申领2026年度宁波市安家补助的通知",
+          "url": "https://rsc.nbu.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1057&wbnewsid=10826",
+          "job_type": "Academic",
+          "via": "https://rsc.nbu.edu.cn/"
+        },
+        {
+          "title": "关于做好2026年下半年高等学校教师资格认定工作的通知",
+          "url": "https://rsc.nbu.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1057&wbnewsid=10736",
+          "job_type": "Academic",
+          "via": "https://rsc.nbu.edu.cn/"
+        },
+        {
+          "title": "关于2026年秋季高校教师普通话水平测试报名的通知",
+          "url": "https://rsc.nbu.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1057&wbnewsid=10726",
+          "job_type": "Academic",
+          "via": "https://rsc.nbu.edu.cn/"
+        },
+        {
+          "title": "宁大博士后团队在浙江省第二届博...",
+          "url": "https://rsc.nbu.edu.cn/content.jsp?urltype=news.NewsContentUrl&wbtreeid=1059&wbnewsid=10846",
+          "job_type": "Postdoc",
+          "via": "https://rsc.nbu.edu.cn/"
+        },
+        {
+          "title": "宁波市教育局来校开展人才调研座谈",
+          "url": "https://rsc.nbu.edu.cn/info/1059/10476.htm",
+          "job_type": "Academic",
+          "via": "https://rsc.nbu.edu.cn/"
+        },
+        {
+          "title": "宁波大学召开人事人才工作例会",
+          "url": "https://rsc.nbu.edu.cn/info/1059/10276.htm",
+          "job_type": "Academic",
+          "via": "https://rsc.nbu.edu.cn/"
+        }
+      ]
+    },
+    {
+      "university_zh": "杭州师范大学",
+      "university_en": "Hangzhou Normal University",
+      "city": "杭州",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "https://jjxy.hznu.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://rsc.hznu.edu.cn/"
+        }
+      ],
+      "jobs": []
+    },
+    {
+      "university_zh": "杭州电子科技大学",
+      "university_en": "Hangzhou Dianzi University",
+      "city": "杭州",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "https://jjxy.hdu.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://hr.hdu.edu.cn/"
+        }
+      ],
+      "jobs": []
+    },
+    {
+      "university_zh": "浙江理工大学",
+      "university_en": "Zhejiang Sci-Tech University",
+      "city": "杭州",
+      "unit_zh": "经济管理学院",
+      "unit_en": "School of Economics and Management",
+      "dept_url": "https://sem.zstu.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://rsc.zstu.edu.cn/"
+        }
+      ],
+      "jobs": []
+    },
+    {
+      "university_zh": "宁波诺丁汉大学",
+      "university_en": "University of Nottingham Ningbo China",
+      "city": "宁波",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "https://www.nottingham.edu.cn/cn/economics/",
+      "dept_status": 404,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://www.nottingham.edu.cn/cn/jobs/"
+        }
+      ],
+      "jobs": []
+    },
+    {
+      "university_zh": "温州肯恩大学",
+      "university_en": "Wenzhou-Kean University",
+      "city": "温州",
+      "unit_zh": "商学院",
+      "unit_en": "College of Business and Public Management",
+      "dept_url": "https://www.wku.edu.cn/zh-hans/cbpm",
+      "dept_status": 404,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "教师",
+          "url": "https://www.wku.edu.cn/zh-hans/faculty-staff"
+        },
+        {
+          "text": "职业发展中心",
+          "url": "https://career.wku.edu.cn/"
+        },
+        {
+          "text": "学校招聘",
+          "url": "https://www.wku.edu.cn/zh-hans/hr"
+        }
+      ],
+      "jobs": [
+        {
+          "title": "2024-10-10升学就业活动协理生招聘啦！",
+          "url": "https://career.wku.edu.cn/news/view/aid/592656/tag/tzgg",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "参加2025“创新温州”海内外博士人才交流暨新质生产力青年人才招聘会通知",
+          "url": "https://career.wku.edu.cn/news/view/aid/702046/tag/tzgg",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "求职技巧| 大学生秋招季来临，这些虚假招聘不得不防！",
+          "url": "https://career.wku.edu.cn/news/view/aid/343835/tag/xwkd",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "招聘公告",
+          "url": "https://career.wku.edu.cn/campus",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "姚品国际2026年校园招聘启动！",
+          "url": "https://career.wku.edu.cn/campus/view/id/1145646",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "杭州银行温州分行2027届秋季校园招聘启事 （网申10月25日截止）",
+          "url": "https://career.wku.edu.cn/campus/view/id/1145574",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "仲利国际融资租赁有限公司招聘简章",
+          "url": "https://career.wku.edu.cn/campus/view/id/1143240",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "华夏银行温州分行2027届校园招聘",
+          "url": "https://career.wku.edu.cn/campus/view/id/1142639",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "申万宏源证券分支机构2027届秋季校园招聘",
+          "url": "https://career.wku.edu.cn/campus/view/id/1142060",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "申万宏源证券温州分公司2027届校园招聘重磅启动",
+          "url": "https://career.wku.edu.cn/campus/view/id/1141905",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "10月专场 | 温州肯恩大学2027届毕业生“金秋启航”校园招聘网络招聘会，在线投递简历",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/60690",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "2026年温州肯恩大学秋季综合招聘会邀请函温州市瓯海区大学路88号",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/58224",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办海归求职专场|秋季线上招聘会网络招聘会，在线投递简历",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/59397",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办留学生秋招专场｜9月24日线上招聘会开启，多家名企岗位等你来网络招聘会，在线投递简历",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/59381",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办温州肯恩大学2027届毕业生9月专场网络招聘会网络招聘会，在线投递简历",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/58167",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办2026留学生专场系列招聘会（第三季）上海人才大厦",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/58060",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办离校未就业专场 | 温州肯恩大学2026届毕业生夏季网络招聘会网络招聘会，在线投递简历",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/56619",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办百日冲刺 | 温州肯恩大学2026届毕业生6月专场网络招聘会网络招聘会，在线投递简历",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/56368",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办关于举办青鹿人才市集专场招聘活动的通知五马街",
+          "url": "https://career.wku.edu.cn/jobfair/view/id/56179",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "姚品国际2026年校园招聘空中宣讲会线上宣讲",
+          "url": "https://career.wku.edu.cn/teachin/view/id/212778",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        },
+        {
+          "title": "已举办姚品国际2027届校园招聘空中宣讲会线上宣讲",
+          "url": "https://career.wku.edu.cn/teachin/view/id/209601",
+          "job_type": "Academic",
+          "via": "https://career.wku.edu.cn/"
+        }
+      ]
+    },
+    {
+      "university_zh": "浙江工业大学",
+      "university_en": "Zhejiang University of Technology",
+      "city": "杭州",
+      "unit_zh": "经济学院",
+      "unit_en": "School of Economics",
+      "dept_url": "https://www.zjut.edu.cn/",
+      "dept_status": null,
+      "has_career": true,
+      "career_hubs": [
+        {
+          "text": "学校招聘",
+          "url": "https://rsc.zjut.edu.cn/"
+        }
+      ],
+      "jobs": []
+    }
+  ]
+}
