@@ -28,6 +28,8 @@ data/economics/china_coastal_validation_summary_*.json
 data/economics/freshness_summary_*.json
 data/economics/verify_summary_*.json
 data/economics/china_coastal_summary_*.json
+data/economics/province_ready_*.json
+data/economics/advanced_filter_summary_*.json
 
 # Local Excel working copies / Office locks
 ~$*

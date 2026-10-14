@@ -557,6 +557,10 @@ def validate_region(region: str, workers: int = 6) -> dict:
     (base / "discovered_jobs_validated.json").write_text(
         json.dumps(kept_clean, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+    # Preliminary full list (advanced filter reads this next)
+    (base / "discovered_jobs_full.json").write_text(
+        json.dumps(kept_clean, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     # Final listing = validated real postings only
     (base / "discovered_jobs.json").write_text(
         json.dumps(kept_clean, ensure_ascii=False, indent=2), encoding="utf-8"

@@ -99,16 +99,20 @@ python code/init_province_pipeline.py --all
 
 ### One-command pipeline (any province)
 
-Catalog → discover → seeds → validate → **freshness screen (2026+ / 2025 rolling)** →
-**one-by-one verify** → province PDF → coastal summarize:
+Two-stage filter:
+
+1. **Preliminary** — discover + seeds + validate → `discovered_jobs_full.json`  
+   Target: full list **≥ 2 × schools** in the province  
+2. **Advanced** — one-by-one re-fetch each posting; keep only right content;  
+   drop **deadline already passed**, **2025 without rolling/招满即止**, other stale  
+3. **Coastal summarize** when provinces are ready  
 
 ```bash
 python code/run_province_pipeline.py --region shanghai
 python code/run_province_pipeline.py --all --continue-on-error
-python code/run_province_pipeline.py --summarize-only
+python code/run_province_pipeline.py --check-ready --require-advanced
+python code/run_province_pipeline.py --summarize-only --summarize-when-ready --require-advanced
 ```
-
-Target coverage: **kept ≥ 2 × number of schools** in that province (via seeds + discover).
 
 Legacy one-liner still works:
 
@@ -141,20 +145,9 @@ python code/run_province_pipeline.py --region beijing --skip-discover
 python code/download_china_universities.py --region beijing
 python code/discover_by_university.py --region beijing
 python code/seed_jobs.py --region beijing
-python code/validate_job_links.py --region beijing
-python code/screen_job_freshness.py --region beijing
-python code/verify_jobs_one_by_one.py --region beijing
-python code/summarize_coastal.py
-```
-
-Or `--all` on the stage scripts:
-
-```bash
-python code/discover_by_university.py --all
-python code/seed_jobs.py --all
-python code/validate_job_links.py --all
-python code/screen_job_freshness.py --all
-python code/verify_jobs_one_by_one.py --all
+python code/validate_job_links.py --region beijing          # preliminary full list
+python code/advanced_filter_jobs.py --region beijing        # advanced one-by-one
+python code/check_province_ready.py --require-advanced
 python code/summarize_coastal.py
 ```
 
