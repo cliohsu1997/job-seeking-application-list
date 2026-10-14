@@ -35,6 +35,7 @@ UNIVERSITIES_985_211: list[dict] = []
 def build_coastal_universities() -> list[dict]:
     """Prefer provincial_catalog.json; enrich econ_units from legacy UNIVERSITIES."""
     from download_china_provinces import UNIVERSITIES
+    from provincial_universities import universities_by_region
 
     known = {
         u["name_zh"]: u
@@ -43,7 +44,8 @@ def build_coastal_universities() -> list[dict]:
         if u.get("name_zh")
     }
     rows, seen = [], set()
-    for region, unis in PROVINCIAL_UNIVERSITIES.items():
+    # Live reload so catalog JSON edits apply without process restart
+    for region, unis in universities_by_region().items():
         for u in clean_provincial_list(unis):
             zh = u["name_zh"]
             key = (region, zh)
@@ -87,8 +89,8 @@ def build_coastal_universities() -> list[dict]:
     return rows
 
 
-def universities_for_region(region: str) -> list[dict]:
+def universities_for_region(region: str, *, reload: bool = True) -> list[dict]:
     global UNIVERSITIES_985_211
-    if not UNIVERSITIES_985_211:
+    if reload or not UNIVERSITIES_985_211:
         UNIVERSITIES_985_211 = build_coastal_universities()
     return [dict(u) for u in UNIVERSITIES_985_211 if u["region"] == region]

@@ -51,13 +51,21 @@ def load_catalog() -> dict:
 
 
 def universities_by_region() -> dict[str, list[dict]]:
+    """Always reload from disk so catalog edits are picked up mid-session."""
+    if not _CATALOG_PATH.exists():
+        return {}
     return dict(load_catalog().get("universities_by_region") or {})
 
 
-# Populated on first import if catalog exists
-PROVINCIAL_UNIVERSITIES: dict[str, list[dict]] = (
-    universities_by_region() if _CATALOG_PATH.exists() else {}
-)
+def refresh_provincial_universities() -> dict[str, list[dict]]:
+    """Refresh module cache; prefer universities_by_region() for live reads."""
+    global PROVINCIAL_UNIVERSITIES
+    PROVINCIAL_UNIVERSITIES = universities_by_region()
+    return PROVINCIAL_UNIVERSITIES
+
+
+# Cached snapshot (call refresh_provincial_universities after catalog edits)
+PROVINCIAL_UNIVERSITIES: dict[str, list[dict]] = universities_by_region()
 
 
 def clean_provincial_list(rows: list[dict]) -> list[dict]:

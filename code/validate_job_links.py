@@ -486,14 +486,17 @@ def validate_region(region: str, workers: int = 6) -> dict:
     print("=== VALIDATE %s -- %d candidates ===" % (region.upper(), len(jobs)))
     validated: list[dict] = []
 
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {ex.submit(validate_job, j): i for i, j in enumerate(jobs)}
-        done = 0
-        for fut in as_completed(futs):
-            validated.append(fut.result())
-            done += 1
-            if done % 10 == 0 or done == len(jobs):
-                print("  scored %d/%d" % (done, len(jobs)))
+    if not jobs:
+        print("  no candidates; writing empty validated outputs")
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            futs = {ex.submit(validate_job, j): i for i, j in enumerate(jobs)}
+            done = 0
+            for fut in as_completed(futs):
+                validated.append(fut.result())
+                done += 1
+                if done % 10 == 0 or done == len(jobs):
+                    print("  scored %d/%d" % (done, len(jobs)))
 
     order = {j.get("JobPostUrl"): i for i, j in enumerate(jobs)}
     validated.sort(key=lambda j: order.get(j.get("JobPostUrl"), 10**9))
