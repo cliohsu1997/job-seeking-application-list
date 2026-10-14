@@ -1,7 +1,7 @@
 """
 Compile EJM JSON ads into Application-list columns (chunk-by-chunk).
 
-Industrial / Other nonacademic / Consultant -> Job Type = Non-Academic.
+Job Type: Faculty | Postdoc | Non-Academic (from position_types + title).
 """
 from __future__ import annotations
 
@@ -14,6 +14,7 @@ from pathlib import Path
 from openpyxl import load_workbook
 from openpyxl.styles import Font
 
+from classify_aea_job_type import classify_ejm_position_types
 from columns import COLUMNS
 
 from paths import APP_XLSX, DATA_ECON, ensure_dirs
@@ -37,13 +38,6 @@ MATERIAL_LABELS = [
     "Writing Sample",
 ]
 
-NONACADEMIC_TYPES = {
-    "other nonacademic",
-    "consultant",
-    "private sector",
-    "industry",
-}
-
 
 def clean_text(value: str) -> str:
     value = html.unescape(html.unescape(value or ""))
@@ -66,19 +60,6 @@ def parse_deadline(raw):
         return datetime.strptime(s[:10], "%Y-%m-%d")
     except ValueError:
         return s
-
-
-def job_type_from_positions(position_types) -> str:
-    names = []
-    for p in position_types or []:
-        if isinstance(p, dict):
-            names.append((p.get("name") or "").lower())
-        else:
-            names.append(str(p).lower())
-    for n in names:
-        if n in NONACADEMIC_TYPES or "nonacademic" in n or "non-academic" in n:
-            return "Non-Academic"
-    return "Academic"
 
 
 def extract_required_materials(full_text: str) -> str:
@@ -131,6 +112,12 @@ def ad_to_row(ad: dict) -> dict:
     country, location = location_fields(ad)
     job_post = " | ".join(p for p in (title, url) if p)
 
+    job_type, _reason = classify_ejm_position_types(
+        ad.get("position_types"),
+        title=title,
+        body=plain,
+    )
+
     return {
         "Country": country or None,
         "Location": location or None,
@@ -145,7 +132,7 @@ def ad_to_row(ad: dict) -> dict:
         "Submission Date": None,
         "Reference Status": None,
         "Interview Date": None,
-        "Job Type": job_type_from_positions(ad.get("position_types")),
+        "Job Type": job_type,
     }
 
 
@@ -194,20 +181,34 @@ def update_application_workbook(rows: list[dict]) -> None:
     wb.save(APP_XLSX)
 
 
+def _job_type_rank(job_type: str) -> int:
+    if job_type in ("Faculty", "Academic"):
+        return 0
+    if job_type == "Postdoc":
+        return 1
+    return 2
+
+
 def main() -> None:
     rows = load_ejm_rows()
 
     def sort_key(r):
         d = r.get("Deadline")
         dkey = d if isinstance(d, datetime) else datetime.max
-        return (0 if r["Job Type"] == "Academic" else 1, dkey, r.get("University") or "")
+        return (
+            _job_type_rank(r.get("Job Type") or ""),
+            dkey,
+            r.get("University") or "",
+        )
 
     rows.sort(key=sort_key)
     update_application_workbook(rows)
+    n_fac = sum(1 for r in rows if r["Job Type"] in ("Faculty", "Academic"))
+    n_post = sum(1 for r in rows if r["Job Type"] == "Postdoc")
     n_non = sum(1 for r in rows if r["Job Type"] == "Non-Academic")
     print(f"Compiled {len(rows)} EJM listings")
     print(f"Columns ({len(COLUMNS)}): {COLUMNS}")
-    print(f"Academic: {len(rows) - n_non} | Non-Academic: {n_non}")
+    print(f"Faculty: {n_fac} | Postdoc: {n_post} | Non-Academic: {n_non}")
     print(f"Updated sheet EJM Listings in {APP_XLSX}")
 
 

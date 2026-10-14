@@ -1,0 +1,19 @@
+{
+  "region": "shenzhen",
+  "verified": 16,
+  "schools": 8,
+  "unis_in_verified": 7,
+  "ratio": 2.0,
+  "target": 16,
+  "success": true,
+  "pdf": "clean/shenzhen_listings_validated_2026-10-15.pdf",
+  "universities": [
+    "CUHK Shenzhen",
+    "HIT Shenzhen",
+    "PKU Shenzhen",
+    "SMBU",
+    "SUSTech",
+    "Shenzhen University",
+    "Tsinghua SIGS"
+  ]
+}

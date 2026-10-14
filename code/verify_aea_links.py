@@ -247,10 +247,12 @@ def verify_one(pos: dict) -> dict:
         apply_url = listing if ok_listing else None
         apply_ok = ok_listing
 
-    job_type = (
-        "Non-Academic"
-        if "nonacademic" in (pos.get("section") or "").lower()
-        else "Academic"
+    from classify_aea_job_type import classify_joe_fields
+
+    job_type, _reason = classify_joe_fields(
+        section=pos.get("section") or "",
+        title=pos.get("title") or "",
+        full_text=pos.get("full_text") or "",
     )
 
     return {
@@ -297,7 +299,7 @@ def rows_from_results(results: list[dict]) -> list[dict]:
                 "Submission Date": None,
                 "Reference Status": None,
                 "Interview Date": None,
-                "Job Type": r.get("job_type") or "Academic",
+                "Job Type": r.get("job_type") or "Faculty",
                 "_title": title,
                 "_joe_ok": r.get("joe_ok"),
                 "_apply_ok": r.get("apply_ok"),

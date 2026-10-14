@@ -21,8 +21,9 @@ from datetime import date
 from china_universities_data import REGIONS
 from download_china_provinces import fetch, job_to_row, write_xlsx
 from export_clean_pdf import export_one
-from paths import CLEAN, CLEAN_ECON, DATA_ECON, ensure_dirs
+from paths import CLEAN_ECON, CLEAN_ECON_PROVINCE, DATA_ECON, ensure_dirs
 from freshness_rules import ROLLING, YEAR_2025, YEAR_2026_PLUS, strip_html
+from repair_corrupted_text import looks_corrupted, page_title
 from validate_job_links import DEADLINE_RE, ROLLING_OK, score_announcement
 
 TODAY = date.today().isoformat()
@@ -105,6 +106,24 @@ def advanced_filter_region(region: str) -> dict:
                 reasons.append("needs_2026_or_rolling_2025")
 
         row = dict(j)
+        # Recover CJK titles that were corrupted to ASCII '?'
+        if looks_corrupted(title):
+            recovered = page_title(html or "")
+            if recovered:
+                row["JobPostTitle"] = recovered
+                title = recovered
+        if looks_corrupted(row.get("School")) and title:
+            for key in (
+                "\u7ecf\u6d4e\u5b66\u9662",
+                "\u7ecf\u6d4e\u4e0e\u7ba1\u7406\u5b66\u9662",
+                "\u5546\u5b66\u9662",
+                "\u91d1\u878d\u5b66\u9662",
+            ):
+                if key in title or key in (html or "")[:3000]:
+                    row["School"] = key
+                    break
+        if looks_corrupted(row.get("RequiredMaterial")):
+            row["RequiredMaterial"] = "See announcement page"
         row["_advanced"] = {
             "keep": keep,
             "label": label,
@@ -158,12 +177,12 @@ def advanced_filter_region(region: str) -> dict:
     )
 
     rows = [job_to_row(j) for j in kept_clean]
-    CLEAN.mkdir(parents=True, exist_ok=True)
     CLEAN_ECON.mkdir(parents=True, exist_ok=True)
+    CLEAN_ECON_PROVINCE.mkdir(parents=True, exist_ok=True)
     xlsx = CLEAN_ECON / ("%s_listings_verified_%s.xlsx" % (region, TODAY))
-    pdf = CLEAN / ("%s_listings_verified_%s.pdf" % (region, TODAY))
     write_xlsx(rows, base / ("listings_verified_%s.xlsx" % TODAY), region.title())
     write_xlsx(rows, xlsx, region.title())
+    pdf = CLEAN_ECON_PROVINCE / ("%s_listings_verified_%s.pdf" % (region, TODAY))
     export_one(
         xlsx,
         pdf,
@@ -172,7 +191,7 @@ def advanced_filter_region(region: str) -> dict:
     )
     export_one(
         xlsx,
-        CLEAN / ("%s_listings_validated_%s.pdf" % (region, TODAY)),
+        CLEAN_ECON_PROVINCE / ("%s_listings_validated_%s.pdf" % (region, TODAY)),
         "%s Economics - Faculty + Postdoc (validated)" % region.title(),
         use_cjk=True,
     )
@@ -185,6 +204,7 @@ def advanced_filter_region(region: str) -> dict:
         "kept": len(kept_clean),
         "rejected": len(rejected),
         "pdf": str(pdf),
+        "xlsx": str(xlsx),
     }
 
 

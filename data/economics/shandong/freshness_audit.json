@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-14",
+  "region": "shandong",
+  "input": 11,
+  "kept": 11,
+  "rejected": 0,
+  "rows": [
+    {
+      "title": "中国石油大学（华东）经济管理学院教师招聘启事",
+      "url": "https://sem.upc.edu.cn/2025/0402/c19374a454231/page.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "中国海洋大学2026年卓越博士后招聘公告",
+      "url": "https://rsc.ouc.edu.cn/2026/0914/c923a537132/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "中国海洋大学2026年科研博士后招聘启事",
+      "url": "https://rsc.ouc.edu.cn/2026/0630/c923a533385/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "山东财经大学2026年度高层次人才和优秀博士招聘公告",
+      "url": "https://www.sdufe.edu.cn/info/1068/26223.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "山东财经大学经济学院2025年全职博士后研究人员招聘简章",
+      "url": "https://econ.sdufe.edu.cn/info/1058/7192.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "山东财经大学金融学院2026年全职博士后研究人员招聘公告",
+      "url": "https://jinrong.sdufe.edu.cn/info/1160/8909.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "山东财经大学金融学院2026年招聘全职博士后研究人员公告-博士后招聘网",
+      "url": "http://www.boshihoujob.com/gxbsh/shandong/131224.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2025年度山东大学经济学院博士后招聘公告",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/12952.htm",
+      "keep": true,
+      "label": "fresh_2025_rolling",
+      "reasons": [
+        "year_2025_with_rolling"
+      ]
+    },
+    {
+      "title": "2026年度山东大学经济学院博士后招聘公告",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/13398.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "山东大学经济学院2025年度教师招聘公告",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/11073.htm",
+      "keep": true,
+      "label": "fresh_2025_rolling",
+      "reasons": [
+        "year_2025_with_rolling"
+      ]
+    },
+    {
+      "title": "山东大学经济学院诚聘海内外英才",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/13146.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    }
+  ]
+}

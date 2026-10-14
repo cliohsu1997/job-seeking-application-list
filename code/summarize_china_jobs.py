@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Merge coastal province verified jobs + Macau/Taiwan listings into one export.
+"""Merge coastal province verified jobs + Macau/Taiwan into one final clean/ PDF.
+
+Top-level clean/ gets only:
+  china_macau_taiwan_listings_YYYY-MM-DD.pdf
+
+Intermediate xlsx stay under clean/economics/.
 
 Usage:
   python summarize_china_jobs.py
@@ -10,14 +15,14 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 from datetime import date, datetime
 from pathlib import Path
 
 from china_universities_data import REGIONS
 from download_china_provinces import job_to_row, write_xlsx
+from enrich_job_metadata import enrich_jobs
 from export_clean_pdf import export_one
-from paths import CLEAN, CLEAN_ECON, DATA_ECON, ensure_dirs
+from paths import CLEAN, CLEAN_ECON, CLEAN_ECON_PROVINCE, DATA_ECON, ensure_dirs
 
 TODAY = date.today().isoformat()
 
@@ -69,18 +74,21 @@ def macau_taiwan_to_internal(rows: list[dict], region_key: str) -> list[dict]:
         out.append(
             {
                 "region": region_key,
-                "Country": r.get("Country") or ("Macau" if region_key == "macau" else "Taiwan"),
+                "Country": r.get("Country")
+                or ("Macau" if region_key == "macau" else "Taiwan"),
                 "Location": r.get("Location"),
                 "University": r.get("University"),
                 "School": r.get("School"),
                 "Deadline": deadline,
                 "JobPostTitle": title,
                 "JobPostUrl": link,
-                "RequiredMaterial": r.get("Required Material") or r.get("RequiredMaterial"),
-                "SubmissionChannel": r.get("Submission Channel") or r.get("SubmissionChannel"),
+                "RequiredMaterial": r.get("Required Material")
+                or r.get("RequiredMaterial"),
+                "SubmissionChannel": r.get("Submission Channel")
+                or r.get("SubmissionChannel"),
                 "ApplicationLink": link,
                 "Email": r.get("Email"),
-                "JobType": r.get("Job Type") or r.get("JobType") or "Academic",
+                "JobType": r.get("Job Type") or r.get("JobType") or "Faculty",
             }
         )
     return out
@@ -101,10 +109,16 @@ def _dedupe(jobs: list[dict]) -> list[dict]:
     for j in jobs:
         u = j.get("JobPostUrl") or j.get("ApplicationLink") or ""
         if not u:
-            # fall back to title+uni
             u = "%s|%s" % (j.get("University"), j.get("JobPostTitle"))
         by_url[u] = j
     return list(by_url.values())
+
+
+def _write_xlsx(jobs: list[dict], stem: str, title: str) -> Path:
+    rows = [job_to_row(j) for j in jobs]
+    xlsx = CLEAN_ECON / ("%s_%s.xlsx" % (stem, TODAY))
+    write_xlsx(rows, xlsx, title[:31])
+    return xlsx
 
 
 def summarize(*, prefer: str = "verified", coastal_only: bool = False) -> dict:
@@ -122,35 +136,55 @@ def summarize(*, prefer: str = "verified", coastal_only: bool = False) -> dict:
         print("  coastal %-12s %d" % (region, len(jobs)))
 
     coastal = _dedupe(coastal)
+    # Fill Published Year + College Ranking from title/URL + catalog (no page fetch)
+    coastal = enrich_jobs(coastal, fetch_page=False)
     macau, taiwan = ([], []) if coastal_only else load_macau_taiwan()
     print("  macau          %d" % len(macau))
     print("  taiwan         %d" % len(taiwan))
 
     all_jobs = _dedupe(coastal + macau + taiwan)
+    all_jobs = enrich_jobs(all_jobs, fetch_page=False)
     CLEAN.mkdir(parents=True, exist_ok=True)
     CLEAN_ECON.mkdir(parents=True, exist_ok=True)
 
-    def _export(jobs: list[dict], stem: str, title: str) -> tuple[Path, Path]:
-        rows = [job_to_row(j) for j in jobs]
-        xlsx = CLEAN_ECON / ("%s_%s.xlsx" % (stem, TODAY))
-        pdf = CLEAN / ("%s_%s.pdf" % (stem, TODAY))
-        write_xlsx(rows, xlsx, title[:31])
-        export_one(xlsx, pdf, title, use_cjk=True)
-        return xlsx, pdf
-
-    coastal_xlsx, coastal_pdf = _export(
+    coastal_xlsx = _write_xlsx(
         coastal,
         "china_coastal_listings_validated",
         "China Coastal - Faculty + Postdoc (validated)",
     )
-    # Keep legacy coastal filename used elsewhere
+    CLEAN_ECON_PROVINCE.mkdir(parents=True, exist_ok=True)
+    coastal_pdf = CLEAN_ECON_PROVINCE / (
+        "china_coastal_listings_validated_%s.pdf" % TODAY
+    )
+    export_one(
+        coastal_xlsx,
+        coastal_pdf,
+        "China Coastal - Faculty + Postdoc (validated)",
+        use_cjk=True,
+    )
     (DATA_ECON / ("china_coastal_jobs_%s.json" % TODAY)).write_text(
         json.dumps(coastal, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
     greater_xlsx = greater_pdf = None
     if not coastal_only:
-        greater_xlsx, greater_pdf = _export(
+        # Intermediate xlsx under clean/economics/; final provincial_* lives in clean/
+        # via combine_asia_pacific.py (preferred). Keep a root provincial export here too.
+        from download_china_provinces import write_xlsx as _wx
+        from download_china_provinces import job_to_row as _jtr
+
+        rows = [_jtr(j) for j in all_jobs]
+        greater_xlsx = CLEAN / ("provincial_listings_%s.xlsx" % TODAY)
+        greater_pdf = CLEAN / ("provincial_listings_%s.pdf" % TODAY)
+        _wx(rows, greater_xlsx, "Provincial China+MT")
+        export_one(
+            greater_xlsx,
+            greater_pdf,
+            "Provincial China + Macau/Taiwan - Faculty + Postdoc",
+            use_cjk=True,
+        )
+        # legacy name under economics/ for back-compat
+        _write_xlsx(
             all_jobs,
             "china_macau_taiwan_listings",
             "China + Macau + Taiwan - Faculty + Postdoc",
@@ -166,8 +200,8 @@ def summarize(*, prefer: str = "verified", coastal_only: bool = False) -> dict:
         "taiwan": len(taiwan),
         "greater_china_total": len(all_jobs),
         "regions": per_region,
-        "coastal_pdf": str(coastal_pdf),
         "coastal_xlsx": str(coastal_xlsx),
+        "coastal_pdf": str(coastal_pdf),
         "greater_pdf": str(greater_pdf) if greater_pdf else None,
         "greater_xlsx": str(greater_xlsx) if greater_xlsx else None,
     }
@@ -179,8 +213,9 @@ def summarize(*, prefer: str = "verified", coastal_only: bool = False) -> dict:
         % (len(coastal), len(macau), len(taiwan), len(all_jobs))
     )
     if greater_pdf:
-        print("Greater China PDF ->", greater_pdf)
-    print("Coastal PDF ->", coastal_pdf)
+        print("Final clean PDF ->", greater_pdf)
+    else:
+        print("Coastal xlsx only (no root PDF) ->", coastal_xlsx)
     return summary
 
 

@@ -13,6 +13,7 @@ DATA_MKT = DATA / "marketing"
 
 CLEAN = ROOT / "clean"
 CLEAN_ECON = CLEAN / "economics"
+CLEAN_ECON_PROVINCE = CLEAN_ECON / "province"
 CLEAN_MKT = CLEAN / "marketing"
 
 APP_XLSX = ROOT / "application list.xlsx"
@@ -32,6 +33,7 @@ def ensure_dirs() -> None:
         DATA_ECON_TAIWAN,
         DATA_MKT,
         CLEAN_ECON,
+        CLEAN_ECON_PROVINCE,
         CLEAN_MKT,
         DATA_ECON / "china_universities",
         DATA_ECON / "china_universities" / "by_region",

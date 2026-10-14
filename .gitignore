@@ -19,6 +19,7 @@ data/**/raw/
 data/**/raw_*/
 data/**/departments/
 data/**/job_mine*/
+data/economics/cice_html/
 
 # Ephemeral pipeline run summaries
 data/economics/province_init_summary_*.json
@@ -31,6 +32,14 @@ data/economics/china_coastal_summary_*.json
 data/economics/china_jobs_summary_*.json
 data/economics/province_ready_*.json
 data/economics/advanced_filter_summary_*.json
+data/economics/repair_text_summary_*.json
+data/economics/enrich_metadata_summary_*.json
+data/economics/asia_pacific_summary_*.json
+data/economics/asia_pacific_deadlines_summary_*.json
+data/economics/regional_deadlines_summary_*.json
+data/economics/aea_job_type_page_cache.json
+data/economics/website_page_enrich_summary_*.json
+data/economics/provincial_page_enrich_summary_*.json
 
 # Local Excel working copies / Office locks
 ~$*

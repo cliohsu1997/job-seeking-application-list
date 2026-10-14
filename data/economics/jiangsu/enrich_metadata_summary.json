@@ -1,0 +1,14 @@
+{
+  "region": "jiangsu",
+  "count": 26,
+  "published_year": {
+    "2026": 20,
+    "": 5,
+    "2025": 1
+  },
+  "college_ranking": {
+    "211": 15,
+    "": 3,
+    "985/211": 8
+  }
+}

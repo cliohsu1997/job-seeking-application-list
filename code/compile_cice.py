@@ -76,12 +76,16 @@ def item_to_row(item: dict) -> dict:
     if emails:
         email = "; ".join(list(dict.fromkeys(e.rstrip(".") for e in emails))[:3])
 
+    deadline = item.get("deadline") or item.get("Deadline")
+    if deadline in ("", "None"):
+        deadline = None
+
     return {
         "Country": "China",
         "Location": None,
         "University": university or None,
         "School": school or None,
-        "Deadline": None,
+        "Deadline": deadline,
         "Job Post": url or None,  # CICE detail page
         "Required Material": materials,
         "Submission Channel": "CICE",
@@ -90,7 +94,7 @@ def item_to_row(item: dict) -> dict:
         "Submission Date": None,
         "Reference Status": None,
         "Interview Date": None,
-        "Job Type": "Academic",
+        "Job Type": "Faculty",
         "_title": school or university or "CICE listing",
     }
 

@@ -12,7 +12,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.hebut.edu.cn/rczp/zpgg/be54ac68d1e34c1ab0f57e8afdfc9c8f.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "hebei",
@@ -27,7 +31,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.hueb.edu.cn/info/1068/4413.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hebei",
@@ -42,7 +50,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.boshijob.com/article/202606/24284866.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hebei",
@@ -57,7 +69,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.hbu.cn/info/1017/2038.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hebei",
@@ -65,14 +81,18 @@
     "Location": "河北",
     "University": "Hebei University",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "2025-08-04",
     "JobPostTitle": "河北大学经济学院相关招聘",
     "JobPostUrl": "https://ec.hbu.edu.cn/info/1084/1669.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://ec.hbu.edu.cn/info/1084/1669.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "hebei",
@@ -87,7 +107,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.ncepu.edu.cn/rczp/bjrczp/e5222acc770e4a7cb8e09eefad9098e1.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "hebei",
@@ -95,14 +119,19 @@
     "Location": "河北",
     "University": "NCEPU Baoding",
     "School": "经济管理系",
-    "Deadline": null,
+    "Deadline": "2025-12-10",
     "JobPostTitle": "华北电力大学2026年度教学科研岗位招聘启事（保定）",
     "JobPostUrl": "https://www.ncepu.edu.cn/rczp/bdrczp/c9e86b816a9e4c359d3bd2695f737a3a.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.ncepu.edu.cn/rczp/bdrczp/c9e86b816a9e4c359d3bd2695f737a3a.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "hebei",
@@ -110,14 +139,19 @@
     "Location": "河北",
     "University": "NCEPU Baoding",
     "School": "经济管理系",
-    "Deadline": null,
+    "Deadline": "2025-12-10",
     "JobPostTitle": "华北电力大学2026年度教学科研岗位招聘启事（经管学院转载）",
     "JobPostUrl": "https://business.ncepu.edu.cn/szll2/rczp/9ab45767dd944af290b7e2d4c0b41184.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://business.ncepu.edu.cn/szll2/rczp/9ab45767dd944af290b7e2d4c0b41184.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "hebei",
@@ -132,7 +166,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://460.net.cn/a/522403.html",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hebei",
@@ -147,7 +185,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "http://jrzhufu.com/zhaopin/article/2269.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hebei",
@@ -162,6 +204,10 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.sciencehr.net/job/229026.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   }
 ]

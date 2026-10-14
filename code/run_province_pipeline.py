@@ -11,15 +11,16 @@ Two-stage filtering:
   ADVANCED (one-by-one on the full list)
     6. Re-fetch each posting: right content, drop deadline-passed,
        drop 2025-without-rolling, drop other stale -> verified PDF
-  COMBINE
-    7. When ready, summarize coastal (+ optional Macau/Taiwan) PDF
+  ENRICH + COMBINE
+    7. Published Year + College Ranking (985/211) scan
+    8. Summarize coastal (+ Macau/Taiwan)
+    9. Combine with AEA/EJM/CICE filtered to CN/MY/JP/AU/NZ
 
 Usage:
   python run_province_pipeline.py --list
   python run_province_pipeline.py --region shanghai
   python run_province_pipeline.py --all --continue-on-error
   python run_province_pipeline.py --check-ready --require-advanced
-  python run_province_pipeline.py --summarize-only
   python run_province_pipeline.py --summarize-only --with-macau-taiwan
 """
 from __future__ import annotations
@@ -110,12 +111,21 @@ def run_region(
             out["full_list"] = _save_full_list(region)
 
     if not skip_advanced:
-        print("=== 6/6 ADVANCED filter (content + deadline + 2025/rolling) ===")
+        print("=== 6/7 ADVANCED filter (content + deadline + 2025/rolling) ===")
         from advanced_filter_jobs import advanced_filter_region
 
         out["advanced"] = advanced_filter_region(region)
     else:
-        print("=== 6/6 ADVANCED SKIPPED ===")
+        print("=== 6/7 ADVANCED SKIPPED ===")
+
+    print("=== 7/7 ENRICH Published Year + College Ranking ===")
+    from enrich_job_metadata import enrich_region
+
+    try:
+        out["enrich"] = enrich_region(region, fetch_page=False)
+    except FileNotFoundError as exc:
+        out["enrich_error"] = str(exc)
+        print("!! enrich skipped:", exc)
 
     return out
 
@@ -189,16 +199,23 @@ def main() -> None:
             raise SystemExit(
                 "Not all provinces ready: %s" % ", ".join(ready["not_ready"])
             )
-        print(
-            json.dumps(
-                summarize_china_jobs(
-                    prefer="verified",
-                    coastal_only=not args.with_macau_taiwan,
-                ),
-                ensure_ascii=False,
-                indent=2,
-            )
+        from combine_asia_pacific import combine as combine_asia_pacific
+        from enrich_job_metadata import enrich_region
+
+        for region in REGIONS:
+            try:
+                enrich_region(region, fetch_page=False)
+            except FileNotFoundError:
+                pass
+        china = summarize_china_jobs(
+            prefer="verified",
+            coastal_only=not args.with_macau_taiwan,
         )
+        from enrich_provincial_from_pages import run as enrich_provincial_pages
+
+        enrich_provincial_pages()
+        asia = combine_asia_pacific(prefer="verified", fetch_page=False)
+        print(json.dumps({"china": china, "asia_pacific": asia}, ensure_ascii=False, indent=2))
         return
 
     targets = list(REGIONS) if args.all else (args.region or [])
@@ -259,6 +276,19 @@ def main() -> None:
             except Exception as exc:
                 summary["china_error"] = str(exc)
                 print("!! china summarize failed:", exc)
+            print("\n########## ASIA-PACIFIC COMBINE ##########")
+            try:
+                from combine_asia_pacific import combine as combine_asia_pacific
+
+                from enrich_provincial_from_pages import run as enrich_provincial_pages
+
+                enrich_provincial_pages()
+                summary["asia_pacific"] = combine_asia_pacific(
+                    prefer="verified", fetch_page=False
+                )
+            except Exception as exc:
+                summary["asia_pacific_error"] = str(exc)
+                print("!! asia-pacific combine failed:", exc)
 
     out_path = DATA_ECON / ("province_pipeline_summary_%s.json" % TODAY)
     out_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")

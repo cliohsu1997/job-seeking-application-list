@@ -974,30 +974,39 @@ def parse_deadline(raw):
         return None
     if isinstance(raw, datetime):
         return raw
+    s = str(raw).strip()
+    if s.lower() == "rolling" or "\u5e38\u5e74" in s:
+        return "Rolling"
     try:
-        return datetime.strptime(str(raw)[:10], "%Y-%m-%d")
+        return datetime.strptime(s[:10], "%Y-%m-%d")
     except ValueError:
-        return None
+        return s if s else None
 
 
 def job_to_row(job: dict) -> dict:
     url = job.get("ApplicationLink") or job.get("JobPostUrl")
     title = job.get("JobPostTitle") or "Faculty position"
+    jt = job.get("JobType") or "Faculty"
+    if jt == "Academic":
+        jt = "Faculty"
     return {
         "Country": job.get("Country") or "China",
         "Location": job.get("Location"),
         "University": job.get("University"),
+        "College Ranking": job.get("CollegeRanking")
+        or job.get("College Ranking")
+        or "",
         "School": job.get("School"),
         "Deadline": parse_deadline(job.get("Deadline")),
+        "Published Year": job.get("PublishedYear")
+        or job.get("Published Year")
+        or "",
         "Job Post": f"{title} | {url}" if url else title,
         "Required Material": job.get("RequiredMaterial"),
         "Submission Channel": job.get("SubmissionChannel"),
         "Application Link": url,
         "Email": job.get("Email"),
-        "Submission Date": None,
-        "Reference Status": None,
-        "Interview Date": None,
-        "Job Type": job.get("JobType") or "Academic",
+        "Job Type": jt,
         "_title": title,
         "_region": job.get("region"),
     }

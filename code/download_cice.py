@@ -1,46 +1,109 @@
-"""Download CICE careers listings via AjaxHandler into ../data."""
+"""Download CICE careers listings + detail HTML into ../data/economics.
+
+Index list comes from AjaxHandler getCareersIndex.
+Each detail page is an SPA shell; real content is fetched via
+getCareersDetail with TDES-encrypted keys (same as the site JS).
+
+HTML is saved under data/economics/cice_html/ and deadlines are scraped
+from phrases like "Deadline Date: Nov. 20, 2019" / "November 1, 2026".
+"""
 from __future__ import annotations
 
-import html
+import hashlib
+import html as html_lib
 import json
 import re
+import time
+from base64 import b64encode
 from datetime import date
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import quote, unquote
 from urllib.request import Request, urlopen
 
-from paths import DATA_ECON, ensure_dirs
+from Crypto.Cipher import DES3
+from Crypto.Util.Padding import pad
+
+from deadline_extract import extract_deadline, html_to_text
+from paths import DATA_ECON, ROOT, ensure_dirs
 
 DATA = DATA_ECON
+HTML_DIR = DATA / "cice_html"
 BASE = "http://www.cicecon.org.cn"
 API = BASE + "/ajax/AjaxHandler_CICE2018.ashx"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+# Keys from /Ajax/TDES.js on cicecon.org.cn
+_TDES_KEY = b"hfoui7DzDfzhfieNMJ760CUO"
+_TDES_IV = b"oMo3xjFb"
+FETCH_SLEEP_SEC = 0.2
 
 
 def clean_text(value: str) -> str:
-    value = html.unescape(html.unescape(value or ""))
+    value = html_lib.unescape(html_lib.unescape(value or ""))
     value = value.replace("&#32;", " ").replace("%u201C", '"').replace("%u201D", '"')
     return re.sub(r"\s+", " ", value).strip()
 
 
-def fetch_careers_html() -> str:
-    body = b"cmd=getCareersIndex&k="
+def js_unescape(s: str) -> str:
+    """Approximate JS unescape() used by CICE ajax responses."""
+
+    def repl_u(mo: re.Match) -> str:
+        return chr(int(mo.group(1), 16))
+
+    def repl(mo: re.Match) -> str:
+        return chr(int(mo.group(1), 16))
+
+    s = re.sub(r"%u([0-9a-fA-F]{4})", repl_u, s)
+    s = re.sub(r"%([0-9a-fA-F]{2})", repl, s)
+    return s
+
+
+def tdes_encrypt(text: str) -> str:
+    """Match TDES.encrypt in /Ajax/TDES.js (md5 suffix + 3DES-CBC + b64)."""
+    payload = text + "$" + hashlib.md5(text.encode("utf-8")).hexdigest()
+    data = pad(payload.encode("utf-8"), 8)
+    ct = DES3.new(_TDES_KEY, DES3.MODE_CBC, _TDES_IV).encrypt(data)
+    # JS strips trailing NUL bytes from the ciphertext string before b64
+    return b64encode(ct.rstrip(b"\x00")).decode("ascii")
+
+
+def _post_api(body: bytes, referer: str) -> str:
     req = Request(
         API,
         data=body,
         headers={
             "User-Agent": UA,
             "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": BASE + "/careers/index.html",
+            "Referer": referer,
         },
         method="POST",
     )
     with urlopen(req, timeout=60) as resp:
-        raw = resp.read().decode("utf-8", "replace")
-    m = re.search(r"list:\s*'([^']*)'", raw) or re.search(r'list:\s*"([^"]*)"', raw)
+        return resp.read().decode("utf-8", "replace")
+
+
+def fetch_careers_index_html() -> str:
+    raw = _post_api(b"cmd=getCareersIndex&k=", BASE + "/careers/index.html")
+    m = re.search(r"list:\s*'([^']*)'", raw) or re.search(
+        r'list:\s*"([^"]*)"', raw
+    )
     if not m:
         raise RuntimeError("Could not parse CICE list field from API response")
     return unquote(m.group(1))
+
+
+def fetch_careers_detail_html(key: str) -> str:
+    """Return decoded detail HTML fragment for listing key (may be empty)."""
+    if not key:
+        return ""
+    enc = tdes_encrypt(key)
+    body = f"cmd=getCareersDetail&k={quote(enc, safe='')}".encode()
+    raw = _post_api(body, BASE + f"/careers/detail.html?k={key}")
+    m = re.search(r"info:\s*'(.*?)'\s*,", raw, flags=re.S)
+    if not m:
+        m = re.search(r'info:\s*"(.*?)"\s*,', raw, flags=re.S)
+    if not m:
+        return ""
+    return js_unescape(m.group(1))
 
 
 def parse_listings(page_html: str) -> list[dict]:
@@ -59,7 +122,6 @@ def parse_listings(page_html: str) -> list[dict]:
         key_m = re.search(r"[?&]k=([^&\"']+)", rel)
         key = key_m.group(1) if key_m else ""
 
-        # Institution in h3 > a
         inst_m = re.search(
             r"<h3[^>]*>\s*<a[^>]*>(.*?)</a>\s*</h3>",
             block,
@@ -67,7 +129,6 @@ def parse_listings(page_html: str) -> list[dict]:
         )
         institution = clean_text(re.sub(r"<[^>]+>", "", inst_m.group(1))) if inst_m else ""
 
-        # School / unit in the <p> under par_p
         school_m = re.search(
             r'<div class="par_p">.*?<p>(.*?)</p>',
             block,
@@ -76,11 +137,9 @@ def parse_listings(page_html: str) -> list[dict]:
         school = clean_text(re.sub(r"<[^>]+>", "", school_m.group(1))) if school_m else ""
         if school.lower() in {"access to details", "to apply for jobs"}:
             school = ""
-        # if school duplicates institution, clear
         if school and institution and school.lower() == institution.lower():
             school = ""
 
-        # Description blurb
         desc_m = re.search(
             r'<div class="partner_box_p">\s*<p>(.*?)</p>',
             block,
@@ -98,7 +157,6 @@ def parse_listings(page_html: str) -> list[dict]:
             }
         )
 
-    # de-dupe by url
     seen, out = set(), []
     for it in items:
         if it["url"] in seen:
@@ -108,16 +166,90 @@ def parse_listings(page_html: str) -> list[dict]:
     return out
 
 
+def enrich_from_detail_html(item: dict, detail_html: str) -> dict:
+    """Attach deadline (+ optional text) scraped from saved detail HTML."""
+    text = html_to_text(detail_html)
+    deadline = extract_deadline(text) if text else None
+    item = dict(item)
+    item["deadline"] = deadline
+    item["detail_html_path"] = None
+    if text:
+        item["_detail_text_len"] = len(text)
+    return item
+
+
 def download_cice() -> Path:
     ensure_dirs()
+    HTML_DIR.mkdir(parents=True, exist_ok=True)
     today = date.today().isoformat()
     print(f"Downloading CICE careers from {API}")
-    page_html = fetch_careers_html()
+    page_html = fetch_careers_index_html()
+    index_path = HTML_DIR / f"index_{today}.html"
+    index_path.write_text(page_html, encoding="utf-8")
+    print(f"Saved index HTML {index_path} ({len(page_html)} chars)")
+
     listings = parse_listings(page_html)
+    print(f"Found {len(listings)} index listings; fetching detail pages...")
+
+    with_deadline = 0
+    for i, item in enumerate(listings, 1):
+        key = item.get("key") or ""
+        detail_html = ""
+        try:
+            detail_html = fetch_careers_detail_html(key)
+        except Exception as exc:
+            print(f"  [{i}/{len(listings)}] {key}: fetch error {exc}")
+        if detail_html:
+            html_path = HTML_DIR / f"{key}.html"
+            html_path.write_text(detail_html, encoding="utf-8")
+            item["detail_html_path"] = str(html_path.relative_to(ROOT)).replace("\\", "/")
+            item["deadline"] = enrich_from_detail_html(item, detail_html).get(
+                "deadline"
+            )
+        else:
+            item["deadline"] = None
+            item["detail_html_path"] = None
+
+        if item.get("deadline"):
+            with_deadline += 1
+        if i % 10 == 0 or i == len(listings):
+            print(
+                f"  [{i}/{len(listings)}] with_deadline={with_deadline} "
+                f"last={item.get('institution', '')[:40]!r} "
+                f"dl={item.get('deadline')}"
+            )
+        time.sleep(FETCH_SLEEP_SEC)
+
     json_path = DATA / f"cice_listings_{today}.json"
-    json_path.write_text(json.dumps(listings, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Saved {json_path} ({len(listings)} listings)")
+    for it in listings:
+        it.pop("_detail_text_len", None)
+    json_path.write_text(
+        json.dumps(listings, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(
+        f"Saved {json_path} ({len(listings)} listings, "
+        f"{with_deadline} with deadline)"
+    )
     return json_path
+
+
+def load_detail_html_for_url(url: str) -> str:
+    """Load saved detail HTML for a CICE careers URL, or fetch live."""
+    m = re.search(r"[?&]k=([A-Fa-f0-9]+)", url or "")
+    if not m:
+        return ""
+    key = m.group(1)
+    path = HTML_DIR / f"{key}.html"
+    if path.exists():
+        return path.read_text(encoding="utf-8")
+    try:
+        html = fetch_careers_detail_html(key)
+    except Exception:
+        return ""
+    if html:
+        HTML_DIR.mkdir(parents=True, exist_ok=True)
+        path.write_text(html, encoding="utf-8")
+    return html
 
 
 def main() -> None:

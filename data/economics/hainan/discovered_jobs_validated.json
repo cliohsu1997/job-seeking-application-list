@@ -5,14 +5,18 @@
     "Location": "海南",
     "University": "Hainan Normal University",
     "School": "人事处",
-    "Deadline": null,
+    "Deadline": "2026-08-06",
     "JobPostTitle": "海南师范大学2026年公开招聘专任教师公告",
     "JobPostUrl": "https://www.hainnu.edu.cn/2026/0803/c499a168635/page.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.hainnu.edu.cn/2026/0803/c499a168635/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hainan",
@@ -20,14 +24,18 @@
     "Location": "海南",
     "University": "Hainan Normal University",
     "School": "经济与管理学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "海南师范大学经济与管理学院2026年高层次人才招聘启事",
     "JobPostUrl": "https://jgxy.hainnu.edu.cn/2026/1014/c352a170265/page.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://jgxy.hainnu.edu.cn/2026/1014/c352a170265/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "hainan",
@@ -42,7 +50,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "http://www.efnchina.com/info/1111/59241.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "211",
+    "Published Year": "",
+    "College Ranking": "211"
   },
   {
     "region": "hainan",
@@ -57,7 +69,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://hro.hainanu.edu.cn/info/1223/9743.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "hainan",
@@ -72,7 +88,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://hro.hainanu.edu.cn/info/1009/9413.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "hainan",
@@ -87,7 +107,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://hro.hainanu.edu.cn/info/1074/9473.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "hainan",
@@ -102,6 +126,10 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://hro.hainanu.edu.cn/info/1074/9483.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   }
 ]

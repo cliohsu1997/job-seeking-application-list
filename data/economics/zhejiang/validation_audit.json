@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-14",
+  "region": "zhejiang",
+  "candidates": 13,
+  "kept_before_polish": 12,
+  "kept": 12,
+  "rejected": 1,
+  "academic": 5,
+  "postdoc": 7,
+  "rows": [
+    {
+      "title": "嘉兴大学2026年人才招聘公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/389303.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "浙江财经大学科技金融重点实验室2026年专职研究员",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/407749.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "浙江财经大学2026年特殊专业技术岗位",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/432519.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "浙江大学管理学院2026年招聘学科博士后",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/400624.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "浙江大学ZIBS2026年博士后招聘",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/368647.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "浙江大学国际联合商学院诚纳英才",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/17722.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "浙江大学ZIBS博士后研究人员招聘",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/19061.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "浙江工商大学2026年特殊专业技术岗位",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/384690.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "浙江工商大学统计与数学学院2025诚聘英才",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/321984.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "宁波大学2026年公开招聘高层次人才（教师）alt",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/404723.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "杭州电子科技大学会计学院诚聘海内外优秀人才",
+      "url": "https://acc.hdu.edu.cn/2026/0702/c12448a298474/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "浙江大学国际校区海纳人才全球招聘",
+      "url": "https://www.intl.zju.edu.cn/zh-hans/recruit/16747",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "浙江工商大学2026年招收博士后公告（gaoxiaojob）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/391400.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    }
+  ]
+}

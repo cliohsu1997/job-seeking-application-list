@@ -20,7 +20,7 @@ from urllib.parse import urlparse, urlunparse
 from china_universities_data import REGIONS
 from download_china_provinces import fetch, job_to_row, write_xlsx
 from export_clean_pdf import export_one
-from paths import CLEAN, CLEAN_ECON, DATA_ECON, ensure_dirs
+from paths import CLEAN_ECON, CLEAN_ECON_PROVINCE, DATA_ECON, ensure_dirs
 
 TODAY = date.today().isoformat()
 
@@ -568,13 +568,14 @@ def validate_region(region: str, workers: int = 6) -> dict:
 
     rows = [job_to_row(j) for j in kept_clean]
     xlsx_region = CLEAN_ECON / ("%s_listings_validated_%s.xlsx" % (region, TODAY))
-    write_xlsx(rows, base / ("listings_validated_%s.xlsx" % TODAY), region.title())
+    xlsx_local = base / ("listings_validated_%s.xlsx" % TODAY)
+    write_xlsx(rows, xlsx_local, region.title())
     CLEAN_ECON.mkdir(parents=True, exist_ok=True)
-    CLEAN.mkdir(parents=True, exist_ok=True)
+    CLEAN_ECON_PROVINCE.mkdir(parents=True, exist_ok=True)
     write_xlsx(rows, xlsx_region, region.title())
-
-    # Always refresh PDF next to other clean/*.pdf (Cursor preview may need reopen)
-    pdf_path = CLEAN / ("%s_listings_validated_%s.pdf" % (region, TODAY))
+    pdf_path = CLEAN_ECON_PROVINCE / (
+        "%s_listings_validated_%s.pdf" % (region, TODAY)
+    )
     export_one(
         xlsx_region,
         pdf_path,
@@ -620,7 +621,10 @@ def main(regions: list[str] | None = None, workers: int = 6) -> None:
         rows = [job_to_row(j) for j in all_kept]
         xlsx_all = CLEAN_ECON / ("china_coastal_listings_validated_%s.xlsx" % TODAY)
         write_xlsx(rows, xlsx_all, "China Coastal Validated")
-        pdf_all = CLEAN / ("china_coastal_listings_validated_%s.pdf" % TODAY)
+        CLEAN_ECON_PROVINCE.mkdir(parents=True, exist_ok=True)
+        pdf_all = CLEAN_ECON_PROVINCE / (
+            "china_coastal_listings_validated_%s.pdf" % TODAY
+        )
         export_one(
             xlsx_all,
             pdf_all,

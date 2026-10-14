@@ -1,13 +1,13 @@
 {
   "region": "fujian",
-  "verified": 19,
+  "verified": 22,
   "schools": 10,
   "unis_in_verified": 12,
-  "ratio": 1.9,
+  "ratio": 2.2,
   "target": 20,
-  "success": false,
+  "success": true,
+  "pdf": "clean/fujian_listings_validated_2026-10-15.pdf",
   "universities": [
-    "FAFU",
     "FJNU",
     "FJXU",
     "Fujian University of Technology",
@@ -16,6 +16,7 @@
     "Huaqiao University",
     "Jimei University",
     "Minjiang University",
+    "Minnan Normal University",
     "Putian University",
     "Quanzhou Normal University",
     "Xiamen University"

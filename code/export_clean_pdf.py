@@ -1,4 +1,14 @@
-"""Export clean economics + marketing listings to readable PDFs in clean/ (root)."""
+# -*- coding: utf-8 -*-
+"""Export final PDFs/XLSX into clean/ root only.
+
+Allowed in clean/ (outside subfolders):
+  - marketing_listings_*.pdf
+  - aea_listings_*.pdf (+ .xlsx)
+  - provincial_listings_*.pdf (+ .xlsx)
+  - asia_pacific_listings_*.pdf (+ .xlsx)  # combined two-section
+
+Everything else moves to clean/economics/province/.
+"""
 from __future__ import annotations
 
 import re
@@ -15,16 +25,18 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 from columns import COLUMNS
-from paths import CLEAN, CLEAN_ECON, CLEAN_MKT, ensure_dirs
+from paths import CLEAN, CLEAN_ECON, CLEAN_ECON_PROVINCE, CLEAN_MKT, ensure_dirs
 
-# Windows CJK fonts so Chinese job titles render in coastal PDFs.
 _CJK_FONT_CANDIDATES = (
-    Path(r"C:\Windows\Fonts\msyh.ttc"),
-    Path(r"C:\Windows\Fonts\msyh.ttf"),
-    Path(r"C:\Windows\Fonts\simsun.ttc"),
     Path(r"C:\Windows\Fonts\simhei.ttf"),
+    Path(r"C:\Windows\Fonts\simkai.ttf"),
+    Path(r"C:\Windows\Fonts\simfang.ttf"),
+    Path(r"C:\Windows\Fonts\msyh.ttf"),
+    Path(r"C:\Windows\Fonts\msyh.ttc"),
+    Path(r"C:\Windows\Fonts\simsun.ttc"),
 )
 _CJK_FONT_NAME: str | None = None
+_CJK_PROBE = "\u5317\u4eac\u7ecf\u6d4e"
 
 
 def ensure_cjk_font() -> str | None:
@@ -36,35 +48,43 @@ def ensure_cjk_font() -> str | None:
             continue
         try:
             name = "AppListCJK"
-            # .ttc needs subfontIndex; try 0 first
             if path.suffix.lower() == ".ttc":
                 pdfmetrics.registerFont(TTFont(name, str(path), subfontIndex=0))
             else:
                 pdfmetrics.registerFont(TTFont(name, str(path)))
+            if pdfmetrics.stringWidth(_CJK_PROBE, name, 10) <= 0:
+                continue
             _CJK_FONT_NAME = name
             return name
         except Exception:
             continue
     return None
 
+
 WEIGHTS = {
-    "Country": 6,
-    "Location": 8,
-    "University": 12,
-    "School": 10,
-    "Deadline": 6,
+    "Country": 5,
+    "Location": 6,
+    "University": 10,
+    "College Ranking": 4,
+    "School": 8,
+    "Deadline": 5,
+    "Published Year": 4,
     "Job Post": 10,
-    "Required Material": 10,
+    "Required Material": 8,
     "Submission Channel": 5,
-    "Application Link": 12,
-    "Email": 8,
-    "Submission Date": 5,
-    "Reference Status": 5,
-    "Interview Date": 5,
-    "Job Type": 5,
+    "Application Link": 11,
+    "Email": 7,
+    "Job Type": 4,
 }
 
 _URL_RE = re.compile(r"https?://[^\s|]+")
+
+FINAL_STEMS = (
+    "marketing_listings_",
+    "aea_listings_",
+    "provincial_listings_",
+    "asia_pacific_listings_",
+)
 
 
 def latest(folder: Path, pattern: str) -> Path | None:
@@ -104,103 +124,74 @@ def fmt(value, col: str, max_len: int = 90) -> str:
         return value.strftime("%Y-%m-%d")
     text = str(value).replace("\n", " ").strip()
     if len(text) > max_len:
-        text = text[: max_len - 1] + "…"
+        text = text[: max_len - 1] + "..."
     return xml_escape(text)
 
 
 def fmt_link_cell(value, col: str) -> str:
-    """Render Job Post / Application Link as a clickable PDF link with the full URL shown."""
     if value is None or value == "":
         return ""
     raw = str(value).replace("\n", " ").strip()
     url = extract_url(raw)
     if not url:
         return fmt(raw, col)
-
     title = None
     if " | " in raw:
         left, right = raw.rsplit(" | ", 1)
         if extract_url(right):
             title = left.strip() or None
-
-    # Job Post: prefer human title when present; otherwise show the full URL.
-    # Application Link: always show the full URL (no truncation / no substitute label).
     if col == "Job Post" and title:
         label = title
     else:
         label = url
-
     href = xml_escape(url)
-    return f'<link href="{href}">{xml_escape(label)}</link>'
+    return '<link href="%s">%s</link>' % (href, xml_escape(label))
 
-def load_rows(path: Path) -> list[dict]:
-    wb = load_workbook(path, data_only=True)
-    ws = wb.active
+
+def _sheet_rows(ws) -> list[dict]:
     headers = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
     rows = []
     for r in range(2, ws.max_row + 1):
         item = {}
+        empty = True
         for c, h in enumerate(headers, 1):
+            if not h:
+                continue
             cell = ws.cell(r, c)
             if h in ("Job Post", "Application Link"):
-                # Prefer cell text (may be "Title | url"); fall back to hyperlink target.
                 val = cell.value
                 href = cell.hyperlink.target if cell.hyperlink else None
                 if val and href and extract_url(str(val)) is None:
-                    item[h] = f"{val} | {href}"
+                    item[h] = "%s | %s" % (val, href)
                 elif href and not val:
                     item[h] = href
                 else:
                     item[h] = val or href
             else:
                 item[h] = cell.value
-        rows.append(item)
+            if item.get(h) not in (None, ""):
+                empty = False
+        if not empty:
+            rows.append(item)
+    return rows
+
+
+def load_rows(path: Path) -> list[dict]:
+    wb = load_workbook(path, data_only=True)
+    rows = _sheet_rows(wb.active)
     wb.close()
     return rows
 
 
-def export_one(src: Path, pdf_path: Path, title: str, use_cjk: bool = False) -> Path:
-    rows = load_rows(src)
-    today = date.today().isoformat()
-    page = landscape(A3)
-    margin = 6 * mm
-    usable = page[0] - 2 * margin
-    weights = [WEIGHTS.get(c, 6) for c in COLUMNS]
-    total_w = sum(weights)
-    col_widths = [usable * w / total_w for w in weights]
+def load_sheets(path: Path) -> list[tuple[str, list[dict]]]:
+    wb = load_workbook(path, data_only=True)
+    out = [(name, _sheet_rows(wb[name])) for name in wb.sheetnames]
+    wb.close()
+    return out
 
-    font = ensure_cjk_font() if use_cjk else None
-    base = getSampleStyleSheet()["Normal"]
-    cell_kw = {"fontName": font} if font else {}
-    cell_style = ParagraphStyle(
-        "Cell", parent=base, fontSize=5.5, leading=7, **cell_kw
-    )
-    # CJK wrap lets long URLs break mid-string without inserting zero-width chars
-    # (Helvetica has no ZWSP glyph, which previously showed as boxes).
-    link_style = ParagraphStyle(
-        "LinkCell",
-        parent=cell_style,
-        fontSize=5.5,
-        leading=7,
-        wordWrap="CJK",
-        **cell_kw,
-    )
-    header_style = ParagraphStyle(
-        "Hdr",
-        parent=base,
-        fontSize=6.5,
-        leading=8,
-        textColor=colors.white,
-        **cell_kw,
-    )
-    title_style = ParagraphStyle(
-        "Title", parent=base, fontSize=11, leading=14, spaceAfter=2, **cell_kw
-    )
-    sub_style = ParagraphStyle(
-        "Sub", parent=base, fontSize=7.5, leading=9, **cell_kw
-    )
 
-    data = [[Paragraph(f"<b>{h}</b>", header_style) for h in COLUMNS]]
+def _build_table(rows, col_widths, cell_style, link_style, header_style):
+    data = [[Paragraph("<b>%s</b>" % h, header_style) for h in COLUMNS]]
     for row in rows:
         cells = []
         for c in COLUMNS:
@@ -216,7 +207,12 @@ def export_one(src: Path, pdf_path: Path, title: str, use_cjk: bool = False) -> 
                 ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1f4e79")),
                 ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
                 ("FONTSIZE", (0, 0), (-1, -1), 5.5),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#f2f5f9")]),
+                (
+                    "ROWBACKGROUNDS",
+                    (0, 1),
+                    (-1, -1),
+                    [colors.white, colors.HexColor("#f2f5f9")],
+                ),
                 ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#b0b0b0")),
                 ("VALIGN", (0, 0), (-1, -1), "TOP"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 2),
@@ -226,6 +222,144 @@ def export_one(src: Path, pdf_path: Path, title: str, use_cjk: bool = False) -> 
             ]
         )
     )
+    return table
+
+
+def export_one(src: Path, pdf_path: Path, title: str, use_cjk: bool = False) -> Path:
+    sheets = load_sheets(src)
+    if len(sheets) > 1:
+        return export_sections(
+            sheets,
+            pdf_path,
+            title=title,
+            use_cjk=use_cjk,
+            source_name=src.name,
+        )
+
+    rows = sheets[0][1] if sheets else []
+    today = date.today().isoformat()
+    page = landscape(A3)
+    margin = 6 * mm
+    usable = page[0] - 2 * margin
+    weights = [WEIGHTS.get(c, 6) for c in COLUMNS]
+    total_w = sum(weights)
+    col_widths = [usable * w / total_w for w in weights]
+
+    font = ensure_cjk_font() if use_cjk else None
+    base = getSampleStyleSheet()["Normal"]
+    cell_kw = {"fontName": font} if font else {}
+    cell_style = ParagraphStyle("Cell", parent=base, fontSize=5.5, leading=7, **cell_kw)
+    link_style = ParagraphStyle(
+        "LinkCell", parent=cell_style, fontSize=5.5, leading=7, wordWrap="CJK", **cell_kw
+    )
+    header_style = ParagraphStyle(
+        "Hdr", parent=base, fontSize=6.5, leading=8, textColor=colors.white, **cell_kw
+    )
+    title_style = ParagraphStyle(
+        "Title", parent=base, fontSize=11, leading=14, spaceAfter=2, **cell_kw
+    )
+    sub_style = ParagraphStyle("Sub", parent=base, fontSize=7.5, leading=9, **cell_kw)
+
+    table = _build_table(rows, col_widths, cell_style, link_style, header_style)
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+    doc = SimpleDocTemplate(
+        str(pdf_path),
+        pagesize=page,
+        leftMargin=margin,
+        rightMargin=margin,
+        topMargin=8 * mm,
+        bottomMargin=8 * mm,
+        title=title,
+    )
+    doc.build(
+        [
+            Paragraph(title, title_style),
+            Paragraph(
+                "Source: %s · %d listings · Application columns · %s"
+                % (src.name, len(rows), today),
+                sub_style,
+            ),
+            Spacer(1, 3 * mm),
+            table,
+        ]
+    )
+    return pdf_path
+
+
+def export_sections(
+    sections: list[tuple[str, list[dict]]],
+    pdf_path: Path,
+    *,
+    title: str,
+    use_cjk: bool = False,
+    source_name: str = "",
+    gap_mm: float = 18.0,
+) -> Path:
+    today = date.today().isoformat()
+    page = landscape(A3)
+    margin = 6 * mm
+    usable = page[0] - 2 * margin
+    weights = [WEIGHTS.get(c, 6) for c in COLUMNS]
+    total_w = sum(weights)
+    col_widths = [usable * w / total_w for w in weights]
+
+    font = ensure_cjk_font() if use_cjk else None
+    base = getSampleStyleSheet()["Normal"]
+    cell_kw = {"fontName": font} if font else {}
+    cell_style = ParagraphStyle(
+        "CellSec", parent=base, fontSize=5.5, leading=7, **cell_kw
+    )
+    link_style = ParagraphStyle(
+        "LinkCellSec",
+        parent=cell_style,
+        fontSize=5.5,
+        leading=7,
+        wordWrap="CJK",
+        **cell_kw,
+    )
+    header_style = ParagraphStyle(
+        "HdrSec",
+        parent=base,
+        fontSize=6.5,
+        leading=8,
+        textColor=colors.white,
+        **cell_kw,
+    )
+    title_style = ParagraphStyle(
+        "TitleSec", parent=base, fontSize=11, leading=14, spaceAfter=2, **cell_kw
+    )
+    section_style = ParagraphStyle(
+        "SectionSec",
+        parent=base,
+        fontSize=10,
+        leading=13,
+        spaceBefore=2,
+        spaceAfter=4,
+        textColor=colors.HexColor("#1f4e79"),
+        **cell_kw,
+    )
+    sub_style = ParagraphStyle("SubSec", parent=base, fontSize=7.5, leading=9, **cell_kw)
+
+    total = sum(len(rows) for _, rows in sections)
+    story = [
+        Paragraph(title, title_style),
+        Paragraph(
+            "Source: %s · %d listings · %d sections · same columns · %s"
+            % (source_name or pdf_path.name, total, len(sections), today),
+            sub_style,
+        ),
+        Spacer(1, 3 * mm),
+    ]
+    for i, (sec_name, rows) in enumerate(sections):
+        if i > 0:
+            story.append(Spacer(1, gap_mm * mm))
+        story.append(
+            Paragraph("<b>%s</b>  (%d listings)" % (sec_name, len(rows)), section_style)
+        )
+        story.append(Spacer(1, 2 * mm))
+        story.append(
+            _build_table(rows, col_widths, cell_style, link_style, header_style)
+        )
 
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(
@@ -237,62 +371,81 @@ def export_one(src: Path, pdf_path: Path, title: str, use_cjk: bool = False) -> 
         bottomMargin=8 * mm,
         title=title,
     )
-    story = [
-        Paragraph(title, title_style),
-        Paragraph(
-            f"Source: {src.name} · {len(rows)} listings · Application columns · {today}",
-            sub_style,
-        ),
-        Spacer(1, 3 * mm),
-        table,
-    ]
     doc.build(story)
     return pdf_path
 
 
-def main() -> None:
+def prune_clean_root(today: str | None = None) -> list[Path]:
+    """Keep only marketing / aea / provincial / asia_pacific finals in clean/.
+
+    Also archive older dated copies of the same stem (keep newest per extension).
+    """
+    ensure_dirs()
+    CLEAN_ECON_PROVINCE.mkdir(parents=True, exist_ok=True)
+    moved = []
+    for path in CLEAN.iterdir():
+        if not path.is_file():
+            continue
+        if any(path.name.startswith(p) for p in FINAL_STEMS):
+            continue
+        dest = CLEAN_ECON_PROVINCE / path.name
+        if dest.exists():
+            dest.unlink()
+        path.replace(dest)
+        moved.append(dest)
+
+    for stem in FINAL_STEMS:
+        by_ext: dict[str, list[Path]] = {}
+        for path in CLEAN.glob(stem + "*"):
+            if path.is_file():
+                by_ext.setdefault(path.suffix.lower(), []).append(path)
+        for group in by_ext.values():
+            group.sort(key=lambda p: p.name, reverse=True)
+            for old in group[1:]:
+                dest = CLEAN_ECON_PROVINCE / old.name
+                if dest.exists():
+                    dest.unlink()
+                old.replace(dest)
+                moved.append(dest)
+    return moved
+
+
+def main(*, prune: bool = True) -> None:
     ensure_dirs()
     today = date.today().isoformat()
     written = []
-
-    econ = latest(CLEAN_ECON, "all_listings_*.xlsx")
-    if econ:
-        out = export_one(
-            econ,
-            CLEAN / f"economics_listings_{today}.pdf",
-            "Economics Job Listings — Application List Format",
-        )
-        written.append(out)
-        print(f"Wrote {out}")
-    else:
-        print("No clean/economics/all_listings_*.xlsx — skip econ PDF")
 
     mkt = latest(CLEAN_MKT, "marketing_listings_*.xlsx")
     if mkt:
         out = export_one(
             mkt,
-            CLEAN / f"marketing_listings_{today}.pdf",
-            "Marketing Job Listings — Application List Format",
+            CLEAN / ("marketing_listings_%s.pdf" % today),
+            "Marketing Job Listings",
         )
         written.append(out)
-        print(f"Wrote {out}")
-    else:
-        print("No clean/marketing/marketing_listings_*.xlsx — skip marketing PDF")
+        print("Wrote", out)
 
-    coastal = latest(CLEAN_ECON, "china_coastal_listings_mined_*.xlsx")
-    if not coastal:
-        coastal = latest(CLEAN_ECON, "china_coastal_listings_*.xlsx")
-    if coastal:
+    for stem, title in (
+        ("aea_listings", "AEA/EJM/CICE Asia-Pacific"),
+        ("provincial_listings", "Provincial China + Macau/Taiwan"),
+        ("asia_pacific_listings", "Asia-Pacific combined"),
+    ):
+        src = latest(CLEAN, "%s_*.xlsx" % stem)
+        if not src:
+            print("No clean/%s_*.xlsx — skip" % stem)
+            continue
         out = export_one(
-            coastal,
-            CLEAN / f"china_coastal_listings_{today}.pdf",
-            "China Coastal (GD/FJ/ZJ/SZ) — Faculty + Postdoc",
+            src,
+            CLEAN / ("%s_%s.pdf" % (stem, today)),
+            title,
             use_cjk=True,
         )
         written.append(out)
-        print(f"Wrote {out}")
-    else:
-        print("No clean/economics/china_coastal_listings*.xlsx — skip coastal PDF")
+        print("Wrote", out)
+
+    if prune:
+        for path in prune_clean_root(today):
+            print("Moved non-final -> economics/province/%s" % path.name)
 
     if not written:
         raise FileNotFoundError("No clean listings to export")

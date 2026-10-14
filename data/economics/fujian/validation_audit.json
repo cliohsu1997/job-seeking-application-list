@@ -2,14 +2,14 @@
   "date": "2026-10-14",
   "region": "fujian",
   "candidates": 43,
-  "kept_before_polish": 27,
-  "kept": 27,
-  "rejected": 16,
-  "academic": 18,
-  "postdoc": 9,
+  "kept_before_polish": 30,
+  "kept": 30,
+  "rejected": 13,
+  "academic": 20,
+  "postdoc": 10,
   "rows": [
     {
-      "title": "?????????????????2026-2027?????????",
+      "title": "厦门大学王亚南经济研究院、经济学院2026-2027年诚聘海外研究人员",
       "url": "https://soe.xmu.edu.cn/info/6591/1067665.htm",
       "keep": false,
       "label": "weak_job_signal",
@@ -19,17 +19,17 @@
       "job_type": "Academic"
     },
     {
-      "title": "?????????????????2026-2027??????????????????",
+      "title": "厦门大学王亚南经济研究院、经济学院2026-2027年诚聘海外研究人员（高校人才网）",
       "url": "https://www.gaoxiaojob.com/announcement/detail/436031.html",
-      "keep": true,
-      "label": "real_announcement",
+      "keep": false,
+      "label": "dead",
       "reasons": [
-        "ok"
+        "fetch_fail status=None"
       ],
       "job_type": "Academic"
     },
     {
-      "title": "????2026????????",
+      "title": "厦门大学2026年博士后招收启事",
       "url": "https://postdoctor.xmu.edu.cn/info/1061/4196.htm",
       "keep": true,
       "label": "real_announcement",
@@ -39,7 +39,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "???????????????????/??/??/???",
+      "title": "厦门大学邹至庄经济研究院教师招聘（计量/统计/经济/金融）",
       "url": "https://chow.xmu.edu.cn/sqwm/jszp.htm",
       "keep": true,
       "label": "real_announcement",
@@ -49,7 +49,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "2026?????????????????????????",
+      "title": "2026年福州大学高层次教学科研人员招聘方案（含经管学院）",
       "url": "https://rsc.fzu.edu.cn/info/1071/2641.htm",
       "keep": true,
       "label": "real_announcement",
@@ -59,7 +59,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "????2026??????????????????",
+      "title": "欢迎申报2026福州大学经济与管理学院博士后引才项目",
       "url": "https://jgxy.fzu.edu.cn/info/1127/24608.htm",
       "keep": true,
       "label": "real_announcement",
@@ -69,17 +69,17 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "????????????????????????",
+      "title": "常态化招聘！福州大学诚聘师资博士后（含经管学院）",
       "url": "https://rsc.fzu.edu.cn/info/1071/2514.htm",
       "keep": true,
       "label": "real_announcement",
       "reasons": [
         "campus_hr_econ_field"
       ],
-      "job_type": "Academic"
+      "job_type": "Postdoc"
     },
     {
-      "title": "2025?????????????????????????",
+      "title": "2025年福州大学经济与管理学院高层次教学科研人员招聘方案",
       "url": "https://jgxy.fzu.edu.cn/info/1061/23365.htm",
       "keep": true,
       "label": "real_announcement",
@@ -89,7 +89,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "2026???????????????????????????",
+      "title": "2026年福建师范大学高层次教学科研人员招聘方案（含经济学院）",
       "url": "https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202603/t20260309_7107427.htm",
       "keep": true,
       "label": "real_announcement",
@@ -99,7 +99,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "????????????????????????",
+      "title": "福建师范大学经济学院教学科研岗招聘",
       "url": "https://www.gaoxiaojob.com/job/detail/2049266.html",
       "keep": false,
       "label": "empty",
@@ -109,7 +109,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "????????????????????2026-2027???",
+      "title": "华侨大学面向全球诚聘优秀人才（2026-2027学年）",
       "url": "https://rsc.hqu.edu.cn/info/1491/25021.htm",
       "keep": false,
       "label": "empty",
@@ -119,7 +119,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "?????????????????????2025-2026???",
+      "title": "华侨大学诚邀海内外优秀人才加盟（2025-2026学年）",
       "url": "https://jobs.hqu.edu.cn/info/1011/7645.htm",
       "keep": false,
       "label": "empty",
@@ -129,7 +129,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "????2026??????????????????",
+      "title": "华侨大学2026年全职博士后招聘启事（含应用经济学）",
       "url": "https://rsc.hqu.edu.cn/info/1491/23121.htm",
       "keep": false,
       "label": "dead",
@@ -139,7 +139,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "????2026?????????????????",
+      "title": "华侨大学2026年全职博士后招聘启事（人才招聘网）",
       "url": "https://jobs.hqu.edu.cn/info/1013/8005.htm",
       "keep": true,
       "label": "real_announcement",
@@ -149,7 +149,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "2026??????????????????????/?????",
+      "title": "2026年集美大学公开招聘高层次人才方案（含财经）",
       "url": "https://rst.fj.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202602/t20260225_7100631.htm",
       "keep": true,
       "label": "real_announcement",
@@ -159,17 +159,17 @@
       "job_type": "Academic"
     },
     {
-      "title": "????2026???????????????????",
+      "title": "集美大学2026年公开招聘高层次人才方案（高校人才网）",
       "url": "https://www.gaoxiaojob.com/announcement/detail/381575.html",
       "keep": true,
       "label": "real_announcement",
       "reasons": [
         "ok"
       ],
-      "job_type": "Postdoc"
+      "job_type": "Academic"
     },
     {
-      "title": "2026????????????????????????/?????",
+      "title": "2026年福建农林大学高层次教学科研人员招聘方案（含经管）",
       "url": "https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202605/t20260512_7146924.htm",
       "keep": true,
       "label": "real_announcement",
@@ -179,7 +179,7 @@
       "job_type": "Postdoc"
     },
     {
-      "title": "??????2026????????????????/?????",
+      "title": "福建江夏学院2026年博士高层次人才招聘公告",
       "url": "https://rsc.fjjxu.edu.cn/2026/0402/c2784a119519/page.htm",
       "keep": true,
       "label": "real_announcement",
@@ -189,27 +189,27 @@
       "job_type": "Academic"
     },
     {
-      "title": "2026????????????????????",
+      "title": "2026年福建江夏学院公开招聘博士高层次人才方案",
       "url": "https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202603/t20260330_7117115.htm",
       "keep": true,
       "label": "real_announcement",
       "reasons": [
         "ok"
       ],
-      "job_type": "Postdoc"
+      "job_type": "Academic"
     },
     {
-      "title": "2026???????????????????????????",
+      "title": "2026年闽南师范大学引进高层次人才招聘方案（含商学院）",
       "url": "https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202603/t20260318_7113003.htm",
-      "keep": false,
-      "label": "not_target_role",
+      "keep": true,
+      "label": "real_announcement",
       "reasons": [
-        "not_faculty_or_postdoc"
+        "ok"
       ],
       "job_type": "Academic"
     },
     {
-      "title": "2026?????????????????????????????",
+      "title": "2026年泉州师范学院公开招聘高层次人才方案（含商学院）",
       "url": "https://www.qztc.edu.cn/2026/0804/c2094a294909/page.htm",
       "keep": true,
       "label": "real_announcement",
@@ -219,7 +219,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "?????????????????????????",
+      "title": "福州大学经济与管理学院教学科研岗招聘",
       "url": "https://www.gaoxiaojob.com/job/detail/2044424.html",
       "keep": false,
       "label": "empty",
@@ -229,7 +229,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "????????????2025???????????????",
+      "title": "厦门大学王亚南经济研究院2025年诚邀海内外英才",
       "url": "https://www.gxszw.com/region/fujian/gxzpfj/202508/19118908.html",
       "keep": true,
       "label": "real_announcement",
@@ -239,7 +239,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "??????????????-????????",
+      "title": "集美大学经济贸易类（财经学院-高层次人才）招聘",
       "url": "https://www.sciencehr.net/job/211533.html",
       "keep": true,
       "label": "real_announcement",
@@ -249,7 +249,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "????????????????-??????",
+      "title": "福建师范大学理论经济学【经济学院-教研岗】招聘",
       "url": "https://www.sciencehr.net/job/227601.html",
       "keep": true,
       "label": "real_announcement",
@@ -299,13 +299,12 @@
       "job_type": "Academic"
     },
     {
-      "title": "2026年福州大学高层次专业技术人员招聘方案",
+      "title": "2026年福州大学高层次专业技术人员招聘方案（含经管）",
       "url": "https://rsc.fzu.edu.cn/info/1071/2642.htm",
-      "keep": false,
-      "label": "wrong_field",
+      "keep": true,
+      "label": "real_announcement",
       "reasons": [
-        "campus_hr_not_econ",
-        "not_econ_related"
+        "campus_hr_econ_field"
       ],
       "job_type": "Academic"
     },
@@ -320,17 +319,17 @@
       "job_type": "Academic"
     },
     {
-      "title": "华侨大学2026年全职博士后招聘启事(info/1035)",
+      "title": "华侨大学2026年全职博士后招聘启事（info/1035）",
       "url": "https://jobs.hqu.edu.cn/info/1035/8015.htm",
-      "keep": false,
-      "label": "dead",
+      "keep": true,
+      "label": "real_announcement",
       "reasons": [
-        "fetch_fail status=None"
+        "ok"
       ],
       "job_type": "Postdoc"
     },
     {
-      "title": "优酬优聘！华侨大学面向全球诚聘优秀人才（2026-2027学年）",
+      "title": "华侨大学面向全球诚聘优秀人才（2026-2027学年）",
       "url": "https://jobs.hqu.edu.cn/info/1011/8535.htm",
       "keep": false,
       "label": "dead",
@@ -342,12 +341,12 @@
     {
       "title": "华侨大学2026年邀请海外优秀青年人才开展交流合作的公告",
       "url": "https://jobs.hqu.edu.cn/info/1011/8135.htm",
-      "keep": false,
-      "label": "dead",
+      "keep": true,
+      "label": "real_announcement",
       "reasons": [
-        "fetch_fail status=None"
+        "ok"
       ],
-      "job_type": "Academic"
+      "job_type": "Postdoc"
     },
     {
       "title": "2025年集美大学公开招聘高层次人才方案",
@@ -380,7 +379,7 @@
       "job_type": "Academic"
     },
     {
-      "title": "闽江大学计算机与大数据学院诚邀英才（参考校级方案）",
+      "title": "闽江大学高层次人才引进相关招聘信息（校级方案参考）",
       "url": "https://jsj.mju.edu.cn/2026/0529/c6083a219243/page.htm",
       "keep": true,
       "label": "real_announcement",
@@ -403,9 +402,9 @@
       "title": "仰恩大学经济学院2026年招聘启事",
       "url": "https://www.gaoxiaojob.com/announcement/detail/398881.html",
       "keep": false,
-      "label": "dead",
+      "label": "expired_deadline",
       "reasons": [
-        "fetch_fail status=None"
+        "deadline_passed_2026-6-30"
       ],
       "job_type": "Academic"
     },

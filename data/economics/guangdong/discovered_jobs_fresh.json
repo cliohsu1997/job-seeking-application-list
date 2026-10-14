@@ -12,7 +12,11 @@
     "SubmissionChannel": "Online",
     "ApplicationLink": "https://www.sciencehr.net/job/193240.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -27,7 +31,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://ai.gduf.edu.cn/info/1099/1240.htm",
     "Email": "gdufrczp@gduf.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -35,14 +43,18 @@
     "Location": "广州",
     "University": "GDUT",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "广东工业大学经济学院高层次人才招聘",
     "JobPostUrl": "https://jjxy.gdut.edu.cn/info/1055/3235.htm",
     "RequiredMaterial": "青百计划教师岗",
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://jjxy.gdut.edu.cn/info/1055/3235.htm",
     "Email": "jjrczhp@gdut.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -57,7 +69,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://hr.gdut.edu.cn/info/1073/1195.htm",
     "Email": "jjrczhp@gdut.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -72,7 +88,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "http://rsc.gdufe.edu.cn/2026/0306/c4710a233784/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -87,7 +107,11 @@
     "SubmissionChannel": "HR",
     "ApplicationLink": "http://rsc.gdufe.edu.cn/2026/0429/c4948a238378/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -95,14 +119,18 @@
     "Location": "广州",
     "University": "Guangdong University of Finance and Economics",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "广东财经大学面向海内外招聘学科方向带头人的公告",
     "JobPostUrl": "http://rsc.gdufe.edu.cn/2025/0116/c12800a215856/page.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "http://rsc.gdufe.edu.cn/2025/0116/c12800a215856/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -117,7 +145,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1083/12549.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -132,7 +164,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1083/11977.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2024",
+    "CollegeRanking": "",
+    "Published Year": "2024",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -147,7 +183,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1083/12041.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -162,7 +202,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1083/12519.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -177,7 +221,11 @@
     "SubmissionChannel": "HR/学院",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1017/12559.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -192,7 +240,11 @@
     "SubmissionChannel": "Email/学院",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1017/12399.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -207,7 +259,11 @@
     "SubmissionChannel": "HR/导师",
     "ApplicationLink": "https://rsc.gdufs.edu.cn/info/1017/12909.htm",
     "Email": "gpszk@gdufs.edu.cn",
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -215,14 +271,18 @@
     "Location": "广州",
     "University": "Guangzhou University",
     "School": "经济与统计学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "广州大学2026年高层次人才招聘公告",
     "JobPostUrl": "https://rsc.gzhu.edu.cn/info/1016/8191.htm",
     "RequiredMaterial": "2026年度长期有效",
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://rsc.gzhu.edu.cn/info/1016/8191.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -237,7 +297,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://www.gaoxiaojob.com/announcement/detail/388060.html",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -252,7 +316,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://www.gxszw.com/region/guangdong/gxzpgd/202603/30124547.html",
     "Email": "lizh@gzhu.edu.cn",
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -267,7 +335,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://www.gzhu.edu.cn/info/1205/31377.htm",
     "Email": "jjytjxy@163.com",
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -282,7 +354,11 @@
     "SubmissionChannel": "HR",
     "ApplicationLink": "https://www.gzucm.edu.cn/info/1461/114061.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "",
+    "Published Year": "2026",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -297,7 +373,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://rsc.gzucm.edu.cn/info/1003/4003.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -312,7 +392,11 @@
     "SubmissionChannel": "AEA/Email",
     "ApplicationLink": "https://iesr.jnu.edu.cn/2025/1021/c17720a844641/page.htm",
     "Email": "iesr@jnu.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "guangdong",
@@ -327,7 +411,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://ec.jnu.edu.cn/2024/1129/c24919a826585/page.htm",
     "Email": "ojjy@jnu.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2025",
+    "CollegeRanking": "211",
+    "Published Year": "2025",
+    "College Ranking": "211"
   },
   {
     "region": "guangdong",
@@ -342,7 +430,11 @@
     "SubmissionChannel": "HR",
     "ApplicationLink": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "guangdong",
@@ -357,7 +449,11 @@
     "SubmissionChannel": "HR/导师",
     "ApplicationLink": "https://hrdam.jnu.edu.cn/2026/0413/c343a853500/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "guangdong",
@@ -372,7 +468,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://iesr.jnu.edu.cn/2025/0624/c17209a839104/page.htm",
     "Email": "iesr@jnu.edu.cn",
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "211",
+    "Published Year": "2025",
+    "College Ranking": "211"
   },
   {
     "region": "guangdong",
@@ -387,7 +487,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://ec.jnu.edu.cn/2024/1129/c42192a826585/page.htm",
     "Email": "ojjy@jnu.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2025",
+    "CollegeRanking": "211",
+    "Published Year": "2025",
+    "College Ranking": "211"
   },
   {
     "region": "guangdong",
@@ -402,7 +506,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://cem.scau.edu.cn/2025/0221/c9875a399607/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -417,7 +525,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://cem.scau.edu.cn/2025/0221/c9875a399618/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -432,7 +544,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://cem.scau.edu.cn/2025/0221/c9875a399608/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -447,7 +563,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://cem.scau.edu.cn/2025/0221/c9875a399594/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -462,7 +582,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://cem.scau.edu.cn/2025/0221/c9875a399586/page.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2025",
+    "CollegeRanking": "",
+    "Published Year": "2025",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -470,14 +594,19 @@
     "Location": "广州",
     "University": "SCNU",
     "School": "经济与管理学院",
-    "Deadline": null,
+    "Deadline": "2025-09-05",
     "JobPostTitle": "华南师范大学2025年公开招聘教学科研人员公告",
     "JobPostUrl": "http://em.scnu.edu.cn/a/20250910/10765.html",
     "RequiredMaterial": "见岗位表",
     "SubmissionChannel": "Online",
     "ApplicationLink": "http://em.scnu.edu.cn/a/20250910/10765.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2025",
+    "CollegeRanking": "211",
+    "Published Year": "2025",
+    "College Ranking": "211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "guangdong",
@@ -485,14 +614,18 @@
     "Location": "汕头",
     "University": "Shantou University",
     "School": "商学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "汕头大学商学院博士后招聘（数字经济/宏观经济/产业经济）",
     "JobPostUrl": "https://biz.stu.edu.cn/gk/cpyc/bshzp.htm",
     "RequiredMaterial": "全年接受入站申请",
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://biz.stu.edu.cn/gk/cpyc/bshzp.htm",
     "Email": "biz_recruitment@stu.edu.cn",
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -507,7 +640,11 @@
     "SubmissionChannel": "Online/Email",
     "ApplicationLink": "https://biz.stu.edu.cn/gk/cpyc/jszp.htm",
     "Email": "biz_recruitment@stu.edu.cn",
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -522,7 +659,11 @@
     "SubmissionChannel": "Email",
     "ApplicationLink": "http://em.scnu.edu.cn/xueshukeyan/boshihouliudongzhan/",
     "Email": "scnujgzp@126.com",
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "guangdong",
@@ -530,14 +671,18 @@
     "Location": "珠海",
     "University": "Sun Yat-sen University",
     "School": "国际金融学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "中山大学国际金融学院诚聘海内外英才（教师+博士后）",
     "JobPostUrl": "https://isbf.sysu.edu.cn/zh-hans/article/2827",
     "RequiredMaterial": "常年有效; 应用经济学等",
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://isbf.sysu.edu.cn/zh-hans/article/2827",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "985/211",
+    "Published Year": "",
+    "College Ranking": "985/211"
   },
   {
     "region": "guangdong",
@@ -545,28 +690,17 @@
     "Location": "广州/深圳",
     "University": "Sun Yat-sen University",
     "School": "岭南学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "中山大学岭南学院2026年招聘教师（含教研岗与博士后）",
     "JobPostUrl": "https://www.gaoxiaojob.com/announcement/detail/434822.html",
     "RequiredMaterial": "CV to sunyxi@mail.sysu.edu.cn; rolling",
     "SubmissionChannel": "Email",
     "ApplicationLink": "https://www.gaoxiaojob.com/announcement/detail/434822.html",
     "Email": "sunyxi@mail.sysu.edu.cn",
-    "JobType": "Academic"
-  },
-  {
-    "region": "guangdong",
-    "Country": "China",
-    "Location": "江门",
-    "University": "Wuyi University",
-    "School": "经济管理学院",
-    "Deadline": null,
-    "JobPostTitle": "五邑大学经济管理学院2026年招聘人才",
-    "JobPostUrl": "https://www.gaoxiaojob.com/announcement/detail/399560.html",
-    "RequiredMaterial": "金融学/数字金融",
-    "SubmissionChannel": "Email",
-    "ApplicationLink": "https://www.gaoxiaojob.com/announcement/detail/399560.html",
-    "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   }
 ]

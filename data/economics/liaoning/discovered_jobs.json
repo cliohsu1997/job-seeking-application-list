@@ -12,7 +12,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rcb.dlmu.edu.cn/info/1013/4752.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "liaoning",
@@ -27,7 +31,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://smse.dufe.edu.cn/content_98151.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "liaoning",
@@ -42,7 +50,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://econ.dufe.edu.cn/content_95758.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "liaoning",
@@ -57,7 +69,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://cs.dufe.edu.cn/content_96670.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "",
+    "Published Year": "",
+    "College Ranking": ""
   },
   {
     "region": "liaoning",
@@ -72,7 +88,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://perdep.dlut.edu.cn/info/1401/21541.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   },
   {
     "region": "liaoning",
@@ -87,7 +107,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://perdep.dlut.edu.cn/info/1401/21561.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   },
   {
     "region": "liaoning",
@@ -102,7 +126,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://panjin.dlut.edu.cn/info/1342/48784.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   },
   {
     "region": "liaoning",
@@ -117,7 +145,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "http://sem.dlut.edu.cn/info/1072/7620.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "985/211",
+    "Published Year": "",
+    "College Ranking": "985/211"
   },
   {
     "region": "liaoning",
@@ -125,14 +157,19 @@
     "Location": "辽宁",
     "University": "Liaoning University",
     "School": "商学院",
-    "Deadline": null,
+    "Deadline": "2026-12-31",
     "JobPostTitle": "辽宁大学商学院2026年面向社会公开招聘3名高层次和急需紧缺人才公告（第二批）",
     "JobPostUrl": "https://www.gaoxiaojob.com/announcement/detail/424265.html",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.gaoxiaojob.com/announcement/detail/424265.html",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "liaoning",
@@ -147,7 +184,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://coba.lnu.edu.cn/info/1164/4976.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "211",
+    "Published Year": "2026",
+    "College Ranking": "211"
   },
   {
     "region": "liaoning",
@@ -162,6 +203,10 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.neu.edu.cn/2025/0623/c3973a288430/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2025",
+    "CollegeRanking": "985/211",
+    "Published Year": "2025",
+    "College Ranking": "985/211"
   }
 ]

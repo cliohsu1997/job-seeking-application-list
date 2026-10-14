@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-14",
+  "region": "shandong",
+  "candidates": 15,
+  "kept_before_polish": 11,
+  "kept": 11,
+  "rejected": 4,
+  "academic": 4,
+  "postdoc": 7,
+  "rows": [
+    {
+      "title": "山东大学经济学院诚聘海内外英才",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/13146.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2026年度山东大学经济学院博士后招聘公告",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/13398.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "山东大学经济学院2025年度教师招聘公告",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/11073.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2025年度山东大学经济学院博士后招聘公告",
+      "url": "https://www.econ.sdu.edu.cn/info/1284/12952.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中国海洋大学2026年教师招聘启事",
+      "url": "https://rsc.ouc.edu.cn/2026/0630/c923a533416/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国海洋大学2026年科研博士后招聘启事",
+      "url": "https://rsc.ouc.edu.cn/2026/0630/c923a533385/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中国海洋大学2026年卓越博士后招聘公告",
+      "url": "https://rsc.ouc.edu.cn/2026/0914/c923a537132/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "提示信息",
+      "url": "https://rsc.ouc.edu.cn/2025/0416/c923a498309/page.htm",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国石油大学（华东）经济管理学院教师招聘启事",
+      "url": "https://sem.upc.edu.cn/2025/0402/c19374a454231/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "山东财经大学2026年度高层次人才和优秀博士招聘公告",
+      "url": "https://www.sdufe.edu.cn/info/1068/26223.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "山东财经大学经济学院2025年全职博士后研究人员招聘简章",
+      "url": "https://econ.sdufe.edu.cn/info/1058/7192.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "山东财经大学金融学院2026年全职博士后研究人员招聘公告",
+      "url": "https://jinrong.sdufe.edu.cn/info/1160/8909.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "青岛大学2026年诚聘海内外优秀人才公告",
+      "url": "https://rlzy.qdu.edu.cn/info/1003/2442.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "青岛大学2026年公开招聘专业技术人员公告",
+      "url": "https://rlzy.qdu.edu.cn/info/1003/2463.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "not_econ_related"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "山东财经大学金融学院2026年招聘全职博士后研究人员公告-博士后招聘网",
+      "url": "http://www.boshihoujob.com/gxbsh/shandong/131224.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    }
+  ]
+}

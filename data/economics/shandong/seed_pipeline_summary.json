@@ -1,0 +1,16 @@
+{
+  "region": "shandong",
+  "verified": 11,
+  "schools": 5,
+  "unis_in_verified": 4,
+  "ratio": 2.2,
+  "target": 10,
+  "success": true,
+  "pdf": "clean/shandong_listings_validated_2026-10-15.pdf",
+  "universities": [
+    "CUP East China",
+    "Ocean University of China",
+    "SDUFE",
+    "Shandong University"
+  ]
+}

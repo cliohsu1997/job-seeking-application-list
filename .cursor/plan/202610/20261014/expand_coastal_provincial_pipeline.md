@@ -66,6 +66,9 @@ python code/run_province_pipeline.py --summarize-only --with-macau-taiwan
 - [x] Streamline: delete `screen_job_freshness` / `verify_jobs_one_by_one`; shared `freshness_rules.py`  
 - [x] Deprecate CLI for `download_china_provinces` / `discover_dept_jobs` (libs kept)  
 - [x] `summarize_china_jobs.py` combines coastal + Macau/Taiwan (6+6 checked)  
+- [x] Asia-Pacific combine: AEA/EJM/CICE (CN/MY/JP/AU/NZ) top + provincial bottom; Excel in `clean/`  
+- [x] Provincial deadline one-by-one fill before combine (`fill_regional_deadlines.py`)  
+- [ ] Streamline: two-track website vs provincial; cache fetches; AEA Job Type faculty vs postdoc  
 - [ ] All provinces advanced-ready (>=2x verified) then final coastal merge  
 - [x] Plan lives under `.cursor/plan/` (tracked via gitignore exceptions)  
 - [x] First Shanghai pipeline run (12 schools -> 3 kept Donghua after stale purge)  

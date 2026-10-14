@@ -156,11 +156,22 @@ def is_outdated(row: dict, today: date) -> bool:
     return d < today
 
 
+# Website-channel outputs only — keep provincial / Macau-Taiwan xlsx.
+_WEBSITE_XLSX_PREFIXES = (
+    "all_listings_",
+    "aea_listings_",
+    "ejm_listings_",
+    "cice_listings_",
+)
+
+
 def clear_old_econ_outputs() -> None:
     if not CLEAN_ECON.exists():
         return
     for p in CLEAN_ECON.glob("*"):
-        if p.is_file():
+        if not p.is_file():
+            continue
+        if any(p.name.startswith(prefix) for prefix in _WEBSITE_XLSX_PREFIXES):
             p.unlink()
 
 
@@ -184,12 +195,19 @@ def main() -> None:
     active = [r for r in with_link if not is_outdated(r, today_d)]
     outdated = len(with_link) - len(active)
 
+    def job_type_rank(jt: str) -> int:
+        if jt in ("Faculty", "Academic"):
+            return 0
+        if jt == "Postdoc":
+            return 1
+        return 2
+
     def sort_key(r):
         d = r.get("Deadline")
         dkey = d if isinstance(d, datetime) else datetime.max
         return (
             r.get("Submission Channel") or "",
-            0 if r.get("Job Type") == "Academic" else 1,
+            job_type_rank(r.get("Job Type") or ""),
             dkey,
             r.get("University") or "",
         )
@@ -204,10 +222,14 @@ def main() -> None:
         subset = [r for r in active if r.get("Submission Channel") == channel]
         write_xlsx(subset, CLEAN_ECON / f"{channel.lower()}_listings_{today}.xlsx")
 
+    n_fac = sum(1 for r in active if r.get("Job Type") in ("Faculty", "Academic"))
+    n_post = sum(1 for r in active if r.get("Job Type") == "Postdoc")
+    n_non = sum(1 for r in active if r.get("Job Type") == "Non-Academic")
     print(f"Sources: {counts}")
     print(f"With Application Link: {len(with_link)}")
     print(f"Removed outdated (deadline < {today}): {outdated}")
     print(f"Clean active listings: {len(active)}")
+    print(f"Job Type - Faculty: {n_fac} | Postdoc: {n_post} | Non-Academic: {n_non}")
     if missing:
         print(f"Skipped {missing} rows without a direct link")
     print(f"Wrote {xlsx_path}")

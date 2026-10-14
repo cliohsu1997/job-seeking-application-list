@@ -12,7 +12,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://finance.nankai.edu.cn/2026/0119/c34541a589287/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   },
   {
     "region": "tianjin",
@@ -27,7 +31,11 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://nbr.nankai.edu.cn/nkglpl/news/view/20251106121718001",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2025",
+    "CollegeRanking": "985/211",
+    "Published Year": "2025",
+    "College Ranking": "985/211"
   },
   {
     "region": "tianjin",
@@ -35,14 +43,18 @@
     "Location": "天津",
     "University": "Nankai University",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "2025-12-18",
     "JobPostTitle": "南开大学经济学院2026年人才引进、教职工公开招聘、博士后招收公告",
     "JobPostUrl": "https://economics.nankai.edu.cn/2025/1211/c16001a586532/page.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://economics.nankai.edu.cn/2025/1211/c16001a586532/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   },
   {
     "region": "tianjin",
@@ -50,14 +62,19 @@
     "Location": "天津",
     "University": "Nankai University",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "2025-12-07",
     "JobPostTitle": "南开大学经济学院2026年教学科研人员招聘启事",
     "JobPostUrl": "https://economics.nankai.edu.cn/2025/1120/c16001a584393/page.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://economics.nankai.edu.cn/2025/1120/c16001a584393/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "tianjin",
@@ -65,14 +82,18 @@
     "Location": "天津",
     "University": "Nankai University",
     "School": "金融学院",
-    "Deadline": null,
+    "Deadline": "2026-01-09",
     "JobPostTitle": "金融学院2026年教学科研（副高）岗位招聘公告",
     "JobPostUrl": "https://finance.nankai.edu.cn/2025/1219/c34541a587299/page.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://finance.nankai.edu.cn/2025/1219/c34541a587299/page.htm",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   },
   {
     "region": "tianjin",
@@ -80,14 +101,19 @@
     "Location": "天津",
     "University": "Tianjin Normal University",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "2026-12-31",
     "JobPostTitle": "2026年天津师范大学第一批招聘（博士层次专业技术岗位）公告",
     "JobPostUrl": "http://www.jiaoshizhaopin.net/tianjin/jobshow_511040.html",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "http://www.jiaoshizhaopin.net/tianjin/jobshow_511040.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "tianjin",
@@ -95,14 +121,19 @@
     "Location": "天津",
     "University": "Tianjin Normal University",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "2026-02-06",
     "JobPostTitle": "天津师范大学数量经济学经济学院教师岗招聘",
     "JobPostUrl": "https://www.sciencehr.net/job/208814.html",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.sciencehr.net/job/208814.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "",
+    "CollegeRanking": "985/211",
+    "Published Year": "",
+    "College Ranking": "985/211",
+    "_deadline_source": "page_scan"
   },
   {
     "region": "tianjin",
@@ -117,6 +148,10 @@
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://www.gxszw.com/region/tianjin/gxzptj/202601/30123168.html",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Faculty",
+    "PublishedYear": "2026",
+    "CollegeRanking": "985/211",
+    "Published Year": "2026",
+    "College Ranking": "985/211"
   }
 ]
