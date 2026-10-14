@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-14",
+  "region": "hainan",
+  "input": 8,
+  "kept": 7,
+  "rejected": 1,
+  "rows": [
+    {
+      "title": "海南师范大学2026年公开招聘专任教师公告",
+      "url": "https://www.hainnu.edu.cn/2026/0803/c499a168635/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海南师范大学经济与管理学院2026年高层次人才招聘启事",
+      "url": "https://jgxy.hainnu.edu.cn/2026/1014/c352a170265/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "拥抱自贸港，拥有未来｜海南大学经济学科诚聘海内外高层次人才",
+      "url": "http://www.efnchina.com/info/1111/59241.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海南大学2026年全职博士后招收公告",
+      "url": "https://hro.hainanu.edu.cn/info/1223/9743.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海南大学2026年招聘教学科研专业技术人员公告",
+      "url": "https://hro.hainanu.edu.cn/info/1009/9413.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海南大学2026年招聘教学科研专业技术人员公告（副本）",
+      "url": "https://hro.hainanu.edu.cn/info/1074/9473.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海南大学诚邀全球英才依托申报2026年海外优青项目",
+      "url": "https://hro.hainanu.edu.cn/info/1074/9483.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "海南师范大学经济与管理学院2025年专任教师招聘启事",
+      "url": "https://jgxy.hainnu.edu.cn/2024/0312/c359a6915/page.htm",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    }
+  ]
+}

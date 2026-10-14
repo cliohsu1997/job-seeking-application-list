@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-14",
+  "region": "tianjin",
+  "candidates": 22,
+  "kept_before_polish": 9,
+  "kept": 9,
+  "rejected": 13,
+  "academic": 9,
+  "postdoc": 0,
+  "rows": [
+    {
+      "title": "南开大学经济学院2026年人才引进、教职工公开招聘、博士后招收公告",
+      "url": "https://economics.nankai.edu.cn/2025/1211/c16001a586532/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学经济学院2026年教学科研人员招聘启事",
+      "url": "https://economics.nankai.edu.cn/2025/1120/c16001a584393/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "金融学院2026年教学科研（副高）岗位招聘公告",
+      "url": "https://finance.nankai.edu.cn/2025/1219/c34541a587299/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2026年南开大学青年学科带头人岗位岗位招聘公告（金融学院）",
+      "url": "https://finance.nankai.edu.cn/2026/0119/c34541a589287/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学商学院诚聘全球英才",
+      "url": "https://nbr.nankai.edu.cn/nkglpl/news/view/20251106121718001",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "Tianjin University CoME Faculty Position Openings",
+      "url": "https://come.tju.edu.cn/info/1287/11683.htm",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "few_application_signals"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津大学管理与经济学部2026年诚邀英才依托申报海外优青项目",
+      "url": "https://www.gxszw.com/region/tianjin/gxzptj/202601/30123168.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "马寅初经济学院教授、副教授、助理教授招聘启事",
+      "url": "https://mysoe.tju.edu.cn/info/1208/4361.htm",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2024-12-31"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津财经大学金融学科诚聘海内外优秀人才",
+      "url": "https://finance.tjufe.edu.cn/info/1082/1284.htm",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=404"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津财经大学2026年第一批公开招聘方案（高层次人才岗位）",
+      "url": "https://jy.tj.gov.cn/ZWGK_52172/ZPXX/GKZPFA6214/202601/t20260128_7233307.html",
+      "keep": false,
+      "label": "student_career",
+      "reasons": [
+        "student_employment_portal"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津财经大学2026年第二批公开招聘方案（博士层次专业技术岗位）",
+      "url": "https://jy.tj.gov.cn/ZWGK_52172/ZPXX/GKZPFA6214/202601/t20260128_7233317.html",
+      "keep": false,
+      "label": "student_career",
+      "reasons": [
+        "student_employment_portal"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学人才引进、教职工公开招聘、博士后招收公告（2026年9月）",
+      "url": "https://rsc.nankai.edu.cn/2026/0911/c13685a602402/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津财经大学2026年专业教师岗会计学院",
+      "url": "https://www.gaoxiaojob.com/job/detail/2002265.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津大学管理与经济学部2025年全球招聘信息",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/319042.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津大学管理与经济学部招聘信息（讲席教授/英才教授/副教授/讲师）",
+      "url": "https://come.tju.edu.cn/szqk/zpxx.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学2026年人才引进、教职工公开招聘、博士后招收公告",
+      "url": "https://rsc.nankai.edu.cn/2025/1124/c13662a584788/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津财经大学2025年第三批公开招聘教师方案",
+      "url": "https://rsc.tjufe.edu.cn/info/1030/1680.htm",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "campus_hr_not_econ",
+        "few_application_signals"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津工业大学2026年第一批公开招聘（博士）人员方案及计划",
+      "url": "https://rsc.tiangong.edu.cn/2026/0123/c4383a112400/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津师范大学2026年第一批公开招聘（博士层次专业技术岗位）人员方案",
+      "url": "https://rsc.tjnu.edu.cn/info/1107/2574.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "天津商业大学2026年第二批公开招聘方案（博士岗位）",
+      "url": "https://www.tjcu.edu.cn/info/1080/25194.htm",
+      "keep": false,
+      "label": "not_target_role",
+      "reasons": [
+        "not_faculty_or_postdoc"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津师范大学数量经济学经济学院教师岗招聘",
+      "url": "https://www.sciencehr.net/job/208814.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2026年天津师范大学第一批招聘（博士层次专业技术岗位）公告",
+      "url": "http://www.jiaoshizhaopin.net/tianjin/jobshow_511040.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    }
+  ]
+}

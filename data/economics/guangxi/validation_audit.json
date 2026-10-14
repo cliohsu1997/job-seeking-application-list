@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-14",
+  "region": "guangxi",
+  "candidates": 12,
+  "kept_before_polish": 7,
+  "kept": 7,
+  "rejected": 5,
+  "academic": 7,
+  "postdoc": 0,
+  "rows": [
+    {
+      "title": "广西大学海内外人才招聘（含工商管理学院）",
+      "url": "https://www.gxu.edu.cn/info/1364/34798.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西大学经济学院诚聘海内外英才公告",
+      "url": "https://sef.gxu.edu.cn/info/10836/90824.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西财经学院2026年招聘高层次人才公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/409543.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西财经学院2026年公开招聘10名高层次人才（高级职称人才）公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/409403.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2026-6-25"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西财经学院2026年助理教授岗",
+      "url": "https://www.gaoxiaojob.com/job/detail/2224678.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "经济学院专任教师招聘（广西财经学院）",
+      "url": "https://www.gaoxiaojob.com/job/detail/2262200.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西民族大学2026年度公开招聘专任教师公告",
+      "url": "https://rsc.gxmzu.edu.cn/info/1296/10555.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西民族大学经济学院商学院2026年公开招聘4名专任教师公告",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/423963.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西师范大学2026年高层次人才公开招聘公告",
+      "url": "https://www.zhipin8.com/notice/info/38347",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西大学公开招聘工商管理学科学科带头人公告",
+      "url": "https://bs.gxu.edu.cn/info/1008/4333.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "广西财经学院2026年公开招聘138名教职人员公告（第二批）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/415538.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2026-7-22"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "广西大学工商管理学院教师招聘",
+      "url": "https://bs.gxu.edu.cn/szdw/jszp.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    }
+  ]
+}

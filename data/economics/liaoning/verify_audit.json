@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-14",
+  "region": "liaoning",
+  "input": 11,
+  "verified": 11,
+  "rejected": 0,
+  "rows": [
+    {
+      "title": "大连海事大学2026年度专任教师（博士）招聘公告",
+      "url": "https://rcb.dlmu.edu.cn/info/1013/4752.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东北财经大学管理科学与工程学院诚聘英才",
+      "url": "https://smse.dufe.edu.cn/content_98151.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东北财经大学经济学院诚聘天下英才",
+      "url": "https://econ.dufe.edu.cn/content_95758.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东北财经大学财政税务学院诚聘海内外英才",
+      "url": "https://cs.dufe.edu.cn/content_96670.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "大连理工大学2026年全球人才招聘",
+      "url": "https://perdep.dlut.edu.cn/info/1401/21541.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "大连理工大学2026年博士后招聘公告",
+      "url": "https://perdep.dlut.edu.cn/info/1401/21561.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "大连理工大学盘锦校区2026年专任教师招聘公告",
+      "url": "https://panjin.dlut.edu.cn/info/1342/48784.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "大连理工大学经济管理学院诚聘海内外优秀人才",
+      "url": "http://sem.dlut.edu.cn/info/1072/7620.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "辽宁大学商学院2026年面向社会公开招聘3名高层次和急需紧缺人才公告（第二批）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/424265.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "辽宁大学商学院2026年高层次人才招聘公告（第二批）",
+      "url": "https://coba.lnu.edu.cn/info/1164/4976.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东北大学2025年专任教师招聘启事",
+      "url": "https://rsc.neu.edu.cn/2025/0623/c3973a288430/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "campus_hr_econ_field"
+      ],
+      "job_type": "Academic"
+    }
+  ]
+}

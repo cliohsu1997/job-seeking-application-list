@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-14",
+  "region": "tianjin",
+  "input": 8,
+  "verified": 8,
+  "rejected": 0,
+  "rows": [
+    {
+      "title": "2026年南开大学青年学科带头人岗位岗位招聘公告（金融学院）",
+      "url": "https://finance.nankai.edu.cn/2026/0119/c34541a589287/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学商学院诚聘全球英才",
+      "url": "https://nbr.nankai.edu.cn/nkglpl/news/view/20251106121718001",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学经济学院2026年人才引进、教职工公开招聘、博士后招收公告",
+      "url": "https://economics.nankai.edu.cn/2025/1211/c16001a586532/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南开大学经济学院2026年教学科研人员招聘启事",
+      "url": "https://economics.nankai.edu.cn/2025/1120/c16001a584393/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "金融学院2026年教学科研（副高）岗位招聘公告",
+      "url": "https://finance.nankai.edu.cn/2025/1219/c34541a587299/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2026年天津师范大学第一批招聘（博士层次专业技术岗位）公告",
+      "url": "http://www.jiaoshizhaopin.net/tianjin/jobshow_511040.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津师范大学数量经济学经济学院教师岗招聘",
+      "url": "https://www.sciencehr.net/job/208814.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "天津大学管理与经济学部2026年诚邀英才依托申报海外优青项目",
+      "url": "https://www.gxszw.com/region/tianjin/gxzptj/202601/30123168.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    }
+  ]
+}
