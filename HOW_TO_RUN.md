@@ -158,7 +158,7 @@ python code/seed_jobs.py --region guangdong --sync-from-validated
 
 ### Task plan
 
-See `cursor/plan/202610/20261014/expand_coastal_provincial_pipeline.md`.
+See `.cursor/plan/202610/20261014/expand_coastal_provincial_pipeline.md`.
 
 ### Legacy (Guangdong/Fujian/Zhejiang/Shenzhen dept pages only)
 
