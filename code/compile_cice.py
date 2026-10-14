@@ -11,7 +11,7 @@ from openpyxl.styles import Font
 from openpyxl.utils import get_column_letter
 
 from columns import COLUMNS
-
+from download_cice import HTML_DIR, has_cice_content, load_detail_html_for_url
 from paths import APP_XLSX, DATA_ECON, ensure_dirs
 
 DATA = DATA_ECON
@@ -99,13 +99,41 @@ def item_to_row(item: dict) -> dict:
     }
 
 
+def _item_has_content(item: dict) -> bool:
+    """Drop CICE rows whose detail page is an empty 'nothing' shell."""
+    from paths import ROOT
+
+    html = ""
+    rel = item.get("detail_html_path") or ""
+    if rel:
+        path = Path(rel) if Path(rel).is_absolute() else ROOT / rel
+        if path.exists():
+            html = path.read_text(encoding="utf-8", errors="replace")
+    if not html:
+        key = item.get("key") or ""
+        local = HTML_DIR / ("%s.html" % key)
+        if local.exists():
+            html = local.read_text(encoding="utf-8", errors="replace")
+    if not html:
+        html = load_detail_html_for_url(item.get("url") or "")
+    if html:
+        return has_cice_content(html)
+    desc = (item.get("description") or "").strip()
+    return len(desc) >= 80
+
+
 def load_rows() -> list[dict]:
     files = sorted(DATA.glob("cice_listings_*.json"), reverse=True)
     if not files:
         raise FileNotFoundError("No cice_listings_*.json. Run download_cice.py first.")
     items = json.loads(files[0].read_text(encoding="utf-8"))
-    print(f"Compiling {len(items)} CICE listings from {files[0].name}")
-    return [item_to_row(item) for item in items]
+    kept = [it for it in items if _item_has_content(it)]
+    skipped = len(items) - len(kept)
+    print(
+        f"Compiling {len(kept)} CICE listings from {files[0].name}"
+        + (f" (skipped {skipped} empty)" if skipped else "")
+    )
+    return [item_to_row(item) for item in kept]
 
 
 def _write_sheet(ws, rows: list[dict]) -> None:

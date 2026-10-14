@@ -178,6 +178,31 @@ def enrich_from_detail_html(item: dict, detail_html: str) -> dict:
     return item
 
 
+def has_cice_content(detail_html: str) -> bool:
+    """False for empty SPA shells (Job Requirements / Application = 'nothing')."""
+    text = html_to_text(detail_html or "")
+    if len(text) < 200:
+        return False
+    # Empty employer templates on CICE repeat the word "nothing"
+    nothings = len(re.findall(r"\bnothing\b", text, flags=re.I))
+    if nothings >= 3 and len(text) < 400:
+        return False
+    if re.search(
+        r"Job Requirements\s+nothing\s+Application Instruction\s+nothing",
+        text,
+        flags=re.I,
+    ):
+        return False
+    return bool(
+        re.search(
+            r"apply|application|deadline|Ph\.?D|professor|"
+            r"\u62db\u8058|\u5e94\u8058|\u5c97\u4f4d",
+            text,
+            flags=re.I,
+        )
+    )
+
+
 def download_cice() -> Path:
     ensure_dirs()
     HTML_DIR.mkdir(parents=True, exist_ok=True)
@@ -191,6 +216,8 @@ def download_cice() -> Path:
     listings = parse_listings(page_html)
     print(f"Found {len(listings)} index listings; fetching detail pages...")
 
+    kept: list[dict] = []
+    skipped_empty = 0
     with_deadline = 0
     for i, item in enumerate(listings, 1):
         key = item.get("key") or ""
@@ -202,7 +229,9 @@ def download_cice() -> Path:
         if detail_html:
             html_path = HTML_DIR / f"{key}.html"
             html_path.write_text(detail_html, encoding="utf-8")
-            item["detail_html_path"] = str(html_path.relative_to(ROOT)).replace("\\", "/")
+            item["detail_html_path"] = str(html_path.relative_to(ROOT)).replace(
+                "\\", "/"
+            )
             item["deadline"] = enrich_from_detail_html(item, detail_html).get(
                 "deadline"
             )
@@ -210,25 +239,36 @@ def download_cice() -> Path:
             item["deadline"] = None
             item["detail_html_path"] = None
 
+        if not has_cice_content(detail_html):
+            skipped_empty += 1
+            print(
+                "  skip empty CICE page: %s"
+                % ((item.get("institution") or key)[:50],)
+            )
+            time.sleep(FETCH_SLEEP_SEC)
+            continue
+
+        kept.append(item)
         if item.get("deadline"):
             with_deadline += 1
         if i % 10 == 0 or i == len(listings):
             print(
-                f"  [{i}/{len(listings)}] with_deadline={with_deadline} "
+                f"  [{i}/{len(listings)}] kept={len(kept)} "
+                f"with_deadline={with_deadline} "
                 f"last={item.get('institution', '')[:40]!r} "
                 f"dl={item.get('deadline')}"
             )
         time.sleep(FETCH_SLEEP_SEC)
 
     json_path = DATA / f"cice_listings_{today}.json"
-    for it in listings:
+    for it in kept:
         it.pop("_detail_text_len", None)
     json_path.write_text(
-        json.dumps(listings, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(kept, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     print(
-        f"Saved {json_path} ({len(listings)} listings, "
-        f"{with_deadline} with deadline)"
+        f"Saved {json_path} ({len(kept)} listings, "
+        f"{with_deadline} with deadline; skipped_empty={skipped_empty})"
     )
     return json_path
 
