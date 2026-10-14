@@ -42,11 +42,12 @@ Or: `python code/run_province_pipeline.py --region {region}`
 
 - [x] Remove stale debug / one-off province scrapers  
 - [x] Web-checked Project 211 lists (gk100 / eol.cn) + ??? / finance extras  
-- [x] `provincial_catalog.json` — 113 schools across 13 regions (full 211 per province)  
+- [x] `provincial_catalog.json` — 122 schools across 13 regions (full 211 per province)  
 - [x] Concise loaders: `provincial_universities.py` + `china_universities_data.py`  
 - [x] Unified `REGIONS` + `paths.ensure_dirs` for all provinces  
 - [x] Guangdong seeds locked (`seeds.json`) + polish in validator  
 - [x] `HOW_TO_RUN.md` updated  
+- [x] Audit: all coastal 211 present; GD double-first-class complete (incl. GZCMU/GMU); Fujian 10; Zhejiang 13  
 - [ ] Run discover+validate for beijing / shanghai / shandong / zhejiang  
 - [ ] Run remaining coastal provinces (`--all`)  
 - [ ] Sync seeds per province after first good validate  

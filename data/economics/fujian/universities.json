@@ -59,7 +59,8 @@
       "city": "福州",
       "tags": [
         "provincial",
-        "双一流学科"
+        "双一流学科",
+        "省一流"
       ],
       "home": "https://www.fjnu.edu.cn/",
       "career": "https://rsc.fjnu.edu.cn/",
@@ -78,7 +79,8 @@
       "region": "fujian",
       "city": "泉州/厦门",
       "tags": [
-        "provincial"
+        "provincial",
+        "省一流"
       ],
       "home": "https://www.hqu.edu.cn/",
       "career": "https://rsc.hqu.edu.cn/",
@@ -116,7 +118,8 @@
       "region": "fujian",
       "city": "福州",
       "tags": [
-        "provincial"
+        "provincial",
+        "省一流"
       ],
       "home": "https://www.fafu.edu.cn/",
       "career": "https://rsc.fafu.edu.cn/",
@@ -154,7 +157,7 @@
       "region": "fujian",
       "city": "漳州",
       "tags": [
-        "known_catalog"
+        "provincial"
       ],
       "home": "https://www.mnnu.edu.cn/",
       "career": "https://rsc.mnnu.edu.cn/",
@@ -167,7 +170,7 @@
       "region": "fujian",
       "city": "泉州",
       "tags": [
-        "known_catalog"
+        "provincial"
       ],
       "home": "https://www.qztc.edu.cn/",
       "career": "https://rsc.qztc.edu.cn/",
@@ -180,7 +183,7 @@
       "region": "fujian",
       "city": "泉州",
       "tags": [
-        "known_catalog"
+        "provincial"
       ],
       "home": "https://www.yeu.edu.cn/",
       "career": "https://www.yeu.edu.cn/",

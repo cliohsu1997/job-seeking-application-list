@@ -2,8 +2,8 @@
   "date": "2026-10-14",
   "region": "guangdong",
   "province_zh": "广东",
-  "count": 16,
-  "with_econ_units": 12,
+  "count": 17,
+  "with_econ_units": 11,
   "tags_985_211": 4,
   "universities": [
     {
@@ -249,7 +249,7 @@
       "econ_units": []
     },
     {
-      "name_zh": "北京师范大学香港浵会大学联合国际学院",
+      "name_zh": "北京师范大学香港浸会大学联合国际学院",
       "name_en": "UIC",
       "region": "guangdong",
       "city": "珠海",
@@ -259,7 +259,7 @@
       ],
       "home": "https://uic.edu.cn/",
       "career": "https://uic.edu.cn/",
-      "postdoc": null,
+      "postdoc": "https://uic.edu.cn/",
       "econ_units": [
         {
           "unit_zh": "工商管理学院",
@@ -269,36 +269,43 @@
       ]
     },
     {
+      "name_zh": "广州中医药大学",
+      "name_en": "Guangzhou University of Chinese Medicine",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "双一流"
+      ],
+      "home": "https://www.gzucm.edu.cn/",
+      "career": "https://rsc.gzucm.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
+      "name_zh": "广州医科大学",
+      "name_en": "Guangzhou Medical University",
+      "region": "guangdong",
+      "city": "广州",
+      "tags": [
+        "双一流"
+      ],
+      "home": "https://www.gzhmu.edu.cn/",
+      "career": "https://rsc.gzhmu.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
       "name_zh": "广东海洋大学",
       "name_en": "Guangdong Ocean University",
       "region": "guangdong",
       "city": "湛江",
       "tags": [
-        "known_catalog"
+        "provincial"
       ],
       "home": "https://www.gdou.edu.cn/",
       "career": "https://rsc.gdou.edu.cn/",
       "postdoc": "https://rsc.gdou.edu.cn/",
       "econ_units": []
-    },
-    {
-      "name_zh": "北京师范大学香港浸会大学联合国际学院",
-      "name_en": "BNU-HKBU UIC",
-      "region": "guangdong",
-      "city": "珠海",
-      "tags": [
-        "known_catalog"
-      ],
-      "home": "https://uic.edu.cn/",
-      "career": "https://uic.edu.cn/",
-      "postdoc": "https://uic.edu.cn/",
-      "econ_units": [
-        {
-          "unit_zh": "工商管理学院",
-          "unit_en": "Faculty of Business and Management",
-          "url": "https://uic.edu.cn/"
-        }
-      ]
     }
   ]
 }

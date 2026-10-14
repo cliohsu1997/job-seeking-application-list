@@ -1521,6 +1521,47 @@
         ],
         "region": "zhejiang",
         "province_zh": "浙江"
+      },
+      {
+        "name_zh": "中国美术学院",
+        "name_en": "China Academy of Art",
+        "city": "杭州",
+        "tags": [
+          "双一流"
+        ],
+        "home": "https://www.caa.edu.cn/",
+        "career": "https://www.caa.edu.cn/",
+        "econ_units": [],
+        "region": "zhejiang",
+        "province_zh": "浙江"
+      },
+      {
+        "name_zh": "嘉兴大学",
+        "name_en": "Jiaxing University",
+        "region": "zhejiang",
+        "province_zh": "浙江",
+        "city": "嘉兴",
+        "tags": [
+          "provincial"
+        ],
+        "home": "https://www.zjxu.edu.cn/",
+        "career": "https://rsc.zjxu.edu.cn/",
+        "postdoc": null,
+        "econ_units": []
+      },
+      {
+        "name_zh": "浙江海洋大学",
+        "name_en": "Zhejiang Ocean University",
+        "region": "zhejiang",
+        "province_zh": "浙江",
+        "city": "舟山",
+        "tags": [
+          "provincial"
+        ],
+        "home": "https://www.zjou.edu.cn/",
+        "career": "https://rsc.zjou.edu.cn/",
+        "postdoc": null,
+        "econ_units": []
       }
     ],
     "fujian": [
@@ -1576,7 +1617,8 @@
         "city": "福州",
         "tags": [
           "provincial",
-          "双一流学科"
+          "双一流学科",
+          "省一流"
         ],
         "home": "https://www.fjnu.edu.cn/",
         "career": "https://rsc.fjnu.edu.cn/",
@@ -1595,7 +1637,8 @@
         "name_en": "Huaqiao University",
         "city": "泉州/厦门",
         "tags": [
-          "provincial"
+          "provincial",
+          "省一流"
         ],
         "home": "https://www.hqu.edu.cn/",
         "career": "https://rsc.hqu.edu.cn/",
@@ -1633,7 +1676,8 @@
         "name_en": "FAFU",
         "city": "福州",
         "tags": [
-          "provincial"
+          "provincial",
+          "省一流"
         ],
         "home": "https://www.fafu.edu.cn/",
         "career": "https://rsc.fafu.edu.cn/",
@@ -1665,6 +1709,47 @@
         ],
         "region": "fujian",
         "province_zh": "福建"
+      },
+      {
+        "name_zh": "闽南师范大学",
+        "name_en": "Minnan Normal University",
+        "city": "漳州",
+        "tags": [
+          "provincial"
+        ],
+        "home": "https://www.mnnu.edu.cn/",
+        "career": "https://rsc.mnnu.edu.cn/",
+        "econ_units": [],
+        "region": "fujian",
+        "province_zh": "福建"
+      },
+      {
+        "name_zh": "泉州师范学院",
+        "name_en": "Quanzhou Normal University",
+        "region": "fujian",
+        "province_zh": "福建",
+        "city": "泉州",
+        "tags": [
+          "provincial"
+        ],
+        "home": "https://www.qztc.edu.cn/",
+        "career": "https://rsc.qztc.edu.cn/",
+        "postdoc": null,
+        "econ_units": []
+      },
+      {
+        "name_zh": "仰恩大学",
+        "name_en": "Yang-En University",
+        "region": "fujian",
+        "province_zh": "福建",
+        "city": "泉州",
+        "tags": [
+          "provincial"
+        ],
+        "home": "https://www.yeu.edu.cn/",
+        "career": "https://www.yeu.edu.cn/",
+        "postdoc": null,
+        "econ_units": []
       }
     ],
     "shandong": [
@@ -2013,7 +2098,7 @@
         "province_zh": "广东"
       },
       {
-        "name_zh": "北京师范大学香港浵会大学联合国际学院",
+        "name_zh": "北京师范大学香港浸会大学联合国际学院",
         "name_en": "UIC",
         "city": "珠海",
         "tags": [
@@ -2029,6 +2114,45 @@
             "url": "https://uic.edu.cn/"
           }
         ],
+        "region": "guangdong",
+        "province_zh": "广东"
+      },
+      {
+        "name_zh": "广州中医药大学",
+        "name_en": "Guangzhou University of Chinese Medicine",
+        "city": "广州",
+        "tags": [
+          "双一流"
+        ],
+        "home": "https://www.gzucm.edu.cn/",
+        "career": "https://rsc.gzucm.edu.cn/",
+        "econ_units": [],
+        "region": "guangdong",
+        "province_zh": "广东"
+      },
+      {
+        "name_zh": "广州医科大学",
+        "name_en": "Guangzhou Medical University",
+        "city": "广州",
+        "tags": [
+          "双一流"
+        ],
+        "home": "https://www.gzhmu.edu.cn/",
+        "career": "https://rsc.gzhmu.edu.cn/",
+        "econ_units": [],
+        "region": "guangdong",
+        "province_zh": "广东"
+      },
+      {
+        "name_zh": "广东海洋大学",
+        "name_en": "Guangdong Ocean University",
+        "city": "湛江",
+        "tags": [
+          "provincial"
+        ],
+        "home": "https://www.gdou.edu.cn/",
+        "career": "https://rsc.gdou.edu.cn/",
+        "econ_units": [],
         "region": "guangdong",
         "province_zh": "广东"
       }
@@ -2267,10 +2391,10 @@
     "liaoning": 5,
     "shanghai": 12,
     "jiangsu": 13,
-    "zhejiang": 10,
-    "fujian": 7,
+    "zhejiang": 13,
+    "fujian": 10,
     "shandong": 5,
-    "guangdong": 14,
+    "guangdong": 17,
     "shenzhen": 8,
     "guangxi": 2,
     "hainan": 2

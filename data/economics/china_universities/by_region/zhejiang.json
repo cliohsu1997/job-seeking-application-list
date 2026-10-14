@@ -2,7 +2,7 @@
   "date": "2026-10-14",
   "region": "zhejiang",
   "province_zh": "浙江",
-  "count": 12,
+  "count": 13,
   "with_econ_units": 10,
   "tags_985_211": 1,
   "universities": [
@@ -201,12 +201,25 @@
       ]
     },
     {
+      "name_zh": "中国美术学院",
+      "name_en": "China Academy of Art",
+      "region": "zhejiang",
+      "city": "杭州",
+      "tags": [
+        "双一流"
+      ],
+      "home": "https://www.caa.edu.cn/",
+      "career": "https://www.caa.edu.cn/",
+      "postdoc": null,
+      "econ_units": []
+    },
+    {
       "name_zh": "嘉兴大学",
       "name_en": "Jiaxing University",
       "region": "zhejiang",
       "city": "嘉兴",
       "tags": [
-        "known_catalog"
+        "provincial"
       ],
       "home": "https://www.zjxu.edu.cn/",
       "career": "https://rsc.zjxu.edu.cn/",
@@ -219,7 +232,7 @@
       "region": "zhejiang",
       "city": "舟山",
       "tags": [
-        "known_catalog"
+        "provincial"
       ],
       "home": "https://www.zjou.edu.cn/",
       "career": "https://rsc.zjou.edu.cn/",
