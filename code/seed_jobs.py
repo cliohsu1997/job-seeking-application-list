@@ -128,14 +128,21 @@ def sync_seeds_from_validated(region: str) -> int:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--region", action="append", choices=list(REGIONS), required=True)
+    ap.add_argument("--region", action="append", choices=list(REGIONS))
+    ap.add_argument("--all", action="store_true", help="Merge seeds for every region")
     ap.add_argument(
         "--sync-from-validated",
         action="store_true",
         help="Overwrite seeds.json from discovered_jobs_validated.json",
     )
     args = ap.parse_args()
-    for region in args.region:
+    targets = list(REGIONS) if args.all else (args.region or [])
+    if not targets:
+        raise SystemExit(
+            "Pass --region <name> (repeatable) or --all.\nRegions: %s"
+            % ", ".join(REGIONS)
+        )
+    for region in targets:
         if args.sync_from_validated:
             sync_seeds_from_validated(region)
         merge_seeds(region)

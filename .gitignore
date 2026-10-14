@@ -20,6 +20,12 @@ data/**/raw_*/
 data/**/departments/
 data/**/job_mine*/
 
+# Ephemeral pipeline run summaries
+data/economics/province_init_summary_*.json
+data/economics/province_pipeline_summary_*.json
+data/economics/by_university_summary_*.json
+data/economics/china_coastal_validation_summary_*.json
+
 # Local Excel working copies / Office locks
 ~$*
 *.tmp

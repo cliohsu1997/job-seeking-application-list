@@ -48,6 +48,8 @@ Or: `python code/run_province_pipeline.py --region {region}`
 - [x] Guangdong seeds locked (`seeds.json`) + polish in validator  
 - [x] `HOW_TO_RUN.md` updated  
 - [x] Audit: all coastal 211 present; GD double-first-class complete (incl. GZCMU/GMU); Fujian 10; Zhejiang 13  
+- [x] Per-province workspaces (`seeds.json` + candidates) via `init_province_pipeline.py`  
+- [x] `run_province_pipeline.py --region|--all|--list|--init-only` for all 13 regions  
 - [ ] Run discover+validate for beijing / shanghai / shandong / zhejiang  
 - [ ] Run remaining coastal provinces (`--all`)  
 - [ ] Sync seeds per province after first good validate  

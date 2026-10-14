@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """One-by-one university search: home/HR/econ units -> career hubs -> job links.
 
-Works for any coastal region (guangdong / fujian / zhejiang / shenzhen).
+Works for any coastal region in REGIONS (beijing ... hainan, incl. shenzhen).
 
 Usage:
   python discover_by_university.py --region guangdong
-  python discover_by_university.py --region fujian --no-merge
+  python discover_by_university.py --region fujian --region zhejiang
+  python discover_by_university.py --all
+  python discover_by_university.py --region beijing --no-merge
 """
 from __future__ import annotations
 
@@ -501,8 +503,12 @@ def main() -> None:
         "--region",
         action="append",
         choices=list(REGIONS),
-        required=True,
         help="Region to mine (repeatable).",
+    )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="Mine every coastal region.",
     )
     ap.add_argument(
         "--no-merge",
@@ -510,8 +516,14 @@ def main() -> None:
         help="Do not merge prior candidates; start fresh from university loop.",
     )
     args = ap.parse_args()
+    targets = list(REGIONS) if args.all else (args.region or [])
+    if not targets:
+        raise SystemExit(
+            "Pass --region <name> (repeatable) or --all.\nRegions: %s"
+            % ", ".join(REGIONS)
+        )
     all_summary = {"date": TODAY, "regions": {}}
-    for region in args.region:
+    for region in targets:
         all_summary["regions"][region] = discover_region(
             region, merge_existing=not args.no_merge
         )

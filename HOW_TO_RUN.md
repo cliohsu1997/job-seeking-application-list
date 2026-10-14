@@ -70,33 +70,75 @@ Outputs:
 Province-level folders under `data/economics/{region}/`. Shenzhen schools stay
 under `shenzhen/` (not duplicated in Guangdong).
 
-**Regions:** `beijing` `tianjin` `hebei` `liaoning` `shanghai` `jiangsu`
-`zhejiang` `fujian` `shandong` `guangdong` `shenzhen` `guangxi` `hainan`
-
 School lists = 985/211/double-first-class **plus** provincial econ hirers
-(same strategy as Guangdong). Catalog source: `code/provincial_universities.py`
-+ legacy `download_china_provinces.UNIVERSITIES` + `EXTRA_UNIVERSITIES`.
+(same strategy as Guangdong). Catalog:
+`data/economics/china_universities/provincial_catalog.json`.
 
-### One-command pipeline
+### Available regions
 
-Catalog → one-by-one school scrape (dept + HR) → seeds → validate/polish → PDF:
+| Region key | Area |
+|------------|------|
+| `beijing` | Beijing |
+| `tianjin` | Tianjin |
+| `hebei` | Hebei |
+| `liaoning` | Liaoning |
+| `shanghai` | Shanghai |
+| `jiangsu` | Jiangsu |
+| `zhejiang` | Zhejiang |
+| `fujian` | Fujian |
+| `shandong` | Shandong |
+| `guangdong` | Guangdong (excl. Shenzhen) |
+| `shenzhen` | Shenzhen |
+| `guangxi` | Guangxi |
+| `hainan` | Hainan |
+
+```bash
+python code/run_province_pipeline.py --list
+python code/init_province_pipeline.py --all
+```
+
+### One-command pipeline (any province)
+
+Catalog → one-by-one school scrape → seeds → validate/polish → PDF:
 
 ```bash
 python code/run_province_pipeline.py --region guangdong
 python code/run_province_pipeline.py --region beijing
 python code/run_province_pipeline.py --region shanghai
-python code/run_province_pipeline.py --region shandong
+python code/run_province_pipeline.py --region fujian
 python code/run_province_pipeline.py --region zhejiang
+python code/run_province_pipeline.py --region shandong
+python code/run_province_pipeline.py --region jiangsu
+python code/run_province_pipeline.py --region tianjin
+python code/run_province_pipeline.py --region hebei
+python code/run_province_pipeline.py --region liaoning
+python code/run_province_pipeline.py --region shenzhen
+python code/run_province_pipeline.py --region guangxi
+python code/run_province_pipeline.py --region hainan
 python code/run_province_pipeline.py --all
 ```
 
-### Step-by-step
+Skip slow scrape (seed + validate only):
+
+```bash
+python code/run_province_pipeline.py --region beijing --skip-discover
+```
+
+### Step-by-step (same for every region)
 
 ```bash
 python code/download_china_universities.py --region beijing
 python code/discover_by_university.py --region beijing
 python code/seed_jobs.py --region beijing
 python code/validate_job_links.py --region beijing
+```
+
+Or `--all` on discover / seed / validate:
+
+```bash
+python code/discover_by_university.py --all
+python code/seed_jobs.py --all
+python code/validate_job_links.py --all
 ```
 
 Lock a good validated set into seeds (reproducible keep list):

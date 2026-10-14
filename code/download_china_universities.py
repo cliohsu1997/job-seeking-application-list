@@ -100,7 +100,10 @@ def load_region_universities(region: str) -> list[dict]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--region", action="append", choices=list(REGIONS))
-    write_catalog(ap.parse_args().region)
+    ap.add_argument("--all", action="store_true", help="Write catalogs for every region")
+    args = ap.parse_args()
+    regions = list(REGIONS) if args.all or not args.region else args.region
+    write_catalog(regions)
 
 
 if __name__ == "__main__":
