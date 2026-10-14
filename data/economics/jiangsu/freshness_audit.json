@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-14",
+  "region": "jiangsu",
+  "input": 23,
+  "kept": 21,
+  "rejected": 2,
+  "rows": [
+    {
+      "title": "中国矿业大学2026年博士后招聘（含经管学院）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/383481.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "河海大学商学院人才招聘公告（微信）",
+      "url": "https://mp.weixin.qq.com/s/EjfNyNnvI_aeOxFolLR_2Q",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "江南大学2026年人才招聘公告",
+      "url": "http://renshi.jiangnan.edu.cn/info/1008/3329.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "江南大学2026年人才招聘公告（新闻网）",
+      "url": "https://news.jiangnan.edu.cn/info/1132/106209.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "江苏大学2026年公开招聘专任教师公告",
+      "url": "https://www.ujs.edu.cn/info/1093/211052.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "江苏大学2026年公开招聘专任教师公告（高校人才网）",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/395509.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京农业大学经济管理学院2026年诚聘海内外优秀人才",
+      "url": "http://www.chinajxrc.com/gaoxiao/zpview_B5EAD67F114545E3.shtml",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京农业大学经济管理学院2026年诚聘海内外优秀人才",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/425313.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京农业大学经济管理学院人才招聘公告",
+      "url": "https://economy.njau.edu.cn/info/1460/14471.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京农业大学经济管理学院人才招聘公告（备份）",
+      "url": "https://economy.njau.edu.cn/info/1435/14470.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京理工大学企业管理（经济管理学院-专任教师）",
+      "url": "https://www.sciencehr.net/job/228739.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京理工大学会计学（经济管理学院-专任教师）",
+      "url": "https://www.100zp.com/job/211061.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京师范大学商学院2026年公开招聘2名工作人员公告（第二批）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/426065.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京财经大学2026年公开招聘教学科研岗人员公告",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/394111.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "南京财经大学诚邀海内外优秀人才加盟",
+      "url": "https://xxgk.nufe.edu.cn/info/1410/2781.htm",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "南京大学商学院2026年度研究系列人员招聘公告",
+      "url": "https://nubs.nju.edu.cn/d9/7c/c17177a842108/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "苏州大学2026年度热忱邀请全球英才依托申报海外优青项目",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/373883.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "苏州大学商学院2026年度邀请全球英才依托申报海外优青项目",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/374116.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "苏州大学商学院招聘公告",
+      "url": "https://sxy.suda.edu.cn/7f/49/c13338a491337/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "IACMR 东南大学经济管理学院诚聘海内外英才",
+      "url": "https://iacmr.org/%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%EF%BD%9C%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E8%AF%9A%E8%81%98%E6%B5%B7%E5%86%85%E5%A4%96%E8%8B%B1%E6%89%8D/",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "东南大学经管学院诚聘海内外英才（2025长年有效）",
+      "url": "https://em.seu.edu.cn/2025/0303/c34068a520025/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "河海大学经济与金融学院2025年招聘人才公告",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/340627.html",
+      "keep": false,
+      "label": "stale_2025_closed",
+      "reasons": [
+        "2025_with_deadline_no_rolling"
+      ]
+    },
+    {
+      "title": "2025年江苏南京大学商学院准聘长聘岗位招聘公告",
+      "url": "https://kaituoedu.com/recruitment/2897.html",
+      "keep": false,
+      "label": "stale_2025_closed",
+      "reasons": [
+        "2025_with_deadline_no_rolling"
+      ]
+    }
+  ]
+}

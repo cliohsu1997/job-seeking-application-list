@@ -1,0 +1,23 @@
+{
+  "region": "fujian",
+  "verified": 19,
+  "schools": 10,
+  "unis_in_verified": 12,
+  "ratio": 1.9,
+  "target": 20,
+  "success": false,
+  "universities": [
+    "FAFU",
+    "FJNU",
+    "FJXU",
+    "Fujian University of Technology",
+    "Fuzhou University",
+    "Fuzhou University of International Studies and Trade",
+    "Huaqiao University",
+    "Jimei University",
+    "Minjiang University",
+    "Putian University",
+    "Quanzhou Normal University",
+    "Xiamen University"
+  ]
+}

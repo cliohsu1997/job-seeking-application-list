@@ -1161,12 +1161,7 @@ def main(regions: list[str] | None = None) -> None:
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
-    ap.add_argument(
-        "--region",
-        action="append",
-        choices=list(REGIONS),
-        help="Run one region (repeatable). Default: all.",
+    raise SystemExit(
+        "DEPRECATED: use run_province_pipeline.py.\n"
+        "This module remains as a helper library (fetch/job_to_row/write_xlsx)."
     )
-    args = ap.parse_args()
-    main(args.region)

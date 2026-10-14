@@ -1,15 +1,6 @@
-"""
-Pipeline for all China coastal regions (guangdong / fujian / zhejiang / shenzhen):
+"""Helper library: dept-page link mining for discover_by_university.
 
-  1. Start from economics departments (UNIVERSITIES catalog)
-  2. Scrape each department page
-  3. Detect career-related links (招聘 / 博士后 / 人才引进 / ...)
-  4. Follow career hubs → extract exact job announcement links
-  5. Write job_links.json + discovered_jobs.json + Application-column xlsx
-
-Usage:
-  python discover_dept_jobs.py                  # all regions
-  python discover_dept_jobs.py --region guangdong
+CLI entry is deprecated — use run_province_pipeline.py / discover_by_university.py.
 """
 from __future__ import annotations
 
@@ -431,17 +422,7 @@ def main(regions: list[str] | None = None, do_validate: bool = False) -> None:
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
-    ap.add_argument(
-        "--region",
-        action="append",
-        choices=list(REGIONS),
-        help="Mine one region (repeatable). Default: all four.",
+    raise SystemExit(
+        "DEPRECATED: use run_province_pipeline.py / discover_by_university.py.\n"
+        "This module remains as a helper library only."
     )
-    ap.add_argument(
-        "--validate",
-        action="store_true",
-        help="After mining, keep only real faculty/postdoc announcement pages.",
-    )
-    args = ap.parse_args()
-    main(args.region, do_validate=args.validate)

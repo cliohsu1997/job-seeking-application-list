@@ -1,0 +1,648 @@
+{
+  "date": "2026-10-14",
+  "region": "jiangsu",
+  "candidates": 63,
+  "kept_before_polish": 23,
+  "kept": 23,
+  "rejected": 40,
+  "academic": 18,
+  "postdoc": 5,
+  "rows": [
+    {
+      "title": "南京大学商学院2026年度准聘长聘岗位（事业编制）招聘公告",
+      "url": "https://nubs.nju.edu.cn/cc/b0/c8896a838832/page.htm",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2026-10-9"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京大学商学院2026年度准聘长聘岗位（人才网）",
+      "url": "https://rczp.nju.edu.cn/zrjs/zrjsgwlb/20260709/i401349.html",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "few_application_signals"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京大学商学院2026年度研究系列人员招聘公告",
+      "url": "https://nubs.nju.edu.cn/d9/7c/c17177a842108/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "东南大学经管学院诚聘海内外英才（2025长年有效）",
+      "url": "https://em.seu.edu.cn/2025/0303/c34068a520025/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "苏州大学商学院招聘公告",
+      "url": "https://sxy.suda.edu.cn/7f/49/c13338a491337/page.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "苏州大学商学院博士后招聘公告",
+      "url": "https://sxy.suda.edu.cn/7f/4f/c13338a491343/page.htm",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "苏州大学2025年教学科研岗公开招聘公告",
+      "url": "https://rsc.suda.edu.cn/5d/a6/c275a679334/page.htm",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "经济与管理学院长期面向海内外诚聘教师",
+      "url": "https://cem.nuaa.edu.cn/_upload/article/files/51/ff/4dfe38e04c77b4a850d34cd1714c/28a999bf-68be-43bc-8a08-02e8f25d995a.pdf",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京航空航天大学诚聘四海英才",
+      "url": "https://rsc.nuaa.edu.cn/2025/0506/c381a374499/page.htm",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京航空航天大学航天学院诚聘海内外优秀人才",
+      "url": "https://hr.nuaa.edu.cn/2026/0518/c381a399317/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京理工大学企业管理（经济管理学院-专任教师）",
+      "url": "https://www.sciencehr.net/job/228739.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京理工大学会计学（经济管理学院-专任教师）",
+      "url": "https://www.100zp.com/job/211061.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国矿业大学2026年新教师招聘启事",
+      "url": "https://hr.cumt.edu.cn/info/1025/3229.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国矿业大学2026年高层次人才引进公告",
+      "url": "https://hr.cumt.edu.cn/info/1024/3228.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "河海大学商学院人才招聘公告",
+      "url": "https://hhbs.hhu.edu.cn/2025/0331/c18194a300345/page.htm",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "江南大学2026年人才招聘公告",
+      "url": "http://renshi.jiangnan.edu.cn/info/1008/3329.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "江南大学2026年人才招聘公告（新闻网）",
+      "url": "https://news.jiangnan.edu.cn/info/1132/106209.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京农业大学2026年诚聘海内外优秀人才",
+      "url": "https://rsrcw.njau.edu.cn/info/1139/10234.htm",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=404"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国药科大学专任教师招聘启事",
+      "url": "https://rsc.cpu.edu.cn/a9/0c/c4821a239884/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国药科大学诚聘海内外英才",
+      "url": "http://rsc.cpu.edu.cn/c5/ba/c4821a116154/page.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京师范大学商学院2026年公开招聘2名工作人员公告（第二批）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/426065.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "南京师范大学2026年教学科研人员招聘公告",
+      "url": "https://www.100zp.com/m_zpgg-c_detail-id_2500.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京财经大学2026年公开招聘教学科研岗公告",
+      "url": "https://rsc.nufe.edu.cn/info/1029/4288.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "campus_hr_not_econ",
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "经济学院教学科研教师2",
+      "url": "https://www.gaoxiaojob.com/job/detail/2127806.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "江苏大学2026年公开招聘专任教师公告",
+      "url": "https://www.ujs.edu.cn/info/1093/211052.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "江苏大学2026年公开招聘专任教师公告（人才办）",
+      "url": "https://rcb.ujs.edu.cn/info/1081/4021.htm",
+      "keep": false,
+      "label": "wrong_field",
+      "reasons": [
+        "not_econ_related"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京大学商学院2025年度准聘长聘岗位招聘公告",
+      "url": "http://www.91haigui.com/html/10401.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2025-4-2"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "IACMR 东南大学经济管理学院诚聘海内外英才",
+      "url": "https://iacmr.org/%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%EF%BD%9C%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E8%AF%9A%E8%81%98%E6%B5%B7%E5%86%85%E5%A4%96%E8%8B%B1%E6%89%8D/",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "苏州大学人才招聘网长期招聘岗位",
+      "url": "https://rczp.suda.edu.cn/recruit/recruitNew/job.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=404"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京农业大学经济管理学院2026年诚聘海内外优秀人才",
+      "url": "http://www.chinajxrc.com/gaoxiao/zpview_B5EAD67F114545E3.shtml",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "正高岗位(长聘教授三岗)-经济与管理学院",
+      "url": "https://www.gaoxiaojob.com/job/detail/2019788.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "河海大学商学院人才招聘公告（微信）",
+      "url": "https://mp.weixin.qq.com/s/EjfNyNnvI_aeOxFolLR_2Q",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "2025年江苏南京大学商学院准聘长聘岗位招聘公告",
+      "url": "https://kaituoedu.com/recruitment/2897.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "青年首席教授-经济管理学院",
+      "url": "https://www.gaoxiaojob.com/job/detail/2105870.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京财经大学人才招聘平台（长期有效）",
+      "url": "https://rszp.nufe.edu.cn/",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "few_application_signals"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京师范大学全职博士后招聘公告（常年）",
+      "url": "http://bsh.njnu.edu.cn/",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "few_application_signals"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "南京农业大学经济管理学院人才招聘公告",
+      "url": "https://economy.njau.edu.cn/info/1460/14471.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京农业大学经济管理学院人才招聘公告（备份）",
+      "url": "https://economy.njau.edu.cn/info/1435/14470.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京农业大学经济管理学院钟山青年研究员招聘条件",
+      "url": "https://economy.njau.edu.cn/info/1460/12621.htm",
+      "keep": false,
+      "label": "stale",
+      "reasons": [
+        "posted_year_too_old"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "南京农业大学经济管理学院2026年诚聘海内外优秀人才",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/425313.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "苏州大学商学院2026年度邀请全球英才依托申报海外优青项目",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/374116.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "苏州大学2026年度热忱邀请全球英才依托申报海外优青项目",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/373883.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中国矿业大学2026年高层次人才引进公告（含经管学院）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/356248.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国矿业大学2026年博士后招聘（含经管学院）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/383481.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "中国矿业大学高校人才网2026年上半年博士后峰会（经管）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/392327.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2026-5-19"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "河海大学商学院人才招聘公告（2026-09）",
+      "url": "https://hhbs.hhu.edu.cn/2026/0921/c18194a335260/page.htm",
+      "keep": false,
+      "label": "weak_job_signal",
+      "reasons": [
+        "few_application_signals"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "河海大学商学院博士后招收",
+      "url": "https://hhbs.hhu.edu.cn/18195/list.htm",
+      "keep": false,
+      "label": "list_hub",
+      "reasons": [
+        "url_is_list_hub"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "河海大学经济与金融学院2025年招聘人才公告",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/340627.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京财经大学2026年公开招聘教学科研岗人员公告",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/394111.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京财经大学诚邀海内外优秀人才加盟",
+      "url": "https://xxgk.nufe.edu.cn/info/1410/2781.htm",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "南京航空航天大学2026年诚邀全球英才依托申报海外优青项目",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/378911.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "教师岗-商学院（应用经济学/管理科学与工程/工商管理）",
+      "url": "https://www.gaoxiaojob.com/job/detail/1979356.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "学科带头人/团队成员-商学院",
+      "url": "https://m.gaoxiaojob.com/job/detail/1581205.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2025-8-31"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京大学商学院2026年招聘助理教授、副教授（高校人才网）",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/415265.html",
+      "keep": false,
+      "label": "expired_deadline",
+      "reasons": [
+        "deadline_passed_2026-10-9"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "南京师范大学商学院2026年公开招聘2名工作人员公告（m站）",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/426065.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=None"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "金融学院教学科研教师1",
+      "url": "https://www.gaoxiaojob.com/job/detail/2127809.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "国际经贸学院教学科研教师1",
+      "url": "https://www.gaoxiaojob.com/job/detail/2127811.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "国际经贸学院教学科研教师2",
+      "url": "https://www.gaoxiaojob.com/job/detail/2127812.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "会计学院教学科研教师2",
+      "url": "https://www.gaoxiaojob.com/job/detail/2127814.html",
+      "keep": false,
+      "label": "empty",
+      "reasons": [
+        "body_too_small"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "江苏大学2026年公开招聘专任教师公告（高校人才网）",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/395509.html",
+      "keep": true,
+      "label": "real_announcement",
+      "reasons": [
+        "ok"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "江苏大学2026年下半年博士人才全国巡回招聘会暨博士后招收对接会",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/434173.html",
+      "keep": false,
+      "label": "rejected_title",
+      "reasons": [
+        "reject_title_pattern"
+      ],
+      "job_type": "Postdoc"
+    },
+    {
+      "title": "河海大学商学院教师招聘栏目",
+      "url": "http://hhbs.hhu.edu.cn/18194/list.htm",
+      "keep": false,
+      "label": "list_hub",
+      "reasons": [
+        "url_is_list_hub"
+      ],
+      "job_type": "Academic"
+    },
+    {
+      "title": "中国矿业大学2026年诚邀英才依托申报海外优青项目",
+      "url": "https://m.gaoxiaojob.com/announcement/detail/379254.html",
+      "keep": false,
+      "label": "dead",
+      "reasons": [
+        "fetch_fail status=404"
+      ],
+      "job_type": "Academic"
+    }
+  ]
+}

@@ -22,7 +22,7 @@ from china_universities_data import REGIONS
 from download_china_provinces import fetch, job_to_row, write_xlsx
 from export_clean_pdf import export_one
 from paths import CLEAN, CLEAN_ECON, DATA_ECON, ensure_dirs
-from screen_job_freshness import ROLLING, YEAR_2025, YEAR_2026_PLUS, strip_html
+from freshness_rules import ROLLING, YEAR_2025, YEAR_2026_PLUS, strip_html
 from validate_job_links import DEADLINE_RE, ROLLING_OK, score_announcement
 
 TODAY = date.today().isoformat()

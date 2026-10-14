@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-14",
+  "region": "fujian",
+  "input": 22,
+  "kept": 20,
+  "rejected": 2,
+  "rows": [
+    {
+      "title": "2026????????????????????????/?????",
+      "url": "https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202605/t20260512_7146924.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????????????????-??????",
+      "url": "https://www.sciencehr.net/job/227601.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "福建师范大学协和学院2026年高层次人才招聘公告",
+      "url": "https://cuc.fjnu.edu.cn/2026/0518/c315a43167/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "??????2026????????????????/?????",
+      "url": "https://rsc.fjjxu.edu.cn/2026/0402/c2784a119519/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "福建理工大学2026年高层次人才招聘方案",
+      "url": "https://rst.fujian.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202603/t20260330_7117134.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2026?????????????????????????",
+      "url": "https://rsc.fzu.edu.cn/info/1071/2641.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????2026??????????????????",
+      "url": "https://jgxy.fzu.edu.cn/info/1127/24608.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????????????????????????",
+      "url": "https://rsc.fzu.edu.cn/info/1071/2514.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "福州外语外贸学院2026年优秀博士招聘公告",
+      "url": "https://www.fzfu.com/jsfzzx/info/1054/2245.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????2026?????????????????",
+      "url": "https://jobs.hqu.edu.cn/info/1013/8005.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2026??????????????????????/?????",
+      "url": "https://rst.fj.gov.cn/zw/ztzl/zxzt/sydwrczp/gccrczpfa/202602/t20260225_7100631.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????2026???????????????????",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/381575.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "??????????????-????????",
+      "url": "https://www.sciencehr.net/job/211533.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "闽江大学计算机与大数据学院诚邀英才（参考校级方案）",
+      "url": "https://jsj.mju.edu.cn/2026/0529/c6083a219243/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2026年莆田学院公开招聘博士高层次人才方案",
+      "url": "https://www.ptu.edu.cn/info/1024/26914.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2026?????????????????????????????",
+      "url": "https://www.qztc.edu.cn/2026/0804/c2094a294909/page.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????2026????????",
+      "url": "https://postdoctor.xmu.edu.cn/info/1061/4196.htm",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "????????????2025???????????????",
+      "url": "https://www.gxszw.com/region/fujian/gxzpfj/202508/19118908.html",
+      "keep": true,
+      "label": "fresh_2025_open",
+      "reasons": [
+        "year_2025_no_closed_signal"
+      ]
+    },
+    {
+      "title": "?????????????????2026-2027??????????????????",
+      "url": "https://www.gaoxiaojob.com/announcement/detail/436031.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "厦门大学WISE/经济学院2026-2027年诚聘海外研究人员（英才网）",
+      "url": "http://www.gaoxiaozp.com/fujian/62361.html",
+      "keep": true,
+      "label": "fresh_2026_plus",
+      "reasons": [
+        "has_2026_plus"
+      ]
+    },
+    {
+      "title": "2025?????????????????????????",
+      "url": "https://jgxy.fzu.edu.cn/info/1061/23365.htm",
+      "keep": false,
+      "label": "stale_2025_closed",
+      "reasons": [
+        "2025_with_deadline_no_rolling"
+      ]
+    },
+    {
+      "title": "???????????????????/??/??/???",
+      "url": "https://chow.xmu.edu.cn/sqwm/jszp.htm",
+      "keep": false,
+      "label": "stale_pre_2025",
+      "reasons": [
+        "no_2025_or_2026_or_rolling"
+      ]
+    }
+  ]
+}

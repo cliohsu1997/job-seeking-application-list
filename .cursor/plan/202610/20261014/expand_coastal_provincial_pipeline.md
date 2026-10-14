@@ -34,8 +34,9 @@ econ hirers).
 2. `download_china_universities.py` - write `universities.json`
 3. `discover_by_university.py` - one-by-one home / econ unit / HR scrape
 4. `seed_jobs.py` - merge `seeds.json` (+ Python fallback)
-5. `validate_job_links.py` - keep real open faculty/postdoc; dedupe; drop dean/stale
-6. Export `clean/{region}_listings_validated_YYYY-MM-DD.pdf`
+5. `validate_job_links.py` - preliminary full list (~2x schools)
+6. `advanced_filter_jobs.py` - one-by-one verified keep list
+7. `summarize_china_jobs.py` - coastal merge (+ optional Macau/Taiwan)
 
 One command:
 
@@ -43,6 +44,7 @@ One command:
 python code/run_province_pipeline.py --list
 python code/run_province_pipeline.py --region {region}
 python code/run_province_pipeline.py --all --continue-on-error
+python code/run_province_pipeline.py --summarize-only --with-macau-taiwan
 ```
 
 ## Implementation status (2026-10-14)
@@ -61,7 +63,10 @@ python code/run_province_pipeline.py --all --continue-on-error
 - [x] Two-stage filter: preliminary full list (~2x schools) then advanced one-by-one  
 - [x] Advanced drops: wrong content, deadline passed, 2025 without rolling, other stale  
 - [x] `check_province_ready.py` / `--summarize-when-ready` before coastal merge  
-- [ ] All provinces advanced-ready (>=2x verified) then coastal merge  
+- [x] Streamline: delete `screen_job_freshness` / `verify_jobs_one_by_one`; shared `freshness_rules.py`  
+- [x] Deprecate CLI for `download_china_provinces` / `discover_dept_jobs` (libs kept)  
+- [x] `summarize_china_jobs.py` combines coastal + Macau/Taiwan (6+6 checked)  
+- [ ] All provinces advanced-ready (>=2x verified) then final coastal merge  
 - [x] Plan lives under `.cursor/plan/` (tracked via gitignore exceptions)  
 - [x] First Shanghai pipeline run (12 schools -> 3 kept Donghua after stale purge)  
 - [x] Shanghai coverage fix: hand seeds + catalog career hubs -> **25 kept (>=2x 12 schools)**  

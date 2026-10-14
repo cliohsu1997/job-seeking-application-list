@@ -52,29 +52,23 @@ python code/export_clean_pdf.py
 
 Outputs: `clean/economics_listings_YYYY-MM-DD.pdf`, `clean/marketing_listings_YYYY-MM-DD.pdf`
 
-## Macau + Taiwan universities (full catalog + econ units)
-
-Downloads MOE Taiwan department list, saves all Macau HEIs + Taiwan universities / economics units, fetches department & career pages:
+## Macau + Taiwan
 
 ```bash
 python code/download_macau_taiwan.py
+python code/compile_macau_taiwan.py
 ```
 
 Outputs:
-- `data/economics/macau/` — university list, raw career/job HTML, listings
-- `data/economics/taiwan/` — MOE CSV, all universities, economics units, dept HTML, listings
+- `data/economics/macau/listings_*.json`
+- `data/economics/taiwan/listings_*.json`
 - `clean/economics/macau_listings_*.xlsx`, `taiwan_listings_*.xlsx`, `macau_taiwan_listings_*.xlsx`
 
-## China provincial economics pipeline (coastal + Beijing)
+## China provincial pipeline (coastal + Beijing)
 
-Province-level folders under `data/economics/{region}/`. Shenzhen schools stay
-under `shenzhen/` (not duplicated in Guangdong).
-
-School lists = 985/211/double-first-class **plus** provincial econ hirers
-(same strategy as Guangdong). Catalog:
+Province folders under `data/economics/{region}/`. Shenzhen stays under
+`shenzhen/` (not duplicated in Guangdong). Catalog:
 `data/economics/china_universities/provincial_catalog.json`.
-
-### Available regions
 
 | Region key | Area |
 |------------|------|
@@ -92,45 +86,21 @@ School lists = 985/211/double-first-class **plus** provincial econ hirers
 | `guangxi` | Guangxi |
 | `hainan` | Hainan |
 
-```bash
-python code/run_province_pipeline.py --list
-python code/init_province_pipeline.py --all
-```
-
-### One-command pipeline (any province)
-
-Two-stage filter:
+### Stages
 
 1. **Preliminary** — discover + seeds + validate → `discovered_jobs_full.json`  
    Target: full list **≥ 2 × schools** in the province  
-2. **Advanced** — one-by-one re-fetch each posting; keep only right content;  
-   drop **deadline already passed**, **2025 without rolling/招满即止**, other stale  
-3. **Coastal summarize** when provinces are ready  
+2. **Advanced** — one-by-one re-fetch; drop wrong content, past deadlines,  
+   and **2025 without rolling/招满即止**  
+3. **Summarize** — merge coastal verified jobs; optionally add Macau/Taiwan  
 
 ```bash
+python code/run_province_pipeline.py --list
+python code/init_province_pipeline.py --all
 python code/run_province_pipeline.py --region shanghai
 python code/run_province_pipeline.py --all --continue-on-error
 python code/run_province_pipeline.py --check-ready --require-advanced
-python code/run_province_pipeline.py --summarize-only --summarize-when-ready --require-advanced
-```
-
-Legacy one-liner still works:
-
-```bash
-python code/run_province_pipeline.py --region guangdong
-python code/run_province_pipeline.py --region beijing
-python code/run_province_pipeline.py --region shanghai
-python code/run_province_pipeline.py --region fujian
-python code/run_province_pipeline.py --region zhejiang
-python code/run_province_pipeline.py --region shandong
-python code/run_province_pipeline.py --region jiangsu
-python code/run_province_pipeline.py --region tianjin
-python code/run_province_pipeline.py --region hebei
-python code/run_province_pipeline.py --region liaoning
-python code/run_province_pipeline.py --region shenzhen
-python code/run_province_pipeline.py --region guangxi
-python code/run_province_pipeline.py --region hainan
-python code/run_province_pipeline.py --all
+python code/run_province_pipeline.py --summarize-only --with-macau-taiwan
 ```
 
 Skip slow scrape (seed + validate only):
@@ -145,13 +115,19 @@ python code/run_province_pipeline.py --region beijing --skip-discover
 python code/download_china_universities.py --region beijing
 python code/discover_by_university.py --region beijing
 python code/seed_jobs.py --region beijing
-python code/validate_job_links.py --region beijing          # preliminary full list
-python code/advanced_filter_jobs.py --region beijing        # advanced one-by-one
+python code/validate_job_links.py --region beijing
+python code/advanced_filter_jobs.py --region beijing
 python code/check_province_ready.py --require-advanced
-python code/summarize_coastal.py
+python code/summarize_china_jobs.py
 ```
 
-Lock a good validated set into seeds (reproducible keep list):
+Coastal-only (no Macau/Taiwan):
+
+```bash
+python code/summarize_china_jobs.py --coastal-only
+```
+
+Lock a good validated set into seeds:
 
 ```bash
 python code/seed_jobs.py --region guangdong --sync-from-validated
@@ -159,20 +135,13 @@ python code/seed_jobs.py --region guangdong --sync-from-validated
 
 ### Outputs
 
-- `data/economics/china_universities/all.json` — full catalog + national 985 reference
-- `data/economics/{region}/universities.json` — detailed school list for that province
-- `data/economics/{region}/seeds.json` — known-good announcement URLs
-- `data/economics/{region}/discovered_jobs_candidates.json` — pre-validation
-- `data/economics/{region}/discovered_jobs_validated.json` — kept rows
+- `data/economics/{region}/seeds.json`
+- `data/economics/{region}/discovered_jobs_full.json` — preliminary
+- `data/economics/{region}/discovered_jobs_verified.json` — advanced keep
 - `clean/{region}_listings_validated_YYYY-MM-DD.pdf`
+- `clean/china_coastal_listings_validated_YYYY-MM-DD.pdf`
+- `clean/china_macau_taiwan_listings_YYYY-MM-DD.pdf` — coastal + Macau + Taiwan
 
 ### Task plan
 
 See `.cursor/plan/202610/20261014/expand_coastal_provincial_pipeline.md`.
-
-### Legacy (Guangdong/Fujian/Zhejiang/Shenzhen dept pages only)
-
-```bash
-python code/download_china_provinces.py
-python code/discover_dept_jobs.py --region guangdong --validate
-```

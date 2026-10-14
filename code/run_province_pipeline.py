@@ -11,8 +11,8 @@ Two-stage filtering:
   ADVANCED (one-by-one on the full list)
     6. Re-fetch each posting: right content, drop deadline-passed,
        drop 2025-without-rolling, drop other stale -> verified PDF
-  COASTAL
-    7. When provinces are ready, summarize into coastal PDF
+  COMBINE
+    7. When ready, summarize coastal (+ optional Macau/Taiwan) PDF
 
 Usage:
   python run_province_pipeline.py --list
@@ -20,6 +20,7 @@ Usage:
   python run_province_pipeline.py --all --continue-on-error
   python run_province_pipeline.py --check-ready --require-advanced
   python run_province_pipeline.py --summarize-only
+  python run_province_pipeline.py --summarize-only --with-macau-taiwan
 """
 from __future__ import annotations
 
@@ -35,7 +36,7 @@ from download_china_universities import write_catalog
 from init_province_pipeline import ensure_province_ready, init_regions
 from paths import DATA_ECON, ensure_dirs
 from seed_jobs import merge_seeds
-from summarize_coastal import summarize as summarize_coastal
+from summarize_china_jobs import summarize as summarize_china_jobs
 
 TODAY = date.today().isoformat()
 
@@ -140,7 +141,12 @@ def main() -> None:
     ap.add_argument(
         "--summarize-only",
         action="store_true",
-        help="Merge coastal PDF (warns if provinces not ready).",
+        help="Merge coastal (+ optional Macau/Taiwan) PDF.",
+    )
+    ap.add_argument(
+        "--with-macau-taiwan",
+        action="store_true",
+        help="Include Macau/Taiwan listings in the summarize step.",
     )
     ap.add_argument("--skip-discover", action="store_true")
     ap.add_argument(
@@ -183,7 +189,16 @@ def main() -> None:
             raise SystemExit(
                 "Not all provinces ready: %s" % ", ".join(ready["not_ready"])
             )
-        print(json.dumps(summarize_coastal("verified"), ensure_ascii=False, indent=2))
+        print(
+            json.dumps(
+                summarize_china_jobs(
+                    prefer="verified",
+                    coastal_only=not args.with_macau_taiwan,
+                ),
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
         return
 
     targets = list(REGIONS) if args.all else (args.region or [])
@@ -235,12 +250,15 @@ def main() -> None:
                 % ", ".join(ready["not_ready"])
             )
         else:
-            print("\n########## COASTAL SUMMARIZE ##########")
+            print("\n########## CHINA SUMMARIZE ##########")
             try:
-                summary["coastal"] = summarize_coastal("verified")
+                summary["china"] = summarize_china_jobs(
+                    prefer="verified",
+                    coastal_only=not args.with_macau_taiwan,
+                )
             except Exception as exc:
-                summary["coastal_error"] = str(exc)
-                print("!! coastal summarize failed:", exc)
+                summary["china_error"] = str(exc)
+                print("!! china summarize failed:", exc)
 
     out_path = DATA_ECON / ("province_pipeline_summary_%s.json" % TODAY)
     out_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
