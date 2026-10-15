@@ -1,0 +1,232 @@
+[
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=9058523321C2911A",
+    "University": "Dongbei University of Finance & Economics",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=9058523321C2911A",
+    "old_deadline": null,
+    "ai_deadline": null,
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE cached listing: faculty requirements and email application only; no application closing date stated."
+  },
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=5EE87D5DE6734D4D",
+    "University": "Nanjing University",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=5EE87D5DE6734D4D",
+    "old_deadline": null,
+    "ai_deadline": "2024-12-04",
+    "decision": "remove",
+    "needs_fixed_date": true,
+    "reason": "CICE page states Application Deadline: December 4, 2024, before 2026-10-15."
+  },
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=6CAF00207D46BD36",
+    "University": "University of Science and Technology of China",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=6CAF00207D46BD36",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE cached listing invites CV submission to hriif@ustc.edu.cn with no closing date."
+  },
+  {
+    "url": "https://sem.buaa.edu.cn/info/1024/16832.htm",
+    "University": "Beihang University",
+    "JobPost": "??????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Open faculty recruitment notice (2026-04-16); materials to listed emails, no application deadline."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/383481.html",
+    "University": "CUMT",
+    "JobPost": "??????2026?????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 postdoc announcement; portal shows ????????? with no fixed close date in body—ongoing recruitment."
+  },
+  {
+    "url": "https://panjin.dlut.edu.cn/info/1342/48784.htm",
+    "University": "DUT",
+    "JobPost": "??????????2026?????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 faculty hire lists directions and contact email pjdut@dlut.edu.cn; no registration deadline in notice."
+  },
+  {
+    "url": "https://bs.ecust.edu.cn/cms/ecust/facultyAndResearch/teacherRecruit/450106463682564.html",
+    "University": "ECUST",
+    "JobPost": "??????????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Postdoc notice asks applicants to email sxyrs@mail.ecust.edu.cn; no closing date stated."
+  },
+  {
+    "url": "http://rsc.gdufe.edu.cn/2026/0306/c4710a233784/page.htm",
+    "University": "Guangdong University of Finance and Economics",
+    "JobPost": "“???????”??????2026????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Postdoc notice says ?????????; no application deadline."
+  },
+  {
+    "url": "https://rsc.gzhu.edu.cn/info/1016/8191.htm",
+    "University": "Guangzhou University",
+    "JobPost": "????2026??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Notice states ???2026???????; rolling contact with units."
+  },
+  {
+    "url": "https://renshi.hdu.edu.cn/2026/0313/c13762a290223/page.htm",
+    "University": "HDU",
+    "JobPost": "????????2026??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 talent notice says ???????????; no closing date."
+  },
+  {
+    "url": "https://hro.hainanu.edu.cn/info/1074/9473.htm",
+    "University": "Hainan University",
+    "JobPost": "????2026???????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 faculty hire: ???????? via online system; no fixed calendar deadline."
+  },
+  {
+    "url": "https://hrdam.jnu.edu.cn/2026/0413/c264a853500/page.htm",
+    "University": "Jinan University",
+    "JobPost": "????2026??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 global postdoc notice ends with effective-date language and unit contacts; no application close date."
+  },
+  {
+    "url": "https://economy.njau.edu.cn/info/1435/14470.htm",
+    "University": "NAU",
+    "JobPost": "??????????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Notice states ??????; email/online application without deadline."
+  },
+  {
+    "url": "https://economics.nankai.edu.cn/2025/1120/c16001a584393/page.htm",
+    "University": "Nankai University",
+    "JobPost": "????????2026???????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "2025-12-07",
+    "decision": "remove",
+    "needs_fixed_date": true,
+    "reason": "Notice requires materials by 2025?12?7? to ecojobs@nankai.edu.cn, before 2026-10-15."
+  },
+  {
+    "url": "https://www.phbs.pku.edu.cn/info/1471/163281.htm",
+    "University": "PKU Shenzhen",
+    "JobPost": "??????????????????????????2026???",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "States ????????????????."
+  },
+  {
+    "url": "http://hr.ruc.edu.cn/zpxx/c26637043fc8457496f0781066bcad04.htm",
+    "University": "Renmin University of China",
+    "JobPost": "??????? ???????——????????2026?????????????",
+    "old_deadline": null,
+    "ai_deadline": null,
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 annual recruitment via zhaopin.ruc.edu.cn; only domestic-fresh-grad subset had 2025-11-20 cutoff—no overall posting deadline."
+  },
+  {
+    "url": "https://www.suibe.edu.cn/gjzz/2025/0421/c21874a183262/page.htm",
+    "University": "SUIBE",
+    "JobPost": "??????????????????????2026????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Notice ends ?????????."
+  },
+  {
+    "url": "https://sem.shanghaitech.edu.cn/2026/0922/c3518a1127559/page.htm",
+    "University": "ShanghaiTech",
+    "JobPost": "??????????????????2026?",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Faculty apply by email to sem-recruit@shanghaitech.edu.cn; no closing date in 2026 posting."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/company/detail/31523.html",
+    "University": "Southeast University",
+    "JobPost": "????????2026???????",
+    "old_deadline": null,
+    "ai_deadline": null,
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Gaoxiaojob company hub shows 0 active announcements/jobs; no posting-specific deadline to remove."
+  },
+  {
+    "url": "https://www.sem.tsinghua.edu.cn/js/jszp.htm",
+    "University": "Tsinghua University",
+    "JobPost": "???????????????2026?10????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "October 2026 faculty page: apply to scholar@sem.tsinghua.edu.cn with no stated close date."
+  },
+  {
+    "url": "https://hr.xujc.com/zhaopin/teacher/215.html",
+    "University": "Xiamen University",
+    "JobPost": "???????2026—2027??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026-10-09 Jiageng College notice: email hr@xujc.com; no application deadline for 2026–27 year."
+  },
+  {
+    "url": "https://rsc.zufe.edu.cn/info/1073/3738.htm",
+    "University": "ZUFE",
+    "JobPost": "??????2026????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 postdoc hire via college emails; no closing date in announcement."
+  },
+  {
+    "url": "https://www.must.edu.mo/en/careers",
+    "University": "Macau University of Science and Technology",
+    "JobPost": "Faculty (Economics among areas) — School of Business",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "MUST HR careers portal links to ongoing academic vacancies system; no single posting deadline."
+  }
+]

@@ -35,14 +35,15 @@
     "Location": "河北",
     "University": "HUEB",
     "School": "人力资源处",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "河北经贸大学2026年公开选聘工作人员公告（第一批）",
     "JobPostUrl": "https://rsc.hueb.edu.cn/info/1068/4413.htm",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://rsc.hueb.edu.cn/info/1068/4413.htm",
     "Email": null,
-    "JobType": "Postdoc"
+    "JobType": "Postdoc",
+    "deadline": "Rolling"
   },
   {
     "region": "hebei",

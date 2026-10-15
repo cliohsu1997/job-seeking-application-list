@@ -1,12 +1,12 @@
 {
   "region": "hebei",
-  "count": 11,
+  "count": 7,
   "published_year": {
-    "2026": 9,
-    "": 2
+    "2026": 6,
+    "": 1
   },
   "college_ranking": {
-    "211": 4,
-    "": 7
+    "211": 1,
+    "": 6
   }
 }

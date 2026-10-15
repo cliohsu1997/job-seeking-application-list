@@ -1,0 +1,281 @@
+[
+  {
+    "url": "http://boshihoujob.com/gxbsh/beijing/133313.html",
+    "University": "Beijing Normal University",
+    "JobPost": "北京师范大学经济与工商管理学院2026年招收博士后公告",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Open postdoc via supervisor contact; no closing date on page."
+  },
+  {
+    "url": "https://hr.cufe.edu.cn/info/1046/3431.htm",
+    "University": "CUFE",
+    "JobPost": "中央财经大学2026年度教学科研相关岗位人才招聘公告（第一批）",
+    "old_deadline": "2026-10-31",
+    "ai_deadline": "2026-10-31",
+    "decision": "keep",
+    "reason": "First-batch faculty hire active; attachment has per-position deadlines; Oct 31 2026 still after today."
+  },
+  {
+    "url": "https://sf.cufe.edu.cn/info/1104/15771.htm",
+    "University": "CUFE",
+    "JobPost": "金融学院2026年度博士后研究人员招收简章",
+    "old_deadline": null,
+    "ai_deadline": "2026-03-02",
+    "decision": "remove",
+    "reason": "School material submission deadline was 2026-03-02."
+  },
+  {
+    "url": "https://rcb.dlmu.edu.cn/info/1013/4752.htm",
+    "University": "DMU",
+    "JobPost": "大连海事大学2026年度专任教师（博士）招聘公告",
+    "old_deadline": null,
+    "ai_deadline": "2026-12-31",
+    "decision": "keep",
+    "reason": "Registration open through 2026-12-31 or until positions filled."
+  },
+  {
+    "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376231/page.htm",
+    "University": "Donghua University",
+    "JobPost": "东华大学旭日工商管理学院研究助理教授（RAP）招聘公告",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "RAP posting says recruitment info valid long-term; apply anytime."
+  },
+  {
+    "url": "https://www.sciencehr.net/job/227601.html",
+    "University": "FJNU",
+    "JobPost": "福建师范大学理论经济学【经济学院-教研岗】招聘",
+    "old_deadline": "2026-12-31",
+    "ai_deadline": "2026-12-31",
+    "decision": "keep",
+    "reason": "ScienceHR job open; Dec 31 2026 is qualification cutoff, no earlier apply deadline."
+  },
+  {
+    "url": "https://rsc.fzu.edu.cn/info/1071/2514.htm",
+    "University": "Fuzhou University",
+    "JobPost": "常态化招聘！福州大学诚聘师资博士后（含经管学院）",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Normalized ongoing postdoc recruitment; no end date."
+  },
+  {
+    "url": "http://rsc.gdufe.edu.cn/2026/0306/c4710a233784/page.htm",
+    "University": "Guangdong University of Finance and Economics",
+    "JobPost": "“百万英才汇南粤”广东财经大学2026年博士后招聘公告",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Year-round postdoc recruitment; no application deadline."
+  },
+  {
+    "url": "https://www.gxu.edu.cn/info/1364/34798.htm",
+    "University": "Guangxi University",
+    "JobPost": "广西大学海内外人才招聘（含工商管理学院）",
+    "old_deadline": "2026-12-31",
+    "ai_deadline": "2026-12-31",
+    "decision": "keep",
+    "reason": "Registration until 2026-12-31 from announcement date."
+  },
+  {
+    "url": "https://renshi.hdu.edu.cn/2026/0518/c13760a295531/page.htm",
+    "University": "HDU",
+    "JobPost": "杭州电子科技大学2026年博士后招聘启事",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 postdoc notice has no registration deadline."
+  },
+  {
+    "url": "https://jgxy.hainnu.edu.cn/2026/1014/c352a170265/page.htm",
+    "University": "Hainan Normal University",
+    "JobPost": "海南师范大学经济与管理学院2026年高层次人才招聘启事",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Notice long-valid; year-round applications welcome."
+  },
+  {
+    "url": "https://ec.hbu.edu.cn/info/1084/1669.htm",
+    "University": "Hebei University",
+    "JobPost": "河北大学经济学院相关招聘",
+    "old_deadline": null,
+    "ai_deadline": "2025-08-18",
+    "decision": "remove",
+    "reason": "2025 assistant hire; registration ended 2025-08-18."
+  },
+  {
+    "url": "https://iesr.jnu.edu.cn/2025/1021/c17720a844641/page.htm",
+    "University": "Jinan University",
+    "JobPost": "Job Openings IESR 2026",
+    "old_deadline": null,
+    "ai_deadline": "2025-12-01",
+    "decision": "remove",
+    "reason": "Application deadline 12/01/2025 on page."
+  },
+  {
+    "url": "http://www.chinajxrc.com/gaoxiao/zpview_B5EAD67F114545E3.shtml",
+    "University": "NAU",
+    "JobPost": "南京农业大学经济管理学院2026年诚聘海内外优秀人才",
+    "old_deadline": "2026-10-15",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 NAU repost; apply via zp.njau.edu.cn with no stated close date."
+  },
+  {
+    "url": "https://www.sciencehr.net/job/228739.html",
+    "University": "NJUST",
+    "JobPost": "南京理工大学企业管理（经济管理学院-专任教师）",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "ScienceHR faculty listing; no application deadline in text."
+  },
+  {
+    "url": "https://nubs.nju.edu.cn/d9/72/c8896a842098/page.htm",
+    "University": "Nanjing University",
+    "JobPost": "南京大学商学院2026年度研究系列人员招聘公告(alt)",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Research series hire until positions filled."
+  },
+  {
+    "url": "https://recruit.nbu.edu.cn/info/1009/2521.htm",
+    "University": "Ningbo University",
+    "JobPost": "宁波大学2026年公开招聘高层次人才（教师）公告",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 high-level faculty plan; no registration end date."
+  },
+  {
+    "url": "https://hr.pku.edu.cn/rczp/jxky/5a8411beae2c4e8ba518ba4c6efe8794.htm",
+    "University": "Peking University",
+    "JobPost": "2026年北京大学光华管理学院教学科研岗位招聘启事",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Guanghua notice says advertisement valid all year."
+  },
+  {
+    "url": "http://ae.ruc.edu.cn/xwzx/tzgg/62a1d3280023497a9cc7a2c15c5894c7.htm",
+    "University": "Renmin University of China",
+    "JobPost": "中国人民大学应用经济学院博士后招聘公告",
+    "old_deadline": null,
+    "ai_deadline": "2026-05-10",
+    "decision": "remove",
+    "reason": "Materials due 2026-05-10 17:00, already passed."
+  },
+  {
+    "url": "https://www.acem.sjtu.edu.cn/acem/hr/97812.html",
+    "University": "SJTU",
+    "JobPost": "经济系2027年度招聘——上海交大安泰经管学院诚聘英才",
+    "old_deadline": "2026-11-15",
+    "ai_deadline": "2026-11-15",
+    "decision": "keep",
+    "reason": "Submission deadline November 15, 2026 23:59 Beijing time."
+  },
+  {
+    "url": "https://www.smbu.edu.cn/info/4561/129821.htm",
+    "University": "SMBU",
+    "JobPost": "深圳北理莫斯科大学2026年管理系招聘公告（含数字经济/财务管理）",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 management faculty call; email apply, no close date."
+  },
+  {
+    "url": "http://boshihoujob.com/gxbsh/guangdong/131857.html",
+    "University": "SUSTech",
+    "JobPost": "南方科技大学风险分析预测与管控研究院2026年博士后招聘",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Postdoc via email; no deadline stated."
+  },
+  {
+    "url": "https://biz.stu.edu.cn/gk/cpyc/bshzp.htm",
+    "University": "Shantou University",
+    "JobPost": "汕头大学商学院博士后招聘（数字经济/宏观经济/产业经济）",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Long-term postdoc recruitment across directions."
+  },
+  {
+    "url": "https://m.gaoxiaojob.com/announcement/detail/401115.html",
+    "University": "Southeast University",
+    "JobPost": "东南大学2026年诚邀全球全职博士后",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "SEU postdoc: deadline in body is rolling monthly application."
+  },
+  {
+    "url": "https://www.gxszw.com/region/guangdong/gxzpgd/202602/09123430.html",
+    "University": "Tsinghua SIGS",
+    "JobPost": "清华大学深圳国际研究生院2026年海外优青（含金融科技/数字智能经济）",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 overseas talent invitation; no posting close date."
+  },
+  {
+    "url": "https://hr.uibe.edu.cn/jszp/zpxx/ed338932d6d94149945898e2ab2429c7.htm",
+    "University": "UIBE",
+    "JobPost": "对外经济贸易大学全球价值链研究院专职教学科研人员招聘相关公告",
+    "old_deadline": null,
+    "ai_deadline": "2026-07-10",
+    "decision": "remove",
+    "reason": "Registration window 2026-06-29 to 2026-07-10 ended."
+  },
+  {
+    "url": "http://www.gaoxiaozp.com/fujian/62361.html",
+    "University": "Xiamen University",
+    "JobPost": "厦门大学WISE/经济学院2026-2027年诚聘海外研究人员（英才网）",
+    "old_deadline": "2026-11-30",
+    "ai_deadline": "2026-11-30",
+    "decision": "keep",
+    "reason": "Apply before November 30, 2026 per English notice."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/384652.html",
+    "University": "ZJUT",
+    "JobPost": "浙江工业大学2026年特殊专业技术岗位招聘",
+    "old_deadline": "2026-12-31",
+    "ai_deadline": "2026-12-31",
+    "decision": "keep",
+    "reason": "Listed deadline 2026-12-31 on posting."
+  },
+  {
+    "url": "https://rsc.zufe.edu.cn/info/1073/3709.htm",
+    "University": "ZUFE",
+    "JobPost": "浙江财经大学高等研究院2026年人才引进公告",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Email application; no closing date in notice."
+  },
+  {
+    "url": "https://career.admo.um.edu.mo/fss_deco_ap_04_2026/",
+    "University": "University of Macau",
+    "JobPost": "Assistant Professor in Economics (macro/monetary)",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Applications reviewed until position filled."
+  },
+  {
+    "url": "https://web-ch.scu.edu.tw/econ/opinion/16118/31786",
+    "University": "Soochow University",
+    "JobPost": "Assistant Professor or above (2)",
+    "old_deadline": "2026-10-30",
+    "ai_deadline": "2026-10-30",
+    "decision": "keep",
+    "reason": "Mail-in deadline ROC 115/10/30 (2026-10-30), still open on 2026-10-15."
+  }
+]

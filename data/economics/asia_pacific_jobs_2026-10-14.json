@@ -2665,7 +2665,7 @@
     "Location": "北京",
     "University": "CAU",
     "School": "经济管理学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "中国农业大学2026年度人才招聘启事",
     "JobPostUrl": "https://cau.edu.cn/tzgg/7080fc338ac04c4c87c78e37531fef46.htm",
     "RequiredMaterial": "高层次/普通学术岗全年招聘",
@@ -2676,7 +2676,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "beijing",
@@ -3327,7 +3328,7 @@
     "Location": "北京",
     "University": "UIBE",
     "School": "中国金融学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "中国金融学院2026年专职教师招聘公告",
     "JobPostUrl": "https://sbf.uibe.edu.cn/tzgg/b20abafc23f940349876baa87054aace.htm",
     "RequiredMaterial": "See announcement page",
@@ -3338,7 +3339,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "211",
     "Published Year": "2026",
-    "College Ranking": "211"
+    "College Ranking": "211",
+    "deadline": "Rolling"
   },
   {
     "region": "beijing",
@@ -3653,7 +3655,7 @@
     "Location": "河北",
     "University": "HUEB",
     "School": "人力资源处",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "河北经贸大学2026年公开选聘工作人员公告（第一批）",
     "JobPostUrl": "https://rsc.hueb.edu.cn/info/1068/4413.htm",
     "RequiredMaterial": "See announcement page",
@@ -3664,7 +3666,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "hebei",
@@ -5259,7 +5262,7 @@
     "Location": "温州",
     "University": "WKU",
     "School": "中美人文与经济研究院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "温州肯恩大学中美人文与经济研究院2026年高层次人才招聘公告",
     "JobPostUrl": "https://talent.sciencenet.cn/index.php?s=Info%2Findex%2Fid%2F24766",
     "RequiredMaterial": "See announcement page",
@@ -5270,7 +5273,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "zhejiang",
@@ -7604,23 +7608,6 @@
     "region": "macau",
     "Country": "Macau",
     "Location": "Taipa",
-    "University": "City University of Macau",
-    "School": "Institute of Urban and Sustainable Development",
-    "Deadline": null,
-    "JobPostTitle": "Professor/Associate/Assistant — Economics (IUSD)",
-    "JobPostUrl": "https://career.cityu.edu.mo",
-    "RequiredMaterial": "Resume; ID; certificates; cover letter; 3 referees",
-    "SubmissionChannel": "CityU-Career",
-    "ApplicationLink": "https://career.cityu.edu.mo",
-    "Email": "jobs@cityu.edu.mo",
-    "JobType": "Academic",
-    "PublishedYear": "",
-    "CollegeRanking": ""
-  },
-  {
-    "region": "macau",
-    "Country": "Macau",
-    "Location": "Taipa",
     "University": "Macau University of Science and Technology",
     "School": "School of Business — Applied Economics",
     "Deadline": null,
@@ -7734,6 +7721,7 @@
     "Email": "poleco@mail.nsysu.edu.tw",
     "JobType": "Academic",
     "PublishedYear": "",
-    "CollegeRanking": "985/211"
+    "CollegeRanking": "985/211",
+    "deadline": "2026-12-31"
   }
 ]

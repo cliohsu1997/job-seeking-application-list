@@ -102,7 +102,7 @@
     "Location": "福州",
     "University": "Fuzhou University",
     "School": "经济与管理学院",
-    "Deadline": "Rolling",
+    "Deadline": "2026-12-31",
     "JobPostTitle": "2026年福州大学高层次专业技术人员招聘方案（含经管）",
     "JobPostUrl": "https://rsc.fzu.edu.cn/info/1071/2642.htm",
     "RequiredMaterial": "招满即止",
@@ -140,7 +140,7 @@
     "Location": "??",
     "University": "Fuzhou University",
     "School": "???????",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "常态化招聘！福州大学诚聘师资博士后（含经管学院）",
     "JobPostUrl": "https://rsc.fzu.edu.cn/info/1071/2514.htm",
     "RequiredMaterial": "See announcement page",
@@ -151,7 +151,8 @@
     "PublishedYear": "",
     "CollegeRanking": "211",
     "Published Year": "",
-    "College Ranking": "211"
+    "College Ranking": "211",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -159,7 +160,7 @@
     "Location": "??",
     "University": "Fuzhou University",
     "School": "经济与管理学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "欢迎申报2026福州大学经济与管理学院博士后引才项目",
     "JobPostUrl": "https://jgxy.fzu.edu.cn/info/1127/24608.htm",
     "RequiredMaterial": "See announcement page",
@@ -170,7 +171,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "211",
     "Published Year": "2026",
-    "College Ranking": "211"
+    "College Ranking": "211",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -198,7 +200,7 @@
     "Location": "福州",
     "University": "Fuzhou University of International Studies and Trade",
     "School": "国际商学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "福州外语外贸学院2026年高层次人才招聘公告",
     "JobPostUrl": "https://www.gaoxiaojob.com/announcement/detail/198488.html",
     "RequiredMaterial": "See announcement page",
@@ -209,7 +211,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "211",
     "Published Year": "2026",
-    "College Ranking": "211"
+    "College Ranking": "211",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -217,7 +220,7 @@
     "Location": "泉州/厦门",
     "University": "Huaqiao University",
     "School": "数量统计与经济研究院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "华侨大学2026年邀请海外优秀青年人才开展交流合作的公告",
     "JobPostUrl": "https://jobs.hqu.edu.cn/info/1011/8135.htm",
     "RequiredMaterial": "See announcement page",
@@ -228,7 +231,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -256,7 +260,7 @@
     "Location": "??",
     "University": "Jimei University",
     "School": "????",
-    "Deadline": "2026-12-31",
+    "Deadline": "Rolling",
     "JobPostTitle": "集美大学经济贸易类（财经学院-高层次人才）招聘",
     "JobPostUrl": "https://www.sciencehr.net/job/211533.html",
     "RequiredMaterial": "See announcement page",
@@ -267,7 +271,8 @@
     "PublishedYear": "",
     "CollegeRanking": "",
     "Published Year": "",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -275,7 +280,7 @@
     "Location": "福州",
     "University": "Minjiang University",
     "School": "经济与管理学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "闽江大学高层次人才引进相关招聘信息（校级方案参考）",
     "JobPostUrl": "https://jsj.mju.edu.cn/2026/0529/c6083a219243/page.htm",
     "RequiredMaterial": "campus scheme page; may lack econ",
@@ -286,7 +291,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -333,7 +339,7 @@
     "Location": "??",
     "University": "Quanzhou Normal University",
     "School": "??????",
-    "Deadline": "Rolling",
+    "Deadline": "2026-12-31",
     "JobPostTitle": "2026年泉州师范学院公开招聘高层次人才方案（含商学院）",
     "JobPostUrl": "https://www.qztc.edu.cn/2026/0804/c2094a294909/page.htm",
     "RequiredMaterial": "See announcement page",
@@ -352,7 +358,7 @@
     "Location": "漳州",
     "University": "Xiamen University",
     "School": "嘉庚学院会计与金融学院",
-    "Deadline": "2026-10-15",
+    "Deadline": "Rolling",
     "JobPostTitle": "会计与金融学院2026—2027学年专任教师招聘启事",
     "JobPostUrl": "https://hr.xujc.com/zhaopin/teacher/215.html",
     "RequiredMaterial": "See announcement page",
@@ -363,7 +369,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",
@@ -371,7 +378,7 @@
     "Location": "??",
     "University": "Xiamen University",
     "School": "?????/????????",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "厦门大学2026年博士后招收启事",
     "JobPostUrl": "https://postdoctor.xmu.edu.cn/info/1061/4196.htm",
     "RequiredMaterial": "See announcement page",
@@ -382,7 +389,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "fujian",

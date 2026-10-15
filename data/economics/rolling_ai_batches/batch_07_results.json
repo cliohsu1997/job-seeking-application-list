@@ -1,0 +1,232 @@
+[
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=E153FEE8CC8E11B5",
+    "University": "Fudan University",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=E153FEE8CC8E11B5",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE cached posting: FDSM 2026 faculty applications to hrfdms@fudan.edu.cn with no closing date stated."
+  },
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=D6296C379B46AFF9",
+    "University": "Shanghai Institute for Mathematics and Interdisciplinary Sciences",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=D6296C379B46AFF9",
+    "old_deadline": "Rolling",
+    "ai_deadline": "2025-03-31",
+    "decision": "remove",
+    "needs_fixed_date": true,
+    "reason": "CICE page lists application deadline March 31, 2025; submission period ended before 2026-10-15."
+  },
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=038CBF83FD61166B",
+    "University": "Xi%u2019an Jiaotong-Liverpool University",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=038CBF83FD61166B",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE listing describes position close date as open until filled; apply by email with no fixed cutoff."
+  },
+  {
+    "url": "https://ifegg.com/html/12654.html",
+    "University": "Beijing Normal University",
+    "JobPost": "???????????????2026???????????????",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Postdoc notice: contact intended supervisor and apply; no application deadline on page."
+  },
+  {
+    "url": "https://www.cup.edu.cn/sba/rczp/a11fe97eb87141269783d3fded8c4456.htm",
+    "University": "CUP Beijing",
+    "JobPost": "??????????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "School accepts applications year-round until positions are filled (????)."
+  },
+  {
+    "url": "https://glxy.dhu.edu.cn/2026/0520/c20103a376231/page.htm",
+    "University": "Donghua University",
+    "JobPost": "???????????????????RAP?????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "RAP notice states recruitment information remains valid long-term; welcome to apply anytime."
+  },
+  {
+    "url": "https://rsc.fzu.edu.cn/info/1071/2514.htm",
+    "University": "Fuzhou University",
+    "JobPost": "????????????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Normalized ongoing faculty postdoc recruitment; no end date."
+  },
+  {
+    "url": "https://rsc.gdufs.edu.cn/info/1083/12549.htm",
+    "University": "Guangdong University of Foreign Studies",
+    "JobPost": "????????2026??????????...",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 faculty postdoc recruitment; contact units and apply without a stated close date."
+  },
+  {
+    "url": "https://www.gxszw.com/region/guangdong/gxzpgd/202603/30124547.html",
+    "University": "Guangzhou University",
+    "JobPost": "???????????????????2026??????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Group postdoc call: email CV to lizh@gzhu.edu.cn; no application deadline given."
+  },
+  {
+    "url": "https://www.hebut.edu.cn/rczp/zpgg/be54ac68d1e34c1ab0f57e8afdfc9c8f.htm",
+    "University": "HEBUT",
+    "JobPost": "??????2026?????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 open faculty selection via email to rczp@hebut.edu.cn; no fixed registration end date."
+  },
+  {
+    "url": "https://rsc.hbu.cn/info/1017/2038.htm",
+    "University": "Hebei University",
+    "JobPost": "????2026???????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 open selection by email; no application cutoff in the notice."
+  },
+  {
+    "url": "https://coba.lnu.edu.cn/info/1164/4976.htm",
+    "University": "Liaoning University",
+    "JobPost": "???????2026???????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Aug 2026 batch-II talent notice; apply via contact channels with no closing date on page."
+  },
+  {
+    "url": "https://www.sciencehr.net/job/228739.html",
+    "University": "NJUST",
+    "JobPost": "?????????????????-?????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "ScienceHR faculty listing; job text has no application deadline."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/409898.html",
+    "University": "Ningbo University",
+    "JobPost": "????2026??????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 high-level faculty plan; body gives no registration end date (see attachment/system)."
+  },
+  {
+    "url": "https://www.phbs.pku.edu.cn/info/1451/129371.htm",
+    "University": "PKU Shenzhen",
+    "JobPost": "?????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Standing PHBS faculty hiring via Interfolio links; no application deadline stated."
+  },
+  {
+    "url": "https://www.sdufe.edu.cn/info/1068/26223.htm",
+    "University": "SDUFE",
+    "JobPost": "??????2026????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Registration from date of publication onward; 2026 open recruitment with no hard close in text."
+  },
+  {
+    "url": "http://boshihoujob.com/gxbsh/guangdong/131967.html",
+    "University": "SUSTech",
+    "JobPost": "?????????????????????2026????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "PI postdoc ad: email materials to supervisor; no closing date."
+  },
+  {
+    "url": "https://biz.stu.edu.cn/gk/cpyc/jszp.htm",
+    "University": "Shantou University",
+    "JobPost": "??????????????????/?????",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Open faculty recruitment page inviting applications; no deadline listed."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/434822.html",
+    "University": "Sun Yat-sen University",
+    "JobPost": "????????2026???????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Gaoxiaojob repost quotes Lingnan: year-round faculty hiring, apply anytime."
+  },
+  {
+    "url": "https://sem.ustb.edu.cn/szll/bshldz/bshzp/index.htm",
+    "University": "USTB",
+    "JobPost": "?????????????????",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Postdoc recruitment page: submit CV to jgzp@ustb.edu.cn; no application deadline."
+  },
+  {
+    "url": "http://jrzhufu.com/zhaopin/article/2269.html",
+    "University": "Yanshan University",
+    "JobPost": "????2026???????????",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 open faculty selection via zp.ysu.edu.cn; no fixed registration period end stated."
+  },
+  {
+    "url": "https://rsc.zufe.edu.cn/info/1073/3709.htm",
+    "University": "ZUFE",
+    "JobPost": "???????????2026???????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Email application to feias@zufe.edu.cn; no closing date in notice."
+  },
+  {
+    "url": "https://career.admo.um.edu.mo/fba_drtm_te_ap_05_2026/",
+    "University": "University of Macau",
+    "JobPost": "Assistant Professor in Tourism Economics",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "UM careers page: review continues until the position is filled."
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "sheet": "AEA EJM CICE Asia-Pacific",
+    "University": "Beijing Normal University",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=4AC7F281ECBD2BA4",
+    "Deadline": null,
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=4AC7F281ECBD2BA4",
+    "html_path": null,
+    "html_exists": false
+  },
+  {
+    "sheet": "AEA EJM CICE Asia-Pacific",
+    "University": "Nanjing Agricultural University",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=41CE1E8D1AE20F34",
+    "Deadline": null,
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=41CE1E8D1AE20F34",
+    "html_path": null,
+    "html_exists": false
+  },
+  {
+    "sheet": "AEA EJM CICE Asia-Pacific",
+    "University": "University of Science and Technology of China",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=612A2FEECB1FB3D7",
+    "Deadline": null,
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=612A2FEECB1FB3D7",
+    "html_path": null,
+    "html_exists": false
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "BJTU",
+    "JobPost": "北京交通大学经济管理学院教师岗位招聘启事（常年有效）",
+    "Deadline": "Rolling",
+    "url": "https://jingguan.bjtu.edu.cn/show-972-9001.html",
+    "html_path": "data/economics/provincial_html/2e02a476199f3271.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "CUFE",
+    "JobPost": "中央财经大学2026年度人才招聘公告（第二批）",
+    "Deadline": "Rolling",
+    "url": "https://www.cufe.edu.cn/info/1186/26420.htm",
+    "html_path": "data/economics/provincial_html/b3900213ca0e3a4a.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "DUT",
+    "JobPost": "大连理工大学2026年博士后招聘公告",
+    "Deadline": "Rolling",
+    "url": "https://perdep.dlut.edu.cn/info/1401/21561.htm",
+    "html_path": "data/economics/provincial_html/e680a0e198c69d40.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "ECUST",
+    "JobPost": "华东理工大学陈万思教授团队招聘博士后启事",
+    "Deadline": "Rolling",
+    "url": "https://bs.ecust.edu.cn/cms/ecust/szyky/szdw/zpqs.html",
+    "html_path": "data/economics/provincial_html/d7830777112c57b8.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "GDUT",
+    "JobPost": "百万英才汇南粤--广东工业大学高层次人才招聘简章（经济学院）",
+    "Deadline": "Rolling",
+    "url": "https://hr.gdut.edu.cn/info/1073/1195.htm",
+    "html_path": "data/economics/provincial_html/12b09d36e1b1a025.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Guangxi University",
+    "JobPost": "广西大学经济学院诚聘海内外英才公告",
+    "Deadline": "Rolling",
+    "url": "https://sef.gxu.edu.cn/info/10836/90824.htm",
+    "html_path": "data/economics/provincial_html/51ae2e14b76e87dd.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "HDU",
+    "JobPost": "杭州电子科技大学2026年诚聘海内外优秀人才",
+    "Deadline": "Rolling",
+    "url": "https://m.gaoxiaojob.com/announcement/detail/385225.html",
+    "html_path": "data/economics/provincial_html/244c2cb5b2398fb8.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Hainan University",
+    "JobPost": "海南大学2026年招聘教学科研专业技术人员公告",
+    "Deadline": "Rolling",
+    "url": "https://hro.hainanu.edu.cn/info/1009/9413.htm",
+    "html_path": "data/economics/provincial_html/95662a248226b80e.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Jimei University",
+    "JobPost": "集美大学经济贸易类（财经学院-高层次人才）招聘",
+    "Deadline": "Rolling",
+    "url": "https://www.sciencehr.net/job/211533.html",
+    "html_path": "data/economics/provincial_html/08ebc5b12298cb27.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "NAU",
+    "JobPost": "南京农业大学经济管理学院人才招聘公告",
+    "Deadline": "Rolling",
+    "url": "https://economy.njau.edu.cn/info/1460/14471.htm",
+    "html_path": "data/economics/provincial_html/bfbcd885c5580e4b.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Nankai University",
+    "JobPost": "南开大学经济学院2026年人才引进、教职工公开招聘、博士后招收公告",
+    "Deadline": "Rolling",
+    "url": "https://economics.nankai.edu.cn/2025/1211/c16001a586532/page.htm",
+    "html_path": "data/economics/provincial_html/652acf6f629a3415.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Ocean University of China",
+    "JobPost": "中国海洋大学2026年科研博士后招聘启事",
+    "Deadline": "Rolling",
+    "url": "https://rsc.ouc.edu.cn/2026/0630/c923a533385/page.htm",
+    "html_path": "data/economics/provincial_html/3b9f228ccd029f0a.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Renmin University of China",
+    "JobPost": "中国人民大学财政金融学院2026年度引进人才和教师通知",
+    "Deadline": "Rolling",
+    "url": "https://ifegg.com/html/11188.html",
+    "html_path": "data/economics/provincial_html/b6a3cd86e9277239.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "SUFE",
+    "JobPost": "上海财经大学金融学院2026年“毓秀人才计划”招聘启事",
+    "Deadline": "Rolling",
+    "url": "https://sof.sufe.edu.cn/d1/50/c7791a250192/page.htm",
+    "html_path": "data/economics/provincial_html/01af422327bfd7b8.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "ShanghaiTech",
+    "JobPost": "上海科技大学创业与管理学院诚聘英才",
+    "Deadline": "Rolling",
+    "url": "https://sem.shanghaitech.edu.cn/2026/0922/c3517a1127559/page.htm",
+    "html_path": "data/economics/provincial_html/77d874cb9e770f61.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Southeast University",
+    "JobPost": "东南大学2026年诚邀全球全职博士后",
+    "Deadline": "Rolling",
+    "url": "https://m.gaoxiaojob.com/announcement/detail/401115.html",
+    "html_path": "data/economics/provincial_html/590857d2ba1ae740.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "Tsinghua University",
+    "JobPost": "清华大学经济管理学院博士后招聘",
+    "Deadline": "Rolling",
+    "url": "https://sem.tsinghua.edu.cn/js/bshldz/bshzp.htm",
+    "html_path": "data/economics/provincial_html/7fd7a261f561f110.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "WKU",
+    "JobPost": "温州肯恩大学中美人文与经济研究院2026年高层次人才招聘公告",
+    "Deadline": "Rolling",
+    "url": "https://talent.sciencenet.cn/index.php?s=Info%2Findex%2Fid%2F24766",
+    "html_path": "data/economics/provincial_html/9acd25aab2b694e1.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "ZUFE",
+    "JobPost": "浙江财经大学2026年人才引进公告",
+    "Deadline": "Rolling",
+    "url": "https://rsc.zufe.edu.cn/info/1073/3604.htm",
+    "html_path": "data/economics/provincial_html/828e3e7197b88283.html",
+    "html_exists": true
+  },
+  {
+    "sheet": "Provincial China+MT",
+    "University": "City University of Macau",
+    "JobPost": "Professor/Associate/Assistant — Economics (IUSD)",
+    "Deadline": "Rolling",
+    "url": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-institute-of-urban-and-sustainable-development-2/",
+    "html_path": null,
+    "html_exists": false
+  }
+]

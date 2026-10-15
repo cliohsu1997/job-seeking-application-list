@@ -1,12 +1,12 @@
 {
   "region": "tianjin",
-  "count": 8,
+  "count": 5,
   "published_year": {
-    "2026": 6,
     "2025": 1,
+    "2026": 3,
     "": 1
   },
   "college_ranking": {
-    "985/211": 8
+    "985/211": 5
   }
 }

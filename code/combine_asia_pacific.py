@@ -214,6 +214,23 @@ def to_app_row(job: dict) -> dict:
     return row
 
 
+def published_year_ok(job_or_row: dict) -> bool:
+    """Drop ads whose Published Year is strictly before 2026; keep blank/unknown."""
+    raw = (
+        job_or_row.get("PublishedYear")
+        or job_or_row.get("Published Year")
+        or ""
+    )
+    s = str(raw).strip()
+    if not s:
+        return True
+    # First 4-digit year in the field (e.g. "2025", "2025-26")
+    m = re.search(r"(20\d{2})", s)
+    if not m:
+        return True
+    return int(m.group(1)) >= 2026
+
+
 def _sort_rows(rows: list[dict]) -> list[dict]:
     def sort_key(r):
         d = r.get("Deadline")
@@ -326,6 +343,14 @@ def combine(
 
     web_jobs = ensure_metadata(web_jobs, fetch_page=fetch_page)
     provincial = ensure_metadata(provincial, fetch_page=fetch_page)
+
+    n_web_before, n_prov_before = len(web_jobs), len(provincial)
+    web_jobs = [j for j in web_jobs if published_year_ok(j)]
+    provincial = [j for j in provincial if published_year_ok(j)]
+    print(
+        "Published Year >= 2026 (or blank): website %d -> %d | provincial %d -> %d"
+        % (n_web_before, len(web_jobs), n_prov_before, len(provincial))
+    )
 
     web_rows = _sort_rows([to_app_row(j) for j in web_jobs])
     prov_rows = _sort_rows([to_app_row(j) for j in provincial])

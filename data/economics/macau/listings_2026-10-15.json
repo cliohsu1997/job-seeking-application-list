@@ -4,7 +4,7 @@
     "Location": "Taipa",
     "University": "University of Macau",
     "School": "Faculty of Social Sciences — Department of Economics",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "Job Post": "Assistant Professor in Economics (macro/monetary) | https://career.admo.um.edu.mo/fss_deco_ap_04_2026/",
     "Required Material": "Online application via Career@UM; PhD in Economics",
     "Submission Channel": "UM-Career",
@@ -13,14 +13,15 @@
     "Submission Date": null,
     "Reference Status": null,
     "Interview Date": null,
-    "Job Type": "Faculty"
+    "Job Type": "Faculty",
+    "deadline": "Rolling"
   },
   {
     "Country": "Macau",
     "Location": "Taipa",
     "University": "University of Macau",
     "School": "FBA — Finance & Business Economics",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "Job Post": "Associate/Assistant Professor in Microeconometrics | https://career.admo.um.edu.mo/fba_fbe_mec_aap_08_2026/",
     "Required Material": "Online application; 3 referees; PhD in Economics",
     "Submission Channel": "UM-Career",
@@ -29,14 +30,15 @@
     "Submission Date": null,
     "Reference Status": null,
     "Interview Date": null,
-    "Job Type": "Faculty"
+    "Job Type": "Faculty",
+    "deadline": "Rolling"
   },
   {
     "Country": "Macau",
     "Location": "Taipa",
     "University": "University of Macau",
     "School": "FBA — Integrated Resort & Tourism Management",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "Job Post": "Assistant Professor in Tourism Economics | https://career.admo.um.edu.mo/fba_drtm_te_ap_05_2026/",
     "Required Material": "Online application; 3 referees",
     "Submission Channel": "UM-Career",
@@ -45,46 +47,53 @@
     "Submission Date": null,
     "Reference Status": null,
     "Interview Date": null,
-    "Job Type": "Faculty"
+    "Job Type": "Faculty",
+    "deadline": "Rolling"
   },
   {
     "Country": "Macau",
     "Location": "Taipa",
     "University": "City University of Macau",
     "School": "Faculty of Finance",
-    "Deadline": null,
-    "Job Post": "Professor/Associate/Assistant — Economics & Digital Economics | https://career.cityu.edu.mo",
+    "Deadline": "Rolling",
+    "Job Post": "Professor/Associate/Assistant — Economics & Digital Economics | https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-faculty-of-finance/",
     "Required Material": "Resume; ID; certificates; cover letter; 3 referees",
     "Submission Channel": "CityU-Career",
-    "Application Link": "https://career.cityu.edu.mo",
+    "Application Link": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-faculty-of-finance/",
     "Email": "jobs@cityu.edu.mo",
     "Submission Date": null,
     "Reference Status": null,
     "Interview Date": null,
-    "Job Type": "Faculty"
+    "Job Type": "Faculty",
+    "ApplicationLink": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-faculty-of-finance/",
+    "JobPostUrl": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-faculty-of-finance/",
+    "deadline": "Rolling"
   },
   {
     "Country": "Macau",
     "Location": "Taipa",
     "University": "City University of Macau",
     "School": "Institute of Urban and Sustainable Development",
-    "Deadline": null,
-    "Job Post": "Professor/Associate/Assistant — Economics (IUSD) | https://career.cityu.edu.mo",
+    "Deadline": "Rolling",
+    "Job Post": "Professor/Associate/Assistant — Economics (IUSD) | https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-institute-of-urban-and-sustainable-development-2/",
     "Required Material": "Resume; ID; certificates; cover letter; 3 referees",
     "Submission Channel": "CityU-Career",
-    "Application Link": "https://career.cityu.edu.mo",
+    "Application Link": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-institute-of-urban-and-sustainable-development-2/",
     "Email": "jobs@cityu.edu.mo",
     "Submission Date": null,
     "Reference Status": null,
     "Interview Date": null,
-    "Job Type": "Faculty"
+    "Job Type": "Faculty",
+    "ApplicationLink": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-institute-of-urban-and-sustainable-development-2/",
+    "JobPostUrl": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-institute-of-urban-and-sustainable-development-2/",
+    "deadline": "Rolling"
   },
   {
     "Country": "Macau",
     "Location": "Taipa",
     "University": "Macau University of Science and Technology",
     "School": "School of Business — Applied Economics",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "Job Post": "Faculty (Economics among areas) — School of Business | https://www.must.edu.mo/en/careers",
     "Required Material": "CV; certificates; publications via MUST careers",
     "Submission Channel": "MUST-Career",
@@ -93,6 +102,7 @@
     "Submission Date": null,
     "Reference Status": null,
     "Interview Date": null,
-    "Job Type": "Faculty"
+    "Job Type": "Faculty",
+    "deadline": "Rolling"
   }
 ]

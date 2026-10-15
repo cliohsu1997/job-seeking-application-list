@@ -24,7 +24,7 @@
     "Location": "??",
     "University": "Ocean University of China",
     "School": "????",
-    "Deadline": null,
+    "Deadline": "2026-11-23",
     "JobPostTitle": "中国海洋大学2026年卓越博士后招聘公告",
     "JobPostUrl": "https://rsc.ouc.edu.cn/2026/0914/c923a537132/page.htm",
     "RequiredMaterial": "See announcement page",
@@ -35,7 +35,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "2026-11-23"
   },
   {
     "region": "shandong",
@@ -43,7 +44,7 @@
     "Location": "??",
     "University": "Ocean University of China",
     "School": "????",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "中国海洋大学2026年科研博士后招聘启事",
     "JobPostUrl": "https://rsc.ouc.edu.cn/2026/0630/c923a533385/page.htm",
     "RequiredMaterial": "See announcement page",
@@ -54,7 +55,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "shandong",
@@ -62,7 +64,7 @@
     "Location": "??",
     "University": "SDUFE",
     "School": "????",
-    "Deadline": "2026-12-31",
+    "Deadline": "Rolling",
     "JobPostTitle": "山东财经大学2026年度高层次人才和优秀博士招聘公告",
     "JobPostUrl": "https://www.sdufe.edu.cn/info/1068/26223.htm",
     "RequiredMaterial": "See announcement page",
@@ -73,7 +75,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "shandong",
@@ -100,7 +103,7 @@
     "Location": "??",
     "University": "SDUFE",
     "School": "金融学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "山东财经大学金融学院2026年全职博士后研究人员招聘公告",
     "JobPostUrl": "https://jinrong.sdufe.edu.cn/info/1160/8909.htm",
     "RequiredMaterial": "See announcement page",
@@ -111,7 +114,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "shandong",
@@ -119,7 +123,7 @@
     "Location": "??",
     "University": "SDUFE",
     "School": "金融学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "山东财经大学金融学院2026年招聘全职博士后研究人员公告-博士后招聘网",
     "JobPostUrl": "http://www.boshihoujob.com/gxbsh/shandong/131224.html",
     "RequiredMaterial": "See announcement page",
@@ -130,7 +134,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "",
     "Published Year": "2026",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "shandong",
@@ -168,7 +173,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "shandong",
@@ -195,7 +201,7 @@
     "Location": "??",
     "University": "Shandong University",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "山东大学经济学院诚聘海内外英才",
     "JobPostUrl": "https://www.econ.sdu.edu.cn/info/1284/13146.htm",
     "RequiredMaterial": "See announcement page",
@@ -207,6 +213,7 @@
     "CollegeRanking": "985/211",
     "Published Year": "",
     "College Ranking": "985/211",
-    "_deadline_source": "page_scan"
+    "_deadline_source": "page_scan",
+    "deadline": "Rolling"
   }
 ]

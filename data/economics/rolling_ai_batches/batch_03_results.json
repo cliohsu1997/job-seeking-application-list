@@ -1,0 +1,232 @@
+[
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=223BE806CD01DB59",
+    "University": "Beijing Jiaotong University School of Economics and Management",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=223BE806CD01DB59",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE detail page (cached HTML): recruitment notice valid year-round; four review rounds per year."
+  },
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=003923B6EFE42FFF",
+    "University": "Lanzhou University of Finance and Economics",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=003923B6EFE42FFF",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE detail page (cached HTML): open email application to renshi@lzufe.edu.cn; no closing date stated."
+  },
+  {
+    "url": "http://www.cicecon.org.cn/careers/detail.html?k=390B333672086D05",
+    "University": "University of Electronic Science and Technology of China",
+    "JobPost": "http://www.cicecon.org.cn/careers/detail.html?k=390B333672086D05",
+    "old_deadline": null,
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "CICE detail page (cached HTML): ongoing faculty/postdoc hiring by email; no application deadline."
+  },
+  {
+    "url": "https://soe.bit.edu.cn/lbt/b2d5331b505c49a3bc98591c4b90f43f.htm",
+    "University": "BIT",
+    "JobPost": "????????????????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML states the recruitment announcement is long-term effective (????)."
+  },
+  {
+    "url": "https://www.cufe.edu.cn/info/1186/26673.htm",
+    "University": "CUFE",
+    "JobPost": "??????2026?????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": null,
+    "decision": "keep",
+    "needs_fixed_date": true,
+    "reason": "Cached HTML: non-teaching resume deadline 2026-04-17 (passed); teaching/research deadlines are per attachment PDF, not a single list date."
+  },
+  {
+    "url": "https://perdep.dlut.edu.cn/info/1401/21541.htm",
+    "University": "DUT",
+    "JobPost": "??????2026???????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML is open global faculty recruitment with no application closing date."
+  },
+  {
+    "url": "https://sem.ecnu.edu.cn/42/d8/c42845a738008/page.htm",
+    "University": "ECNU",
+    "JobPost": "?????????????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Title and body state long-term recruitment (????); no fixed close date."
+  },
+  {
+    "url": "https://jjxy.gdut.edu.cn/info/1055/3235.htm",
+    "University": "GDUT",
+    "JobPost": "?????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML: notice remains long-term effective; accept materials year-round."
+  },
+  {
+    "url": "https://rsc.gdufs.edu.cn/info/1017/12909.htm",
+    "University": "Guangdong University of Foreign Studies",
+    "JobPost": "???????????????2026??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Page states postdoc applications accepted year-round (???????????)."
+  },
+  {
+    "url": "https://renshi.hdu.edu.cn/2026/0518/c13760a295531/page.htm",
+    "University": "HDU",
+    "JobPost": "????????2026????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "2026 postdoc call lists contacts and materials only; no application closing date."
+  },
+  {
+    "url": "https://hro.hainanu.edu.cn/info/1223/9743.htm",
+    "University": "Hainan University",
+    "JobPost": "????2026??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML: 2026 cohort; applications to join station accepted all year (????????)."
+  },
+  {
+    "url": "https://www.ujs.edu.cn/info/1093/211052.htm",
+    "University": "Jiangsu University",
+    "JobPost": "????2026???????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "2026-12-29",
+    "decision": "keep",
+    "needs_fixed_date": true,
+    "reason": "Provincial platform notice (linked from cached HTML): online registration through 2026-12-29 16:00; long-term posts until filled."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/425313.html",
+    "University": "NAU",
+    "JobPost": "????????????2026??????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached gaoxiaojob mirror: announcement valid for 2026 calendar year; no fixed close date."
+  },
+  {
+    "url": "https://nubs.nju.edu.cn/d9/72/c8896a842098/page.htm",
+    "University": "Nanjing University",
+    "JobPost": "???????2026????????????(alt)",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML: research-series posts open until filled (????)."
+  },
+  {
+    "url": "https://rsc.ouc.edu.cn/2026/0914/c923a537132/page.htm",
+    "University": "Ocean University of China",
+    "JobPost": "??????2026??????????",
+    "old_deadline": null,
+    "ai_deadline": "2026-11-23",
+    "decision": "keep",
+    "needs_fixed_date": true,
+    "reason": "2026 cycle: departments must submit packages by 2026-11-23; still open as of 2026-10-15."
+  },
+  {
+    "url": "https://econ.pku.edu.cn/tzgg/334008.htm",
+    "University": "Peking University",
+    "JobPost": "?????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML faculty call with email submission; no application deadline stated."
+  },
+  {
+    "url": "https://ibdr.sufe.edu.cn/e0/17/c19471a253975/page.htm",
+    "University": "SUFE",
+    "JobPost": "????????????????????????Faculty Recruitment?2026?",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML (English): applications accepted until positions are filled."
+  },
+  {
+    "url": "https://sem.shanghaitech.edu.cn/sem_en/2026/0922/c3708a1127557/page.htm",
+    "University": "ShanghaiTech",
+    "JobPost": "Faculty Openings at ShanghaiTech SEM",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Live page: submit CV to sem-recruit@shanghaitech.edu.cn; no closing date."
+  },
+  {
+    "url": "https://iacmr.org/%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%EF%BD%9C%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BB%8F%E6%B5%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E8%AF%9A%E8%81%98%E6%B5%B7%E5%86%85%E5%A4%96%E8%8B%B1%E6%89%8D/",
+    "University": "Southeast University",
+    "JobPost": "IACMR ?????????????????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML: recruitment notice effective year-round (????)."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/393833.html",
+    "University": "Tsinghua SIGS",
+    "JobPost": "??????????????????2026??????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached gaoxiaojob mirror: deadline listed as long-term recruitment (????)."
+  },
+  {
+    "url": "https://www.gaoxiaojob.com/announcement/detail/348660.html",
+    "University": "WKU",
+    "JobPost": "????????????????2026??????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached gaoxiaojob mirror: email application via WKU portal; no closing date in body."
+  },
+  {
+    "url": "https://news.zstu.edu.cn/info/1113/51843.htm",
+    "University": "ZSTU",
+    "JobPost": "??????2026???????",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "Cached HTML: hiring runs all year until positions filled (???????????)."
+  },
+  {
+    "url": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-faculty-of-finance/",
+    "University": "City University of Macau",
+    "JobPost": "Professor/Associate/Assistant — Economics & Digital Economics",
+    "old_deadline": "Rolling",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "needs_fixed_date": false,
+    "reason": "WebFetch: position remains open until filled; review begins immediately."
+  }
+]

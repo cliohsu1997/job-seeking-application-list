@@ -20,6 +20,7 @@ data/**/raw_*/
 data/**/departments/
 data/**/job_mine*/
 data/economics/cice_html/
+data/economics/provincial_html/
 
 # Ephemeral pipeline run summaries
 data/economics/province_init_summary_*.json

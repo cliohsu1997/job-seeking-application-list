@@ -1,0 +1,50 @@
+[
+  {
+    "name": "CAU",
+    "url": "https://cau.edu.cn/tzgg/7080fc338ac04c4c87c78e37531fef46.htm",
+    "html_key": "8ebd654d00f94e78",
+    "html_path": "data/economics/provincial_html/8ebd654d00f94e78.html",
+    "status": "fail",
+    "error": "<urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>"
+  },
+  {
+    "name": "NSYSU",
+    "url": "https://www.nstc.gov.tw/folksonomy/detail/4b115db7-4cd9-4774-8ba4-31335f5ea07c?l=en",
+    "html_key": "583ef1f996fa5e1c",
+    "html_path": "data/economics/provincial_html/583ef1f996fa5e1c.html",
+    "status": "ok",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "name": "HUEB",
+    "url": "https://rsc.hueb.edu.cn/info/1068/4413.htm",
+    "html_key": "0ec8933a7a75df10",
+    "html_path": "data/economics/provincial_html/0ec8933a7a75df10.html",
+    "status": "ok",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "name": "UIBE",
+    "url": "https://sbf.uibe.edu.cn/tzgg/b20abafc23f940349876baa87054aace.htm",
+    "html_key": "5d41bde8e6d07cd1",
+    "html_path": "data/economics/provincial_html/5d41bde8e6d07cd1.html",
+    "status": "ok",
+    "error": null
+  },
+  {
+    "name": "WKU",
+    "url": "https://talent.sciencenet.cn/index.php?s=Info%2Findex%2Fid%2F24766",
+    "html_key": "9acd25aab2b694e1",
+    "html_path": "data/economics/provincial_html/9acd25aab2b694e1.html",
+    "status": "fail",
+    "error": "HTTP Error 405: Not Allowed"
+  },
+  {
+    "name": "CityU Macau",
+    "url": "https://career.cityu.edu.mo",
+    "html_key": "78cc849690fe7bfd",
+    "html_path": "data/economics/provincial_html/78cc849690fe7bfd.html",
+    "status": "ok",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+  }
+]

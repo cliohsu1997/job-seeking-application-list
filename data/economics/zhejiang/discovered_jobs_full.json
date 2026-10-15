@@ -170,14 +170,15 @@
     "Location": "温州",
     "University": "WKU",
     "School": "中美人文与经济研究院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "温州肯恩大学中美人文与经济研究院2026年高层次人才招聘公告",
     "JobPostUrl": "https://talent.sciencenet.cn/index.php?s=Info%2Findex%2Fid%2F24766",
     "RequiredMaterial": "See announcement page",
     "SubmissionChannel": "Dept/HR",
     "ApplicationLink": "https://talent.sciencenet.cn/index.php?s=Info%2Findex%2Fid%2F24766",
     "Email": null,
-    "JobType": "Academic"
+    "JobType": "Academic",
+    "deadline": "Rolling"
   },
   {
     "region": "zhejiang",

@@ -1,0 +1,45 @@
+[
+  {
+    "url": "https://cau.edu.cn/tzgg/7080fc338ac04c4c87c78e37531fef46.htm",
+    "University": "CAU",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Academic posts year-round; non-academic window ended 2026-03-10 but academic remains open"
+  },
+  {
+    "url": "https://www.nstc.gov.tw/folksonomy/detail/4b115db7-4cd9-4774-8ba4-31335f5ea07c?l=en",
+    "University": "National Sun Yat-sen University",
+    "ai_deadline": "2026-12-31",
+    "decision": "keep",
+    "reason": "Review continues until 2026-12-31 or filled"
+  },
+  {
+    "url": "https://rsc.hueb.edu.cn/info/1068/4413.htm",
+    "University": "HUEB",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 open hire; no fixed closing date; email applications"
+  },
+  {
+    "url": "https://sbf.uibe.edu.cn/tzgg/b20abafc23f940349876baa87054aace.htm",
+    "University": "UIBE",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Domestic/overseas signup windows ended; high-level/mature scholars 常年进行"
+  },
+  {
+    "url": "https://talent.sciencenet.cn/index.php?s=Info%2Findex%2Fid%2F24766",
+    "University": "WKU",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "2026 WKU high-level hire; no fixed deadline on page"
+  },
+  {
+    "url": "https://hro.cityu.edu.mo/en/2026/10/05/professor-associate-professor-assistant-professor-faculty-of-finance/",
+    "University": "City University of Macau",
+    "ai_deadline": "Rolling",
+    "decision": "keep",
+    "reason": "Replaced career login hub with HRO detail pages; open until filled",
+    "note": "two CityU rows updated to distinct HRO URLs"
+  }
+]

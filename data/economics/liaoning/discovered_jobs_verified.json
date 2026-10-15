@@ -5,7 +5,7 @@
     "Location": "辽宁",
     "University": "DMU",
     "School": "党委人才工作办公室",
-    "Deadline": null,
+    "Deadline": "2026-12-31",
     "JobPostTitle": "大连海事大学2026年度专任教师（博士）招聘公告",
     "JobPostUrl": "https://rcb.dlmu.edu.cn/info/1013/4752.htm",
     "RequiredMaterial": "See announcement page",
@@ -24,7 +24,7 @@
     "Location": "辽宁",
     "University": "DUFE",
     "School": "管理科学与工程学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "东北财经大学管理科学与工程学院诚聘英才",
     "JobPostUrl": "https://smse.dufe.edu.cn/content_98151.html",
     "RequiredMaterial": "See announcement page",
@@ -35,7 +35,8 @@
     "PublishedYear": "",
     "CollegeRanking": "",
     "Published Year": "",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -43,7 +44,7 @@
     "Location": "辽宁",
     "University": "DUFE",
     "School": "经济学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "东北财经大学经济学院诚聘天下英才",
     "JobPostUrl": "https://econ.dufe.edu.cn/content_95758.html",
     "RequiredMaterial": "See announcement page",
@@ -54,7 +55,8 @@
     "PublishedYear": "",
     "CollegeRanking": "",
     "Published Year": "",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -62,7 +64,7 @@
     "Location": "辽宁",
     "University": "DUFE",
     "School": "财政税务学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "东北财经大学财政税务学院诚聘海内外英才",
     "JobPostUrl": "https://cs.dufe.edu.cn/content_96670.html",
     "RequiredMaterial": "See announcement page",
@@ -73,7 +75,8 @@
     "PublishedYear": "",
     "CollegeRanking": "",
     "Published Year": "",
-    "College Ranking": ""
+    "College Ranking": "",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -81,7 +84,7 @@
     "Location": "辽宁",
     "University": "DUT",
     "School": "经济管理学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "大连理工大学2026年全球人才招聘",
     "JobPostUrl": "https://perdep.dlut.edu.cn/info/1401/21541.htm",
     "RequiredMaterial": "See announcement page",
@@ -92,7 +95,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -100,7 +104,7 @@
     "Location": "辽宁",
     "University": "DUT",
     "School": "工商管理",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "大连理工大学2026年博士后招聘公告",
     "JobPostUrl": "https://perdep.dlut.edu.cn/info/1401/21561.htm",
     "RequiredMaterial": "See announcement page",
@@ -111,7 +115,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -119,7 +124,7 @@
     "Location": "辽宁",
     "University": "DUT",
     "School": "商学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "大连理工大学盘锦校区2026年专任教师招聘公告",
     "JobPostUrl": "https://panjin.dlut.edu.cn/info/1342/48784.htm",
     "RequiredMaterial": "See announcement page",
@@ -130,7 +135,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "985/211",
     "Published Year": "2026",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -138,7 +144,7 @@
     "Location": "辽宁",
     "University": "DUT",
     "School": "经济管理学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "大连理工大学经济管理学院诚聘海内外优秀人才",
     "JobPostUrl": "http://sem.dlut.edu.cn/info/1072/7620.htm",
     "RequiredMaterial": "See announcement page",
@@ -149,7 +155,8 @@
     "PublishedYear": "",
     "CollegeRanking": "985/211",
     "Published Year": "",
-    "College Ranking": "985/211"
+    "College Ranking": "985/211",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
@@ -177,7 +184,7 @@
     "Location": "辽宁",
     "University": "Liaoning University",
     "School": "商学院",
-    "Deadline": null,
+    "Deadline": "Rolling",
     "JobPostTitle": "辽宁大学商学院2026年高层次人才招聘公告（第二批）",
     "JobPostUrl": "https://coba.lnu.edu.cn/info/1164/4976.htm",
     "RequiredMaterial": "See announcement page",
@@ -188,7 +195,8 @@
     "PublishedYear": "2026",
     "CollegeRanking": "211",
     "Published Year": "2026",
-    "College Ranking": "211"
+    "College Ranking": "211",
+    "deadline": "Rolling"
   },
   {
     "region": "liaoning",
